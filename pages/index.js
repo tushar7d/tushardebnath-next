@@ -7,9 +7,15 @@ export default function Home() {
         <title>Create Tushar App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container p-12">
-        <h1 class="text-large font-bold ">Welcome to Tushar</h1>
-       
+      <div className="container p-3 pt-10">
+        <div
+          class=" text-3xl font-bold text-left  "
+          children={`Hello`}
+        />
+        <div
+          class=" text-l font-regular text-left "
+          children={`I am Tushar Debnath a product designer from New Delhi`}
+        />
       </div>
     </div>
   );
