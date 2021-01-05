@@ -1,23 +1,14 @@
-import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Tushar Debbnath</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="md:flex w-screen">
-        <LeftSection />
-        <RightSection />
+    <div className="p-3 h-screen flex flex-col justify-top items-top ">
+      <Image src="/logo.png" alt="me" width="60" height="60" />
+      <div className=" text-2xl mt-4 ">
+        I am Tushar Debnath, a product designer & design technologist living in
+        New Delhi.
       </div>
+      
     </div>
   );
 }
-
-let LeftSection = () => (
-  <div className="md:w-3/12 p-2 h-screen bg-red-100">
-    <div>Tushar Debnath</div>
-  </div>
-);
-let RightSection = () => <div className="md:w-9/12 p-2  h-screen">Right</div>;
