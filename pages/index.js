@@ -71,7 +71,7 @@ let ListItem = (props) => {
       
       <div className="pl-3">
       <div className="text-lg  ">A sample title</div>
-      <div className="text-md text-gray-500">Link</div>
+      <div className="text-md text-gray-500 mb-4">Link</div>
       </div>
       
      
