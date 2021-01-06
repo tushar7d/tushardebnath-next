@@ -1,8 +1,9 @@
 import Card from "../components/Card";
+import Container from '../components/Container';
 
 export default function Home() {
   return (
-    <div className=" max-w-screen-xl w-screen m-auto h-screen ">
+    <Container>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 p-4 pt-12">
         <Card size="sm:col-span-2 md:col-span-2" color="bg-muted-blue">
           <Intro />
@@ -20,7 +21,7 @@ export default function Home() {
         <Heading  head="Figma Plugin" sub="A few cool plugins I built from scratch" />
         </Card>
       </div>
-    </div>
+    </Container>
   );
 }
 let Intro = () => {
