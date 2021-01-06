@@ -2,7 +2,7 @@ import Card from "../components/Card";
 export default function Home() {
   return (
     <div className=" max-w-screen-xl w-screen m-auto h-screen ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 p-4 pt-12">
         <Card size="2" color="bg-muted-blue">
           <Intro />
         </Card>
