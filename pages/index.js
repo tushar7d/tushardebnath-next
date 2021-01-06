@@ -17,7 +17,22 @@ export default function Home() {
         <Card size="xl:col-span-2" color="bg-muted-purple">
         <Heading head="Figma Plugin" sub="A few cool plugins I built from scratch" />
         </Card>
-        <Card size="xl:col-span-3" color="bg-muted-yellow">
+        <Card size="xl:col-span-1" color="bg-muted-yellow">
+        <Heading  head="Figma Plugin" sub="A few cool plugins I built from scratch" />
+        </Card>
+        <Card size="xl:col-span-1" color="bg-muted-green">
+        <Heading  head="Figma Plugin" sub="A few cool plugins I built from scratch" />
+        </Card>
+        <Card size="xl:col-span-1" color="bg-muted-red">
+        <Heading  head="Figma Plugin" sub="A few cool plugins I built from scratch" />
+        </Card>
+        <Card size="xl:col-span-1" color="bg-muted-purple">
+        <Heading  head="Figma Plugin" sub="A few cool plugins I built from scratch" />
+        </Card>
+        <Card size="xl:col-span-1" color="bg-muted-yellow">
+        <Heading  head="Figma Plugin" sub="A few cool plugins I built from scratch" />
+        </Card>
+        <Card size="xl:col-span-1" color="bg-muted-blue">
         <Heading  head="Figma Plugin" sub="A few cool plugins I built from scratch" />
         </Card>
       </div>
@@ -39,7 +54,7 @@ let Intro = () => {
         </button>
       </div>
 
-      <div className="h-full flex justify-center  items-center ">
+      <div className="h-full flex justify-center items-center ">
         <div className=" bg-white  w-full h-full opacity-20 " />
       </div>
     </div>
