@@ -2,7 +2,7 @@ import Card from "../components/Card";
 export default function Home() {
   return (
     <div className=" max-w-screen-xl w-screen m-auto h-screen ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 p-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
         <Card size="2" color="bg-muted-blue">
           <Intro />
         </Card>
@@ -25,10 +25,19 @@ export default function Home() {
 let Intro = () => {
   return (
     <div className="h-full grid grid-cols-1 lg:grid-cols-3 gap-2 ">
-      <div className="h-full bg-red-500 lg:col-span-2 " />
-        
-      
-      <div className="h-full bg-red-50" /> 
+      <div className="h-full lg:col-span-2 flex flex-col justify-center items-center  lg:items-start p-3 ">
+        <div className="text-3xl text-center md:text-4xl xl:text-5xl  lg:text-left font-serif ">
+          Tushar Debnath
+        </div>
+        <div className="text-xl  xl:text-2xl text-gray-500 text-center lg:text-left">
+          Product Designer, & Design Technologist
+        </div>
+      </div>
+
+      <div className="h-full flex justify-center items-center " >
+
+    <div className=" bg-white  w-36 h-36 rounded-full" />
+      </div>
     </div>
   );
 };
