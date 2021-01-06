@@ -31,7 +31,7 @@ let Intro = () => {
           Tushar Debnath
         </div>
         <div className="text-xl  xl:text-2xl text-gray-500 text-center lg:text-left">
-          Product Designer, & Design Technologist
+          Product Designer, & Design Technologist 
         </div>
       </div>
 
