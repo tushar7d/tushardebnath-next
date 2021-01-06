@@ -24,15 +24,11 @@ export default function Home() {
 }
 let Intro = () => {
   return (
-    <div className="h-ful  flex">
-      <div className="w-full">
-        <div className="text-5xl text-center sm:text-left font-serif pt-12 pl-6">
-          Tushar Debnath
-        </div>
-        <div className="text-2xl text-center sm:text-left pt-4 pl-6">
-          Product Designer
-        </div>
-      </div>
+    <div className="h-full grid grid-cols-1 lg:grid-cols-3 gap-2 ">
+      <div className="h-full bg-red-500 lg:col-span-2 " />
+        
+      
+      <div className="h-full bg-red-50" /> 
     </div>
   );
 };
