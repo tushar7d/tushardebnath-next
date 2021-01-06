@@ -4,19 +4,19 @@ export default function Home() {
   return (
     <div className=" max-w-screen-xl w-screen m-auto h-screen ">
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 p-4 pt-12">
-        <Card size="2" color="bg-muted-blue">
+        <Card size="xl:col-span-2" color="bg-muted-blue">
           <Intro />
         </Card>
-        <Card size="1" color="bg-muted-green">
+        <Card size="xl:col-span-1" color="bg-muted-green">
           hello
         </Card>
-        <Card size="1" color="bg-muted-red">
+        <Card size="xl:col-span-1" color="bg-muted-red">
           red
         </Card>
-        <Card size="2" color="bg-muted-purple">
+        <Card size="xl:col-span-2" color="bg-muted-purple">
           purple
         </Card>
-        <Card size="3" color="bg-muted-yellow">
+        <Card size="xl:col-span-3" color="bg-muted-yellow">
           hello
         </Card>
       </div>
