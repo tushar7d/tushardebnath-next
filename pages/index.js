@@ -13,55 +13,23 @@ export default function Home() {
             head="Figma Plugin"
             sub="A few cool plugins I built from scratch"
           />
+          <ListItem />
+          <ListItem />
+          
         </Card>
         <Card size="xl:col-span-1" color="bg-muted-red">
           <Heading
-            head="Figma Plugin"
+            head="Writing"
             sub="A few cool plugins I built from scratch"
           />
         </Card>
         <Card size="xl:col-span-2" color="bg-muted-purple">
           <Heading
-            head="Figma Plugin"
+            head="Playlist"
             sub="A few cool plugins I built from scratch"
           />
         </Card>
-        <Card size="xl:col-span-1" color="bg-muted-yellow">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
-        <Card size="xl:col-span-1" color="bg-muted-green">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
-        <Card size="xl:col-span-1" color="bg-muted-red">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
-        <Card size="xl:col-span-1" color="bg-muted-purple">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
-        <Card size="xl:col-span-1" color="bg-muted-yellow">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
-        <Card size="xl:col-span-1" color="bg-muted-blue">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
+       
       </div>
     </Container>
   );
@@ -70,7 +38,7 @@ let Intro = () => {
   return (
     <div className="h-full grid grid-cols-1 gap-1 sm:grid-cols-3">
       <div className="h-full flex flex-col p-3 sm:col-span-2 justify-center sm:items-start  ">
-        <div className="text-2xl text-center font-bold sm:text-2xl  md:text-4xl xl:text-4xl   sm:text-left  ">
+        <div className="text-2xl text-center font-bold sm:text-3xl  md:text-4xl xl:text-4xl   sm:text-left  ">
           Hello, I am Tushar Debnath a Product Designer & Design Technologist
         </div>
         <div className="text-xl  xl:text-xl text-gray-500 text-center   sm:text-left mt-1">
@@ -90,9 +58,23 @@ let Intro = () => {
 
 let Heading = (props) => {
   return (
-    <div className="h-full p-3">
+    <div className=" p-3">
       <h1 className="  text-2xl  font-semibold">{props.head}</h1>
       <div className="text-gray-500 ">{props.sub}</div>
     </div>
+  );
+};
+
+let ListItem = (props) => {
+  return (
+   
+      
+      <div className="pl-3">
+      <div className="text-lg  ">A sample title</div>
+      <div className="text-md text-gray-500">Link</div>
+      </div>
+      
+     
+    
   );
 };
