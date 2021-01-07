@@ -5,30 +5,10 @@ export default function Home() {
   return (
     <Container>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 p-4 pt-12">
-        <Card size="sm:col-span-2 md:col-span-2" color="bg-muted-blue">
+        <Card size="sm:col-span-2 md:col-span-3" color="bg-muted-blue">
           <Intro />
         </Card>
-        <Card size="xl:col-span-1" color="bg-muted-green">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-          <ListItem />
-          <ListItem />
-          
-        </Card>
-        <Card size="xl:col-span-1" color="bg-muted-red">
-          <Heading
-            head="Writing"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
-        <Card size="xl:col-span-2" color="bg-muted-purple">
-          <Heading
-            head="Playlist"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
+       
        
       </div>
     </Container>
