@@ -5,30 +5,10 @@ export default function Home() {
   return (
     <Container>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 p-4 pt-12">
-        <Card size="sm:col-span-2 md:col-span-2" color="bg-muted-blue">
+        <Card size="sm:col-span-2 md:col-span-3" color="bg-muted-blue">
           <Intro />
         </Card>
-        <Card size="xl:col-span-1" color="bg-muted-green">
-          <Heading
-            head="Figma Plugin"
-            sub="A few cool plugins I built from scratch"
-          />
-          <ListItem />
-          <ListItem />
-          
-        </Card>
-        <Card size="xl:col-span-1" color="bg-muted-red">
-          <Heading
-            head="Writing"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
-        <Card size="xl:col-span-2" color="bg-muted-purple">
-          <Heading
-            head="Playlist"
-            sub="A few cool plugins I built from scratch"
-          />
-        </Card>
+       
        
       </div>
     </Container>
@@ -42,7 +22,7 @@ let Intro = () => {
           Hello, I am Tushar Debnath a Product Designer & Design Technologist
         </div>
         <div className="text-xl  xl:text-xl text-gray-500 text-center   sm:text-left mt-1">
-          Product Designer, & Design Technologist
+          I am currently living in New Delhi and working at Zomato
         </div>
         <button className="bg-white rounded-full px-6 py-2 mt-6 text-lg hover:shadow sm:shadow-md ">
           Know more
