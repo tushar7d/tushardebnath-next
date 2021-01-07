@@ -8,17 +8,32 @@ export default function Home() {
         <Card size="sm:col-span-2 md:col-span-3" color="bg-muted-blue">
           <Intro />
         </Card>
-       
-       
       </div>
     </Container>
   );
 }
+
 let Intro = () => {
-  return (
+  let Container = (props) => (
     <div className="h-full grid grid-cols-1 gap-1 sm:grid-cols-3">
-      <div className="h-full flex flex-col p-3 sm:col-span-2 justify-center sm:items-start  ">
-        <div className="text-2xl text-center font-bold sm:text-3xl  md:text-4xl xl:text-4xl   sm:text-left  ">
+      {props.children}
+    </div>
+  );
+  let Left = (props) => (
+    <div className="h-full flex flex-col p-3 sm:col-span-2 justify-center sm:items-start">
+      {props.children}
+    </div>
+  );
+  let Right = (props) => (
+    <div className="h-full flex justify-center items-center ">
+      {props.children}
+    </div>
+  );
+ 
+  return (
+    <Container>
+      <Left>
+        <div className="text-2xl text-center font-bold sm:text-3xl  md:text-4xl xl:text-4xl sm:text-left  ">
           Hello, I am Tushar Debnath a Product Designer & Design Technologist
         </div>
         <div className="text-xl  xl:text-xl text-gray-500 text-center   sm:text-left mt-1">
@@ -27,12 +42,12 @@ let Intro = () => {
         <button className="bg-white rounded-full px-6 py-2 mt-6 text-lg hover:shadow sm:shadow-md ">
           Know more
         </button>
-      </div>
+      </Left>
 
-      <div className="h-full flex justify-center items-center ">
+      <Right>
         <div className=" bg-white  w-full h-full opacity-20 " />
-      </div>
-    </div>
+      </Right>
+    </Container>
   );
 };
 
@@ -47,14 +62,9 @@ let Heading = (props) => {
 
 let ListItem = (props) => {
   return (
-   
-      
-      <div className="pl-3">
+    <div className="pl-3">
       <div className="text-lg  ">A sample title</div>
       <div className="text-md text-gray-500 mb-4">Link</div>
-      </div>
-      
-     
-    
+    </div>
   );
 };
