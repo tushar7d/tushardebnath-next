@@ -22,7 +22,7 @@ let Intro = () => {
           Hello, I am Tushar Debnath a Product Designer & Design Technologist
         </div>
         <div className="text-xl  xl:text-xl text-gray-500 text-center   sm:text-left mt-1">
-          Product Designer, & Design Technologist
+          I am currently living in New Delhi and working at Zomato
         </div>
         <button className="bg-white rounded-full px-6 py-2 mt-6 text-lg hover:shadow sm:shadow-md ">
           Know more
