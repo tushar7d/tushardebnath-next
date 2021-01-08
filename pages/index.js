@@ -18,47 +18,85 @@ export default function Home() {
           <BlogList />{" "}
         </Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
-          Plugin List
+          <PluginList />
         </Card>
         <Card
           size="sm:col-span-2 md:col-span-1"
           color=" bg-gray-100"
           to="/work/crystal"
         >
-          Crystal
+          <div className="h-full p-2 overflow-y-hidden">
+            <div className=" text-2xl font-semibold mb-4">Crystal</div>
+          </div>
         </Card>
         <Card
           size="sm:col-span-2 md:col-span-1"
           color=" bg-gray-100"
           to="/work/variants"
         >
-          Variants
+          <div className="h-full p-2 overflow-y-hidden">
+            <div className=" text-2xl font-semibold mb-4">Variants</div>
+          </div>
         </Card>
         <Card
           size="sm:col-span-2 md:col-span-1"
           color=" bg-gray-100"
           to="/work/automation"
         >
-          Design Automation
+          <div className="h-full p-2 overflow-y-hidden">
+            <div className=" text-2xl font-semibold mb-4">
+              Design Automation
+            </div>
+          </div>
         </Card>
         <Card
           size="sm:col-span-2 md:col-span-1"
           color=" bg-gray-100"
           to="/work/bluepackets"
         >
-          Blue Packets
+          <div className="h-full p-2 overflow-y-hidden">
+            <div className=" text-2xl font-semibold mb-4">Blue Packets</div>
+          </div>
         </Card>
         <Card
           size="sm:col-span-2 md:col-span-1"
           color=" bg-gray-100"
           to="/work/searchexperience"
         >
-          Search Experience
+          <div className="h-full p-2 overflow-y-hidden">
+            <div className=" text-2xl font-semibold mb-4">
+              Search Experience
+            </div>
+          </div>
         </Card>
       </Grid>
     </Container>
   );
 }
+
+let PluginList = () => {
+  return (
+    <div className="h-full p-2 overflow-y-hidden">
+      <div className=" text-2xl font-semibold mb-4">Plugin List</div>
+      <div className="divide-y-2">
+       
+        <div className="flex">
+          <div className="w-12 h-12 bg-gray-400 rounded-full"></div>
+          <div>
+            <div className="ml-2">
+              <div className=" font-medium">
+                How to run Figma shortcuts using Midi.
+              </div>
+              <div className="  text-base font-normal text-gray-400 ">
+                Medium Article
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 let BlogList = () => {
   return (
