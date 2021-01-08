@@ -17,11 +17,29 @@ export default function Home() {
         <Card size="sm:col-span-2 " color="bg-gray-100">
           <Intro />
         </Card>
+        <Card
+          size="sm:col-span-2 md:col-span-1"
+          color=" bg-gray-100"
+          to="/work/crystal"
+        >
+          <div className="h-full p-2 overflow-y-hidden">
+            <div className=" text-2xl font-semibold mb-4">My Skill</div>
+          </div>
+        </Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
           <BlogList />
         </Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
           <PluginList />
+        </Card>
+        <Card
+          size="sm:col-span-2 md:col-span-1"
+          color=" bg-gray-100"
+          to="/work/crystal"
+        >
+          <div className="h-full p-2 overflow-y-hidden">
+            <div className=" text-2xl font-semibold mb-4">Projects</div>
+          </div>
         </Card>
         <Card
           size="sm:col-span-2 md:col-span-1"
