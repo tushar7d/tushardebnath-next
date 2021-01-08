@@ -2,7 +2,10 @@ import Head from "next/head";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import Intro from "../components/Cards/Intro";
+import BlogList from "../components/Cards/BlogList";
+import PluginList from "../components/Cards/PluginList";
 import Grid from "../components/Grid";
+
 export default function Home() {
   return (
     <Container>
@@ -15,7 +18,7 @@ export default function Home() {
           <Intro />
         </Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
-          <BlogList />{" "}
+          <BlogList />
         </Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
           <PluginList />
@@ -73,72 +76,3 @@ export default function Home() {
     </Container>
   );
 }
-
-let PluginList = () => {
-  return (
-    <div className="h-full p-2 overflow-y-hidden">
-      <div className=" text-2xl font-semibold mb-4">Plugin List</div>
-      <div className="divide-y-2">
-       
-        <div className="flex">
-          <div className="w-12 h-12 bg-gray-400 rounded-full"></div>
-          <div>
-            <div className="ml-2">
-              <div className=" font-medium">
-                How to run Figma shortcuts using Midi.
-              </div>
-              <div className="  text-base font-normal text-gray-400 ">
-                Medium Article
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-let BlogList = () => {
-  return (
-    <div className="h-full p-2 overflow-y-hidden">
-      <div className=" text-2xl font-semibold mb-4">Writing</div>
-      <div className="divide-y-2">
-        <div className="my-4">
-          <div className="  text-base font-medium mt-4 ">
-            How to run Figma shortcuts using Midi.
-          </div>
-          <div className="  text-base font-normal text-gray-400 ">
-            Medium Article
-          </div>
-        </div>
-        <div className="my-4">
-          <div className=" text-base  font-medium  mt-4">
-            How I created a Figma plugin to automate our design system
-            migration.
-          </div>
-          <div className="  text-base font-normal text-gray-400">
-            Medium Article
-          </div>
-        </div>
-        <div className="my-4">
-          <div className=" text-base  font-medium mt-4">
-            How structuring Figma files in a consistent way has improved
-            collaboration and efficiency.
-          </div>
-          <div className="  text-base font-normal text-gray-400">
-            Medium Article
-          </div>
-        </div>
-        <div className="my-4">
-          <div className=" text-base  font-medium mt-4">
-            How structuring Figma files in a consistent way has improved
-            collaboration and efficiency.
-          </div>
-          <div className="  text-base font-normal text-gray-400">
-            Medium Article
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
