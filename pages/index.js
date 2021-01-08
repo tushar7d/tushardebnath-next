@@ -62,7 +62,7 @@ export default function Home() {
 
 let BlogList = () => {
   return (
-    <div className="h-full p-2">
+    <div className="h-full p-2 overflow-y-hidden">
       <div className=" text-2xl font-semibold mb-4">Writing</div>
       <div className="divide-y-2">
         <div className="my-4">
@@ -77,6 +77,15 @@ let BlogList = () => {
           <div className=" text-base  font-medium  mt-4">
             How I created a Figma plugin to automate our design system
             migration.
+          </div>
+          <div className="  text-base font-normal text-gray-400">
+            Medium Article
+          </div>
+        </div>
+        <div className="my-4">
+          <div className=" text-base  font-medium mt-4">
+            How structuring Figma files in a consistent way has improved
+            collaboration and efficiency.
           </div>
           <div className="  text-base font-normal text-gray-400">
             Medium Article
