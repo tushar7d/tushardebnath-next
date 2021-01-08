@@ -6,9 +6,10 @@ export default function Home() {
   return (
     <Container>
       <Grid>
-        <Card size="sm:col-span-2 md:col-span-3" color="bg-muted-blue">
+        <Card size="sm:col-span-2 " color="bg-muted-blue">
           <Intro />
         </Card>
+        <Card size="sm:col-span-2 md:col-span-1" color="bg-muted-green"></Card>
       </Grid>
     </Container>
   );
