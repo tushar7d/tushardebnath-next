@@ -12,6 +12,7 @@
     "@next/mdx": "^10.0.4",
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.1.0",
+    "contentful": "^8.1.7",
     "next": "10.0.0",
     "postcss": "^8.2.2",
     "react": "17.0.1",
