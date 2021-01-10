@@ -1,4 +1,5 @@
 import ListContainer from './ListContainer'
+import Entry from './Entry'
 
 let BlogList = () => {
   return (
@@ -20,15 +21,5 @@ let BlogList = () => {
 };
 export default BlogList;
 
-let Entry = (props) => {
-  return (
-    <div className="my-4">
-      <div className="text-base font-medium mt-4 ">{props.heading}</div>
-      <div className="  text-base font-normal text-gray-400 ">
-        Medium Article
-      </div>
-    </div>
-  );
-};
 
 
