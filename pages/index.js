@@ -8,23 +8,20 @@ import Grid from "../components/Grid";
 
 export default function Home() {
   return (
-    <Container>
-      <Head>
-        <title>{"Tushar Debnath"}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+    <Container title="tushar debnath">
+      
       <Grid>
         <Card size="sm:col-span-2 " color="bg-gray-100">
           <Intro />
         </Card>
-        
+
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
           <BlogList />
         </Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
           <PluginList />
         </Card>
-        
+
         <Card
           size="sm:col-span-2 md:col-span-1"
           color=" bg-gray-100"
