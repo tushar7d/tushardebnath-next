@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: pages
+  path: https://github.com/tushar7d/tushardebnath-next/tree/master/pages/work
   label: pages
   create: all
   match: "**/*"
