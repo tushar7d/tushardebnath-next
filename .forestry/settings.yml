@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: https://github.com/tushar7d/tushardebnath-next/tree/master/pages/work
-  label: pages
+  label: Work
   create: all
   match: "**/*"
   new_doc_ext: ".mdx"
