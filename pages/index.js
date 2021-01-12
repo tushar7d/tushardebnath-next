@@ -1,25 +1,18 @@
-import Head from "next/head";
+
 import Card from "../components/Card";
 import Container from "../components/Container";
 import Intro from "../components/Cards/Intro";
-import BlogList from "../components/Cards/BlogList";
-import PluginList from "../components/Cards/PluginList";
 import Grid from "../components/Grid";
+import NavBar from '../components/NavBar'
+
 
 export default function Home() {
   return (
     <Container title="tushar debnath">
-      
+      <NavBar />
       <Grid>
         <Card size="sm:col-span-2 " color="bg-gray-100">
           <Intro />
-        </Card>
-
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
-          <BlogList />
-        </Card>
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100">
-          <PluginList />
         </Card>
 
         <Card
