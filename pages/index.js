@@ -10,9 +10,10 @@ export default function Home() {
         <Card size="col-span-1 sm:col-span-2 " color="bg-gray-100">
           <Intro />
         </Card>
-        <Card size="col-span-1 "  color="bg-gray-100"/>
-
-        
+        <Card size="col-span-1 " color="bg-gray-100">
+          <div className=" text-2xl text-left mt-2 ">Project</div>
+          
+        </Card>
       </Grid>
     </Container>
   );
