@@ -9,7 +9,7 @@ import NavBar from '../components/NavBar'
 export default function Home() {
   return (
     <Container title="tushar debnath">
-      <NavBar />
+      
       <Grid>
         <Card size="sm:col-span-2 " color="bg-gray-100">
           <Intro />
