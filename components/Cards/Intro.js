@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 let Intro = () => {
   let Container = (props) => (
@@ -20,26 +20,29 @@ let Intro = () => {
   return (
     <Container>
       <Left>
-        <div className="text-2xl text-center font-bold sm:text-3xl  md:text-4xl xl:text-4xl sm:text-left  ">
-          Hello, I am Tushar Debnath a Product Designer & Design Technologist
+        <div className="font-bold text-center  text-2xl  sm:text-left  mb-2  leading-10   ">
+          Hey I'm Tushar
         </div>
-        <div className="text-xl  xl:text-xl text-gray-500 text-center   sm:text-left mt-1">
-          I am currently living in New Delhi and working at Zomato
-        </div>
-        <button className="bg-white rounded-full px-6 py-2 mt-6 text-lg hover:shadow sm:shadow-md ">
-          Know more
-        </button>
+        <div className="text-l   text-gray-500 text-center   sm:text-left mt-1 leading-6">
+          I'm a Product designer and a design technologist. Currently helping millions order food online
+          at Zomato. 
+          <br />
+          <br />
+          In the past I have worked with Expedia, Hike Messenger and MakeMyTrip building products at 
+          a global scale and also worked on developing design systems and internal design tools.
+          <br />
+          <br />
+          I am also a big beliver of opensource so I have a few opensource figma plugins I am super proud of. </div>
+        <div className="text-blue-800 my-3 font-semibold">Know More</div>
       </Left>
 
       <Right>
-      <Image
-
-        src="/photo.png"
-        alt="Picture of the author"
-        width={300}
-       height={300}
-       
-      />
+        <Image
+          src="/photo.png"
+          alt="Picture of the author"
+          width={200}
+          height={200}
+        />
       </Right>
     </Container>
   );
