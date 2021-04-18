@@ -1,16 +1,18 @@
+import Image from 'next/image'
+
 let Intro = () => {
   let Container = (props) => (
-    <div className="h-full grid grid-cols-1 gap-1 sm:grid-cols-3">
+    <div className=" h-full flex flex-col-reverse sm:flex-row ">
       {props.children}
     </div>
   );
   let Left = (props) => (
-    <div className="h-full flex flex-col p-3 sm:col-span-2 justify-center sm:items-start">
+    <div className="flex flex-col sm:items-start justify-center w-full sm:w-2/3 ">
       {props.children}
     </div>
   );
   let Right = (props) => (
-    <div className="h-full flex justify-center items-center ">
+    <div className="flex justify-center w-full m-auto sm:w-1/3">
       {props.children}
     </div>
   );
@@ -30,7 +32,14 @@ let Intro = () => {
       </Left>
 
       <Right>
-        <div className=" bg-white  w-full h-full opacity-20 " />
+      <Image
+
+        src="/photo.png"
+        alt="Picture of the author"
+        width={300}
+       height={300}
+       
+      />
       </Right>
     </Container>
   );
