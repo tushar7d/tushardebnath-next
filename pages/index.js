@@ -14,8 +14,7 @@ export default function Home() {
         <Card size="sm:col-span-2 " color="bg-gray-100">
           <Intro />
         </Card>
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" >Blog List</Card>
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" >Plugin List</Card>
+        
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/crystal">Crystal</Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/variants">Variants</Card>
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/automation">Design Automation</Card>

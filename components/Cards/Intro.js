@@ -20,8 +20,8 @@ let Intro = () => {
   return (
     <Container>
       <Left>
-        <div className="font-bold text-center  text-2xl  sm:text-left  mb-2  leading-10   ">
-          Hey I'm Tushar
+        <div className="font-bold text-center  text-3xl  sm:text-left  mb-2 mt-2  leading-10   ">
+          Hey I'm Tushar 👋
         </div>
         <div className="text-l   text-gray-500 text-center   sm:text-left mt-1 leading-6">
           I'm a Product designer and a design technologist. Currently helping millions order food online
