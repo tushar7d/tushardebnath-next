@@ -29,10 +29,10 @@ let Intro = () => {
           <br />
           <br />
           In the past I have worked with Expedia, Hike Messenger and MakeMyTrip building products at 
-          a global scale and helping to build design systems and developing internal design tools, process and.
+          a global scale and helping to build design systems and developing internal design tools.
           <br />
           <br />
-          I am a big beliver in community learning and opensource and I actively work on opensource projects and do my part in giving back to this awesome community. </div>
+          I am a big beliver in community learning and opensource and I actively contribute to the opensource community. </div>
         <div className="text-blue-800 my-3 font-semibold">Know More</div>
       </Left>
 
