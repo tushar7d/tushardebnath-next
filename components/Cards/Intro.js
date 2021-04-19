@@ -29,7 +29,7 @@ let Intro = () => {
           <br />
           <br />
           In the past I have worked with Expedia, Hike Messenger and MakeMyTrip building products at 
-          a global scale and also worked on developing design systems and internal design tools.
+          a global scale and also worked on developing design systems and design tools internally.
           <br />
           <br />
           I am also a big beliver of opensource so I have a few opensource figma plugins I am super proud of. </div>
