@@ -16,8 +16,13 @@ export default function Home() {
         </Card>
 
         <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/crystal">
+          <div>
+          <div className="bg-blue-800 h-64 rounded-t-lg" />
+          <div className="p-4 text-xl">Order Traking at Zomato</div>
+          </div>
 
-          <div className="bg-gray-200 h-64 rounded-t-lg"></div>
+          
+          
 
         </Card>
 
