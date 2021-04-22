@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <div className="z mt-4">
+    <div className=" mt-4">
       <h1>
         Hello, I’m Tushar Debnath.
       </h1>
