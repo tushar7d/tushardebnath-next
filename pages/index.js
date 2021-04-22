@@ -1,33 +1,136 @@
-import Head from "next/head";
-import Card from "../components/Card";
-import Container from "../components/Container";
-import Intro from "../components/Cards/Intro";
-import Grid from "../components/Grid";
+
 export default function Home() {
   return (
-    <Container>
-      <Head>
-        <title>{"Tushar Debnath"}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <Grid>
-        <Card size="sm:col-span-2 p-4 " color="bg-gray-100">
-          <Intro />
-        </Card>
+    <div className="z mt-4">
+      <h1>
+        Hello, I’m Tushar Debnath.
+      </h1>
+      <p>
+        I'm a Product designer and a design technologist. Currently helping millions order food online
+        at Zomato. In the past I have worked with Expedia, Hike Messenger and MakeMyTrip building products at
+        a global scale and also worked on developing design systems and design tools internally.I am also a big
+        beliver of opensource so I have a few opensource figma plugins I am super proud of.
+      </p>
 
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/crystal">
-          <div>
-          <div className="bg-blue-800 h-64 rounded-t-lg" />
-          <div className="p-4 text-xl">Order Traking at Zomato</div>
-          </div>
+      <h3 className="mt-8">
+        Select Work
+      </h3>
 
-          
-          
+      <ul className="mt-2">
 
-        </Card>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+      </ul>
 
 
-      </Grid>
-    </Container>
+      <h3 className="mt-8">
+        Writing
+      </h3>
+
+      <ul className="mt-2">
+
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+      </ul>
+      <h3 className="mt-8">
+        Figma plugin
+      </h3>
+
+      <ul className="mt-2">
+
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+        <li className="mt-4">
+            <div>
+              <p>Tag</p>
+              <h3>Title</h3>
+              <p>DEscription in long form text</p>
+            </div>
+
+        </li>
+      </ul>
+    </div>
   );
 }
