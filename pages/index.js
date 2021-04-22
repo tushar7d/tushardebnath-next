@@ -11,15 +11,16 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Grid>
-        <Card size="sm:col-span-2 " color="bg-gray-100">
+        <Card size="sm:col-span-2 p-4 " color="bg-gray-100">
           <Intro />
         </Card>
-        
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/crystal">Crystal</Card>
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/variants">Variants</Card>
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/automation">Design Automation</Card>
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/bluepackets">Blue Packets</Card>
-        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/searchexperience">Search Experience</Card>
+
+        <Card size="sm:col-span-2 md:col-span-1" color=" bg-gray-100" to="/work/crystal">
+
+          <div className="bg-gray-200 h-64 rounded-t-lg"></div>
+
+        </Card>
+
 
       </Grid>
     </Container>
