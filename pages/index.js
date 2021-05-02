@@ -4,8 +4,10 @@ export default function Home() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <div>
-      <div><button
+    <div className="container mx-auto ">
+      <div className="flex justify-between items-center p-4 ">
+        <h3 className="text-2xl font-bold invisible">Tushar Debnath</h3>
+        <button
         aria-label="Toggle Dark Mode"
         type="button"
         className="p-3 h-12 w-12 order-2 md:order-3"
@@ -16,7 +18,7 @@ export default function Home() {
 
       <div className="prose  mt-12 mx-auto px-4">
         <h1 className="dark:text-white">
-          Hello, I'm Tushar Debnath.
+          Hello, I'm Tushar Debnath. 
       </h1>
         <p className="dark:text-white">
           A Product designer and a design technologist from New Delhi. Currently helping millions order food online
