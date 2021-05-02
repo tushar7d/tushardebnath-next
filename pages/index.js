@@ -16,7 +16,7 @@ export default function Home() {
       <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
     </svg></button></div>
 
-      <div className="prose  mt-12 mx-auto px-4">
+      <div className="prose  mt-12 mx-auto px-8 md:px-4">
         <h1 className="dark:text-white">
           Hello, I'm Tushar Debnath. 
       </h1>
