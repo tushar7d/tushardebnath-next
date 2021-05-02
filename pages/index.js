@@ -1,5 +1,8 @@
 import { useTheme } from 'next-themes'
 
+
+
+
 export default function Home() {
   const { theme, setTheme } = useTheme()
 
@@ -50,7 +53,7 @@ export default function Home() {
         <div className="mb-3">
           <a className="text-l no-underline dark:text-white" target="_blank"  href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold">Project Scaffold</a>
         </div>
-        <div className="mb-3">
+        <div className="pb-6">
           <a className="text-l no-underline dark:text-white" target="_blank"  href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator">Cover Generator</a>
         </div>
       </div>
