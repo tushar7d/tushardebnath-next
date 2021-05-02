@@ -26,32 +26,32 @@ export default function Home() {
           a global scale, developing design systems and develop internal tools.
       </p>
         <div className="flex">
-          <a className="mr-5 dark:text-white" href="https://www.linkedin.com/in/tushardebnath/">Linkedin</a>
-          <a className="mr-5 dark:text-white" href="https://dribbble.com/tushardebnath">Dribbble</a>
+          <a className="mr-5 dark:text-white" target="_blank"  href="https://www.linkedin.com/in/tushardebnath/">Linkedin</a>
+          <a className="mr-5 dark:text-white" target="_blank"  href="https://dribbble.com/tushardebnath">Dribbble</a>
         </div>
 
         <h2 className="dark:text-white" >Writing</h2>
         <div className="mb-3">
-          <a className="text-l no-underline dark:text-white" href="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa">How to run Figma shortcuts using Midi.</a>
+          <a className="text-l no-underline dark:text-white" target="_blank"  href="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa">How to run Figma shortcuts using Midi.</a>
         </div>
         <div className="mb-3">
-          <a className="text-l no-underline dark:text-white" href="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e">Automating our design system migration @ Expedia.</a>
+          <a className="text-l no-underline dark:text-white" target="_blank"  href="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e">Automating our design system migration @ Expedia.</a>
         </div>
         <div>
-          <a className="text-l no-underline dark:text-white" href="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85">Better way to structure design files.</a>
+          <a className="text-l no-underline dark:text-white" target="_blank"  href="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85">Better way to structure design files.</a>
         </div>
 
         <h2 className="dark:text-white">
           Figma Plugins
         </h2>
         <div className="mb-3">
-          <a className="text-l no-underline dark:text-white" href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit">ColorKit</a>
+          <a className="text-l no-underline dark:text-white" target="_blank"  href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit">ColorKit</a>
         </div>
         <div className="mb-3">
-          <a className="text-l no-underline dark:text-white" href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold">Project Scaffold</a>
+          <a className="text-l no-underline dark:text-white" target="_blank"  href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold">Project Scaffold</a>
         </div>
         <div className="mb-3">
-          <a className="text-l no-underline dark:text-white" href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator">Cover Generator</a>
+          <a className="text-l no-underline dark:text-white" target="_blank"  href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator">Cover Generator</a>
         </div>
       </div>
     </div>
