@@ -8,17 +8,17 @@ export default function Home() {
       <div className="flex justify-between items-center p-4 ">
         <h3 className="text-2xl font-bold invisible">Tushar Debnath</h3>
         <button
-        aria-label="Toggle Dark Mode"
-        type="button"
-        className="p-3 h-12 w-12 order-2 md:order-3"
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      ><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-    </svg></button></div>
+          aria-label="Toggle Dark Mode"
+          type="button"
+          className="p-3 h-12 w-12 order-2 md:order-3"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        ><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg></button></div>
 
       <div className="prose  mt-12 mx-auto px-8 md:px-4">
         <h1 className="dark:text-white">
-          Hello, I'm Tushar Debnath. 
+          Hello, I'm Tushar Debnath.
       </h1>
         <p className="dark:text-white">
           A Product designer and a design technologist from New Delhi. Currently helping millions order food online
