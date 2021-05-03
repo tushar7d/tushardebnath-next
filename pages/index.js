@@ -1,4 +1,5 @@
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
 export default function Home() {
   const { theme, setTheme } = useTheme()
 
@@ -25,6 +26,9 @@ export default function Home() {
           a global scale, developing design systems and develop internal tools.
       </p>
         <div className="flex">
+        <Link href="/resume">
+          <a className="mr-5 dark:text-white" >Résumé</a>
+        </Link>
           <a className="mr-5 dark:text-white" target="_blank"  href="https://www.linkedin.com/in/tushardebnath/">Linkedin</a>
           <a className="mr-5 dark:text-white" target="_blank"  href="https://dribbble.com/tushardebnath">Dribbble</a>
         </div>

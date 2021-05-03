@@ -12,6 +12,7 @@ module.exports = {
         'muted-gray': '#EEEFF2',
       }
     },
+    
   },
   variants: {
     extend: {},
