@@ -23,7 +23,7 @@ export default function Home() {
         <p className="dark:text-white">
           A Product designer and a design technologist from New Delhi. Currently helping millions order food online
           at Zomato. In the past I have worked with Expedia, Hike Messenger and MakeMyTrip building products at
-          a global scale, developing design systems and develop internal tools.
+          a global scale, developing design systems and internal tools.
       </p>
         <div className="flex">
         <Link href="/resume">
