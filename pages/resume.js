@@ -23,7 +23,7 @@ export default function Resume() {
                 <p className="dark:text-white">
                     I am Tushar Debnath a product designer and a design technologist from New Delhi. Currently helping millions order food online
                     at Zomato. In the past I have worked with Expedia, Hike Messenger and MakeMyTrip building products at
-                    a global scale, developing design systems and develop tools.
+                    a global scale, developing design systems and internal tools.
                  </p>
 
                 <h2 className="dark:text-white">Skills</h2>

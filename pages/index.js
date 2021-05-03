@@ -1,10 +1,15 @@
 import { useTheme } from 'next-themes'
+import Head from 'next/head'
 import Link from 'next/link'
 export default function Home() {
   const { theme, setTheme } = useTheme()
 
   return (
     <div className="container mx-auto ">
+      <Head>
+        <title>Tushar Debnath</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="flex justify-between items-center p-4 ">
         <h3 className="text-2xl font-bold invisible">Tushar Debnath</h3>
         <button
@@ -31,6 +36,8 @@ export default function Home() {
         </Link>
           <a className="mr-5 dark:text-white" target="_blank"  href="https://www.linkedin.com/in/tushardebnath/">Linkedin</a>
           <a className="mr-5 dark:text-white" target="_blank"  href="https://dribbble.com/tushardebnath">Dribbble</a>
+          <a className="mr-5 dark:text-white" target="_blank"  href="https://github.com/tushar7d">GitHub</a>
+         
         </div>
 
         <h2 className="dark:text-white" >Writing</h2>
