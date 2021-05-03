@@ -27,7 +27,7 @@ export default function Home() {
           Hello,I'm Tushar Debnath.
          
       </h1>
-      <p className="dark:text-white text-xl font-bold ">   I design <ReactRotatingText items={['products.', 'design tools.', 'workflows.' , 'systems.' ]} /></p>
+      <p className="dark:text-white text-2xl text-grey-900 font-bold ">   I design <ReactRotatingText items={['products.', 'design tools.', 'workflows.' , 'systems.' ]} /></p>
      
         <p className="dark:text-white">
           I am Currently helping millions order food online
