@@ -63,6 +63,8 @@ export default function Home() {
         <div className="pb-6">
           <a className="text-l no-underline dark:text-white" target="_blank"  href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator">Cover Generator</a>
         </div>
+
+        
       </div>
     </div>
   );
