@@ -24,10 +24,10 @@ export default function Home() {
 
       <div className="prose  mt-12 mx-auto px-8 md:px-4">
         <h1 className="dark:text-white">
-          Hello, I'm Tushar Debnath.
+          Hello,I'm Tushar Debnath.
          
       </h1>
-      <h3 className="dark:text-white"> I design <ReactRotatingText items={['products.', 'systems.', 'experiences.' , 'processes.' , 'design tools.']} /></h3>
+      <p className="dark:text-white text-xl font-bold ">   I design <ReactRotatingText items={['products.', 'design tools.', 'workflows.' , 'systems.' ]} /></p>
      
         <p className="dark:text-white">
           I am Currently helping millions order food online
