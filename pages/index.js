@@ -1,6 +1,7 @@
 import { useTheme } from 'next-themes'
 import Head from 'next/head'
 import Link from 'next/link'
+import ReactRotatingText from 'react-rotating-text'
 export default function Home() {
   const { theme, setTheme } = useTheme()
 
@@ -24,9 +25,12 @@ export default function Home() {
       <div className="prose  mt-12 mx-auto px-8 md:px-4">
         <h1 className="dark:text-white">
           Hello, I'm Tushar Debnath.
+         
       </h1>
+      <h3 className="dark:text-white"> I design <ReactRotatingText items={['products.', 'systems.', 'experiences.' , 'processes.' , 'design tools.']} /></h3>
+     
         <p className="dark:text-white">
-          A Product designer and a design technologist from New Delhi. Currently helping millions order food online
+          I am Currently helping millions order food online
           at Zomato. In the past I have worked with Expedia, Hike Messenger and MakeMyTrip building products at
           a global scale, developing design systems and internal tools.
       </p>
@@ -63,6 +67,7 @@ export default function Home() {
         <div className="pb-6">
           <a className="text-l no-underline dark:text-white" target="_blank"  href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator">Cover Generator</a>
         </div>
+       
 
         
       </div>
