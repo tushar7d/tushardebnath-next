@@ -11,7 +11,7 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="flex justify-between items-center p-4 ">
+      <div className="flex justify-between items-center ">
         <h3 className="text-2xl font-bold invisible">Tushar Debnath</h3>
         <button
           aria-label="Toggle Dark Mode"
@@ -27,7 +27,7 @@ export default function Home() {
           Hello,I'm Tushar Debnath.
          
       </h1>
-      <p className="dark:text-white text-2xl text-grey-900 font-bold ">   I design <ReactRotatingText items={['products.', 'design tools.', 'workflows.' , 'systems.' ]} /></p>
+      <p className="dark:text-white text-2xl text-grey-900 font-bold ">   I design <ReactRotatingText items={['products.', 'tools.', 'workflows.' , 'systems.' ]} /></p>
      
         <p className="dark:text-white">
           I am Currently helping millions order food online
