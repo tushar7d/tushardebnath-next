@@ -3,61 +3,57 @@ import Head from "next/head";
 import Link from "next/link";
 import ReactRotatingText from "react-rotating-text";
 
-
-export default function Home() {
+let AboutSection = () => {
   return (
-    <>``
-      <Head>
-        <title>Tushar Debnath</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <div className="container mx-auto ">
-        <Header />
+    <>
+      <h1 className="dark:text-white leading-10">Hello,I'm Tushar Debnath</h1>
+      <div className="dark:text-white text-2xl text-black font-bold ">
+        I design{" "}
+        <ReactRotatingText
+          items={["products.", " custom tools.", "workflows.", "systems."]}
+        />
+      </div>
 
-        <div className="prose  mt-12 mx-auto px-8 md:px-4">
-          <h1 className="dark:text-white">Hello,I'm Tushar Debnath.</h1>
-          <div className="dark:text-white text-2xl text-black font-bold ">
-            
-            I design {" "}
-            <ReactRotatingText
-              items={["products.", " custom tools.", "workflows.", "systems."]}
-            />
-          </div>
+      <p className="dark:text-white ">
+        I am currently helping millions order food online at Zomato. In the past
+        I have worked with Expedia, Hike Messenger and MakeMyTrip building
+        products at a global scale, developing design systems and internal
+        tools.
+      </p>
+      <div className="flex">
+        <Link href="/resume">
+          <a className="mr-5 dark:text-white">Résumé</a>
+        </Link>
+        <a
+          className="mr-5 dark:text-white"
+          target="_blank"
+          href="https://www.linkedin.com/in/tushardebnath/"
+        >
+          Linkedin
+        </a>
+        <a
+          className="mr-5 dark:text-white"
+          target="_blank"
+          href="https://dribbble.com/tushardebnath"
+        >
+          Dribbble
+        </a>
+        <a
+          className="mr-5 dark:text-white"
+          target="_blank"
+          href="https://github.com/tushar7d"
+        >
+          GitHub
+        </a>
+      </div>
+    </>
+  );
+};
 
-          <p className="dark:text-white">
-            I am Currently helping millions order food online at Zomato. In the
-            past I have worked with Expedia, Hike Messenger and MakeMyTrip
-            building products at a global scale, developing design systems and
-            internal tools.
-          </p>
-          <div className="flex">
-            <Link href="/resume">
-              <a className="mr-5 dark:text-white">Résumé</a>
-            </Link>
-            <a
-              className="mr-5 dark:text-white"
-              target="_blank"
-              href="https://www.linkedin.com/in/tushardebnath/"
-            >
-              Linkedin
-            </a>
-            <a
-              className="mr-5 dark:text-white"
-              target="_blank"
-              href="https://dribbble.com/tushardebnath"
-            >
-              Dribbble
-            </a>
-            <a
-              className="mr-5 dark:text-white"
-              target="_blank"
-              href="https://github.com/tushar7d"
-            >
-              GitHub
-            </a>
-          </div>
-
-          <h2 className="dark:text-white">Writing</h2>
+let WritingSection = () =>{
+  return(
+    <>
+    <h2 className="dark:text-white">Writing</h2>
           <div className="mb-3">
             <a
               className="text-l no-underline dark:text-white"
@@ -86,7 +82,12 @@ export default function Home() {
             </a>
           </div>
 
-          <h2 className="dark:text-white">Figma Plugins</h2>
+    </>
+  )
+}
+
+let PluginSection = () =>{return(<>
+<h2 className="dark:text-white">Figma Plugins</h2>
           <div className="mb-3">
             <a
               className="text-l no-underline dark:text-white"
@@ -114,7 +115,28 @@ export default function Home() {
               Cover Generator
             </a>
           </div>
-        </div>
+
+</>)}
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Tushar Debnath</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <div className=" container  prose max-w-screen-md mx-auto px-8 ">
+        
+        <Header />
+        
+
+        
+          <AboutSection />
+          <WritingSection />
+          <PluginSection />
+
+          
+        
       </div>
     </>
   );
