@@ -6,7 +6,7 @@ import ReactRotatingText from "react-rotating-text";
 let AboutSection = () => {
   return (
     <>
-      <h1 className="dark:text-white leading-10">Hello,I'm Tushar Debnath</h1>
+      <h1 className="dark:text-white leading-10">Hello, I'm Tushar Debnath</h1>
       <div className="dark:text-white text-2xl text-black font-bold ">
         I design{" "}
         <ReactRotatingText
