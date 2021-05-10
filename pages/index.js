@@ -3,10 +3,9 @@ import Head from "next/head";
 import Link from "next/link";
 import ReactRotatingText from "react-rotating-text";
 
-
 export default function Home() {
   return (
-    <>``
+    <>
       <Head>
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -17,8 +16,7 @@ export default function Home() {
         <div className="prose  mt-12 mx-auto px-8 md:px-4">
           <h1 className="dark:text-white">Hello,I'm Tushar Debnath.</h1>
           <div className="dark:text-white text-2xl text-black font-bold ">
-            
-            I design {" "}
+            I design{" "}
             <ReactRotatingText
               items={["products.", " custom tools.", "workflows.", "systems."]}
             />
