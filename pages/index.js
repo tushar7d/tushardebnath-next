@@ -11,20 +11,20 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="container mx-auto ">
+      <div className="container prose mx-auto max-w-prose  ">
         <Header />
 
-        <div className="prose  mt-12 mx-auto px-8 md:px-4">
+        <div className="  mt-12 mx-auto px-8 md:px-4">
           <h1 className="dark:text-white">Hello,I'm Tushar Debnath.</h1>
           <div className="dark:text-white text-2xl text-black font-bold ">
 
-            I design {" "}
+            I design 
             <ReactRotatingText
               items={["products.", " custom tools.", "workflows.", "systems."]}
             />
           </div>
 
-          <p className="dark:text-white">
+          <p className=" text-gray-500 dark:text-white">
             I am currently helping millions order food online at Zomato. In the
             past I have worked with Expedia, Hike Messenger and MakeMyTrip
             building products at a global scale, developing design systems and
@@ -35,7 +35,7 @@ export default function Home() {
               <a className="mr-5 dark:text-white">Résumé</a>
             </Link>
             <a
-              className="mr-5 dark:text-white"
+              className="mr-5 dark:text-white no-underline"
               target="_blank"
               href="https://www.linkedin.com/in/tushardebnath/"
             >

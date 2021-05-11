@@ -10,6 +10,15 @@ module.exports = {
         'muted-purple': '#D5D4F5',
         'muted-yellow': '#FEFAF0',
         'muted-gray': '#EEEFF2',
+      },
+      typography:{
+        DEFAULT:{
+          css:{
+            a:{
+              textDecoration: "none"
+            }
+          }
+        }
       }
     },
     
