@@ -16,16 +16,14 @@ export default function Home() {
         <Header />
         <div className="  mt-12 mx-auto px-8 md:px-4">
           
-           <Image
+           <img
               src="/td.png"
-              alt="Picture of the author"
-              width={150}
-              height={150}
-              
+              alt="Picture of the Me"
+              style={{maxWidth:"150px"}}
             />
           
 
-          <h1 className=" dark:text-white pt-8 ">Hello,I'm Tushar Debnath.</h1>
+          <h1 className=" dark:text-white  ">Hello,I'm Tushar Debnath.</h1>
           <div className="dark:text-white text-2xl text-black font-medium ">
 
             I design
