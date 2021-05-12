@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Head from "next/head";
 import Link from "next/link";
 import ReactRotatingText from "react-rotating-text";
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -13,9 +14,24 @@ export default function Home() {
       </Head>
       <div className="container prose mx-auto max-w-prose  ">
         <Header />
+    
+       
+      
 
         <div className="  mt-12 mx-auto px-8 md:px-4">
-          <h1 className="dark:text-white">Hello,I'm Tushar Debnath.</h1>
+          <div className="mb-8">
+
+        
+        <Image
+        src="/td.png"
+        alt="Picture of the author"
+        width={150}
+        height={150}
+        
+        
+      />
+        </div>
+          <h1 className=" dark:text-white ">Hello,I'm Tushar Debnath.</h1>
           <div className="dark:text-white text-xl text-black font-medium ">
 
             I design
