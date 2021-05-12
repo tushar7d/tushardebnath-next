@@ -16,11 +16,11 @@ export default function Home() {
 
         <div className="  mt-12 mx-auto px-8 md:px-4">
           <h1 className="dark:text-white">Hello,I'm Tushar Debnath.</h1>
-          <div className="dark:text-white text-2xl text-black font-bold ">
+          <div className="dark:text-white text-xl text-black font-medium ">
 
-            I design 
+            I design
             <ReactRotatingText
-              items={["products.", " custom tools.", "workflows.", "systems."]}
+              items={[" products.", " custom tools.", " workflows.", " systems."]}
             />
           </div>
 
