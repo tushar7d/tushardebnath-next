@@ -24,7 +24,7 @@ export default function Home() {
             />
           </div>
           <h1 className=" dark:text-white ">Hello,I'm Tushar Debnath.</h1>
-          <div className="dark:text-white text-xl text-black font-medium ">
+          <div className="dark:text-white text-2xl text-black font-medium ">
 
             I design
             <ReactRotatingText
