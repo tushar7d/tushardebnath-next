@@ -2,7 +2,9 @@ import Header from "../components/Header";
 import Head from "next/head";
 import Link from "next/link";
 import ReactRotatingText from "react-rotating-text";
-import Image from 'next/image'
+import { faLinkedin, faDribbbleSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFile} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default function Home() {
@@ -36,32 +38,33 @@ export default function Home() {
             I am currently helping millions order food online at Zomato. In the
             past I have worked with Expedia, Hike Messenger and MakeMyTrip
             building products at a global scale, developing design systems and
-            internal tools.
-          </p>
-          <div className="flex">
-            <Link href="/resume">
-              <a className="mr-5 dark:text-white">Résumé</a>
+            internal tools.<Link href="/resume">
+              <a className="mr-5 dark:text-white underline"> View Résumé</a>
             </Link>
+          </p>
+          
+          <div className="flex text-3xl ">
+           
             <a
-              className="mr-5 dark:text-white no-underline"
+              className="mr-5 dark:text-white no-underline "
               target="_blank"
               href="https://www.linkedin.com/in/tushardebnath/"
             >
-              Linkedin
+              <FontAwesomeIcon icon={faLinkedin} className="text-gray-700" /> 
             </a>
             <a
               className="mr-5 dark:text-white"
               target="_blank"
               href="https://dribbble.com/tushardebnath"
             >
-              Dribbble
+               <FontAwesomeIcon icon={faDribbbleSquare} className="text-gray-700" /> 
             </a>
             <a
               className="mr-5 dark:text-white"
               target="_blank"
               href="https://github.com/tushar7d"
             >
-              GitHub
+              <FontAwesomeIcon icon={faGithubSquare} className="text-gray-700" /> 
             </a>
           </div>
 
