@@ -38,7 +38,7 @@ export default function Home() {
             I am currently helping millions order food online at Zomato. In the
             past I have worked with Expedia, Hike Messenger and MakeMyTrip
             building products at a global scale, developing design systems and
-            internal tools.<Link href="/resume">
+            internal tools. <br/><br/> <Link href="/resume">
               <a className="mr-5 dark:text-white underline"> View Résumé</a>
             </Link>
           </p>
