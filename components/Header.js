@@ -2,8 +2,8 @@ import { useTheme } from 'next-themes'
 export default function Header(props) {
     const { theme, setTheme } = useTheme()
     return (
-        <div className="flex justify-between items-center ">
-        <h3 className="text-2xl font-bold invisible">Tushar Debnath</h3>
+        <div className="flex justify-between items-center sticky top-0 bg-white max-w-prose mx-auto ">
+        <h3 className="text-xl font-medium  ml-4 dark:text-white">Home</h3>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
