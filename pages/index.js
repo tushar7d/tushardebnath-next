@@ -103,7 +103,7 @@ export default function Home() {
               href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
             >
               
-              <div className=" text-gray-800">ColorKit</div>
+              <div className=" text-gray-800 dark:text-white hover:text-blue-800">ColorKit</div>
               
             </a>
           </div>
@@ -113,7 +113,7 @@ export default function Home() {
               target="_blank"
               href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
             >
-               <div className=" text-gray-800">Project Scaffold</div>
+               <div className=" text-gray-800 dark:text-white hover:text-blue-800">Project Scaffold</div>
               
             </a>
           </div>
@@ -123,7 +123,7 @@ export default function Home() {
               target="_blank"
               href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator"
             >
-              <div className=" text-gray-800 hover:text-blue-800">Cover Generator</div>
+              <div className=" text-gray-800 dark:text-white hover:text-blue-800">Cover Generator</div>
             </a>
           </div>
         </div>

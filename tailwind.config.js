@@ -10,6 +10,7 @@ module.exports = {
         'muted-purple': '#D5D4F5',
         'muted-yellow': '#FEFAF0',
         'muted-gray': '#EEEFF2',
+        'page-black':'#121212'
       },
       typography:{
         DEFAULT:{

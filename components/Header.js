@@ -2,7 +2,7 @@ import { useTheme } from 'next-themes'
 export default function Header(props) {
     const { theme, setTheme } = useTheme()
     return (
-        <div className=" sticky top-0 bg-white dark:bg-black  border-b border-solid dark:border-transparent">
+        <div className=" sticky top-0 bg-white dark:bg-page-black  border-b border-solid dark:border-transparent">
           <div className=" flex justify-between items-center max-w-prose mx-auto">
         <h3 className="text-xl font-medium  ml-4 dark:text-white">Home</h3>
         <button
