@@ -4,7 +4,15 @@ export default function Header(props) {
     return (
         <div className=" sticky top-0 bg-white dark:bg-page-black  border-b border-solid dark:border-transparent">
           <div className=" flex justify-between items-center max-w-prose mx-auto">
-        <h3 className="text-xl font-medium  ml-4 dark:text-white">Home</h3>
+            <div className="flex">
+            <h3 className="text-l   ml-4 dark:text-white">Home</h3>
+            <h3 className="text-l   ml-12 dark:text-white">About</h3>
+            <h3 className="text-l   ml-12 dark:text-white">Portfolio</h3>
+
+
+            </div>
+            
+        
         <button
           aria-label="Toggle Dark Mode"
           type="button"
