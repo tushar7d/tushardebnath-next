@@ -18,7 +18,7 @@ export default function Home() {
           alt="Picture of the Me"
           style={{ maxWidth: "150px" }}
         />
-         <h1 className=" dark:text-white  ">Hello, I'm Tushar Debnath.</h1>
+         <h1 className=" dark:text-white  ">Hello, I'm Tushar Debnath. </h1>
         
        
         <div className="flex">
