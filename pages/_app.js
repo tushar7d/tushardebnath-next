@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
       <Header />
+      
       <Component {...pageProps} />
     </ThemeProvider>
   );
