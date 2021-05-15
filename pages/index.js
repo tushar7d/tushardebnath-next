@@ -1,8 +1,6 @@
 import Head from "next/head";
 
 import ReactRotatingText from "react-rotating-text";
-import { faLinkedin, faDribbbleSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   return (
@@ -46,21 +44,21 @@ export default function Home() {
             target="_blank"
             href="https://www.linkedin.com/in/tushardebnath/"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="text-gray-700 dark:text-white  hover:text-yellow-500 dark:hover:text-yellow-500" />
+           LinkedIn
           </a>
           <a
             className="mr-5 dark:text-white"
             target="_blank"
             href="https://dribbble.com/tushardebnath"
           >
-            <FontAwesomeIcon icon={faDribbbleSquare} className="text-gray-700 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500" />
+            Dribbble
           </a>
           <a
             className="mr-5 dark:text-white"
             target="_blank"
             href="https://github.com/tushar7d"
           >
-            <FontAwesomeIcon icon={faGithubSquare} className="text-gray-700 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500" />
+           GitHub
           </a>
         </div>
         <h3 className="dark:text-white text-yellow-400">Writing</h3>
