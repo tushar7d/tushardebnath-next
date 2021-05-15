@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Head from "next/head";
-import Link from "next/link";
+
 import ReactRotatingText from "react-rotating-text";
 import { faLinkedin, faDribbbleSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
