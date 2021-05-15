@@ -13,7 +13,7 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header />
+      
       <div className="container prose mx-auto max-w-prose  ">
       
         <div className="  mt-12 mx-auto px-8 md:px-4">

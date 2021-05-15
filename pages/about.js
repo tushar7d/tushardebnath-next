@@ -9,5 +9,14 @@ export default function About() {
           <title>Tushar Debnath | About</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Header />
+        
+        <div className="container mx-auto ">
+           
+
+           <div className="prose  my-12 mx-auto px-8 md:px-4">
+               <h1 className="dark:text-white">
+                   About
+     </h1>
+     </div>
+     </div>
         </>)}
