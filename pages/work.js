@@ -4,7 +4,9 @@ export default function Work() {
   let Card = (props) => {
     return (
       <div>
-        <div className="w-full  h-80 bg-blue-50 mb-4 mt-8"></div>
+        <div className="w-full flex justify-center items-end  h-80 bg-blue-50 mb-4 mt-8">
+          <img className=" h-80 my-0 object-contain" src="/bgred.png"></img>
+        </div>
         <div className="text-xl font-semibold dark:text-white">{props.title}</div>
         <div className=" text-gray-600 dark:text-white">{props.subtitle}</div>
       </div>
