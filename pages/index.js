@@ -91,10 +91,10 @@ export default function Home() {
           </IconLink>
         </div>
 
-        <h3 className="dark:text-white text-yellow-400">Writing</h3>
+        <h3 className="dark:text-white">Writing</h3>
         <div className="mb-3">
           <a
-            className="text-l no-underline text-gray-500 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500"
+            className="link-text"
             target="_blank"
             href="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
           >
@@ -103,7 +103,7 @@ export default function Home() {
         </div>
         <div className="mb-3">
           <a
-            className="text-l no-underline text-gray-500 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500"
+            className="link-text"
             target="_blank"
             href="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
           >
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
         <div>
           <a
-            className="text-l no-underline text-gray-500 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500"
+            className="link-text"
             target="_blank"
             href="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
           >
@@ -122,36 +122,36 @@ export default function Home() {
         <h3 className="dark:text-white">Figma Plugins</h3>
         <div className="mb-3">
           <a
-            className="text-l no-underline text-gray-500 dark:text-white "
+            className="link-text "
             target="_blank"
             href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
           >
-            <div className=" text-gray-600 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500">
+           
               ColorKit
-            </div>
+           
           </a>
         </div>
 
         <div className="mb-3">
           <a
-            className="text-l no-underline text-gray-500 dark:text-white"
+            className="link-text"
             target="_blank"
             href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
           >
-            <div className=" text-gray-600 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500">
+            
               Project Scaffold
-            </div>
+            
           </a>
         </div>
         <div className="pb-6">
           <a
-            className="text-l no-underline dark:text-white"
+            className="link-text"
             target="_blank"
             href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator"
           >
-            <div className=" text-gray-600 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500">
+           
               Cover Generator
-            </div>
+            
           </a>
         </div>
       </div>

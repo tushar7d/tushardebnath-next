@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link-text {
+    @apply text-base font-light no-underline !text-gray-300 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
+  }
+
+  
+}
