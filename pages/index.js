@@ -1,6 +1,36 @@
 import Head from "next/head";
-
 import ReactRotatingText from "react-rotating-text";
+import IconLink from '../components/IconLink'
+
+let Intro = () => {
+  return (
+    <>
+      <img
+        src="/td.png"
+        alt="Picture of the Me"
+        style={{ maxWidth: "150px" }}
+      />
+      <h1 className=" dark:text-white  ">Hello, I'm Tushar Debnath. </h1>
+
+      <div className="flex">
+        <div className="text-2xl mr-1 dark:text-white">I design </div>
+        <div className=" text-2xl text-yellow-500  font-medium ">
+          <ReactRotatingText
+            items={[" products.", " custom tools.", " workflows.", " systems."]}
+          />
+        </div>
+      </div>
+
+      <p className=" text-gray-500 dark:text-white">
+        I am currently helping millions order food online at Zomato. In the past
+        I have worked with Expedia, Hike Messenger and MakeMyTrip building
+        products at a global scale. I have expereience in developing design
+        systems and internal tools.
+      </p>
+    </>
+  );
+};
+
 
 export default function Home() {
   return (
@@ -9,40 +39,12 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      
 
       <div className=" prose max-w-prose mx-auto  mt-12 px-8 md:px-4  ">
-        <img
-          src="/td.png"
-          alt="Picture of the Me"
-          style={{ maxWidth: "150px" }}
-        />
-        <h1 className=" dark:text-white  ">Hello, I'm Tushar Debnath. </h1>
-
-        <div className="flex">
-          <div className="text-2xl mr-1 dark:text-white">I design </div>
-          <div className=" text-2xl text-yellow-500  font-medium ">
-            <ReactRotatingText
-              items={[
-                " products.",
-                " custom tools.",
-                " workflows.",
-                " systems.",
-              ]}
-            />
-          </div>
-        </div>
-
-        <p className=" text-gray-500 dark:text-white">
-          I am currently helping millions order food online at Zomato. In the
-          past I have worked with Expedia, Hike Messenger and MakeMyTrip
-          building products at a global scale. I have expereience in developing design systems and
-          internal tools.
-        </p>
+      <Intro />
         <div className="flex text-l  ">
-          <a
-            className="mr-5 dark:text-white no-underline hover:text-yellow-500 dark:hover:text-yellow-500"
-            target="_blank"
-            href="https://www.linkedin.com/in/tushardebnath/"
+          <IconLink
           >
             <svg
               width="24"
@@ -56,11 +58,8 @@ export default function Home() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
-            className="mr-5 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500"
-            target="_blank"
-            href="https://dribbble.com/tushardebnath"
+          </IconLink>
+          <IconLink
           >
             <svg
               width="24"
@@ -74,11 +73,8 @@ export default function Home() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
-            className="mr-5 dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500"
-            target="_blank"
-            href="https://github.com/tushar7d"
+          </IconLink>
+          <IconLink
           >
             <svg
               width="24"
@@ -92,7 +88,7 @@ export default function Home() {
                 fill="currentColor"
               />
             </svg>
-          </a>
+          </IconLink>
         </div>
 
         <h3 className="dark:text-white text-yellow-400">Writing</h3>

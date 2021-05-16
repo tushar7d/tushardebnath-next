@@ -28,7 +28,7 @@ export default function Work() {
         <div className="my-12 mx-auto px-8 md:px-4">
           <Card
             img="/crystal.png"
-            title="Improving the order tracking at Zomato"
+            title="Improving order tracking experience at Zomato"
             subtitle="A journal of steps taken towards simplicity and transparency in order tracking. "
           />
           <Card
