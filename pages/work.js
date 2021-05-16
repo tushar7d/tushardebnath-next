@@ -5,7 +5,7 @@ export default function Work() {
     return (
       <div>
         <div className="w-full flex justify-center items-end  h-80 bg-blue-50 mb-4 mt-8">
-          <img className=" object-contain" src="/bgred.png"></img>
+          <img className=" h-80 object-contain" src="/bgred.png"></img>
         </div>
         <div className="text-xl font-semibold dark:text-white">{props.title}</div>
         <div className=" text-gray-600 dark:text-white">{props.subtitle}</div>
