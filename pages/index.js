@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       
 
-      <div className=" prose max-w-prose mx-auto  mt-12 px-8 md:px-4  ">
+      <div className="prose max-w-prose mx-auto  mt-12 px-8 md:px-4  ">
       <Intro />
         <div className="flex text-l  ">
           <IconLink
@@ -91,7 +91,7 @@ export default function Home() {
           </IconLink>
         </div>
 
-        <h3 className="dark:text-white">Writing</h3>
+        <h2 className="dark:text-white !mt-14">Writing</h2>
         <div className="mb-3">
           <a
             className="link-text"
@@ -119,7 +119,7 @@ export default function Home() {
             Better way to structure design files.
           </a>
         </div>
-        <h3 className="dark:text-white">Figma Plugins</h3>
+        <h2 className="dark:text-white">Figma Plugins</h2>
         <div className="mb-3">
           <a
             className="link-text "
