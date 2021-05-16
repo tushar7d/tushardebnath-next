@@ -3,8 +3,8 @@ import Head from "next/head";
 export default function Work() {
   let Card = (props) => {
     return (
-      <div className="mb-14">
-        <div className="w-full flex justify-center items-end  h-80 bg-blue-50 mb-4 ">
+      <div className="mb-14 ">
+        <div className="w-full  flex justify-center items-end  h-80 bg-blue-50 mb-4" >
           <img className="h-80 object-contain" src={props.img}></img>
         </div>
         <div className="text-lg font-medium dark:text-white mb-1">
