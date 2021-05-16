@@ -21,8 +21,8 @@ export default function Work() {
       </Head>
 
       <div className="container mx-auto  ">
-        <div className="prose  my-12 mx-auto px-8 md:px-4">
-          <h1 className="dark:text-white">Work</h1>
+        <div className="my-12 mx-auto px-8 md:px-4">
+          
           <Card
             title="Improving the order tracking experience at Zomato"
             subtitle="A journal of steps taken towards simplicity and transparency in order tracking. "
