@@ -35,7 +35,7 @@ export default function Home() {
         <p className=" text-gray-500 dark:text-white">
           I am currently helping millions order food online at Zomato. In the
           past I have worked with Expedia, Hike Messenger and MakeMyTrip
-          building products at a global scale, developing design systems and
+          building products at a global scale. I have expereience in developing design systems and
           internal tools.
         </p>
         <div className="flex text-l  ">
