@@ -3,12 +3,12 @@ import Head from "next/head";
 export default function Work() {
   let Card = (props) => {
     return (
-      <div className="mb-12">
-        <div className="w-full flex justify-center items-end  h-80 bg-blue-50 mb-3 ">
+      <div className=" mb-14">
+        <div className="w-full flex justify-center items-end  h-80 bg-blue-50 mb-4 ">
           <img className="h-80 object-contain" src={props.img}></img>
         </div>
-        <div className="text-xl font-medium dark:text-white">{props.title}</div>
-        <div className=" text-gray-600 dark:text-white">{props.subtitle}</div>
+        <div className="text-lg font-medium dark:text-white mb-1">{props.title}</div>
+        <div className=" text-sm text-gray-500 dark:text-white">{props.subtitle}</div>
       </div>
     );
   };
@@ -25,7 +25,7 @@ export default function Work() {
           
           <Card
           img="/crystal.png"
-            title="Improving the order tracking experience at Zomato"
+            title="Improving the order tracking at Zomato"
             subtitle="A journal of steps taken towards simplicity and transparency in order tracking. "
           />
             <Card
