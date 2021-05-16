@@ -20,9 +20,9 @@ export default function Work() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="container mx-auto  ">
-        <div className="prose  my-12 mx-auto px-8 md:px-4">
-          <h1 className="dark:text-white">Work</h1>
+      <div className="container max-w-prose mx-auto  ">
+        <div className=" my-12 mx-auto px-8 md:px-4">
+          <h1 className=" text-2xl font-bold dark:text-white">Work</h1>
           <Card
             title="Improving the order tracking experience at Zomato"
             subtitle="A journal of steps taken towards simplicity and transparency in order tracking. "
