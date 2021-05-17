@@ -44,7 +44,7 @@ export default function Home() {
       <div className="prose max-w-prose mx-auto  mt-12 px-8 md:px-4  ">
       <Intro />
         <div className="flex text-l  ">
-          <IconLink
+          <IconLink link="https://www.linkedin.com/in/tushardebnath/"
           >
             <svg
               width="24"
@@ -59,7 +59,7 @@ export default function Home() {
               />
             </svg>
           </IconLink>
-          <IconLink
+          <IconLink link="https://dribbble.com/tushardebnath"
           >
             <svg
               width="24"
@@ -74,7 +74,7 @@ export default function Home() {
               />
             </svg>
           </IconLink>
-          <IconLink
+          <IconLink link="https://github.com/tushar7d"
           >
             <svg
               width="24"
