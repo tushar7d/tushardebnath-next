@@ -2,6 +2,18 @@ import Head from "next/head";
 import ReactRotatingText from "react-rotating-text";
 import IconLink from '../components/IconLink'
 
+let ExtLink = () =>{
+  return(
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 inline-block  align-text-bottom" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+</svg>
+
+  )
+}
+
+
+
 let Intro = () => {
   return (
     <>
@@ -21,7 +33,7 @@ let Intro = () => {
         </div>
       </div>
 
-      <p className=" text-gray-500 dark:text-white my-4">
+      <p className=" text-gray-500 mb-8 dark:text-white my-4">
         I am currently helping millions order food online at Zomato. In the past
         I have worked with Expedia, Hike Messenger and MakeMyTrip building
         products at a global scale. I have expereience in developing design
@@ -91,14 +103,14 @@ export default function Home() {
           </IconLink>
         </div>
 
-        <h2 className="dark:text-white !mt-14">Writing</h2>
+        <h2 className=" text-xl my-2 font-bold dark:text-white !mt-14">Writing</h2>
         <div className="mb-3">
           <a
             className="link-text"
             target="_blank"
             href="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
           >
-            How to run Figma shortcuts using Midi.
+            How to run Figma shortcuts using Midi. <ExtLink />
           </a>
         </div>
         <div className="mb-3">
@@ -107,7 +119,7 @@ export default function Home() {
             target="_blank"
             href="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
           >
-            Automating our design system migration @ Expedia.
+            Automating our design system migration @ Expedia. <ExtLink />
           </a>
         </div>
         <div>
@@ -116,10 +128,10 @@ export default function Home() {
             target="_blank"
             href="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
           >
-            Better way to structure design files.
+            Better way to structure design files. <ExtLink />
           </a>
         </div>
-        <h2 className="dark:text-white">Figma Plugins</h2>
+        <h2 className="text-xl font-bold mb-4 mt-8 dark:text-white">Figma Plugins</h2>
         <div className="mb-3">
           <a
             className="link-text "
@@ -127,7 +139,7 @@ export default function Home() {
             href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
           >
            
-              ColorKit
+              ColorKit <ExtLink />
            
           </a>
         </div>
@@ -139,7 +151,7 @@ export default function Home() {
             href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
           >
             
-              Project Scaffold
+              Project Scaffold <ExtLink />
             
           </a>
         </div>
@@ -150,7 +162,7 @@ export default function Home() {
             href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator"
           >
            
-              Cover Generator
+              Cover Generator <ExtLink />
             
           </a>
         </div>
