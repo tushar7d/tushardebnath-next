@@ -54,13 +54,13 @@ export default function Header(props) {
             <Menu.Item as="div" className="p-4 dark:text-white">
               <Link href="/">Home</Link>
             </Menu.Item>
-            {/*<Menu.Item as="div" className="p-4 dark:text-white">
+            
+            <Menu.Item as="div" className="p-4 dark:text-white">
               <Link href="about">About</Link>
             </Menu.Item>
             <Menu.Item as="div" className="p-4 dark:text-white">
               <Link href="work">Work</Link>
-            </Menu.Item>*/ }
-            
+            </Menu.Item>
           </Menu.Items>
         </Transition>
       </Menu>
@@ -77,12 +77,7 @@ export default function Header(props) {
           <h3 className="text-l hidden sm:block   ml-4 dark:text-white">
             <Link href="/">Home</Link>
           </h3>
-          <h3 className="text-l hidden sm:block  ml-12 dark:text-white">
-            <Link href="about">About</Link>
-          </h3>
-          <h3 className="text-l hidden sm:block  ml-12 dark:text-white">
-            <Link href="work">Work</Link>
-          </h3>
+          
         </div>
 
         <button
