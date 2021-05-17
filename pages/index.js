@@ -10,7 +10,7 @@ let Intro = () => {
         alt="Picture of the Me"
         style={{ maxWidth: "150px" }}
       />
-      <h1 className=" dark:text-white  ">Hello, I'm Tushar Debnath. </h1>
+      <h1 className=" text-4xl font-bold dark:text-whit my-4  ">Hello, I'm Tushar Debnath. </h1>
 
       <div className="flex">
         <div className="text-2xl mr-1 dark:text-white">I design </div>
@@ -21,7 +21,7 @@ let Intro = () => {
         </div>
       </div>
 
-      <p className=" text-gray-500 dark:text-white">
+      <p className=" text-gray-500 dark:text-white my-4">
         I am currently helping millions order food online at Zomato. In the past
         I have worked with Expedia, Hike Messenger and MakeMyTrip building
         products at a global scale. I have expereience in developing design
@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       
 
-      <div className="prose max-w-prose mx-auto  mt-12 px-8 md:px-4  ">
+      <div className=" max-w-prose mx-auto  mt-12 px-8 md:px-4  ">
       <Intro />
         <div className="flex text-l  ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/"
