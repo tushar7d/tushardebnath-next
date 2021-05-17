@@ -9,7 +9,7 @@ export default function Work() {
           <img className="h-80 object-contain" src={props.img}></img>
         </div>
         <div className="text-xs text-gray-500 font-medium dark:text-white mb-1">
-          {props.brand}
+          {props.type}
         </div>
         <div className="text-lg font-medium dark:text-white mb-1">
           {props.title}
@@ -31,16 +31,23 @@ export default function Work() {
       <div className="container max-w-prose mx-auto  ">
         <div className="my-12 mx-auto px-8 md:px-4">
           <Card
-          brand="ZOMATO"
+          type="PRODUCT DESIGN"
             img="/crystal.png"
-            color="bg-blue-50"
-            title="Improving order tracking experience"
+            color="bg-blue-50 dark:bg-blue-500"
+            title="Improving order tracking experience at Zomato"
             subtitle="A journal of steps taken towards simplicity and transparency in order tracking. "
           />
           <Card
-          brand="EXPEDIA"
+          type="DESIGN OPS"
             img="/cars.png"
-            color="bg-red-50"
+            color="bg-yellow-50 dark:bg-yellow-500"
+            title="Auto correct for design files"
+            subtitle="An internal figma plugin designed to help reduce human error while using the Expedia design system. "
+          />
+          <Card
+          type="PRODUCT DESIGN"
+            img="/cars.png"
+            color="bg-red-50 dark:bg-red-500"
             title="Helping users find the right rental car"
             subtitle="A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . "
           />
