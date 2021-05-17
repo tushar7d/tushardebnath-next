@@ -4,8 +4,12 @@ export default function Work() {
   let Card = (props) => {
     return (
       <div className="mb-14 ">
-        <div className="w-full  flex justify-center items-end  h-80 bg-blue-50 mb-4" >
+        
+        <div className={`w-full  flex justify-center items-end  h-80 ${props.color} mb-4 `} >
           <img className="h-80 object-contain" src={props.img}></img>
+        </div>
+        <div className="text-xs text-gray-500 font-medium dark:text-white mb-1">
+          {props.brand}
         </div>
         <div className="text-lg font-medium dark:text-white mb-1">
           {props.title}
@@ -27,12 +31,16 @@ export default function Work() {
       <div className="container max-w-prose mx-auto  ">
         <div className="my-12 mx-auto px-8 md:px-4">
           <Card
+          brand="ZOMATO"
             img="/crystal.png"
-            title="Improving order tracking experience at Zomato"
+            color="bg-blue-50"
+            title="Improving order tracking experience"
             subtitle="A journal of steps taken towards simplicity and transparency in order tracking. "
           />
           <Card
+          brand="EXPEDIA"
             img="/cars.png"
+            color="bg-red-50"
             title="Helping users find the right rental car"
             subtitle="A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . "
           />
