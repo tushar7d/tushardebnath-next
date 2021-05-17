@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Head from "next/head";
 
 export default function About() {
@@ -12,6 +11,7 @@ export default function About() {
       <div className="container mx-auto ">
         <div className="prose  my-12 mx-auto px-8 md:px-4">
           <h1 className="dark:text-white">About</h1>
+          <p></p>
         </div>
       </div>
     </>
