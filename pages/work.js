@@ -30,6 +30,13 @@ export default function Work() {
 
       <div className="container max-w-prose mx-auto  ">
         <div className="my-12 mx-auto px-8 md:px-4">
+        <Card
+          type="PRODUCT DESIGN"
+            img="/crystal.png"
+            color="bg-blue-50 dark:bg-blue-500"
+            title="Grocery at Zomato"
+            subtitle="A case study detailing how we launched the grocery purchase experience in record time"
+          />
           <Card
           type="PRODUCT DESIGN"
             img="/crystal.png"
