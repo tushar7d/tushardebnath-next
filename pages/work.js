@@ -51,6 +51,20 @@ export default function Work() {
             title="Helping users find the right rental car"
             subtitle="A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . "
           />
+          <Card
+          type="PRODUCT DESIGN"
+            img="/cars.png"
+            color="bg-red-50 dark:bg-red-500"
+            title="Making sending money simpler"
+            subtitle="How we designed UPI based money transfer at Hike"
+          />
+          <Card
+          type="PRODUCT DESIGN"
+            img="/cars.png"
+            color="bg-red-50 dark:bg-red-500"
+            title="Better Search for Makemytrip"
+            subtitle="Re-Imagining the mobile search user experience"
+          />
         </div>
       </div>
     </>
