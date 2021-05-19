@@ -1,6 +1,6 @@
 import Head from "next/head";
 import WorkCard from '../components/WorkCard'
-import {projects} from "../data";
+import {projects} from "../components/data";
 
 export default function Work() {
   
@@ -14,12 +14,19 @@ export default function Work() {
       <div className="container max-w-screen-md mx-auto  ">
         <div className="my-12 mx-auto px-8 md:px-4">
           {projects.map((p) => (
+           
+           
             <WorkCard
+           
               img={p.img}
               color={p.color}
               title={p.title}
               subtitle={p.subtitle}
+              link={p.link}
+              
             />
+            
+           
           ))}
         </div>
       </div>

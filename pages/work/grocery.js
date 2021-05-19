@@ -23,7 +23,7 @@ export default function grocery() {
                 </div>
 
                 <div
-                    className={`w-full  flex justify-center items-end  h-80 bg-red-50 mb-4 `}
+                    className={`w-full  flex justify-center items-end  h-80 bg-purple-50 dark:bg-purple-500  mb-4 `}
                 >
                     <img className="h-80 object-contain" src="/grocery.png"></img>
                 </div>
