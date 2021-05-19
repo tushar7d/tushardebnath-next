@@ -13,9 +13,9 @@ export default function Work() {
 
       <div className="container max-w-screen-md mx-auto  ">
         <div className="my-12 mx-auto px-8 md:px-4">
-          {projects.map((p) => (
+          {projects.map((p,index) => (
            
-           
+           <div key={index}> 
             <WorkCard
            
               img={p.img}
@@ -25,6 +25,7 @@ export default function Work() {
               link={p.link}
               
             />
+            </div>
             
            
           ))}
