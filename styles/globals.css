@@ -5,7 +5,18 @@
 @layer components {
   .link-text {
     @apply  no-underline text-gray-500   dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
+  },
+  .card-purple {
+    @apply bg-purple-50 dark:bg-purple-500;
   }
-
-  
+ 
+  .card-blue {
+    @apply bg-blue-50 dark:bg-blue-500;
+  }
+  .card-yellow {
+    @apply bg-yellow-50 dark:bg-yellow-500;
+  }
+  .card-red {
+    @apply bg-red-50 dark:bg-red-500;
+  }
 }
