@@ -71,7 +71,7 @@ export default function Header(props) {
 
   return (
     <div className=" sticky top-0 bg-white dark:bg-page-black  border-b border-solid dark:border-transparent">
-      <div className=" flex justify-between items-center max-w-prose mx-auto">
+      <div className=" flex justify-between items-center  max-w-screen-md mx-auto">
         <div className="flex pl-2 md:pl-0">
          {/* <MyMenu/> */ }
           <h3 className="text-l hidden sm:block   ml-4 dark:text-white">
