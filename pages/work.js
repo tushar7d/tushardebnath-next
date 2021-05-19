@@ -1,6 +1,33 @@
 import Head from "next/head";
 import WorkCard from '../components/WorkCard'
-import {projects} from "../components/data";
+let projects = [
+  {
+      type: "PRODUCT DESIGN",
+      title: "Launching market place at Zomato",
+      subtitle: "A case study detailing how we launched the grocery purchase experience in record time",
+      color: "card-red",
+      img: "/grocery.png",
+      link:"work/grocery",
+  },
+  {
+      type: "PRODUCT DESIGN",
+      title: "Improving order tracking experience at Zomato",
+      subtitle: "A journal of steps taken towards simplicity and transparency in order tracking.",
+      color: "card-yellow",
+      img: "/crystal.png",
+      link:"work/order-tracking"
+  },
+  
+  {
+      type: "PRODUCT DESIGN",
+      img: "/cars.png",
+      color: "card-blue",
+      title: "Helping users find the right rental car",
+      subtitle: "A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . ",
+      link:"work/car-rental"
+  },
+ 
+]
 
 export default function Work() {
   
