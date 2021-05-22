@@ -23,4 +23,8 @@
   .card-red {
     @apply bg-red-50 dark:bg-red-500;
   }
+  .page-container {
+    @apply container max-w-screen-md mx-auto;
+  }
+  
 }

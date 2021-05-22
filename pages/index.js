@@ -53,7 +53,7 @@ export default function Home() {
       </Head>
       
 
-      <div className=" max-w-prose mx-auto  mt-12 px-8 md:px-4  ">
+      <div className="page-container max-w-prose mt-12 px-8 md:px-4">
       <Intro />
         <div className="flex text-l  ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/"
