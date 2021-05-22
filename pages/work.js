@@ -41,6 +41,9 @@ export default function Work() {
 
       <div className="container max-w-screen-md mx-auto  ">
         <div className="my-12 mx-auto px-8 md:px-4">
+          <h1 className="hp-title mb-12">
+              Work
+          </h1>
           {projects.map((p,index) => (
            
            <div key={index}> 

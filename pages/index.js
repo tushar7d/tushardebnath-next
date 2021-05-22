@@ -187,6 +187,7 @@ export default function Home() {
           </a>
         </div>
         <h2 className="hp-heading">Selected Works</h2>
+        <div className="mb-12">
         {projects.map((p, index) => (
           <div key={index}>
             <div className="mb-3">
@@ -197,6 +198,9 @@ export default function Home() {
             </div>
           </div>
         ))}
+
+        </div>
+        
       </div>
     </>
   );

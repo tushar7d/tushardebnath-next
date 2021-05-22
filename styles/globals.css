@@ -7,6 +7,10 @@
 
 @layer components {
 
+  .nav-link {
+    @apply  text-lg font-medium hidden sm:block hover:text-yellow-500 dark:hover:text-yellow-500   mr-12 dark:text-white;
+  }
+
   .link-text {
     @apply  no-underline text-gray-500   dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
   }
@@ -27,7 +31,7 @@
     @apply container max-w-screen-md mx-auto;
   }
   .hp-page-mod {
-    @apply max-w-prose mt-12 px-8 md:px-4;
+    @apply  mt-12 px-8 md:px-4 ;
   }
   .section-heading {
     /*

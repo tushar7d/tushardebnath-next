@@ -8,7 +8,7 @@ export default function grocery() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="container   max-w-screen-md mx-auto  ">
+      <div className="page-container ">
         <div className="my-12 mx-auto px-8 md:px-4">
           <div className="md:flex justify-between mb-8">
             <div>

@@ -54,13 +54,17 @@ export default function Header(props) {
             <Menu.Item as="div" className="p-4 dark:text-white">
               <Link href="/">Home</Link>
             </Menu.Item>
+            <Menu.Item as="div" className="p-4 dark:text-white">
+              <Link href="work">Work</Link>
+            </Menu.Item>
             
             <Menu.Item as="div" className="p-4 dark:text-white">
               <Link href="about">About</Link>
             </Menu.Item>
             <Menu.Item as="div" className="p-4 dark:text-white">
-              <Link href="work">Work</Link>
+              <Link href="/">Writing</Link>
             </Menu.Item>
+            
           </Menu.Items>
         </Transition>
       </Menu>
@@ -72,10 +76,22 @@ export default function Header(props) {
   return (
     <div className=" sticky top-0 bg-white dark:bg-page-black  border-b border-solid dark:border-transparent">
       <div className=" flex justify-between items-center  max-w-screen-md mx-auto">
-        <div className="flex pl-2 md:pl-0">
-         {/* <MyMenu/> */ }
-          <h3 className="text-l hidden sm:block   ml-4 dark:text-white">
+        <div className="flex mx-4 md:mx-4  ">
+          
+          <MyMenu/> 
+         
+       
+          <h3 className="nav-link">
             <Link href="/">Home</Link>
+          </h3>
+          <h3 className="nav-link">
+            <Link href="work">Work</Link>
+          </h3>
+          <h3 className="nav-link">
+            <Link href="about">About</Link>
+          </h3>
+          <h3 className="nav-link">
+            <Link href="/">writing</Link>
           </h3>
           
         </div>
