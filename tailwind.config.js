@@ -4,8 +4,7 @@ module.exports = {
   darkMode: 'class', 
   theme: {
     extend: {
-      colors: {
-        
+      colors: { 
         'page-black':'#121212'
       },
       typography:{

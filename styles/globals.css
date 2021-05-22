@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 @layer components {
+
   .link-text {
     @apply  no-underline text-gray-500   dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
-  },
+  }
   .card-purple {
     @apply bg-purple-50 dark:bg-purple-500;
   }
