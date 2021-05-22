@@ -18,10 +18,7 @@ export default function grocery() {
               <div className="text-2xl font-medium dark:text-white  mb-0.5 ">
                 Launching grocery at Zomato
               </div>
-              {/*<div className=" text-ms text-gray-500 dark:text-white mb-1 ">
-                    A case study detailing how we launched the grocery purchase
-                    experience in record time
-                </div>*/}
+              
             </div>
             <div className="text-md text-gray-500 dark:text-white">
               19 May 2021

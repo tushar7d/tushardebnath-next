@@ -51,9 +51,9 @@ let Intro = () => {
       <img
         src="/td.png"
         alt="Picture of the Me"
-        style={{ maxWidth: "150px" }}
+        style={{ maxWidth: "180px" }}
       />
-      <h1 className="hp-title">Hello, I'm Tushar Debnath. </h1>
+      <h1 className="hp-title mt-12">Hello, I'm Tushar Debnath. </h1>
 
       <div className="flex">
         <div className="text-2xl mr-1 dark:text-white">I design </div>
