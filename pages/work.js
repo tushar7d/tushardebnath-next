@@ -1,6 +1,6 @@
 import Head from "next/head";
 import WorkCard from '../components/WorkCard'
-let projects = [
+export let projects = [
   {
       type: "PRODUCT DESIGN",
       title: "Launching market place at Zomato",
@@ -28,6 +28,7 @@ let projects = [
   },
  
 ]
+
 
 export default function Work() {
   

@@ -14,10 +14,10 @@ let WorkCard = (props) => {
         <div className="text-xs text-gray-500 font-medium dark:text-white  mb-0.5">
           {props.type}
         </div>
-        <div className="text-lg font-medium dark:text-white  mb-0.5 ">
+        <div className="section-heading">
           {props.title}
         </div>
-        <div className=" text-sm text-gray-500 dark:text-white">
+        <div className=" section-subheading">
           {props.subtitle}
         </div>
       </div>

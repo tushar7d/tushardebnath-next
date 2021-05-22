@@ -1,18 +1,49 @@
 import Head from "next/head";
 import ReactRotatingText from "react-rotating-text";
-import IconLink from '../components/IconLink'
+import IconLink from "../components/IconLink";
 
-let ExtLink = () =>{
-  return(
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 inline-block  align-text-bottom" viewBox="0 0 20 20" fill="currentColor">
-  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-</svg>
+export let projects = [
+  {
+      type: "PRODUCT DESIGN",
+      title: "Launching market place at Zomato",
+      subtitle: "A case study detailing how we launched the grocery purchase experience in record time",
+      color: "card-red",
+      img: "/grocery.png",
+      link:"work/grocery",
+  },
+  {
+      type: "PRODUCT DESIGN",
+      title: "Improving order tracking experience at Zomato",
+      subtitle: "A journal of steps taken towards simplicity and transparency in order tracking.",
+      color: "card-yellow",
+      img: "/crystal.png",
+      link:"work/order-tracking"
+  },
+  
+  {
+      type: "PRODUCT DESIGN",
+      img: "/cars.png",
+      color: "card-blue",
+      title: "Helping users find the right rental car",
+      subtitle: "A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . ",
+      link:"work/car-rental"
+  },
+ 
+]
 
-  )
-}
-
-
+let ExtLink = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5 inline-block  align-text-bottom"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+    </svg>
+  );
+};
 
 let Intro = () => {
   return (
@@ -22,7 +53,7 @@ let Intro = () => {
         alt="Picture of the Me"
         style={{ maxWidth: "150px" }}
       />
-      <h1 className=" text-4xl font-bold dark:text-whit my-4  ">Hello, I'm Tushar Debnath. </h1>
+      <h1 className="hp-title">Hello, I'm Tushar Debnath. </h1>
 
       <div className="flex">
         <div className="text-2xl mr-1 dark:text-white">I design </div>
@@ -43,7 +74,6 @@ let Intro = () => {
   );
 };
 
-
 export default function Home() {
   return (
     <>
@@ -51,13 +81,11 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      
 
-      <div className="page-container max-w-prose mt-12 px-8 md:px-4">
-      <Intro />
+      <div className="page-container hp-page-mod">
+        <Intro />
         <div className="flex text-l  ">
-          <IconLink link="https://www.linkedin.com/in/tushardebnath/"
-          >
+          <IconLink link="https://www.linkedin.com/in/tushardebnath/">
             <svg
               width="24"
               height="24"
@@ -71,8 +99,7 @@ export default function Home() {
               />
             </svg>
           </IconLink>
-          <IconLink link="https://dribbble.com/tushardebnath"
-          >
+          <IconLink link="https://dribbble.com/tushardebnath">
             <svg
               width="24"
               height="24"
@@ -86,8 +113,7 @@ export default function Home() {
               />
             </svg>
           </IconLink>
-          <IconLink link="https://github.com/tushar7d"
-          >
+          <IconLink link="https://github.com/tushar7d">
             <svg
               width="24"
               height="24"
@@ -103,7 +129,7 @@ export default function Home() {
           </IconLink>
         </div>
 
-        <h2 className=" text-xl my-2 font-bold dark:text-white !mt-14">Writing</h2>
+        <h2 className="hp-heading">Recent Writing</h2>
         <div className="mb-3">
           <a
             className="link-text"
@@ -131,16 +157,14 @@ export default function Home() {
             Better way to structure design files. <ExtLink />
           </a>
         </div>
-        <h2 className="text-xl font-bold mb-4 mt-8 dark:text-white">Figma Plugins</h2>
+        <h2 className="hp-heading"> Latest Figma Plugins</h2>
         <div className="mb-3">
           <a
             className="link-text "
             target="_blank"
             href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
           >
-           
-              ColorKit <ExtLink />
-           
+            ColorKit <ExtLink />
           </a>
         </div>
 
@@ -150,22 +174,29 @@ export default function Home() {
             target="_blank"
             href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
           >
-            
-              Project Scaffold <ExtLink />
-            
+            Project Scaffold <ExtLink />
           </a>
         </div>
-        <div className="pb-6">
+        <div className="mb-3">
           <a
             className="link-text"
             target="_blank"
             href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator"
           >
-           
-              Cover Generator <ExtLink />
-            
+            Cover Generator <ExtLink />
           </a>
         </div>
+        <h2 className="hp-heading">Selected Works</h2>
+        {projects.map((p, index) => (
+          <div key={index}>
+            <div className="mb-3">
+              <a className="link-text" href={p.link}>
+                {p.title}
+                <ExtLink />
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
