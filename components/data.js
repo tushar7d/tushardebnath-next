@@ -6,7 +6,10 @@ let projects = [
         color: "card-red",
         img: "/grocery.png",
         link:"work/grocery",
-        date:"19 May 2021"
+        date:"19 May 2021",
+        problem:"",
+        solution:"",
+        role:""
     },
     {
         type: "PRODUCT DESIGN",
@@ -15,7 +18,10 @@ let projects = [
         color: "card-yellow",
         img: "/crystal.png",
         link:"work/order-tracking",
-        date:"19 May 2021"
+        date:"19 May 2021",
+        problem:"",
+        solution:"",
+        role:""
     },
     
     {
@@ -25,7 +31,10 @@ let projects = [
         title: "Helping users find the right rental car",
         subtitle: "A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . ",
         link:"work/car-rental",
-        date:"19 May 2021"
+        date:"19 May 2021",
+        problem:"",
+        solution:"The spread of online misinformation is too large to tackle with centralized tools.",
+        role:""
     },
    
 ]
