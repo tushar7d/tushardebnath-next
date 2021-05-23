@@ -1,5 +1,6 @@
 import Head from "next/head";
-
+import { projects } from "../../components/data";
+import ProjectSummary from "../../components/ProjectSummary";
 export default function CarRental() {
   return (
     <>
@@ -8,55 +9,34 @@ export default function CarRental() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="container   max-w-screen-md mx-auto  ">
-        <div className="my-12 mx-auto px-8 md:px-4">
-          <div className="md:flex justify-between mb-8">
+      <div className="container max-w-screen-md mx-auto ">
+        <div className="px-8 mx-auto my-12 md:px-4">
+          <div className="justify-between mb-8 md:flex">
             <div>
               <div className="text-sm text-gray-500 font-medium dark:text-white  mb-0.5">
-                PRODUCT DESIGN
+                {projects[2].type}
               </div>
               <div className="text-2xl font-medium dark:text-white  mb-0.5 ">
-              Helping users find the right rental car
+                {projects[2].title}
               </div>
-              {/*<div className=" text-ms text-gray-500 dark:text-white mb-1 ">
-                    A case study detailing how we launched the grocery purchase
-                    experience in record time
-                </div>*/}
             </div>
-            <div className="text-md text-gray-500 dark:text-white">
-              19 May 2021
+            <div className="text-gray-500 text-md dark:text-white">
+              {projects[2].date}
             </div>
           </div>
           <div
             className={`w-full  flex justify-center items-end  h-80 bg-purple-50 dark:bg-purple-500  mb-8 `}
           >
-            <img className="h-80 object-contain" src="/grocery.png"></img>
+            <img className="object-contain h-80" src="/grocery.png"></img>
           </div>
+          <ProjectSummary
+            problem="The spread of online misinformation is too large to tackle with
+          centralized tools."
+            solution="sol"
+            role="role"
+          />
 
-          <div className="border border-gray-200 rounded divide-y md:divide-y-0 md:flex md:divide-x divide-gray-300">
-            <div className="p-4 md:w-1/3">
-              <h3 className="text-xs text-gray-400 font-medium dark:text-white mb-1">
-                PROBLEM
-              </h3>
-              <p className="text-sm text-gray-800 dark:text-white">
-                The spread of online misinformation is too large to tackle with
-                centralized tools.
-              </p>
-            </div>
-            <div className="p-4  md:w-1/3">
-              <h3 className="text-xs text-gray-400 font-medium dark:text-white mb-1">
-                SOLUTION
-              </h3>
-              <p className="text-sm text-gray-800 dark:text-white"> test</p>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <h3 className="text-xs text-gray-400 font-medium dark:text-white mb-1">
-                MY ROLE
-              </h3>
-              <p className="text-sm text-gray-800 dark:text-white"> test</p>
-            </div>
-          </div>
-          <div className="max-w-prose mt-4">
+          <div className="mt-4 max-w-prose">
             <h4>Details</h4>
           </div>
         </div>

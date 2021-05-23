@@ -1,41 +1,15 @@
 import Head from "next/head";
 import ReactRotatingText from "react-rotating-text";
 import IconLink from "../components/IconLink";
+import {projects} from '../components/data'
 
-export let projects = [
-  {
-      type: "PRODUCT DESIGN",
-      title: "Launching market place at Zomato",
-      subtitle: "A case study detailing how we launched the grocery purchase experience in record time",
-      color: "card-red",
-      img: "/grocery.png",
-      link:"work/grocery",
-  },
-  {
-      type: "PRODUCT DESIGN",
-      title: "Improving order tracking experience at Zomato",
-      subtitle: "A journal of steps taken towards simplicity and transparency in order tracking.",
-      color: "card-yellow",
-      img: "/crystal.png",
-      link:"work/order-tracking"
-  },
-  
-  {
-      type: "PRODUCT DESIGN",
-      img: "/cars.png",
-      color: "card-blue",
-      title: "Helping users find the right rental car",
-      subtitle: "A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . ",
-      link:"work/car-rental"
-  },
- 
-]
+
 
 let ExtLink = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-5 w-5 inline-block  align-text-bottom"
+      className="inline-block w-5 h-5 align-text-bottom"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -51,21 +25,21 @@ let Intro = () => {
       <img
         src="/td.png"
         alt="Picture of the Me"
-        style={{ maxWidth: "180px" }}
+        style={{ maxWidth: "150px" }}
       />
       <h1 className="title">Hello, I'm Tushar Debnath</h1>
 
-      <div className="flex mt-4">
-        <div className="text-3xl mr-1 dark:text-white">I design </div>
-        <div className=" text-3xl text-yellow-500  font-medium ">
+      <div className="flex mt-0 md:mt-4">
+        <div className="mr-1 text-3xl dark:text-white">I design </div>
+        <div className="text-3xl font-medium text-yellow-500 ">
           <ReactRotatingText
             items={[" products.", " custom tools.", " workflows.", " systems."]}
           />
         </div>
       </div>
 
-      <p className=" text-gray-500 mb-8 dark:text-white my-4 max-w-prose">
-        I am currently helping millions order food online at Zomato. In the past
+      <p className="my-4 mb-8 leading-relaxed text-gray-700 md:text-xl dark:text-white max-w-prose">
+        I am currently helping millions order food online at <span></span>Zomato. In the past
         I have worked with Expedia, Hike Messenger and MakeMyTrip building
         products at a global scale. I have expereience in developing design
         systems and internal tools.
@@ -82,9 +56,9 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="page-container  hp-page-mod">
+      <div className="page-container hp-page-mod">
         <Intro />
-        <div className="flex text-l   ">
+        <div className="flex text-l ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/">
             <svg
               width="24"
@@ -129,7 +103,7 @@ export default function Home() {
           </IconLink>
         </div>
 
-        <h2 className="hp-heading mt-12">Recent Writing</h2>
+        <h2 className="mt-12 hp-heading">Recent Writing</h2>
         <div className="mb-3">
           <a
             className="link-text"

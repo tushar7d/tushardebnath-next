@@ -8,7 +8,7 @@ export default function Header(props) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="w-5 h-5"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -25,7 +25,7 @@ export default function Header(props) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="w-5 h-5"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -50,7 +50,7 @@ export default function Header(props) {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute left-0 w-56 mt-2 origin-top-right bg-white  dark:bg-gray-800 divide-y divide-gray-100 dark:divide-gray-800 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute left-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg dark:bg-gray-800 dark:divide-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none">
             <Menu.Item as="div" className="p-4 dark:text-white">
               <Link href="/">Home</Link>
             </Menu.Item>
@@ -74,9 +74,9 @@ export default function Header(props) {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className=" sticky top-0 bg-white dark:bg-page-black  border-b border-solid dark:border-transparent">
-      <div className=" flex justify-between items-center  max-w-screen-md mx-auto">
-        <div className="flex mx-4 md:mx-4  ">
+    <div className="sticky top-0 bg-white border-b border-solid  dark:bg-page-black dark:border-transparent">
+      <div className="flex items-center justify-between max-w-screen-md mx-auto ">
+        <div className="flex mx-4 md:mx-4 ">
           
           <MyMenu/> 
          
@@ -99,7 +99,7 @@ export default function Header(props) {
         <button
           aria-label="Toggle Dark Mode"
           type="button"
-          className="p-3 h-12 w-12 order-2 md:order-3 dark:text-white"
+          className="order-2 w-12 h-12 p-3 md:order-3 dark:text-white"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
           <LightSwitchIcon />

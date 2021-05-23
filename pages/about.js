@@ -10,7 +10,7 @@ export default function About() {
 
       <div className="page-container hp-page-mod">
         
-          <h1 className="hp-title mb-12">About</h1>
+          <h1 className="mb-12 hp-title">About</h1>
           <img src="/td2.png" />
         
       </div>

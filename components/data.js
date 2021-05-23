@@ -6,6 +6,7 @@ let projects = [
         color: "card-red",
         img: "/grocery.png",
         link:"work/grocery",
+        date:"19 May 2021"
     },
     {
         type: "PRODUCT DESIGN",
@@ -13,7 +14,8 @@ let projects = [
         subtitle: "A journal of steps taken towards simplicity and transparency in order tracking.",
         color: "card-yellow",
         img: "/crystal.png",
-        link:"work/order-tracking"
+        link:"work/order-tracking",
+        date:"19 May 2021"
     },
     
     {
@@ -22,7 +24,8 @@ let projects = [
         color: "card-blue",
         title: "Helping users find the right rental car",
         subtitle: "A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . ",
-        link:"work/car-rental"
+        link:"work/car-rental",
+        date:"19 May 2021"
     },
    
 ]

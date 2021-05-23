@@ -8,14 +8,14 @@
 @layer components {
 
   .nav-link {
-    @apply   text-gray-700 hidden sm:block hover:text-yellow-500 dark:hover:text-yellow-500   mr-12 dark:text-white;
+    @apply   hidden mr-12 text-gray-900 sm:block hover:text-yellow-500 dark:hover:text-yellow-500 dark:text-white;
   }
   .hp-heading {
-    @apply text-lg my-4 font-medium text-gray-900  dark:text-white !mt-14;
+    @apply text-lg my-4 font-semibold text-gray-900  dark:text-white !mt-14;
   }
 
   .link-text {
-    @apply  no-underline text-gray-700   dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
+    @apply  text-gray-700 no-underline dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
   }
   .card-purple {
     @apply bg-purple-50 dark:bg-purple-500;
@@ -34,7 +34,7 @@
     @apply container max-w-screen-md mx-auto;
   }
   .hp-page-mod {
-    @apply  mt-12 px-8 md:px-4 ;
+    @apply  px-8 mt-12 md:px-4 ;
   }
   .section-heading {
     /*
@@ -52,11 +52,11 @@
  
 
   .hp-title {
-    @apply text-3xl font-bold dark:text-white mt-4 mb-2;
+    @apply mt-4 mb-2 text-3xl font-bold dark:text-white;
   }
 
   .title {
-    @apply text-4xl font-bold dark:text-white  mt-12 mb-2;
+    @apply mt-12 mb-2 text-4xl font-bold dark:text-white;
   }
   
   
