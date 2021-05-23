@@ -8,11 +8,14 @@
 @layer components {
 
   .nav-link {
-    @apply  text-lg font-medium hidden sm:block hover:text-yellow-500 dark:hover:text-yellow-500   mr-12 dark:text-white;
+    @apply   text-gray-700 hidden sm:block hover:text-yellow-500 dark:hover:text-yellow-500   mr-12 dark:text-white;
+  }
+  .hp-heading {
+    @apply text-lg my-4 font-medium text-gray-900  dark:text-white !mt-14;
   }
 
   .link-text {
-    @apply  no-underline text-gray-500   dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
+    @apply  no-underline text-gray-700   dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500;
   }
   .card-purple {
     @apply bg-purple-50 dark:bg-purple-500;
@@ -46,12 +49,14 @@
     */
     @apply text-sm text-gray-500 dark:text-white;
   }
-  .hp-heading {
-    @apply text-xl my-2 font-bold dark:text-white !mt-14;
-  }
+ 
 
   .hp-title {
     @apply text-3xl font-bold dark:text-white mt-4 mb-2;
+  }
+
+  .title {
+    @apply text-4xl font-bold dark:text-white  mt-12 mb-2;
   }
   
   

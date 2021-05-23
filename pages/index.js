@@ -53,18 +53,18 @@ let Intro = () => {
         alt="Picture of the Me"
         style={{ maxWidth: "180px" }}
       />
-      <h1 className="hp-title mt-12">Hello, I'm Tushar Debnath. </h1>
+      <h1 className="title">Hello, I'm Tushar Debnath</h1>
 
-      <div className="flex">
-        <div className="text-2xl mr-1 dark:text-white">I design </div>
-        <div className=" text-2xl text-yellow-500  font-medium ">
+      <div className="flex mt-4">
+        <div className="text-3xl mr-1 dark:text-white">I design </div>
+        <div className=" text-3xl text-yellow-500  font-medium ">
           <ReactRotatingText
             items={[" products.", " custom tools.", " workflows.", " systems."]}
           />
         </div>
       </div>
 
-      <p className=" text-gray-500 mb-8 dark:text-white my-4">
+      <p className=" text-gray-500 mb-8 dark:text-white my-4 max-w-prose">
         I am currently helping millions order food online at Zomato. In the past
         I have worked with Expedia, Hike Messenger and MakeMyTrip building
         products at a global scale. I have expereience in developing design
@@ -82,9 +82,9 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="page-container hp-page-mod">
+      <div className="page-container  hp-page-mod">
         <Intro />
-        <div className="flex text-l  ">
+        <div className="flex text-l   ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/">
             <svg
               width="24"
@@ -129,7 +129,7 @@ export default function Home() {
           </IconLink>
         </div>
 
-        <h2 className="hp-heading">Recent Writing</h2>
+        <h2 className="hp-heading mt-12">Recent Writing</h2>
         <div className="mb-3">
           <a
             className="link-text"
