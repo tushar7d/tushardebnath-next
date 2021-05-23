@@ -41,7 +41,7 @@ let Intro = () => {
       <p className="my-4 mb-8 leading-relaxed text-gray-700 md:text-xl dark:text-white max-w-prose">
         I am currently helping millions order food online at <span></span>Zomato. In the past
         I have worked with Expedia, Hike Messenger and MakeMyTrip building
-        products at a global scale. I have expereience in developing design
+        products at a global scale. I have experience in developing design
         systems and internal tools.
       </p>
     </>

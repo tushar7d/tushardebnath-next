@@ -32,9 +32,9 @@ let projects = [
         subtitle: "A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . ",
         link:"work/car-rental",
         date:"19 May 2021",
-        problem:"",
-        solution:"The spread of online misinformation is too large to tackle with centralized tools.",
-        role:""
+        problem:"Making it easy for the user to find the right car",
+        solution:"Removing duplication from our inventory and organizing the information better",
+        role:"Project Lead"
     },
    
 ]
