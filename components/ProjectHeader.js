@@ -1,4 +1,6 @@
 let ProjectHeader = (props) => {
+
+  props
   return (
     <>
       <div className="justify-between mb-8 md:flex">

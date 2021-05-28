@@ -34,7 +34,7 @@ let projects = [
         date:"19 May 2021",
         problem:"Making it easy for the user to find the right car",
         solution:"Removing duplication from our inventory and organizing the information better",
-        role:"Project Lead"
+        role:"Product Design, Prototyping & Research strategy"
     },
    
 ]
