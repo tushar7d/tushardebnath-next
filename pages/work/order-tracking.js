@@ -18,10 +18,7 @@ export default function OrderTracking() {
               <div className="text-2xl font-medium dark:text-white  mb-0.5 ">
               Improving order tracking experience at Zomato
               </div>
-              {/*<div className="mb-1 text-gray-500  text-ms dark:text-white">
-                    A case study detailing how we launched the grocery purchase
-                    experience in record time
-                </div>*/}
+              
             </div>
             <div className="text-gray-500 text-md dark:text-white">
               19 May 2021
