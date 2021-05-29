@@ -1,9 +1,8 @@
 import Head from "next/head";
 import ReactRotatingText from "react-rotating-text";
 import IconLink from "../components/IconLink";
-import {projects} from '../components/data'
-
-
+import { projects } from "../components/data";
+import WorkCard from "../components/WorkCard";
 
 let ExtLink = () => {
   return (
@@ -29,20 +28,20 @@ let Intro = () => {
       />
       <h1 className="title">Hello, I'm Tushar Debnath</h1>
 
-      <div className="flex mt-0 md:mt-4">
-        <div className="mr-1 text-3xl dark:text-white">I design </div>
-        <div className="text-3xl font-medium text-yellow-500 ">
+      <div className="flex mt-1 md:mt-2">
+        <div className="mr-1 text-2xl dark:text-white">I design </div>
+        <div className="text-2xl font-medium text-yellow-500 ">
           <ReactRotatingText
             items={[" products.", " custom tools.", " workflows.", " systems."]}
           />
         </div>
       </div>
 
-      <p className="my-4 mb-8 leading-relaxed text-gray-700 md:text-xl dark:text-white max-w-prose">
-        I am currently helping millions order food online at <span></span>Zomato. In the past
-        I have worked with Expedia, Hike Messenger and MakeMyTrip building
-        products at a global scale. I have experience in developing design
-        systems and internal tools.
+      <p className="my-4 mb-8 text-base leading-relaxed text-gray-700 md:text-lg dark:text-white max-w-prose">
+        I am currently helping millions order food online at <span></span>
+        Zomato. In the past I have worked with Expedia, Hike Messenger and
+        MakeMyTrip building products at a global scale. I have experience in
+        developing design systems and internal tools.
       </p>
     </>
   );
@@ -103,78 +102,22 @@ export default function Home() {
           </IconLink>
         </div>
 
-        <h2 className="mt-12 hp-heading">Recent Writing</h2>
-        <div className="mb-3">
-          <a
-            className="link-text"
-            target="_blank"
-            href="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-          >
-            How to run Figma shortcuts using Midi. <ExtLink />
-          </a>
-        </div>
-        <div className="mb-3">
-          <a
-            className="link-text"
-            target="_blank"
-            href="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
-          >
-            Automating our design system migration @ Expedia. <ExtLink />
-          </a>
-        </div>
-        <div>
-          <a
-            className="link-text"
-            target="_blank"
-            href="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
-          >
-            Better way to structure design files. <ExtLink />
-          </a>
-        </div>
-        <h2 className="hp-heading"> Latest Figma Plugins</h2>
-        <div className="mb-3">
-          <a
-            className="link-text "
-            target="_blank"
-            href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
-          >
-            ColorKit <ExtLink />
-          </a>
-        </div>
-
-        <div className="mb-3">
-          <a
-            className="link-text"
-            target="_blank"
-            href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
-          >
-            Project Scaffold <ExtLink />
-          </a>
-        </div>
-        <div className="mb-3">
-          <a
-            className="link-text"
-            target="_blank"
-            href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator"
-          >
-            Cover Generator <ExtLink />
-          </a>
-        </div>
-        <h2 className="hp-heading">Selected Works</h2>
+       
+        
+        <h2 className="mt-12 mb-8 text-2xl font-semibold">Selected Works</h2>
         <div className="mb-12">
         {projects.map((p, index) => (
-          <div key={index}>
-            <div className="mb-3">
-              <a className="link-text" href={p.link}>
-                {p.title}
-                <ExtLink />
-              </a>
+            <div key={index}>
+              <WorkCard
+                img={p.img}
+                color={p.color}
+                title={p.title}
+                subtitle={p.subtitle}
+                link={p.link}
+              />
             </div>
-          </div>
-        ))}
-
+          ))}
         </div>
-        
       </div>
     </>
   );

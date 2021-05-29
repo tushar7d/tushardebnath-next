@@ -62,7 +62,7 @@ export default function Header(props) {
               <Link href="about">About</Link>
             </Menu.Item>
             <Menu.Item as="div" className="p-4 dark:text-white">
-              <Link href="/">Writing</Link>
+              <Link href="writing">Writing</Link>
             </Menu.Item>
             
           </Menu.Items>
@@ -74,7 +74,7 @@ export default function Header(props) {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="sticky top-0 bg-white border-b border-solid  dark:bg-page-black dark:border-transparent">
+    <div className="sticky top-0 bg-white border-b border-solid dark:bg-page-black dark:border-transparent">
       <div className="flex items-center justify-between max-w-screen-md mx-auto ">
         <div className="flex mx-4 md:mx-4 ">
           
@@ -91,7 +91,7 @@ export default function Header(props) {
             <Link href="about">About</Link>
           </h3>
           <h3 className="nav-link">
-            <Link href="/">writing</Link>
+            <Link href="writing">writing</Link>
           </h3>
           
         </div>

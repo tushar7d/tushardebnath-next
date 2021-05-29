@@ -1,23 +1,12 @@
 let projects = [
-    {
-        type: "PRODUCT DESIGN",
-        title: "Launching market place at Zomato",
-        subtitle: "A case study detailing how we launched the grocery purchase experience in record time",
-        color: "card-red",
-        img: "/grocery.png",
-        link:"work/grocery",
-        date:"19 May 2021",
-        problem:"",
-        solution:"",
-        role:""
-    },
+    
     {
         type: "PRODUCT DESIGN",
         title: "Improving order tracking experience at Zomato",
         subtitle: "A journal of steps taken towards simplicity and transparency in order tracking.",
         color: "card-yellow",
         img: "/crystal.png",
-        link:"work/order-tracking",
+        link:"https://www.notion.so/txdebnath/Order-Tracker-Redesign-e8d367ad1aea46e68ce3182d1f4db433",
         date:"19 May 2021",
         problem:"",
         solution:"",
@@ -30,7 +19,7 @@ let projects = [
         color: "card-blue",
         title: "Helping users find the right rental car",
         subtitle: "A case study detailing how we redesigned the car selection experience for the car rental business at Expedia . ",
-        link:"work/car-rental",
+        link:"https://www.notion.so/txdebnath/Helping-users-find-the-right-offer-4140d01adf3343dc98249fdb91d643e2",
         date:"19 May 2021",
         problem:"Making it easy for the user to find the right car",
         solution:"Removing duplication from our inventory and organizing the information better",
@@ -40,6 +29,18 @@ let projects = [
 ]
 
 let upcomingprojects = [
+    {
+        type: "PRODUCT DESIGN",
+        title: "Launching market place at Zomato",
+        subtitle: "A case study detailing how we launched the grocery purchase experience in record time",
+        color: "card-red",
+        img: "/grocery.png",
+        link:"work/grocery",
+        date:"19 May 2021",
+        problem:"",
+        solution:"",
+        role:""
+    },
     {
         type: "PRODUCT DESIGN",
         title: "Launching market place at Zomato",
