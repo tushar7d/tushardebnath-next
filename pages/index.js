@@ -104,7 +104,7 @@ export default function Home() {
 
        
         
-        <h2 className="mt-12 mb-8 text-2xl font-semibold">Selected Works</h2>
+        <h2 className="mt-12 mb-8 text-xl font-semibold md:text-3xl">Selected Works</h2>
         <div className="mb-12">
         {projects.map((p, index) => (
             <div key={index}>
