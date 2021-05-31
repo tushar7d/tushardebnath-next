@@ -6,7 +6,7 @@ import Header from "../components/Header";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
-     
+      <Header />
       
       <Component {...pageProps} />
     </ThemeProvider>
