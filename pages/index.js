@@ -19,24 +19,28 @@ let ExtLink = () => {
 let Intro = () => {
   return (
     <>
+    <div>
       <img
         src="/td.png"
         alt="Picture of the Me"
         style={{ maxWidth: "150px" }}
       />
+
+    </div>
+      
       <h1 className="title">Hello, I'm Tushar Debnath</h1>
 
-      <div className="flex mt-0 md:mt-4">
-        <div className="mr-1 text-3xl dark:text-white">I design </div>
-        <div className="text-3xl font-medium text-yellow-500 ">
+      <div className="flex ">
+        <div className="mr-1 text-xl font-medium dark:text-white">I design </div>
+        <div className="text-xl font-medium text-yellow-500 ">
           <ReactRotatingText
             items={[" products.", " custom tools.", " workflows.", " systems."]}
           />
         </div>
       </div>
 
-      <p className="my-4 mb-8 leading-relaxed text-gray-700 md:text-xl dark:text-white max-w-prose">
-        A product designer & design technologist living in New Delhi. Currently,
+      <p className="hp-p">
+        I am a product designer & design technologist living in New Delhi. Currently,
         I am working at Zomato. When I am not designing or coding,
         you can find me reading fantasy books, working on my podcast, or
         travelling with my wife.

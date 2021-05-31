@@ -78,21 +78,9 @@ export default function Header(props) {
       <div className="flex items-center justify-between max-w-screen-md mx-auto ">
         <div className="flex mx-4 md:mx-4 ">
           
-          <MyMenu/> 
          
        
-          <h3 className="nav-link">
-            <Link href="/">Home</Link>
-          </h3>
-          <h3 className="nav-link">
-            <Link href="work">Work</Link>
-          </h3>
-          <h3 className="nav-link">
-            <Link href="about">About</Link>
-          </h3>
-          <h3 className="nav-link">
-            <Link href="/">writing</Link>
-          </h3>
+         
           
         </div>
 
