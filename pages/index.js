@@ -22,7 +22,7 @@ let Intro = () => {
     <div>
       <img
         src="/td.png"
-        alt="Picture of the Me"
+        alt="Me"
         style={{ maxWidth: "150px" }}
       />
 
