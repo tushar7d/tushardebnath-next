@@ -19,19 +19,16 @@ let ExtLink = () => {
 let Intro = () => {
   return (
     <>
-    <div>
-      <img
-        src="/td.png"
-        alt="Me"
-        style={{ maxWidth: "150px" }}
-      />
+      <div>
+        <img src="/td.png" alt="Me" style={{ maxWidth: "150px" }} />
+      </div>
 
-    </div>
-      
       <h1 className="title">Hello, I'm Tushar Debnath</h1>
 
       <div className="flex ">
-        <div className="mr-1 text-xl font-medium dark:text-white">I design </div>
+        <div className="mr-1 text-xl font-medium dark:text-white">
+          I design{" "}
+        </div>
         <div className="text-xl font-medium text-yellow-500 ">
           <ReactRotatingText
             items={[" products.", " custom tools.", " workflows.", " systems."]}
@@ -40,8 +37,8 @@ let Intro = () => {
       </div>
 
       <p className="hp-p">
-        I am a product designer & design technologist living in New Delhi. Currently,
-        I am working at Zomato. When I am not designing or coding,
+        I am a product designer & design technologist living in New Delhi.
+        Currently, I am working at Zomato. When I am not designing or coding,
         you can find me reading fantasy books, working on my podcast, or
         travelling with my wife.
       </p>
@@ -57,7 +54,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="page-container hp-page-mod">
+      <div className="page-container hp-page-mod max-w-prose">
         <Intro />
         <div className="flex text-l ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/">
