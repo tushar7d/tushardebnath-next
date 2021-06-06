@@ -31,7 +31,7 @@
     @apply bg-red-50 dark:bg-red-500;
   }
   .page-container {
-    @apply container max-w-screen-md mx-auto;
+    @apply container mx-auto;
   }
   .hp-page-mod {
     @apply  px-8 mt-12 md:px-4 ;
@@ -59,7 +59,7 @@
     @apply mt-6 mb-2 text-2xl font-bold dark:text-white;
   }
   .hp-p {
-    @apply mt-2 mb-8 text-lg leading-relaxed tracking-wide text-gray-700  dark:text-white max-w-prose
+    @apply mt-2 mb-8 text-lg leading-relaxed tracking-wide text-gray-700  dark:text-white 
   }
   
   

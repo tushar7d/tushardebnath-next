@@ -54,7 +54,8 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className=" hp-page-mod max-w-prose">
+      <div className="flex hp-page-mod">
+        <div >
         <Intro />
         <div className="flex text-l ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/">
@@ -100,6 +101,10 @@ export default function Home() {
             </svg>
           </IconLink>
         </div>
+
+        </div>
+       
+       <div>
 
         <h2 className="mt-12 hp-heading">Recent Writing</h2>
         <div className="mb-3">
@@ -158,6 +163,7 @@ export default function Home() {
             Cover Generator <ExtLink />
           </a>
         </div>
+      </div>
       </div>
     </>
   );
