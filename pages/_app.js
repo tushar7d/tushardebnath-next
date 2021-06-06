@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
+import { MDXProvider } from "@mdx-js/react";
 
+const Wrapper = (props) => <main className="prose max-w-prose" {...props} />;
 import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }) {
@@ -8,10 +10,10 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme="system">
       <Header />
       <div className="page-container hp-page-mod">
-      <Component {...pageProps} />
-
+        <MDXProvider components={{ wrapper: Wrapper }}>
+          <Component {...pageProps} />
+        </MDXProvider>
       </div>
-      
     </ThemeProvider>
   );
 }
