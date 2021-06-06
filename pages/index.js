@@ -54,7 +54,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="page-container hp-page-mod max-w-prose">
+      <div className=" hp-page-mod max-w-prose">
         <Intro />
         <div className="flex text-l ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/">

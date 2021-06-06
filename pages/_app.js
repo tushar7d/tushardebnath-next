@@ -7,8 +7,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
       <Header />
-      
+      <div className="page-container hp-page-mod">
       <Component {...pageProps} />
+
+      </div>
+      
     </ThemeProvider>
   );
 }
