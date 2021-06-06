@@ -54,8 +54,8 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="flex hp-page-mod">
-        <div >
+      <div className="flex absolute" style={{height: "calc(100vh - 48px)"}}>
+        <div className=" w-3/5 px-8" >
         <Intro />
         <div className="flex text-l ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/">
@@ -104,10 +104,10 @@ export default function Home() {
 
         </div>
        
-       <div>
+       <div className=" overflow-y-auto no-scrollbar w-2/5 px-8">
 
         <h2 className="mt-12 hp-heading">Recent Writing</h2>
-        <div className="mb-3">
+        <div className="mb-3 p-8 bg-gray-50">
           <a
             className="link-text"
             target="_blank"
@@ -116,7 +116,7 @@ export default function Home() {
             How to run Figma shortcuts using Midi. <ExtLink />
           </a>
         </div>
-        <div className="mb-3">
+        <div className="mb-3 p-8 bg-gray-50">
           <a
             className="link-text"
             target="_blank"
@@ -125,7 +125,7 @@ export default function Home() {
             Automating our design system migration @ Expedia. <ExtLink />
           </a>
         </div>
-        <div>
+        <div className="mb-3 p-8 bg-gray-50">
           <a
             className="link-text"
             target="_blank"
@@ -135,7 +135,7 @@ export default function Home() {
           </a>
         </div>
         <h2 className="hp-heading"> Latest Figma Plugins</h2>
-        <div className="mb-3">
+        <div className="mb-3 p-8 bg-gray-50">
           <a
             className="link-text "
             target="_blank"
@@ -145,7 +145,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="mb-3">
+        <div className="mb-3 p-8 bg-gray-50">
           <a
             className="link-text"
             target="_blank"
@@ -154,7 +154,36 @@ export default function Home() {
             Project Scaffold <ExtLink />
           </a>
         </div>
-        <div className="mb-3">
+        <div className="mb-3 p-8 bg-gray-50">
+          <a
+            className="link-text"
+            target="_blank"
+            href="https://www.figma.com/community/plugin/745146759001708690/Cover-Generator"
+          >
+            Cover Generator <ExtLink />
+          </a>
+        </div>
+        <h2 className="hp-heading"> Latest Figma Plugins</h2>
+        <div className="mb-3 p-8 bg-gray-50">
+          <a
+            className="link-text "
+            target="_blank"
+            href="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
+          >
+            ColorKit <ExtLink />
+          </a>
+        </div>
+
+        <div className="mb-3 p-8 bg-gray-50">
+          <a
+            className="link-text"
+            target="_blank"
+            href="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
+          >
+            Project Scaffold <ExtLink />
+          </a>
+        </div>
+        <div className="mb-3 p-8 bg-gray-50">
           <a
             className="link-text"
             target="_blank"
@@ -165,6 +194,8 @@ export default function Home() {
         </div>
       </div>
       </div>
+
+      
     </>
   );
 }
