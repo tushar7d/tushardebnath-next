@@ -54,8 +54,8 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="flex absolute" style={{height: "calc(100vh - 48px)"}}>
-        <div className=" w-3/5 px-8" >
+      <div className="md:flex md:absolute" style={{height: "calc(100vh - 48px)"}}>
+        <div className=" md:w-3/5 p-8 md:p-20" >
         <Intro />
         <div className="flex text-l ">
           <IconLink link="https://www.linkedin.com/in/tushardebnath/">
@@ -104,7 +104,7 @@ export default function Home() {
 
         </div>
        
-       <div className=" overflow-y-auto no-scrollbar w-2/5 px-8">
+       <div className=" md:overflow-y-auto md:no-scrollbar md:w-2/5 px-8">
 
         <h2 className="mt-12 hp-heading">Recent Writing</h2>
         <div className="mb-3 p-8 bg-gray-50">

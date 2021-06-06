@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
       <Header />
-      <div className="page-container hp-page-mod">
+      <div className="page-container">
         <MDXProvider components={{ wrapper: Wrapper }}>
           <Component {...pageProps} />
         </MDXProvider>
