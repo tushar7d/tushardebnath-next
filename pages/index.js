@@ -36,7 +36,7 @@ let Intro = () => {
         </div>
       </div>
 
-      <p className="hp-p">
+      <p className="hp-p max-w-prose">
         I am a product designer & design technologist living in New Delhi.
         Currently, I am working at Zomato. When I am not designing or coding,
         you can find me reading fantasy books, working on my podcast, or
@@ -54,7 +54,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="hp-left-section" style={{height: "calc(100vh - 48px)"}}>
+      <div className="hp-section" style={{height: "calc(100vh - 48px)"}}>
         <div className="hp-left-section-padding" >
         <Intro />
         <div className="flex text-l ">
