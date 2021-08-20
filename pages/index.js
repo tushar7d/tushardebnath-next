@@ -182,35 +182,20 @@ let Left = () => {
 let CardList = () => {
   return (
     <div className="md:w-1/2 mt-4 md:p-4 overflow-scroll">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card h="Helping users find the right car" dc="Expedia" l="https://tushardebnath.notion.site/Helping-users-find-the-right-offer-4140d01adf3343dc98249fdb91d643e2" />
     </div>
   );
 };
-function Card() {
+let Card = (props) => {
   return (
-    <div className="p-4 mb-3 rounded-lg bg-white border border-gray-200 shadow-sm hover:shadow-lg  ease-in-out duration-500 transition">
-      <h1 className=" font-semibold mb-1">Project Heading</h1>
-      <p>A single line description</p>
-    </div>
+    <a href={props.l ? props.l : "/"}>
+      <div className="p-4 mb-3 rounded-lg bg-white border border-gray-200  hover:shadow-lg  ease-in-out duration-500 transition">
+        <h1 className=" font-semibold mb-1">{props.h ? props.h : "Heading"}</h1>
+        <p>{props.dc ? props.dc : "description"}</p>
+      </div>
+    </a>
   );
-}
+};
 
 export default function Home() {
   return (
