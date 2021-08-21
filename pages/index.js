@@ -100,25 +100,7 @@ export default function Home() {
             </svg>
           </IconLink>
         </div>
-        <h2 className="mt-12 hp-heading">Selected Projects</h2>
-        <div className="mb-3">
-          <a
-            className="link-text"
-            target="_blank"
-            href="https://tushardebnath.notion.site/Helping-users-find-the-right-offer-4140d01adf3343dc98249fdb91d643e2"
-          >
-            Expedia Car Finder <ExtLink />
-          </a>
-        </div>
-        <div className="mb-3">
-          <a
-            className="link-text"
-            target="_blank"
-            href="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-          >
-            Zomato Order Tracker <ExtLink />
-          </a>
-        </div>
+        
         
 
         <h2 className="mt-12 hp-heading">Recent Writing</h2>
