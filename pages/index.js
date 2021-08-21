@@ -182,14 +182,25 @@ let Left = () => {
 let CardList = () => {
   return (
     <div className="md:w-1/2 mt-4 md:p-4 overflow-scroll">
-      <Card h="Helping users find the right car" dc="Expedia" l="https://tushardebnath.notion.site/Helping-users-find-the-right-offer-4140d01adf3343dc98249fdb91d643e2" />
+      <Card
+        h="Helping users find the right car"
+        dc="Expedia"
+        l="https://tushardebnath.notion.site/Helping-users-find-the-right-offer-4140d01adf3343dc98249fdb91d643e2"
+      />
+      <Card
+        h="Order Tracking Re-Imagined"
+        dc="Zomato"
+        l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+      />
+      
+
     </div>
   );
 };
 let Card = (props) => {
   return (
     <a href={props.l ? props.l : "/"}>
-      <div className="p-4 mb-3 rounded-lg bg-white border border-gray-200  hover:shadow-lg  ease-in-out duration-500 transition">
+      <div className="p-4 mb-3 rounded-lg bg-white border border-gray-200 hover:scale-105  hover:shadow-lg  ease-in-out duration-500 transition">
         <h1 className=" font-semibold mb-1">{props.h ? props.h : "Heading"}</h1>
         <p>{props.dc ? props.dc : "description"}</p>
       </div>
