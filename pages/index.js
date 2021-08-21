@@ -181,7 +181,7 @@ let Left = () => {
 };
 let CardList = () => {
   return (
-    <div className="md:w-1/2 mt-4 md:p-4 overflow-scroll">
+    <div className="md:w-1/2 mt-4 md:p-4 overflow-y-auto">
       <Card
         h="Helping users find the right car"
         dc="Expedia"
@@ -199,7 +199,7 @@ let CardList = () => {
 };
 let Card = (props) => {
   return (
-    <a href={props.l ? props.l : "/"}>
+    <a href={props.l ? props.l : "/"}  target="_blank">
       <div className="p-4 mb-3 rounded-lg bg-white border border-gray-200 hover:scale-105  hover:shadow-lg  ease-in-out duration-500 transition">
         <h1 className=" font-semibold mb-1">{props.h ? props.h : "Heading"}</h1>
         <p>{props.dc ? props.dc : "description"}</p>
