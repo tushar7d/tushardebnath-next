@@ -182,6 +182,7 @@ let Left = () => {
 let CardList = () => {
   return (
     <div className="md:w-1/2 mt-4 md:p-4 overflow-y-auto">
+      
       <Card
         h="Helping users find the right car"
         dc="Expedia"
@@ -192,6 +193,20 @@ let CardList = () => {
         dc="Zomato"
         l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
       />
+      <div className="md:grid md:grid-cols-2 md:gap-4">
+      <Card
+        h="Order Tracking Re-Imagined"
+        dc="Zomato"
+        l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+      />
+      <Card
+        h="Order Tracking Re-Imagined"
+        dc="Zomato"
+        l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+      />
+
+      </div>
+
       
 
     </div>
@@ -199,7 +214,7 @@ let CardList = () => {
 };
 let Card = (props) => {
   return (
-    <a href={props.l ? props.l : "/"}  target="_blank">
+    <a href={props.l ? props.l : "/"} className=" w-full"  target="_blank">
       <div className="p-4 mb-3 rounded-lg bg-white border border-gray-200 hover:scale-105  hover:shadow-lg  ease-in-out duration-500 transition">
         <h1 className=" font-semibold mb-1">{props.h ? props.h : "Heading"}</h1>
         <p>{props.dc ? props.dc : "description"}</p>
