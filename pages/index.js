@@ -10,7 +10,7 @@ let Intro = () => {
       
       <img src="/td.png" alt="Me" style={{ maxWidth: "150px" }} />
 
-      <h1 className="mt-6 mb-2 text-3xl  font-semibold  dark:text-white">Hello, I'm Tushar Debnath</h1>
+      <h1 className="mt-6 mb-2 text-2xl font-semibold md:text-3xl dark:text-white">Hello, I'm Tushar Debnath</h1>
      
       
       <div className="flex mt-2">
@@ -24,7 +24,7 @@ let Intro = () => {
         </div>
       </div>
 
-      <p className="my-4  text-lg text-gray-500">
+      <p className="my-4 text-lg text-gray-500">
         Currently, I am working at Zomato. When I am not designing or coding,
         you can find me reading fantasy books, working on my podcast, or
         travelling with my wife.
@@ -35,7 +35,7 @@ let Intro = () => {
 
 let Left = () => {
   return (
-    <div className=" p-12 md:h-screen md:w-1/2  flex flex-col justify-between ">
+    <div className="flex flex-col justify-between p-4 md:p-12 md:h-screen md:w-1/2">
       <Intro />
       <div className="flex text-l ">
         <IconLink link="https://www.linkedin.com/in/tushardebnath/">
@@ -86,8 +86,9 @@ let Left = () => {
 };
 let CardList = () => {
   return (
-    <div className="md:w-1/2 overflow-y-auto   ">
-      <div className=" p-8   grid grid-cols-1 gap-4">
+    <div className="overflow-y-auto md:w-1/2 ">
+      <div className="grid grid-cols-1 gap-4 p-4 md:p-8 ">
+        <h1 className="text-xl font-semibold md:mt-24 ">Work</h1>
       <Card
         h="Helping users find the right car"
         dc="Expedia"
@@ -105,9 +106,9 @@ let CardList = () => {
 };
 let Card = (props) => {
   return (
-    <a href={props.l ? props.l : "/"} className=" w-full" target="_blank">
-      <div className="p-4  rounded-lg bg-white border border-gray-200 hover:scale-105  hover:shadow-lg  ease-in-out duration-500 transition">
-        <h1 className=" font-semibold mb-1">{props.h ? props.h : "Heading"}</h1>
+    <a href={props.l ? props.l : "/"} className="w-full " target="_blank">
+      <div className="p-4 transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg hover:scale-105 hover:shadow-lg">
+        <h1 className="mb-1 font-semibold ">{props.h ? props.h : "Heading"}</h1>
         <p>{props.dc ? props.dc : "description"}</p>
       </div>
     </a>
@@ -122,7 +123,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className=" md:flex max-w-7xl m-auto  md:overflow-hidden    max-h-screen">
+      <div className="max-h-screen m-auto md:flex max-w-7xl md:overflow-hidden">
         <Left />
 
         <CardList />
