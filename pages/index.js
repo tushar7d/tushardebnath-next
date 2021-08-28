@@ -86,7 +86,8 @@ let Left = () => {
 };
 let CardList = () => {
   return (
-    <div className="md:w-1/2 p-6   overflow-y-auto grid grid-cols-1 gap-2">
+    <div className="md:w-1/2 overflow-y-auto   ">
+      <div className=" p-8   grid grid-cols-1 gap-4">
       <Card
         h="Helping users find the right car"
         dc="Expedia"
@@ -97,27 +98,7 @@ let CardList = () => {
         dc="Zomato"
         l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
       />
-      <div className="grid md:grid-cols-2 gap-2 ">
-        <Card
-          h="Order Tracking Re-Imagined"
-          dc="Zomato"
-          l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-        />
-        <Card
-          h="Order Tracking Re-Imagined"
-          dc="Zomato"
-          l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-        />
-        <Card
-          h="Order Tracking Re-Imagined"
-          dc="Zomato"
-          l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-        />
-        <Card
-          h="Order Tracking Re-Imagined"
-          dc="Zomato"
-          l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-        />
+      
       </div>
     </div>
   );
