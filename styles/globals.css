@@ -56,11 +56,18 @@
   }
 
   .title {
-    @apply mt-6 mb-2 text-2xl  font-bold dark:text-white;
+    @apply mt-6 mb-2 text-2xl font-bold dark:text-white;
   }
   .hp-p {
-    @apply mt-2 mb-8 text-lg leading-relaxed tracking-wide text-gray-700  dark:text-white max-w-prose
+    @apply mt-2 mb-8 text-lg leading-relaxed tracking-wide text-gray-700 dark:text-white max-w-prose;
+
   }
-  
-  
+  .no-scrollbar::-webkit-scrollbar {
+   display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+ scrollbar-width: none; 
+}
 }

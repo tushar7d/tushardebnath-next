@@ -6,11 +6,11 @@ import IconLink from "../components/IconLink";
 
 let Intro = () => {
   return (
-    <div >
+    <div className="md:mt-24" >
       
       <img src="/td.png" alt="Me" style={{ maxWidth: "150px" }} />
 
-      <h1 className="mt-6 mb-2 text-2xl font-semibold md:text-3xl dark:text-white">Hello, I'm Tushar Debnath</h1>
+      <h1 className="mt-6 mb-2 text-2xl font-medium md:text-5xl dark:text-white">Hello, I'm Tushar Debnath</h1>
      
       
       <div className="flex mt-2">
@@ -86,8 +86,8 @@ let Left = () => {
 };
 let CardList = () => {
   return (
-    <div className="overflow-scroll  md:w-1/2">
-      <div className="grid grid-cols-1 gap-4 p-4 md:p-8 ">
+    <div className="overflow-auto no-scrollbar md:w-1/2">
+      <div className="grid grid-cols-1 gap-4 p-4 md:p-8">
         <h1 className="text-xl font-semibold md:mt-24 ">Work</h1>
       <Card
         h="Helping users find the right car"
@@ -144,7 +144,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="max-h-screen m-auto md:flex max-w-7xl md:overflow-hidden">
+      <div className="max-h-screen m-auto md:overflow-hidden md:flex max-w-7xl">
         <Left />
 
         <CardList />
