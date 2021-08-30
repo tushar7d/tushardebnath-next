@@ -4,7 +4,7 @@ let SectionHeading = (props) => {
 
 let Content = () => {
   return (
-    <div className="mb-8 overflow-auto no-scrollbar md:w-1/2 bg-gray-50">
+    <div className="overflow-auto no-scrollbar md:w-1/2 bg-gray-50">
       <div className="grid grid-cols-1 gap-4 p-4 md:p-8">
         <SectionHeading>Selected Projects</SectionHeading>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
