@@ -21,7 +21,6 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
       <div className="max-h-screen m-auto md:overflow-hidden md:flex ">
         <AboutMe />
 
