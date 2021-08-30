@@ -23,7 +23,6 @@ export default function Home() {
       </Head>
       <div className="max-h-screen m-auto md:overflow-hidden md:flex ">
         <AboutMe />
-
         <Content />
       </div>
     </>
