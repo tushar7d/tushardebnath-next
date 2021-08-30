@@ -99,7 +99,7 @@ let CardList = () => {
         dc="Zomato"
         l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
       />
-        <h1 className="text-xl font-semibold md:mt-12 ">Work</h1>
+        <h1 className="text-xl font-semibold md:mt-12 ">Writing</h1>
       <Card
         h="Helping users find the right car"
         dc="Expedia"
@@ -110,7 +110,7 @@ let CardList = () => {
         dc="Zomato"
         l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
       />
-            <h1 className="text-xl font-semibold md:mt-12 ">Work</h1>
+            <h1 className="text-xl font-semibold md:mt-12 ">Opensource </h1>
       <Card
         h="Helping users find the right car"
         dc="Expedia"
