@@ -63,7 +63,7 @@ let Content = () => {
 let Card = (props) => {
   return (
     <a href={props.l ? props.l : "/"} className="w-full " target="_blank">
-      <div className="p-4 min-h-[280px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
+      <div className="p-4 min-h-[150px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
         <h1 className="mb-1 font-semibold ">{props.h ? props.h : "Heading"}</h1>
         <p>{props.dc ? props.dc : "description"}</p>
       </div>
