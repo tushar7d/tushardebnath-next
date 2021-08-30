@@ -21,7 +21,7 @@ let Intro = () => {
         </div>
   
         <p className="my-4 text-lg text-gray-500">
-          Currently, I work at Zomato and I have previously worked for Expedia, Hike Messenger and . When I am not designing or coding,
+          Currently, I work at Zomato as senior product designer. When I am not designing or coding,
           you can find me reading fantasy books, working on my podcast, or
           travelling with my wife.
         </p>
