@@ -1,6 +1,6 @@
 let SectionHeading = (props) => {
   return (
-    <h1 className="mt-6 mb-2 text-xl font-semibold md:mt-12">
+    <h1 className="mt-6 mb-2 text-xl font-semibold ">
       {props.children}
     </h1>
   );
@@ -8,8 +8,9 @@ let SectionHeading = (props) => {
 
 let Content = () => {
   return (
-    <div className="mb-8 overflow-auto no-scrollbar md:w-1/2">
+    <div className="mb-8 overflow-auto no-scrollbar md:w-1/2 bg-gray-50">
       <div className="grid grid-cols-1 gap-4 p-4 md:p-8">
+        
         <SectionHeading>Selected Works</SectionHeading>
         <Card
           h="Helping users find the right car"
