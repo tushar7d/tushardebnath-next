@@ -6,19 +6,7 @@ let Content = () => {
   return (
     <div className="overflow-auto no-scrollbar md:w-1/2 bg-gray-50">
       <div className="grid grid-cols-1 gap-4 p-4 md:p-8">
-        <SectionHeading>Selected Projects</SectionHeading>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <Card
-            h="Helping users find the right car"
-            dc="Expedia"
-            l="https://tushardebnath.notion.site/Helping-users-find-the-right-offer-4140d01adf3343dc98249fdb91d643e2"
-          />
-          <Card
-            h="Order Tracking Re-Imagined"
-            dc="Zomato"
-            l="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-          />
-        </div>
+        
 
         <SectionHeading>Recent writing</SectionHeading>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
