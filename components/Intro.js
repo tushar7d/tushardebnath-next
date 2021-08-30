@@ -2,7 +2,7 @@ import ReactRotatingText from "react-rotating-text";
 
 let Intro = () => {
     return (
-      <div className="mt-12 md:mt-24" >
+      <div className="mt-12 " >
         
         <img src="/td.png" alt="Me" style={{ maxWidth: "180px" }} />
   

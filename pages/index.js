@@ -6,7 +6,7 @@ import Content from '../components/Content'
 
 let AboutMe = () => {
   return (
-    <div className="flex flex-col justify-between p-4 md:p-12 md:h-screen md:w-1/2">
+    <div className="flex flex-col justify-between p-4 md:px-12 md:h-screen md:w-1/2">
       <Intro />
       <IconSet />
     </div>
