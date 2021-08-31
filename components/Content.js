@@ -52,7 +52,7 @@ let Content = () => {
     </div>
   );
 };
-let td = "/td.png";
+let td = "";
 let Card = (props) => {
   return (
     <a
@@ -60,16 +60,16 @@ let Card = (props) => {
       className="w-full h-full "
       target="_blank"
     >
-      <div className="h-full transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
+      <div className="flex flex-col h-[350px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
         <div
-          className="w-full h-[150px] bg-gray-500 rounded-t-lg"
+          className="w-full h-[200px] bg-gray-200 rounded-t-lg"
           style={{ backgroundImage: `url(${props.im})` }}
         />
-        <div className="p-4">
-          <h1 className="mb-1 font-semibold ">
+        <div className="flex flex-col justify-between flex-1 p-4 ">
+          <h1 className="font-medium text-gray-800 text-md ">
             {props.h ? props.h : "Heading"}
           </h1>
-          <p>{props.dc ? props.dc : "description"}</p>
+          <p className="text-gray-500">{props.dc ? props.dc : "description"}</p>
         </div>
       </div>
     </a>
