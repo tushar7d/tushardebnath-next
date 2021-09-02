@@ -7,7 +7,7 @@ let Content = () => {
     <div className="overflow-auto no-scrollbar md:w-1/2 bg-gray-50">
       <div className="grid grid-cols-1 gap-4 p-4 md:p-8">
         <SectionHeading>Recent writing</SectionHeading>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="project-section">
           <Card
             h="How to run Figma shortcuts using Midi."
             dc="Medium"
@@ -28,7 +28,7 @@ let Content = () => {
           />
         </div>
         <SectionHeading>Open source</SectionHeading>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="project-section">
           <Card
             h="ColorKit - Generate darker or lighter shades of a particular color"
             dc="Figma Plugin"
@@ -52,7 +52,7 @@ let Content = () => {
     </div>
   );
 };
-let td = "";
+let td = "/crystal.png";
 let Card = (props) => {
   return (
     <a
@@ -63,7 +63,7 @@ let Card = (props) => {
       <div className="flex flex-col h-[350px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
         <div
           className="w-full h-[200px] bg-gray-200 rounded-t-lg"
-          style={{ backgroundImage: `url(${props.im})` }}
+          style={{ backgroundImage: `url(${props.im})`, backgroundSize:"cover", backgroundPosition:"center top" }}
         />
         <div className="flex flex-col justify-between flex-1 p-4 ">
           <h1 className="font-medium text-gray-800 text-md ">
