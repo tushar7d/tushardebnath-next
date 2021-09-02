@@ -12,13 +12,13 @@ let Content = () => {
             h="How to run Figma shortcuts using Midi."
             dc="Medium"
             l="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-            im={td}
+            im="/midi.png"
           />
           <Card
             h="How I created a Figma plugin to automate our design system migration."
             dc="Medium"
             l="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
-            im={td}
+            im="/auto.png"
           />
           <Card
             h="How structuring our Figma files in a consistent way has improved collaboration and efficiency."
@@ -33,7 +33,7 @@ let Content = () => {
             h="ColorKit - Generate darker or lighter shades of a particular color"
             dc="Figma Plugin"
             l="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
-            im={td}
+            im="/clr.png"
           />
           <Card
             h="Project Scaffold - Generate project stucture"
@@ -60,9 +60,9 @@ let Card = (props) => {
       className="w-full h-full "
       target="_blank"
     >
-      <div className="flex flex-col h-[350px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
+      <div className="flex flex-col h-[380px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
         <div
-          className="w-full h-[200px] bg-gray-200 rounded-t-lg"
+          className="w-full h-[230px] bg-gray-200 rounded-t-lg"
           style={{ backgroundImage: `url(${props.im})`, backgroundSize:"cover", backgroundPosition:"center top" }}
         />
         <div className="flex flex-col justify-between flex-1 p-4 ">
