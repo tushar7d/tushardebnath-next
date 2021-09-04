@@ -4,8 +4,8 @@ let SectionHeading = (props) => {
 
 let Content = () => {
   return (
-    <div className="overflow-auto no-scrollbar md:w-1/2 bg-gray-50">
-      <div className="grid grid-cols-1 gap-4 p-4 md:p-8">
+    <div className="overflow-auto no-scrollbar md:w-1/2 bg-gray-50 ">
+      <div className="grid grid-cols-1 gap-4 p-4 md:p-8 lg:p-12">
         <SectionHeading>Recent writing</SectionHeading>
         <div className="project-section">
           <Card
@@ -60,11 +60,15 @@ let Card = (props) => {
       className="w-full h-full "
       target="_blank"
     >
-      <div className="flex flex-col h-[380px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
-        <div
+      <div className="flex flex-col h-[150px] transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
+       {/* 
+       
+       <div
           className="w-full h-[230px] bg-gray-200 rounded-t-lg"
           style={{ backgroundImage: `url(${props.im})`, backgroundSize:"cover", backgroundPosition:"center top" }}
         />
+        */
+        } 
         <div className="flex flex-col justify-between flex-1 p-4 ">
           <h1 className="font-medium text-gray-800 text-md ">
             {props.h ? props.h : "Heading"}
