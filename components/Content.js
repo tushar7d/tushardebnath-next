@@ -20,12 +20,16 @@ let Content = () => {
             l="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
             im="/car.png"
           />
+          {/*
           <ImgCard
             h="Redefining MakemyTrip's search experience "
             dc="Case Study"
             l="https://tushardebnath.notion.site/Redefining-MakemyTrip-s-search-experience-8fbd12a960fc4afaba81c044bfdac965"
             im="/mmt.png"
           />
+          
+          */}
+          
          
         </div>
         <SectionHeading>Recent writing</SectionHeading>
