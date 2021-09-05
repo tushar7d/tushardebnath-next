@@ -74,7 +74,7 @@ export default function Header(props) {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="sticky top-0 bg-white border-b border-solid  dark:bg-page-black dark:border-transparent">
+    <div className="sticky top-0 bg-white border-b border-solid dark:bg-page-black dark:border-transparent">
       <div className="flex items-center justify-between max-w-screen-md mx-auto ">
         <div className="flex mx-4 md:mx-4 ">
           
