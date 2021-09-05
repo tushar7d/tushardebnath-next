@@ -1,4 +1,16 @@
-import IconLink from "./IconLink";
+let IconLink = (props) =>{
+  return(
+    <a
+    className="mr-5 no-underline dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500"
+    target="_blank"
+    href={props.link}
+  >
+    {props.children}
+  </a>
+
+  )
+}
+
 let Iconset = () =>{
     return(
       <div className="flex mb-8 text-l md:mb-0">

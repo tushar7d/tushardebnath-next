@@ -78,13 +78,7 @@ let Card = (props) => {
       target="_blank"
     >
       <div className="flex flex-col h-full transition duration-500 ease-in-out bg-white border border-gray-200 rounded-lg md:hover:scale-105 hover:shadow-lg">
-        {/* 
        
-       <div
-          className="w-full h-[230px] bg-gray-200 rounded-t-lg"
-          style={{ backgroundImage: `url(${props.im})`, backgroundSize:"cover", backgroundPosition:"center top" }}
-        />
-        */}
         <div className="flex flex-col justify-between flex-1 p-4 ">
           <h1 className="text-lg font-medium text-gray-800 md:text-md lg:text-lg ">
             {props.h ? props.h : "Heading"}
