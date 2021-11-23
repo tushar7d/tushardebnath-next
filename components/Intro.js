@@ -6,7 +6,7 @@ let Intro = () => {
         
         <img src="/td.png" alt="Me" style={{ maxWidth: "180px" }} />
   
-        <h1 className="mt-8 mb-2 text-4xl font-semibold md:mb-3 md:font-medium md:text-4xl lg:text-5xl dark:text-white">Hello, I'm Tushar Debnath</h1>
+        <h1 className="mt-8 mb-2 text-4xl font-semibold md:mb-3 md:font-medium md:text-4xl lg:text-4xl dark:text-white">Hello, I'm Tushar Debnath</h1>
        
         
         <div className="flex mt-2">
