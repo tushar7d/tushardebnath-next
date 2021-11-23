@@ -12,7 +12,7 @@ let Intro = () => {
         
         <p className="pb-3 my-4 text-xl text-gray-600">
           A product designer and design technologist from New Delhi, India. I currently work at Zomato and
-          previously I have worked for Expedia, MakeMyTrip, and Hike Messenger.  
+          previously I have worked at Expedia, MakeMyTrip, and Hike Messenger.  
           
           <br/><br/>
           When Im not designing or coding, I spend my time on Fantasy books, old school shonen manga, music from the 90s and travelling with my wife.
