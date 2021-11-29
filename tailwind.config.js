@@ -4,6 +4,9 @@ module.exports = {
   darkMode: 'class', 
   theme: {
     extend: {
+      fontFamily:{
+        'sans': ['Poppins', 'sans-serif']
+      },
       colors: { 
         'page-black':'#121212'
       },
@@ -22,5 +25,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography'),require('tailwind-scrollbar-hide')]
+  plugins: [require('tailwind-scrollbar-hide')]
 }

@@ -1,18 +1,4 @@
 import Head from "next/head";
-import IconSet from '../components/IconSet'
-import Intro from '../components/Intro'
-import Content from '../components/Content'
-
-
-let AboutMe = () => {
-  return (
-    <div className="flex flex-col justify-between p-4 pb-12 md:px-12 md:h-screen md:w-1/2 xl:px-">
-      <Intro />
-      <IconSet />
-    </div>
-  );
-};
-
 
 export default function Home() {
   return (
@@ -21,9 +7,18 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="max-h-screen m-auto md:overflow-hidden md:flex ">
-        <AboutMe />
-        <Content />
+      <div className="">
+        <header class="sticky top-0 z-50 w-screen px-8 py-4 bg-white shadow">
+          <div class="flex items-center justify-between px-4 mx-auto">
+            <div class="text-3xl font-semibold">Debnath.</div>
+            <nav class="grid grid-flow-col gap-8 text-lg font-medium">
+              <a href="/">Home</a>
+              <a>Work</a>
+              <a>About</a>
+              <a>Resume</a>
+            </nav>
+          </div>
+        </header>
       </div>
     </>
   );
