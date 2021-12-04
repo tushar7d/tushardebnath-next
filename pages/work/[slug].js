@@ -3,6 +3,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import ActiveLink from '../../components/ActiveLink'
 
 
 const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
