@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class', 
+   
   theme: {
     extend: {
       fontFamily:{
@@ -25,5 +25,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('tailwind-scrollbar-hide'),require('@tailwindcss/typography'),]
+  plugins: [require('tailwind-scrollbar-hide'), require('@tailwindcss/typography'),]
 }
