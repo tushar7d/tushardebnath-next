@@ -4,9 +4,4 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,900&display=swap");
 
-@layer components {
-  .nav-link {
-    @apply hidden mr-12 text-gray-900 sm:block hover:text-yellow-500 dark:hover:text-yellow-500 dark:text-white;
-  }
-  
-}
+    

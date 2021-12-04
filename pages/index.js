@@ -1,32 +1,53 @@
-import Head from "next/head";
 
-export default function Home() {
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import Link from 'next/link'
 
+
+const Home = ({ posts }) => {
   return (
-    <>
-      <Head>
-        <title>Tushar Debnath</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      
-        <header className="sticky top-0 z-50 w-screen px-8 py-4 bg-white shadow">
-          <div className="flex items-center justify-between px-4 mx-auto">
-            <div className="text-3xl font-semibold">TD</div>
-            <nav className="grid grid-flow-col gap-8 text-lg font-medium">
-              <a href="/">Home</a>
-              <a>Work</a>
-              <a>About</a>
-              <a>Resume</a>
-            </nav>
+    <div className="mt-5">
+      {posts.map((post, index) => (
+        <Link href={'/work/' + post.slug} key={index}>
+          <div className="card mb-3 pointer" style={{ maxWidth: '540px' }}>
+            <div className="row g-0">
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">{post.frontMatter.title}</h5>
+                  <p className="card-text">{post.frontMatter.description}</p>
+                  <p className="card-text">
+                    <small className="text-muted">{post.frontMatter.date}</small>
+                  </p>
+                </div>
+              </div>
+              
+            </div>
           </div>
-        </header>
-        <main>
-          <section className="w-full flex justify-center items-center  pt-80"> 
-          
-          <h1 className="font-black text-6xl">Hello, Everyone</h1></section>
-
-        </main>
-      
-    </>
-  );
+        </Link>
+      ))}
+    </div>
+  )
 }
+
+export const getStaticProps = async () => {
+  const files = fs.readdirSync(path.join('posts'))
+
+  const posts = files.map(filename => {
+    const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
+    const { data: frontMatter } = matter(markdownWithMeta)
+
+    return {
+      frontMatter,
+      slug: filename.split('.')[0]
+    }
+  })
+
+  return {
+    props: {
+      posts
+    }
+  }
+}
+
+export default Home
