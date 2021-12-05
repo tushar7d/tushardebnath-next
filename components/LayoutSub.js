@@ -9,10 +9,10 @@ const LayoutSub = (props) => {
             className=" p-4 m-3 hover:rounded-md hover:bg-gray-200 border-b hover:border-b-0 "
             style={{ maxWidth: "540px" }}
           >
-            <h5 className="">{post.frontMatter.title}</h5>
-            <p className="">{post.frontMatter.description}</p>
+            <h5 className="text-base font-medium">{post.frontMatter.title}</h5>
+            <p className="text-sm">{post.frontMatter.description}</p>
             <p className="">
-              <small className="">{post.frontMatter.date}</small>
+              <small className="text-sm">{post.frontMatter.date}</small>
             </p>
           </div>
         </ActiveLink>
