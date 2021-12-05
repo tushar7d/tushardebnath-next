@@ -4,15 +4,29 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,900&display=swap");
 
+
 @layer components {
+  .logo {
+    @apply text-sm w-full   border-b  p-2;
+  }
   .sidebar {
-    @apply  w-52 h-screen border-r;
+    @apply w-52 h-screen border-r;
   }
-  .link {
-    @apply text-gray-800 text-sm p-2 hover:bg-gray-200 rounded-md flex items-center align-baseline;
-  }
+  
   .sidebar-label {
     @apply text-sm text-gray-500  px-2 mt-6 mb-3 rounded-md;
+  }
+  .link {
+    @apply text-gray-800 text-sm my-1 p-2 hover:bg-gray-200 rounded-md flex items-center align-baseline cursor-pointer;
+  }
+  .link-selected {
+    @apply   bg-black text-white hover:text-white hover:bg-black;
+  }
+  .external {
+    @apply   justify-between;
+  }
+  .group{
+      @apply flex items-center align-baseline content-center;
   }
   .link-tag {
     @apply ml-1 mt-[2px];
@@ -20,4 +34,13 @@
   .link-icon {
     @apply mr-1;
   }
+  .link-icon-sm {
+    @apply mr-1  text-gray-500;
+  }
+
+  }
+  .bg-dot{
+    
+    background: linear-gradient(90deg,#f9fafb 15px,transparent 1%) 50%,linear-gradient(#f9fafb 15px,transparent 1%) 50%,rgba(0,0,0,.24);
+    background-size: 16px 16px
 }

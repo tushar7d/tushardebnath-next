@@ -5,28 +5,21 @@ import matter from 'gray-matter'
 import ActiveLink from '../../components/ActiveLink'
 
 
-
-
 const Work = ({ posts }) => {
   return (
-    <div className="mt-5">
+    <div className="w-[350px] border-r ">
       
       {posts.map((post, index) => (
         <ActiveLink href={'/work/' + post.slug} key={index}>
-          <div className="card mb-3 pointer" style={{ maxWidth: '540px' }}>
-            <div className="row g-0">
-              <div className="col-md-8">
-                <div className="card-body">
-                  <h5 className="card-title">{post.frontMatter.title}</h5>
-                  <p className="card-text">{post.frontMatter.description}</p>
-                  <p className="card-text">
-                    <small className="text-muted">{post.frontMatter.date}</small>
+          <div className=" p-4 m-3 rounded-md hover:bg-gray-200 " style={{ maxWidth: '540px' }}>
+           
+                  <h5 className="">{post.frontMatter.title}</h5>
+                  <p className="">{post.frontMatter.description}</p>
+                  <p className="">
+                    <small className="">{post.frontMatter.date}</small>
                   </p>
-                </div>
-              </div>
-              
-            </div>
           </div>
+              
         </ActiveLink>
       ))}
     </div>
