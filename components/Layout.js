@@ -1,29 +1,70 @@
-import ActiveLink from "./ActiveLink";
+import Link from "next/link";
+import { FaHome } from "@react-icons/all-files/fa/FaHome";
+import {FaLinkedin} from "@react-icons/all-files/fa/FaLinkedin";
+import {FaFigma} from "@react-icons/all-files/fa/FaFigma";
+import {FaGithub} from "@react-icons/all-files/fa/FaGithub";
+import {FaDribbble} from"@react-icons/all-files/fa/FaDribbble";
+import {MdWork} from"@react-icons/all-files/md/MdWork";
 
 const Layout = (props) => {
-    return (
-      <div className="flex ">
-        <div className="w-[240px] h-screen border-r " >
+  return (
+    <div className="flex">
+      <div className="sidebar">
+        <section className=" text-base w-full font-medium border-b  p-2">Tushar Debnath</section>
+        <div className=" flex flex-col p-4">
+        
+          <Link href="/">
+            <div className="link">
+              <div className="link-icon"><FaHome /></div>
+              <div className="link-tag">Home</div>
+            </div>
+          </Link>
+          <Link href="/work">
+            <div className="link">
+              <div className="link-icon"><MdWork /></div>
+              <div className="link-tag">Work</div>
+            </div>
+          </Link>
 
-          <section className=" w-full font-bold   p-4">
-            Tushar Debnath
+          <div className="sidebar-label">Side Projects</div>
+          <Link href="/">
+            <div className="link">
+              <div className="link-icon"><FaFigma /></div>
+              <div className="link-tag">Figma Plugins</div>
+            </div>
+          </Link>
+          <div className="sidebar-label">Find me</div>
+          <Link href="/">
+            <div className="link">
+              <div className="link-icon"><FaLinkedin /></div>
+              <div className="link-tag">LinkedIn</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="link">
+              <div className="link-icon"><FaFigma /></div>
+              <div className="link-tag">Figma</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="link">
+              <div className="link-icon"><FaDribbble /></div>
+              <div className="link-tag">Dribbble</div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="link">
+              <div className="link-icon"><FaGithub /></div>
+              <div className="link-tag">Github</div>
+            </div>
+          </Link>
+          
 
-          </section>
-          <div className=" grid grid-row-5  gap-6 p-4">
- 
-            <ActiveLink href="/" className="p-3 hover:bg-gray-400 rounded-lg ">About Me</ActiveLink>
-            <ActiveLink href="/work" className="p-3 hover:bg-gray-400 rounded-lg">Work</ActiveLink>
-            <ActiveLink href="/writing" className="p-3 hover:bg-gray-400 rounded-lg">Writing</ActiveLink>
-            <ActiveLink href="/resume" className="p-3 hover:bg-gray-400 rounded-lg">Resume</ActiveLink>
-            <div>Projects</div>
-            <a></a>
-            <a></a>
-          </div>
         </div>
-        {props.children}
       </div>
-    );
-  };
-  
-  export default Layout;
-  
+      {props.children}
+    </div>
+  );
+};
+
+export default Layout;
