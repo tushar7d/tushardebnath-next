@@ -2,6 +2,7 @@ import ActiveLink from "./ActiveLink";
 import { useRouter } from "next/router";
 
 const LayoutSub = (props) => {
+  const router = useRouter()
   return (
     <div className="w-[350px] border-r ">
       {props.posts.map((post, index) => (
@@ -9,7 +10,7 @@ const LayoutSub = (props) => {
         <ActiveLink href={props.bs + post.slug} key={index}>
            
           <div
-            className=" ease-in-out p-4 m-3  hover:rounded-md hover:bg-gray-100 border-b  hover:border-gray-100 "
+            className={router.asPath.startsWith(`${props.bs+post.slug}`) ? "link-sub-selected" : "link-sub"}
             style={{ maxWidth: "540px" }}
           >
             
