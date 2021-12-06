@@ -15,7 +15,7 @@ const Layout = (props) => {
   const router = useRouter()
   return (
     <div className="flex">
-      <div className="sidebar">
+      <div className="sidebar flex-shrink-0">
         <section className="logo">Tushar Debnath</section>
         <div className=" flex flex-col p-4">
           <Link href="/">
