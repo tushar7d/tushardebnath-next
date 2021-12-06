@@ -10,7 +10,7 @@ import LayoutSub from '../../components/LayoutSub'
 const PostPage = ({ frontMatter: { title, date }, mdxSource,posts }) => {
   return (
     <div className="flex"> 
-    <LayoutSub posts={posts} />
+    <LayoutSub bs="/work/" posts={posts} />
       <article className="p-12 mt-5 max-w-prose prose">
       <h1>{title}</h1>
       <h2>{date}</h2>

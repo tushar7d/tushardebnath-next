@@ -7,7 +7,7 @@ import matter from 'gray-matter'
 
 const Writing = ({ posts }) => {
   return (
-    <LayoutSub posts={posts} />
+    <LayoutSub bs="/writing/" posts={posts} />
   )
 }
 
