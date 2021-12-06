@@ -1,4 +1,5 @@
 import ActiveLink from "./ActiveLink";
+import { useRouter } from "next/router";
 
 const LayoutSub = (props) => {
   return (
@@ -8,7 +9,7 @@ const LayoutSub = (props) => {
         <ActiveLink href={props.bs + post.slug} key={index}>
            
           <div
-            className="transition duration-300  ease-in-out p-4 m-3 hover:rounded-md hover:bg-gray-200 border-b hover:border-b-0 "
+            className=" ease-in-out p-4 m-3  hover:rounded-md hover:bg-gray-100 border-b  hover:border-gray-100 "
             style={{ maxWidth: "540px" }}
           >
             

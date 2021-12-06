@@ -29,7 +29,7 @@ const Layout = (props) => {
             </div>
           </Link>
           <Link href="/work">
-            <div className={router.asPath === "/work" ? "link link-selected" : "link"}>
+            <div className={router.asPath.startsWith("/work") ? "link link-selected" : "link"}>
               <div className="link-icon">
                 <MdWork size={16} />
               </div>
@@ -37,7 +37,7 @@ const Layout = (props) => {
             </div>
           </Link>
           <Link href="/writing">
-            <div className={router.asPath === "/writing" ? "link link-selected" : "link"}>
+            <div className={router.asPath.startsWith("/writing") ? "link link-selected" : "link"}>
               <div className="link-icon">
                 <FaPenNib size={16} />
               </div>
@@ -45,7 +45,7 @@ const Layout = (props) => {
             </div>
           </Link>
           <Link href="/resume">
-            <div className={router.asPath === "/resume" ? "link link-selected" : "link"}>
+            <div className={router.asPath.startsWith("/resume") ? "link link-selected" : "link"}>
               <div className="link-icon">
                 <FaFile size={16} />
               </div>
@@ -55,7 +55,7 @@ const Layout = (props) => {
 
           <div className="sidebar-label">Side Projects</div>
           <Link href="/figmaplugin">
-            <div className={router.asPath === "/figmaplugin" ? "link link-selected" : "link"}>
+            <div className={router.asPath.startsWith("/figmaplugin") ? "link link-selected" : "link"}>
               <div className="link-icon">
                 <FaFigma size={16} />
               </div>
