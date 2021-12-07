@@ -11,126 +11,100 @@ import { FaExternalLinkAlt } from "@react-icons/all-files/fa/FaExternalLinkAlt";
 import { FaDribbble } from "@react-icons/all-files/fa/FaDribbble";
 import { MdWork } from "@react-icons/all-files/md/MdWork";
 
+const LinkIn = (props) => {
+  const router = useRouter();
+  return (
+    <Link href={props.href}>
+      <div
+        className={router.asPath === props.href ? "link link-selected" : "link"}
+      >
+        <div className="link-icon">{props.icon}</div>
+        <div className="link-tag">{props.name}</div>
+      </div>
+    </Link>
+  );
+};
+
+const LinkOut = (props) => {
+  return (
+    <Link href={props.href}>
+      <a target="_blank">
+        <div className="link external">
+          <div className="group">
+            <div className="link-icon">{props.icon}</div>
+            <div className="link-tag">{props.name}</div>
+          </div>
+          <div>
+            <div className="link-icon-sm">
+              <FaExternalLinkAlt size={10} />
+            </div>
+          </div>
+        </div>
+      </a>
+    </Link>
+  );
+};
+
 const Layout = (props) => {
-  const router = useRouter()
+
   return (
     <div className="flex">
       <div className="sidebar flex-shrink-0">
         <section className="logo">Tushar Debnath</section>
         <div className=" flex flex-col p-4">
-          <Link href="/">
-            <div
-              className={router.asPath === "/" ? "link link-selected" : "link"}
-            >
-              <div className="link-icon">
-                <FaHome size={16} />
-              </div>
-              <div className="link-tag">Home</div>
-            </div>
-          </Link>
-          <Link href="/work">
-            <div className={router.asPath.startsWith("/work") ? "link link-selected" : "link"}>
-              <div className="link-icon">
-                <MdWork size={16} />
-              </div>
-              <div className="link-tag">Work</div>
-            </div>
-          </Link>
-          <Link href="/writing">
-            <div className={router.asPath.startsWith("/writing") ? "link link-selected" : "link"}>
-              <div className="link-icon">
-                <FaPenNib size={16} />
-              </div>
-              <div className="link-tag">Writing</div>
-            </div>
-          </Link>
-          <Link href="/resume">
-            <div className={router.asPath.startsWith("/resume") ? "link link-selected" : "link"}>
-              <div className="link-icon">
-                <FaFile size={16} />
-              </div>
-              <div className="link-tag">Resume</div>
-            </div>
-          </Link>
+          <LinkIn
+            href="/"
+            name="Home"
+            icon={<FaHome size={16} />}
+          />
+
+          <LinkIn 
+            href="/work"
+            name="Work"
+            icon={<MdWork size={16} />}
+          />
+
+          <LinkIn
+            href="/writing"
+            name="Writing"
+            icon={<FaPenNib size={16} />}
+          />
+          <LinkIn
+            href="/resume"
+            name="Resume"
+            icon={<FaFile size={16} />}
+          />
 
           <div className="sidebar-label">Side Projects</div>
-          <Link href="/figmaplugin">
-            <div className={router.asPath.startsWith("/figmaplugin") ? "link link-selected" : "link"}>
-              <div className="link-icon">
-                <FaFigma size={16} />
-              </div>
-              <div className="link-tag">Figma Plugins</div>
-            </div>
-          </Link>
+
+          <LinkIn
+            href="/figmaplugin"
+            name="Figma Plugins"
+            icon={<FaFigma size={16} />}
+          />
+
           <div className="sidebar-label">Find me</div>
-          <Link href="https://www.linkedin.com/in/tushardebnath/">
-            <a target="_blank">
-              <div className="link external">
-                <div className="group">
-                  <div className="link-icon">
-                    <FaLinkedin size={16} />
-                  </div>
-                  <div className="link-tag">LinkedIn</div>
-                </div>
-                <div>
-                  <div className="link-icon-sm">
-                    <FaExternalLinkAlt size={10} />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Link>
-          <Link href="https://www.figma.com/@tushar">
-            <a target="_blank">
-              <div className="link external">
-                <div className="group">
-                  <div className="link-icon">
-                    <FaFigma size={16} />
-                  </div>
-                  <div className="link-tag">Figma</div>
-                </div>
-                <div>
-                  <div className="link-icon-sm">
-                    <FaExternalLinkAlt size={10} />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Link>
-          <Link href="https://dribbble.com/tushardebnath">
-            <a target="_blank">
-              <div className="link external">
-                <div className="group">
-                  <div className="link-icon">
-                    <FaDribbble size={16} />
-                  </div>
-                  <div className="link-tag">Dribbble</div>
-                </div>
-                <div>
-                  <div className="link-icon-sm">
-                    <FaExternalLinkAlt size={10} />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Link>
-          <Link href="https://github.com/tushar7d">
-            <a target="_blank">
-              <div className="link external">
-                <div className="group">
-                  <div className="link-icon">
-                    <FaGithub size={16} />
-                  </div>
-                  <div className="link-tag">Github</div>
-                </div>
-                <div>
-                  <div className="link-icon-sm">
-                    <FaExternalLinkAlt size={10} />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Link>
+
+          <LinkOut
+            href="https://www.linkedin.com/in/tushardebnath/"
+            name="LinkedIn"
+            icon={<FaLinkedin size={16} />}
+          />
+          <LinkOut
+            href="https://www.figma.com/@tushar"
+            name="Figma"
+            icon={<FaFigma size={16} />}
+          />
+          <LinkOut
+            href="https://dribbble.com/tushardebnath"
+            name="Dribbble"
+            icon={<FaDribbble size={16} />}
+          />
+          <LinkOut
+            href="https://github.com/tushar7d"
+            name="GitHub"
+            icon={<FaGithub size={16} />}
+          />
         </div>
       </div>
       {props.children}
