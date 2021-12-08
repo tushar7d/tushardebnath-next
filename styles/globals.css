@@ -10,7 +10,7 @@
     @apply text-sm w-full   border-b  p-2;
   }
   .sidebar {
-    @apply w-52 h-screen border-r;
+    @apply w-[200px] h-screen border-r;
   }
   
   .sidebar-label {

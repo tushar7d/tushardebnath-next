@@ -4,14 +4,14 @@ import { useRouter } from "next/router";
 const LayoutSub = (props) => {
   const router = useRouter()
   return (
-    <div className="w-[350px] border-r ">
+    <div className="w-[400px] border-r ">
       {props.posts.map((post, index) => (
        
         <ActiveLink href={props.bs + post.slug} key={index}>
            
           <div
             className={router.asPath.startsWith(`${props.bs+post.slug}`) ? "link-sub-selected" : "link-sub"}
-            style={{ maxWidth: "540px" }}
+            
           >
             
             <h5 className="text-base font-medium">{post.frontMatter.title}</h5>
