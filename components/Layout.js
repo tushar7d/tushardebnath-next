@@ -47,37 +47,23 @@ const LinkOut = (props) => {
 };
 
 const Layout = (props) => {
-
   return (
     <div className="flex">
       <div className="sidebar flex-shrink-0">
+       
         <section className="logo">Tushar Debnath</section>
         <div className=" flex flex-col p-4">
-          <LinkIn
-            href="/"
-            name="Home"
-            icon={<FaHome size={16} />}
-          />
+          <LinkIn href="/" name="Home" icon={<FaHome size={16} />} />
 
-          <LinkIn 
-            href="/work"
-            name="Work"
-            icon={<MdWork size={16} />}
-          />
-          
+          <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} />
 
           <LinkIn
             href="/writing"
             name="Writing"
             icon={<FaPenNib size={16} />}
           />
-          
-          <LinkIn
-            href="/resume"
-            name="Resume"
-            icon={<FaFile size={16} />}
-          />
-          
+
+          <LinkIn href="/resume" name="Resume" icon={<FaFile size={16} />} />
 
           <div className="sidebar-label">Side Projects</div>
 
