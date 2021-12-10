@@ -12,12 +12,13 @@ import { FaExternalLinkAlt } from "@react-icons/all-files/fa/FaExternalLinkAlt";
 import { FaDribbble } from "@react-icons/all-files/fa/FaDribbble";
 import { MdWork } from "@react-icons/all-files/md/MdWork";
 
+
 const LinkIn = (props) => {
   const router = useRouter();
   return (
     <Link href={props.href}>
       <div
-        className={router.asPath === props.href ? "link link-selected" : "link"}
+        className={router.asPath.startsWith(props.href) ? "link link-selected" : "link"}
       >
         <div className="link-icon">{props.icon}</div>
         <div className="link-tag">{props.name}</div>
@@ -47,12 +48,21 @@ const LinkOut = (props) => {
 };
 
 const Navigation = () =>{
+  const router = useRouter();
   return(
     <div className="sidebar flex-shrink-0">
        
         <section className="logo">Tushar Debnath</section>
         <div className=" flex flex-col p-4">
-          <LinkIn href="/" name="Home" icon={<FaHome size={16} />} />
+        <Link href="/">
+      <div
+        className={router.asPath ==="/" ? "link link-selected" : "link"}
+      >
+        <div className="link-icon"><FaHome size={16} /></div>
+        <div className="link-tag">Home</div>
+      </div>
+    </Link>
+          
 
           <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} />
 
@@ -108,9 +118,12 @@ const Navigation = () =>{
 
 const Layout = (props) => {
   return (
-    <div className="flex ">
+    <div className="flex h-screen overflow-hidden ">
      <Navigation />
-      {props.children}
+     <div className=" overflow-hidden h-screen">
+     {props.children}
+     </div>
+      
     </div>
   );
 };

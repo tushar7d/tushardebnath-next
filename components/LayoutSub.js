@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const LayoutSub = (props) => {
   const router = useRouter()
   return (
-    <div className="w-[400px] border-r ">
+    <div className="w-[400px] border-r  overflow-scroll scrollbar-hide  h-screen">
       {props.posts.map((post, index) => (
        
         <ActiveLink href={props.bs + post.slug} key={index}>
