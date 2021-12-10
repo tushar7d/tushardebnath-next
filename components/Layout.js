@@ -46,10 +46,9 @@ const LinkOut = (props) => {
   );
 };
 
-const Layout = (props) => {
-  return (
-    <div className="flex">
-      <div className="sidebar flex-shrink-0">
+const Navigation = () =>{
+  return(
+    <div className="sidebar flex-shrink-0">
        
         <section className="logo">Tushar Debnath</section>
         <div className=" flex flex-col p-4">
@@ -102,6 +101,15 @@ const Layout = (props) => {
           />
         </div>
       </div>
+
+
+  )
+}
+
+const Layout = (props) => {
+  return (
+    <div className="flex ">
+     <Navigation />
       {props.children}
     </div>
   );
