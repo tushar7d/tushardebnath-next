@@ -1,33 +1,30 @@
-import ActiveLink from "./ActiveLink";
 import { useRouter } from "next/router";
+import Link from "next/link";
+
+
 
 const LayoutSub = (props) => {
-  const router = useRouter()
+  const router = useRouter();
   
-  
-  
+
   return (
     <div className="w-[350px] min-w-[350px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial">
-    
       {props.posts.map((post, index) => (
-       
-        <ActiveLink href={props.bs + post.slug} key={index}>
-           
+        <Link href={props.bs + post.slug} key={index}>
           <div
-            className={router.asPath.startsWith(`${props.bs+post.slug}`) ? "link-sub-selected" : "link-sub"}
-            
+            className={
+              router.asPath.startsWith(`${props.bs + post.slug}`)? "link-sub-selected": "link-sub"
+            }
           >
+            <small className="text-sm text-gray-400">{post.frontMatter.date}</small>
             
-            <h5 className="text-base font-medium">{post.frontMatter.title}</h5>
+            <h5 className="text-base font-semibold">{post.frontMatter.title}</h5>
             <p className="text-sm">{post.frontMatter.description}</p>
-            <p className="">
-              <small className="text-sm">{post.frontMatter.date}</small>
-            </p>
+            
+            
           </div>
-        </ActiveLink>
-      ))
-      
-      }
+        </Link>
+      ))}
     </div>
   );
 };

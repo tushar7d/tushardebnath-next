@@ -1,6 +1,11 @@
+import Head from "next/head";
+
 const Home = () => {
   return (
     <div className="flex-auto">
+      <Head>
+        <title>Tushar Debnath</title>
+      </Head>
       <div className="flex-auto mx-auto p-12">
         <img src="./td.png" width={200} className="mx-auto mb-4" />
         <div className=" text-4xl text-center font-bold mb-2 antialiased text-gray-800">

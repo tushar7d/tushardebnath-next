@@ -5,9 +5,11 @@ import path from "path";
 import matter from "gray-matter";
 import LayoutSub from "../../components/LayoutSub";
 
+
 const PostPage = ({ frontMatter: { title, date }, mdxSource, posts }) => {
   return (
     <div className="flex flex-auto  h-screen overflow-hidden">
+      
       <LayoutSub bs="/writing/" posts={posts} />
       
       <article className="p-12 mt-5 max-w-prose mx-auto prose overflow-scroll scrollbar-hide">
@@ -22,8 +24,8 @@ const PostPage = ({ frontMatter: { title, date }, mdxSource, posts }) => {
 
 const getStaticPaths = async () => {
   const files = fs.readdirSync(path.join("blog"));
-
-  const paths = files.map((filename) => ({
+  const filesr = files.reverse();
+  const paths = filesr.map((filename) => ({
     params: {
       slug: filename.replace(".mdx", ""),
     },
@@ -37,13 +39,13 @@ const getStaticPaths = async () => {
 
 const getStaticProps = async ({ params: { slug } }) => {
   const files = fs.readdirSync(path.join("blog"));
-
+  const filesr = files.reverse();
   const markdownWithMeta = fs.readFileSync(
     path.join("blog", slug + ".mdx"),
     "utf-8"
   );
 
-  const posts = files.map((filename) => {
+  const posts = filesr.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
       path.join("blog", filename),
       "utf-8"

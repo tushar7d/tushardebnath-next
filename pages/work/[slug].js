@@ -24,8 +24,8 @@ const PostPage = ({ frontMatter: { title, date }, mdxSource, posts }) => {
 
 const getStaticPaths = async () => {
   const files = fs.readdirSync(path.join("posts"));
-
-  const paths = files.map((filename) => ({
+  const filesr = files.reverse();
+  const paths = filesr.map((filename) => ({
     params: {
       slug: filename.replace(".mdx", ""),
     },
@@ -39,13 +39,13 @@ const getStaticPaths = async () => {
 
 const getStaticProps = async ({ params: { slug } }) => {
   const files = fs.readdirSync(path.join("posts"));
-
+  const filesr = files.reverse();
   const markdownWithMeta = fs.readFileSync(
     path.join("posts", slug + ".mdx"),
     "utf-8"
   );
 
-  const posts = files.map((filename) => {
+  const posts = filesr.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
       path.join("posts", filename),
       "utf-8"

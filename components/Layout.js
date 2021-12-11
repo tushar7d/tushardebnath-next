@@ -13,6 +13,7 @@ import { FaDribbble } from "@react-icons/all-files/fa/FaDribbble";
 import { MdWork } from "@react-icons/all-files/md/MdWork";
 
 
+
 const LinkIn = (props) => {
   const router = useRouter();
   return (
@@ -119,6 +120,7 @@ const Navigation = () =>{
 const Layout = (props) => {
   return (
     <div className="flex h-screen overflow-hidden ">
+      
      <Navigation />
      <div className=" overflow-hidden h-screen flex-auto">
      {props.children}

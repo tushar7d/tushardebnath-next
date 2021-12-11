@@ -8,7 +8,7 @@
 @layer components {
   
   .logo {
-    @apply text-sm w-full   border-b  p-2;
+    @apply text-base font-semibold text-center w-full    border-b  p-2;
   }
   .sidebar {
     @apply w-[200px] h-screen border-r;
@@ -24,10 +24,10 @@
     @apply   bg-black text-white hover:text-white hover:bg-black;
   }
   .link-sub {
-    @apply ease-in-out p-4 m-3  hover:rounded-md hover:bg-gray-100 border-b  hover:border-gray-100 ;
+    @apply ease-in-out  px-3  py-6  hover:bg-gray-100    ;
   }
   .link-sub-selected {
-    @apply ease-in-out p-4 m-3  bg-gray-100 rounded-md   border-b  border-gray-100 ;
+    @apply ease-in-out px-3  py-6   bg-gray-100      ;
   }
   .external {
     @apply   justify-between;
