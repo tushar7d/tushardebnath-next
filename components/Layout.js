@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { usePopper } from "react-popper";
 import { Popover } from "@headlessui/react";
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
@@ -130,12 +131,14 @@ const HNavigation = () => {
         ref={setPopperElement}
         style={styles.popper}
         {...attributes.popper}
-        className="w-1/2 m-2"
+        className="m-2"
       >
+        {({ close }) => (
         <div className=" bg-white  rounded-xl shadow-lg border  p-2">
-          <Link href="/">
+          <Link href="/" >
             <div
               className={router.asPath === "/" ? "link link-selected" : "link"}
+              onClick={close}
             >
               <div className="link-icon">
                 <FaHome size={16} />
@@ -143,23 +146,31 @@ const HNavigation = () => {
               <div className="link-tag">Home</div>
             </div>
           </Link>
-          <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} />
-
+          <div onClick={close}> 
+          <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} /></div>
+          <div onClick={close}> 
           <LinkIn
             href="/writing"
             name="Writing"
             icon={<FaPenNib size={16} />}
+            
           />
+
+          </div>
+          <div onClick={close}> 
           <LinkIn
             href="/figmaplugin"
             name="Figma Plugins"
             icon={<FaFigma size={16} />}
           />
+          </div>
+          <div onClick={close}> 
           <LinkIn
             href="/design-bites"
             name="Design Bites"
             icon={<FaCookieBite size={16} />}
           />
+          </div>
           <LinkOut
             href="https://www.linkedin.com/in/tushardebnath/"
             name="LinkedIn"
@@ -182,7 +193,8 @@ const HNavigation = () => {
           />
         </div>
 
-        <img src="/solutions.jpg" alt="" />
+        
+        )}
       </Popover.Panel>
     </Popover>
   );
@@ -191,10 +203,10 @@ const HNavigation = () => {
 const Layout = (props) => {
   return (
     <div className="md:flex md:h-screen overflow-hidden ">
-      <div className="hidden md:hidden lg:block">
+      <div className="hidden md:block lg:block">
         <Navigation />
       </div>
-      <div className="block md:hidden lg:hidden">
+      <div className="block  md:hidden">
         <HNavigation />
       </div>
       <div className="overflow-hidden h-screen flex-auto">{props.children}</div>
