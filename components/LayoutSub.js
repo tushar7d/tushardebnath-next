@@ -19,7 +19,7 @@ const LayoutSub = (props) => {
             <small className="text-sm text-gray-400">{post.frontMatter.date}</small>
             
             <h5 className="text-base font-semibold">{post.frontMatter.title}</h5>
-            <p className="text-sm">{post.frontMatter.description}</p>
+            <p className="text-sm font-normal text-gray-700">{post.frontMatter.description}</p>
             
             
           </div>
