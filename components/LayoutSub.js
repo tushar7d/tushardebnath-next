@@ -7,7 +7,7 @@ const LayoutSub = (props) => {
   
   
   return (
-    <div className="w-[400px] min-w-[400px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial">
+    <div className="w-[350px] min-w-[350px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial">
     
       {props.posts.map((post, index) => (
        
