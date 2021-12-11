@@ -1,21 +1,18 @@
 @tailwind base;
 
-@layer base {
-  html {
-    @apply font-sans;
-  }
+
   
-}
+
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,900&display=swap");
+
 
 
 @layer components {
   
   .logo {
-    @apply text-base font-semibold text-center w-full    border-b  p-2;
+    @apply text-base font-serif font-semibold text-center w-full    border-b  p-2;
   }
   .sidebar {
     @apply w-[200px] h-screen border-r;

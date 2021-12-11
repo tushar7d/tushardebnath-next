@@ -5,8 +5,9 @@ import matter from "gray-matter";
 
 const Writing = ({ posts }) => {
   return (
-    <div className=" overflow-hidden">
+    <div className=" overflow-hidden ">
       <LayoutSub bs="/writing/" posts={posts} />
+      
     </div>
   );
 };
