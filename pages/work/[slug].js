@@ -1,72 +1,71 @@
-import { serialize } from 'next-mdx-remote/serialize'
-import { MDXRemote } from 'next-mdx-remote'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import LayoutSub from '../../components/LayoutSub'
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import LayoutSub from "../../components/LayoutSub";
 
-
-
-const PostPage = ({ frontMatter: { title, date }, mdxSource,posts }) => {
+const PostPage = ({ frontMatter: { title, date }, mdxSource, posts }) => {
   return (
-    <div className="flex"> 
-    <LayoutSub bs="/work/" posts={posts} />
+    <div className="flex">
+      <LayoutSub bs="/work/" posts={posts} />
       <article className="p-12 mt-5 max-w-prose prose">
-      <h1>{title}</h1>
-      <h2>{date}</h2>
-      <MDXRemote  {...mdxSource} />
-    </article>
-
+        <h1>{title}</h1>
+        <h2>{date}</h2>
+        <MDXRemote {...mdxSource} />
+      </article>
     </div>
-    
-  )
-}
+  );
+};
 
 const getStaticPaths = async () => {
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join("posts"));
 
-  const paths = files.map(filename => ({
+  const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace('.mdx', '')
-    }
-  }))
+      slug: filename.replace(".mdx", ""),
+    },
+  }));
 
   return {
     paths,
-    fallback: false
-  }
-}
+    fallback: false,
+  };
+};
 
 const getStaticProps = async ({ params: { slug } }) => {
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join("posts"));
 
-  const markdownWithMeta = fs.readFileSync(path.join('posts',
-    slug + '.mdx'), 'utf-8')
+  const markdownWithMeta = fs.readFileSync(
+    path.join("posts", slug + ".mdx"),
+    "utf-8"
+  );
 
-    const posts = files.map(filename => {
-      const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
-      const { data: frontMatter } = matter(markdownWithMeta)
-  
-      return {
-        frontMatter,
-        slug: filename.split('.')[0]
-      }
-    })
+  const posts = files.map((filename) => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join("posts", filename),
+      "utf-8"
+    );
+    const { data: frontMatter } = matter(markdownWithMeta);
 
-  const { data: frontMatter, content } = matter(markdownWithMeta)
-  const mdxSource = await serialize(content)
- 
+    return {
+      frontMatter,
+      slug: filename.split(".")[0],
+    };
+  });
+
+  const { data: frontMatter, content } = matter(markdownWithMeta);
+  const mdxSource = await serialize(content);
+
   return {
     props: {
       frontMatter,
       slug,
       mdxSource,
-      posts
-    }
-    
-  }
- 
-}
+      posts,
+    },
+  };
+};
 
-export { getStaticProps, getStaticPaths }
-export default PostPage
+export { getStaticProps, getStaticPaths };
+export default PostPage;
