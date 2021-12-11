@@ -120,7 +120,7 @@ const Layout = (props) => {
   return (
     <div className="flex h-screen overflow-hidden ">
      <Navigation />
-     <div className=" overflow-hidden h-screen">
+     <div className=" overflow-hidden h-screen flex-auto">
      {props.children}
      </div>
       

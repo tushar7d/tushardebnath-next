@@ -7,13 +7,15 @@ import LayoutSub from "../../components/LayoutSub";
 
 const PostPage = ({ frontMatter: { title, date }, mdxSource, posts }) => {
   return (
-    <div className="flex  h-screen overflow-hidden">
+    <div className="flex flex-auto  h-screen overflow-hidden">
       <LayoutSub bs="/writing/" posts={posts} />
-      <article className="p-12 mt-5 max-w-prose prose overflow-scroll scrollbar-hide">
+      <div className="  flex-auto ">
+      <article className="p-12 mt-5 max-w-prose mx-auto prose overflow-scroll scrollbar-hide">
         <h1>{title}</h1>
         <h2>{date}</h2>
         <MDXRemote {...mdxSource} />
       </article>
+      </div>
     </div>
   );
 };
