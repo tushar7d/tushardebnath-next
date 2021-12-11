@@ -6,9 +6,7 @@
 
 
 @layer components {
-  .home-container {
-    @apply w-[calc(100vw-13rem)] 
-  }
+  
   .logo {
     @apply text-sm w-full   border-b  p-2;
   }
