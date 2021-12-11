@@ -25,11 +25,13 @@ const PostPage = ({ frontMatter: { title, date }, mdxSource,posts }) => {
 const getStaticPaths = async () => {
   const files = fs.readdirSync(path.join('blog'))
 
+ 
   const paths = files.map(filename => ({
     params: {
       slug: filename.replace('.mdx', '')
     }
   }))
+  
 
   return {
     paths,

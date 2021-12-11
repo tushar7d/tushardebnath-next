@@ -8,7 +8,7 @@ const LayoutSub = (props) => {
   return (
     <div className="w-[400px] border-r  overflow-scroll scrollbar-hide  h-screen">
     
-      {props.posts\.map((post, index) => (
+      {props.posts.map((post, index) => (
        
         <ActiveLink href={props.bs + post.slug} key={index}>
            
