@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { usePopper } from "react-popper";
+import { Popover } from "@headlessui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
@@ -9,7 +12,6 @@ import { FaPenNib } from "@react-icons/all-files/fa/FaPenNib";
 import { FaFile } from "@react-icons/all-files/fa/FaFile";
 import { FaExternalLinkAlt } from "@react-icons/all-files/fa/FaExternalLinkAlt";
 import { HiMenu } from "@react-icons/all-files/hi/HiMenu";
-import { Popover } from "@headlessui/react";
 
 import { FaDribbble } from "@react-icons/all-files/fa/FaDribbble";
 import { MdWork } from "@react-icons/all-files/md/MdWork";
@@ -115,17 +117,22 @@ const Navigation = () => {
 
 const HNavigation = () => {
   const router = useRouter();
+  let [referenceElement, setReferenceElement] = useState();
+  let [popperElement, setPopperElement] = useState();
+  let { styles, attributes } = usePopper(referenceElement, popperElement);
   return (
-    <Popover className="relative p-4">
-      <Popover.Button>
+    <Popover className="p-4">
+      <Popover.Button ref={setReferenceElement}>
         <HiMenu size={32} />
       </Popover.Button>
 
-      <Popover.Panel className="absolute z-10">
+      <Popover.Panel
+        ref={setPopperElement}
+        style={styles.popper}
+        {...attributes.popper}
+        className="w-1/2 m-2"
+      >
         <div className=" bg-white  rounded-xl shadow-lg border  p-2">
-          
-
-         
           <Link href="/">
             <div
               className={router.asPath === "/" ? "link link-selected" : "link"}
@@ -144,35 +151,35 @@ const HNavigation = () => {
             icon={<FaPenNib size={16} />}
           />
           <LinkIn
-          href="/figmaplugin"
-          name="Figma Plugins"
-          icon={<FaFigma size={16} />}
-        />
-        <LinkIn
-          href="/design-bites"
-          name="Design Bites"
-          icon={<FaCookieBite size={16} />}
-        />
-        <LinkOut
-          href="https://www.linkedin.com/in/tushardebnath/"
-          name="LinkedIn"
-          icon={<FaLinkedin size={16} />}
-        />
-        <LinkOut
-          href="https://www.figma.com/@tushar"
-          name="Figma"
-          icon={<FaFigma size={16} />}
-        />
-        <LinkOut
-          href="https://dribbble.com/tushardebnath"
-          name="Dribbble"
-          icon={<FaDribbble size={16} />}
-        />
-        <LinkOut
-          href="https://github.com/tushar7d"
-          name="GitHub"
-          icon={<FaGithub size={16} />}
-        />
+            href="/figmaplugin"
+            name="Figma Plugins"
+            icon={<FaFigma size={16} />}
+          />
+          <LinkIn
+            href="/design-bites"
+            name="Design Bites"
+            icon={<FaCookieBite size={16} />}
+          />
+          <LinkOut
+            href="https://www.linkedin.com/in/tushardebnath/"
+            name="LinkedIn"
+            icon={<FaLinkedin size={16} />}
+          />
+          <LinkOut
+            href="https://www.figma.com/@tushar"
+            name="Figma"
+            icon={<FaFigma size={16} />}
+          />
+          <LinkOut
+            href="https://dribbble.com/tushardebnath"
+            name="Dribbble"
+            icon={<FaDribbble size={16} />}
+          />
+          <LinkOut
+            href="https://github.com/tushar7d"
+            name="GitHub"
+            icon={<FaGithub size={16} />}
+          />
         </div>
 
         <img src="/solutions.jpg" alt="" />
