@@ -1,30 +1,34 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-   
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+
   theme: {
     extend: {
-      fontFamily:{
-        'sans': ['"Poppins"', ...defaultTheme.fontFamily.sans]
+      fontFamily: {
+        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
       },
-      colors: { 
-        'page-black':'#121212'
+      colors: {
+        "page-black": "#121212",
       },
-      typography:{
-        DEFAULT:{
-          css:{
-            a:{
-              textDecoration: "none"
-            }
-          }
-        }
-      }
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              textDecoration: "none",
+            },
+          },
+        },
+      },
     },
-    
   },
   variants: {
     extend: {},
   },
-  plugins: [require('tailwind-scrollbar-hide'), require('@tailwindcss/typography'),]
-}
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("@tailwindcss/typography"),
+  ],
+};
