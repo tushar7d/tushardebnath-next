@@ -8,7 +8,8 @@ const LayoutSub = (props) => {
   
 
   return (
-    <div className="w-[350px] min-w-[350px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial">
+    <div className="w-[350px] min-w-[350px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial hidden md:hidden lg:block  ">
+      
       {props.posts.map((post, index) => (
         <Link href={props.bs + post.slug} key={index}>
           <div
@@ -25,6 +26,7 @@ const LayoutSub = (props) => {
           </div>
         </Link>
       ))}
+      
     </div>
   );
 };

@@ -32,16 +32,8 @@ const Home = () => {
       <Head>
         <title>Tushar Debnath</title>
       </Head>
-      <div className="bg-black w-full h-60 ">
-        <Canvas className="z-10">
-          <ambientLight />
-          <pointLight position={[10, 10, 10]} />
-          <Box position={[-1.2, 0, 0]} />
-          <Box position={[1.2, 0, 0]} />
-        </Canvas>
-        
-      </div>
-      <div className="flex-auto mx-auto p-12  -m-40  z-50 ">
+      
+      <div className="flex-auto mx-auto p-12  z-50 ">
         <img src="./td.png" width={200} className="mx-auto mb-4" />
         <div className=" font-serif text-6xl text-center font-bold mb-2 antialiased text-gray-800">
           Tushar Debnath
