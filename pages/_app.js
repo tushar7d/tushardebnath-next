@@ -7,10 +7,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className=" overflow-hidden h-screen w-screen">
       <Head>
-        <title>Tushar Debnath</title>
+        <title>Tushar</title>
       </Head>
       <Layout>
-        <Component {...pageProps} />
+       <Component {...pageProps} />
       </Layout>
     </div>
   );
