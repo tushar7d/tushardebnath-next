@@ -20,7 +20,9 @@ const Writing = ({ posts }) => {
 export const getStaticProps = async () => {
   const files = fs.readdirSync(path.join('blog'))
 
-  const posts = files.map(filename => {
+  const filesr = files.reverse()
+
+  const posts = filesr.map(filename => {
     const markdownWithMeta = fs.readFileSync(path.join('blog', filename), 'utf-8')
     const { data: frontMatter } = matter(markdownWithMeta)
 

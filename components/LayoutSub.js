@@ -3,8 +3,9 @@ import { useRouter } from "next/router";
 
 const LayoutSub = (props) => {
   const router = useRouter()
-  let collections = props.posts.reverse()
-  console.log(collections)
+  
+  
+  
   return (
     <div className="w-[400px] border-r  overflow-scroll scrollbar-hide  h-screen">
     
