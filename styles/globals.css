@@ -1,4 +1,11 @@
 @tailwind base;
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+  
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -21,7 +28,7 @@
     @apply  text-gray-800 text-sm my-1 p-2 hover:bg-gray-200 rounded-md flex items-center align-baseline cursor-pointer;
   }
   .link-selected {
-    @apply   bg-black text-white hover:text-white hover:bg-black;
+    @apply  bg-black text-white hover:text-white hover:bg-black;
   }
   .link-sub {
     @apply ease-in-out  px-3  py-6  hover:bg-gray-100    ;

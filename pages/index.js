@@ -6,9 +6,11 @@ const Home = () => {
       <Head>
         <title>Tushar Debnath</title>
       </Head>
-      <div className="flex-auto mx-auto p-12">
+      <div className="bg-black w-full h-60"></div>
+      <div className="flex-auto mx-auto p-12  -m-40">
+        
         <img src="./td.png" width={200} className="mx-auto mb-4" />
-        <div className=" text-4xl text-center font-bold mb-2 antialiased text-gray-800">
+        <div className=" font-serif text-6xl text-center font-bold mb-2 antialiased text-gray-800">
           Tushar Debnath
         </div>
 

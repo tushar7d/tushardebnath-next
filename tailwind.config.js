@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        serif:['Pacifico',...defaultTheme.fontFamily.serif]
       },
       colors: {
         "page-black": "#121212",
