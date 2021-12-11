@@ -118,7 +118,7 @@ const HNavigation = () => {
   return (
     <Popover className="relative p-4">
       <Popover.Button>
-        <HiMenu size={24} />
+        <HiMenu size={32} />
       </Popover.Button>
 
       <Popover.Panel className="absolute z-10">
