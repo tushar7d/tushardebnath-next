@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
     <div className=" md:overflow-hidden md:h-screen md:w-screen">
       <Head>
         <title>Tushar</title>
-        
       </Head>
       <Layout>
         <Component {...pageProps} />

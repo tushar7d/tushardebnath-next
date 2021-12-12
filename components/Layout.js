@@ -123,7 +123,7 @@ const HNavigation = () => {
   let { styles, attributes } = usePopper(referenceElement, popperElement);
 
   return (
-    <Popover className="p-2 bg-white shadow w-screen">
+    <Popover className="p-2 bg-white shadow-sm w-screen">
       <Popover.Button ref={setReferenceElement}>
         <HiMenu size={32} />
       </Popover.Button>
