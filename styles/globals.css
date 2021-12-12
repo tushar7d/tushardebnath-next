@@ -12,10 +12,10 @@
 @layer components {
   
   .logo {
-    @apply text-base font-serif font-semibold text-center w-full    border-b  p-2;
+    @apply text-base font-serif font-semibold text-center w-full scrollbar-hide    border-b  p-2;
   }
   .sidebar {
-    @apply w-[200px] h-screen border-r;
+    @apply w-[200px] h-screen border-r overflow-scroll;
   }
   
   .sidebar-label {
