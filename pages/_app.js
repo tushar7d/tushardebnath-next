@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className=" overflow-hidden h-screen w-screen">
+    <div className=" md:overflow-hidden md:h-screen md:w-screen">
       <Head>
         <title>Tushar</title>
         

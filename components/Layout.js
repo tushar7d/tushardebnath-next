@@ -155,7 +155,6 @@ const HNavigation = () => {
             icon={<FaPenNib size={16} />}
             
           />
-
           </div>
           <div onClick={close}> 
           <LinkIn
@@ -202,14 +201,14 @@ const HNavigation = () => {
 
 const Layout = (props) => {
   return (
-    <div className="md:flex md:h-screen overflow-hidden ">
+    <div className="md:flex md:h-screen md:overflow-hidden ">
       <div className="hidden md:block lg:block">
         <Navigation />
       </div>
-      <div className="block  md:hidden">
+      <div className="block sticky  md:hidden">
         <HNavigation />
       </div>
-      <div className="overflow-hidden h-screen flex-auto">{props.children}</div>
+      <div className="md:overflow-hidden md:h-screen flex-auto">{props.children}</div>
     </div>
   );
 };
