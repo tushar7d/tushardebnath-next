@@ -121,8 +121,9 @@ const HNavigation = () => {
   let [referenceElement, setReferenceElement] = useState();
   let [popperElement, setPopperElement] = useState();
   let { styles, attributes } = usePopper(referenceElement, popperElement);
+
   return (
-    <Popover className="p-4">
+    <Popover className="p-2 bg-white shadow w-screen">
       <Popover.Button ref={setReferenceElement}>
         <HiMenu size={32} />
       </Popover.Button>
@@ -134,65 +135,65 @@ const HNavigation = () => {
         className="m-2"
       >
         {({ close }) => (
-        <div className=" bg-white  rounded-xl shadow-lg border  p-2">
-          <Link href="/" >
-            <div
-              className={router.asPath === "/" ? "link link-selected" : "link"}
-              onClick={close}
-            >
-              <div className="link-icon">
-                <FaHome size={16} />
+          <div className=" bg-white  rounded-xl shadow-lg border  p-2">
+            <Link href="/">
+              <div
+                className={
+                  router.asPath === "/" ? "link link-selected" : "link"
+                }
+                onClick={close}
+              >
+                <div className="link-icon">
+                  <FaHome size={16} />
+                </div>
+                <div className="link-tag">Home</div>
               </div>
-              <div className="link-tag">Home</div>
+            </Link>
+            <div onClick={close}>
+              <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} />
             </div>
-          </Link>
-          <div onClick={close}> 
-          <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} /></div>
-          <div onClick={close}> 
-          <LinkIn
-            href="/writing"
-            name="Writing"
-            icon={<FaPenNib size={16} />}
-            
-          />
+            <div onClick={close}>
+              <LinkIn
+                href="/writing"
+                name="Writing"
+                icon={<FaPenNib size={16} />}
+              />
+            </div>
+            <div onClick={close}>
+              <LinkIn
+                href="/figmaplugin"
+                name="Figma Plugins"
+                icon={<FaFigma size={16} />}
+              />
+            </div>
+            <div onClick={close}>
+              <LinkIn
+                href="/design-bites"
+                name="Design Bites"
+                icon={<FaCookieBite size={16} />}
+              />
+            </div>
+            <LinkOut
+              href="https://www.linkedin.com/in/tushardebnath/"
+              name="LinkedIn"
+              icon={<FaLinkedin size={16} />}
+            />
+            <LinkOut
+              href="https://www.figma.com/@tushar"
+              name="Figma"
+              icon={<FaFigma size={16} />}
+            />
+            <LinkOut
+              href="https://dribbble.com/tushardebnath"
+              name="Dribbble"
+              icon={<FaDribbble size={16} />}
+            />
+            <LinkOut
+              href="https://github.com/tushar7d"
+              name="GitHub"
+              icon={<FaGithub size={16} />}
+            />
           </div>
-          <div onClick={close}> 
-          <LinkIn
-            href="/figmaplugin"
-            name="Figma Plugins"
-            icon={<FaFigma size={16} />}
-          />
-          </div>
-          <div onClick={close}> 
-          <LinkIn
-            href="/design-bites"
-            name="Design Bites"
-            icon={<FaCookieBite size={16} />}
-          />
-          </div>
-          <LinkOut
-            href="https://www.linkedin.com/in/tushardebnath/"
-            name="LinkedIn"
-            icon={<FaLinkedin size={16} />}
-          />
-          <LinkOut
-            href="https://www.figma.com/@tushar"
-            name="Figma"
-            icon={<FaFigma size={16} />}
-          />
-          <LinkOut
-            href="https://dribbble.com/tushardebnath"
-            name="Dribbble"
-            icon={<FaDribbble size={16} />}
-          />
-          <LinkOut
-            href="https://github.com/tushar7d"
-            name="GitHub"
-            icon={<FaGithub size={16} />}
-          />
-        </div>
-
-        
         )}
       </Popover.Panel>
     </Popover>
@@ -205,10 +206,12 @@ const Layout = (props) => {
       <div className="hidden md:block lg:block">
         <Navigation />
       </div>
-      <div className="block sticky  md:hidden">
+      <header className="block sticky top-0 z-50  md:hidden">
         <HNavigation />
+      </header>
+      <div className="relative md:overflow-hidden md:h-screen flex-auto">
+        {props.children}
       </div>
-      <div className="md:overflow-hidden md:h-screen flex-auto">{props.children}</div>
     </div>
   );
 };
