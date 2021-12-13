@@ -17,7 +17,7 @@ import Link from "next/link";
 const Navigation = () => {
     const router = useRouter();
     return (
-      <div className="sidebar flex-shrink-0">
+      <div className="sidebar flex-shrink-0 scrollbar-hide">
         <section className="logo">Tushar Debnath</section>
         <div className=" flex flex-col p-4">
           <Link href="/">
