@@ -17,9 +17,9 @@ const Home = () => {
           Product Designer and Design Technologist.
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 max-w-5xl mx-auto mt-12">
-        <div className="bg-gray-500 h-12">hello</div>
-        <div className="bg-gray-500 h-12">hello</div>
-        <div className="bg-gray-500 h-12">hello</div>
+        <div className="bg-gray-100 h-12 p-12">Section</div>
+        <div className="bg-gray-100 h-12 p-12">Section</div>
+        <div className="bg-gray-100 h-12 p-12">Section</div>
 
         </div>
         
