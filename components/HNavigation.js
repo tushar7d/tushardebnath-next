@@ -28,10 +28,13 @@ const HNavigation = () => {
     let { styles, attributes } = usePopper(referenceElement, popperElement);
   
     return (
-      <Popover className="p-2 bg-white shadow-sm w-screen">
+      <Popover className="p-2 flex align-middle bg-white shadow-sm w-screen">
         <Popover.Button ref={setReferenceElement}>
           <HiMenu size={32} />
         </Popover.Button>
+        <div className=" pt-1 ml-4 font-semibold ">
+          {router.asPath.slice(1)}
+        </div>
   
         <Popover.Panel
           ref={setPopperElement}
