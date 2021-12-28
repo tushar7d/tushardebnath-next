@@ -1,20 +1,21 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { getSanityContent } from "../../utils/sanity";
-import  SubLayout from '../../components/SubLayout';
+import SubLayout from "../../components/SubLayout";
 
 import Callout from "../../components/Callout";
 
 const components = { Callout };
 
-export default function TestPage({ source,po }) {
+export default function TestPage({ source, po }) {
   return (
     <div className="flex flex-auto md:h-screen overflow-hidden">
-      <div className="hidden lg:block"><SubLayout src="/projects/" pages={po} /></div>
+      <div className="hidden lg:block">
+        <SubLayout src="/projects/" pages={po} />
+      </div>
       <article className="p-12 mt-6 max-w-prose mx-auto prose overflow-scroll scrollbar-hide">
-      <MDXRemote {...source} components={components} />
+        <MDXRemote {...source} components={components} />
       </article>
-      
     </div>
   );
 }
