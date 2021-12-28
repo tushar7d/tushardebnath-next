@@ -9,7 +9,7 @@ export default function Index({ pages }) {
       <ul>
         {pages.map(({ title, slug }) => (
           <li key={slug}>
-            <Link href={`/${slug}`}>
+            <Link href={`/sanity/${slug}`}>
               <a>{title}</a>
             </Link>
           </li>
