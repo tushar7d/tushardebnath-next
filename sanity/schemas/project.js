@@ -1,6 +1,6 @@
 export default {
-    name: 'page',
-    title: 'Blog',
+    name: 'project',
+    title: 'Project',
     type: 'document',
     fields: [
       {
@@ -33,6 +33,15 @@ export default {
           source: 'title',
           maxLength: 96,
         },
+      },
+      {
+        title: 'Tags',
+        name: 'tags',
+        type: 'array',
+        of: [{type: 'string'}],
+        options: {
+          layout: 'tags'
+        }
       },
       {
         name: 'content',
