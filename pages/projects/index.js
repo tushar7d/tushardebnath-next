@@ -6,7 +6,7 @@ export default function Index({ pages }) {
   const router = useRouter();
   return (
     <div>
-      <SubLayout pages={pages} />
+      <SubLayout src="/projects/" pages={pages} />
     </div>
   );
 }
