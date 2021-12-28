@@ -10,7 +10,7 @@ const components = { Callout };
 export default function TestPage({ source,po }) {
   return (
     <div className="flex flex-auto md:h-screen overflow-hidden">
-      <div className="hidden lg:block"><SubLayout src="/projects/" pages={po} /></div>
+      <div className="hidden lg:block"><SubLayout src="/writing/" pages={po} /></div>
       <article className="p-12 mt-6 max-w-prose mx-auto prose overflow-scroll scrollbar-hide">
       <MDXRemote {...source} components={components} />
       </article>
@@ -21,8 +21,8 @@ export default function TestPage({ source,po }) {
 export async function getStaticPaths() {
   const data = await getSanityContent({
     query: `
-      query AllProject {
-        allProject {
+      query AllPage {
+        allPage {
           slug {
             current
           }
@@ -31,10 +31,10 @@ export async function getStaticPaths() {
     `,
   });
 
-  const pages = data.allProject;
+  const pages = data.allPage;
 
   return {
-    paths: pages.map((p) => `/projects/${p.slug.current}`),
+    paths: pages.map((p) => `/writing/${p.slug.current}`),
     fallback: false,
   };
 }
@@ -43,7 +43,7 @@ export async function getStaticProps(context) {
   const data = await getSanityContent({
     query: `
       query ProjectBySlug($slug: String!) {
-        allProject(where: { slug: { current: { eq: $slug } } }) {
+        allPage(where: { slug: { current: { eq: $slug } } }) {
           title
           content
       }
@@ -55,8 +55,8 @@ export async function getStaticProps(context) {
   });
   const datad = await getSanityContent({
     query: `
-    query AllProject {
-      allProject {
+    query AllPage {
+      allPage {
         publishDate
         title
         sub
@@ -69,14 +69,14 @@ export async function getStaticProps(context) {
     `,
   });
 
-  const po = datad.allProject.map((page) => ({
+  const po = datad.allPage.map((page) => ({
     title: page.title,
     slug: page.slug.current,
     date: page.publishDate,
     sub: page.sub,
   }));
 
-  const source = data.allProject[0].content;
+  const source = data.allPage[0].content;
 
   const mdxSource = await serialize(source);
   return { props: { source: mdxSource, po } };

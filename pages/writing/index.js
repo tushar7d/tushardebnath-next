@@ -7,7 +7,7 @@ export default function Index({ pages }) {
   const router = useRouter();
   return (
     <div>
-      <SubLayout pages={pages} />
+      <SubLayout src="/writing/" pages={pages} />
     </div>
   );
 }
@@ -15,8 +15,8 @@ export default function Index({ pages }) {
 export async function getStaticProps() {
   const data = await getSanityContent({
     query: `
-    query AllProject {
-      allProject {
+    query AllPage {
+      allPage {
         publishDate
         title
         sub
@@ -29,7 +29,7 @@ export async function getStaticProps() {
     `,
   });
 
-  const pages = data.allProject.map((page) => ({
+  const pages = data.allPage.map((page) => ({
     title: page.title,
     slug: page.slug.current,
     date: page.publishDate,

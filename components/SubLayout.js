@@ -1,17 +1,17 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const SubLayout = ({ pages }) => {
+const SubLayout = ({ pages,src }) => {
   const router = useRouter();
 
   return (
     <div>
       <div className=" overflow-scroll h-screen scrollbar-hide  flex-initial block  lg:hidden  divide-y ">
         {pages.map(({ title, slug, date, sub }) => (
-          <Link href={`/projects/${slug}`} key={slug}>
+          <Link href={`${src}${slug}`} key={slug}>
             <div
               className={
-                router.asPath.startsWith(`/projects/${slug}`)
+                router.asPath.startsWith(`${src}${slug}`)
                   ? "link-sub-selected"
                   : "link-sub"
               }
@@ -26,10 +26,10 @@ const SubLayout = ({ pages }) => {
       </div>
       <div className="w-[350px] min-w-[350px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial hidden md:hidden lg:block  ">
         {pages.map(({ title, slug, date, sub }) => (
-          <Link href={`/projects/${slug}`} key={slug}>
+          <Link href={`${src}${slug}`} key={slug}>
             <div
               className={
-                router.asPath.startsWith(`/projects/${slug}`)
+                router.asPath.startsWith(`${src}${slug}`)
                   ? "link-sub-selected"
                   : "link-sub"
               }
