@@ -1,20 +1,14 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { getSanityContent } from "../../utils/sanity";
+import SubLayout from "../../components/SubLayout";
 
 export default function Index({ pages }) {
+  const router = useRouter();
   return (
     <div>
-      <h1>This Site Loads MDX From Sanity.io</h1>
-      <p>View any of these pages to see it in action:</p>
-      <ul>
-        {pages.map(({ title, slug }) => (
-          <li key={slug}>
-            <Link href={`/projects/${slug}`}>
-              <a>{title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      
+      <SubLayout pages={pages} />
     </div>
   );
 }
@@ -24,7 +18,9 @@ export async function getStaticProps() {
     query: `
     query AllProject {
       allProject {
+        publishDate
         title
+        sub
         slug {
           current
         }
@@ -37,6 +33,8 @@ export async function getStaticProps() {
   const pages = data.allProject.map((page) => ({
     title: page.title,
     slug: page.slug.current,
+    date: page.publishDate,
+    sub: page.sub,
   }));
 
   return {
