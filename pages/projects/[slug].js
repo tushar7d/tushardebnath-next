@@ -13,7 +13,7 @@ export default function TestPage({ source, po }) {
       <div className="hidden lg:block">
         <SubLayout src="/projects/" pages={po} />
       </div>
-      <article className="p-12 mt-6 max-w-prose mx-auto prose overflow-scroll scrollbar-hide">
+      <article className="mdx">
         <MDXRemote {...source} components={components} />
       </article>
     </div>

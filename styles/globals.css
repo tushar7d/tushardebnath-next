@@ -4,6 +4,10 @@
 
 
 @layer components {
+
+  .mdx {
+    @apply p-12 mt-6 max-w-6xl  w-full mx-auto prose overflow-scroll scrollbar-hide;
+  }
   
   .logo {
     @apply text-base font-serif font-semibold text-center w-full scrollbar-hide    border-b  p-2;
