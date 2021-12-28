@@ -31,7 +31,7 @@ const Navigation = () => {
             </div>
           </Link>
   
-          <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} />
+          <LinkIn href="/projects" name="Projects" icon={<MdWork size={16} />} />
   
           <LinkIn href="/writing" name="Writing" icon={<FaPenNib size={16} />} />
   
