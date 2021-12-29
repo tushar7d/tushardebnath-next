@@ -12,7 +12,6 @@ const Home = () => {
         <div className=" flex justify-center mb-4 ">
           <Image src="/td.png" width={200} height={200} loading="lazy" />
         </div>
-
         <div className=" font-serif text-4xl md:text-5xl  text-center font-bold mb-2 antialiased ">
           Tushar Debnath
         </div>
