@@ -20,15 +20,19 @@ const Home = () => {
         </div>
         <div className=" grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2  gap-3 max-w-5xl mx-auto mt-4 p-4">
           <div className="p-4 bg-indigo-100 rounded-xl">
-            <h1 className="text-xl font-medium">About</h1>
+            <h1 className="text-xl font-medium">Work</h1>
             <p>heloo this is awesome</p>
           </div>
           <div className="p-4 bg-indigo-100 rounded-xl">
-            <h1 className="text-xl font-medium">About</h1>
+            <h1 className="text-xl font-medium">Skills</h1>
             <p>heloo this is awesome</p>
           </div>
           <div className="p-4 bg-indigo-100 rounded-xl">
-            <h1 className="text-xl font-medium">About</h1>
+            <h1 className="text-xl font-medium">Education</h1>
+            <p>heloo this is awesome</p>
+          </div>
+          <div className="p-4 bg-indigo-100 rounded-xl">
+            <h1 className="text-xl font-medium">About me</h1>
             <p>heloo this is awesome</p>
           </div>
         </div>
