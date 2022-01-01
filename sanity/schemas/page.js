@@ -4,6 +4,12 @@ export default {
     type: 'document',
     fields: [
       {
+        name: "order",
+        title: "Order",
+        type: "number",
+        hidden: true,
+      },
+      {
         title: 'Publish Date',
         name: 'publishDate',
         type: 'date',
@@ -40,4 +46,12 @@ export default {
         type: 'markdown',
       },
     ],
+    orderings: [
+      {
+        title: "Manual order",
+        name: "manualOrder",
+        by: [{ field: "order", direction: "asc" }],
+      },
+    ],
+    
   };

@@ -1,19 +1,19 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { getSanityContent } from "../../utils/sanity";
-import SubLayout from "../../components/SubLayout";
+import ProjectLayout from '../../components/ProjectLayout';
 
 import Callout from "../../components/Callout";
 
 const components = { Callout };
 
 export default function TestPage({ source, po }) {
-  console.log(po)
-  console.log(source)
+ 
+
   return (
     <div className="flex flex-auto md:h-screen overflow-hidden">
       <div className="hidden lg:block">
-        <SubLayout src="/projects/" pages={po} />
+        <ProjectLayout src="/projects/" pages={po} />
       </div>
       <article className="mdx">
         <MDXRemote {...source} components={components} />
@@ -63,7 +63,7 @@ export async function getStaticProps(context) {
   const datad = await getSanityContent({
     query: `
     query AllProject {
-      allProject {
+      allProject(sort: [{ order: ASC }]) {
         publishDate
         title
         sub

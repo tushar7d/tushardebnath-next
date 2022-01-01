@@ -58,7 +58,7 @@ const HNavigation = () => {
                 </div>
               </Link>
               <div onClick={close}>
-                <LinkIn href="/work" name="Work" icon={<MdWork size={16} />} />
+                <LinkIn href="/projects" name="Projects" icon={<MdWork size={16} />} />
               </div>
               <div onClick={close}>
                 <LinkIn

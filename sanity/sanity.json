@@ -15,7 +15,8 @@
     "markdown",
     "@sanity/dashboard",
     "vercel-deploy",
-    "media-library"
+    "media-library",
+    "order-documents"
   ],
   "env": {
     "development": {

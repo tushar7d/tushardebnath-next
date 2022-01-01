@@ -1,12 +1,13 @@
 import { useRouter } from "next/router";
 import { getSanityContent } from "../../utils/sanity";
 import SubLayout from "../../components/SubLayout";
+import ProjectLayout from '../../components/ProjectLayout';
 
 export default function Index({ pages }) {
   const router = useRouter();
   return (
     <div>
-      <SubLayout src="/projects/" pages={pages} />
+      <ProjectLayout src="/projects/" pages={pages} />
     </div>
   );
 }
