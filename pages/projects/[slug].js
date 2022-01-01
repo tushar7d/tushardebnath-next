@@ -8,6 +8,8 @@ import Callout from "../../components/Callout";
 const components = { Callout };
 
 export default function TestPage({ source, po }) {
+  console.log(po)
+  console.log(source)
   return (
     <div className="flex flex-auto md:h-screen overflow-hidden">
       <div className="hidden lg:block">
@@ -15,7 +17,11 @@ export default function TestPage({ source, po }) {
       </div>
       <article className="mdx">
         <MDXRemote {...source} components={components} />
+      <a>Previous</a>
+      <a>Next</a>
       </article>
+     
+
     </div>
   );
 }
