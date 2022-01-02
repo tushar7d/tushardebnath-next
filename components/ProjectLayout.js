@@ -11,8 +11,8 @@ const SubLayout = (props) => {
           <div
             className={
               router.asPath.startsWith(`${props.src}${slug}`)
-                ? "ease-in-out px-2  py-2  bg-gray-50 "
-                : "ease-in-out  px-2  py-2 hover:bg-gray-50"
+                ? "ease-in-out px-2  py-6  bg-gray-50 "
+                : "ease-in-out  px-2  py-6 hover:bg-gray-50"
             }
           >
             <div className="flex items-center justify-between space-x-2">
