@@ -15,7 +15,7 @@ const SubLayout = (props) => {
                 : "ease-in-out  px-2  py-2 hover:bg-gray-50"
             }
           >
-            <div className="flex justify-between space-x-2">
+            <div className="flex items-center justify-between space-x-2">
            
               <div >
               <small className="text-xs text-gray-500 uppercase ">{type}</small>
