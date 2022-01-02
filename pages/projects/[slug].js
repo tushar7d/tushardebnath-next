@@ -6,14 +6,15 @@ import Callout from "../../components/Callout";
 
 const components = { Callout };
 
-export default function TestPage({ source, po,img }) {
+export default function TestPage({ source, po, img }) {
   return (
     <div className="flex flex-auto overflow-hidden md:h-screen">
       <div className="hidden lg:block">
         <ProjectLayout src="/projects/" projects={po} />
       </div>
-      <article className="mdx">
-        <img src={img} />
+      <article className="w-full max-w-6xl p-8 mx-auto overflow-scroll prose scrollbar-hide">
+        <img className="" src={img} />
+
         <MDXRemote {...source} components={components} />
         <a>Previous</a>
         <a>Next</a>
@@ -96,5 +97,5 @@ export async function getStaticProps(context) {
   const img = data.allProject[0].banner.asset.url;
 
   const mdxSource = await serialize(source);
-  return { props: { source: mdxSource, po,img } };
+  return { props: { source: mdxSource, po, img } };
 }
