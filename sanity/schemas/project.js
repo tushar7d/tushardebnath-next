@@ -4,6 +4,12 @@ export default {
   type: "document",
   fields: [
     {
+      name: "pname",
+      title: "Project Name",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "order",
       title: "Order",
       type: "number",
@@ -22,12 +28,7 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     
-    {
-      name: "pname",
-      title: "Project Name",
-      type: "string",
-      validation: (Rule) => Rule.required(),
-    },
+  
     {
       name: "desc",
       title: "Description",
