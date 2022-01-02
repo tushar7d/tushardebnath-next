@@ -1,30 +1,27 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { getSanityContent } from "../../utils/sanity";
-import ProjectLayout from '../../components/ProjectLayout';
-
+import ProjectLayout from "../../components/ProjectLayout";
 import Callout from "../../components/Callout";
 
 const components = { Callout };
 
-export default function TestPage({ source, po }) {
- 
-
+export default function TestPage({ source, po,img }) {
   return (
-    <div className="flex flex-auto md:h-screen overflow-hidden">
+    <div className="flex flex-auto overflow-hidden md:h-screen">
       <div className="hidden lg:block">
-        <ProjectLayout src="/projects/" pages={po} />
+        <ProjectLayout src="/projects/" projects={po} />
       </div>
       <article className="mdx">
+        <img src={img} />
         <MDXRemote {...source} components={components} />
-      <a>Previous</a>
-      <a>Next</a>
+        <a>Previous</a>
+        <a>Next</a>
       </article>
-     
-
     </div>
   );
 }
+
 export async function getStaticPaths() {
   const data = await getSanityContent({
     query: `
@@ -51,8 +48,12 @@ export async function getStaticProps(context) {
     query: `
       query ProjectBySlug($slug: String!) {
         allProject(where: { slug: { current: { eq: $slug } } }) {
-          title
           content
+          banner{
+            asset{
+              url
+            }
+          }
       }
      }
     `,
@@ -63,10 +64,17 @@ export async function getStaticProps(context) {
   const datad = await getSanityContent({
     query: `
     query AllProject {
-      allProject(sort: [{ order: ASC }]) {
-        publishDate
-        title
-        sub
+      allProject {
+       pname
+        type
+        desc
+        org 
+        badge{
+          asset{
+            url
+          }
+        }
+        
         slug {
           current
         }
@@ -76,15 +84,17 @@ export async function getStaticProps(context) {
     `,
   });
 
-  const po = datad.allProject.map((page) => ({
-    title: page.title,
-    slug: page.slug.current,
-    date: page.publishDate,
-    sub: page.sub,
+  const po = datad.allProject.map((prjkt) => ({
+    title: prjkt.pname,
+    slug: prjkt.slug.current,
+    sub: prjkt.desc,
+    badge: prjkt.badge.asset.url,
+    type: prjkt.type,
   }));
 
   const source = data.allProject[0].content;
+  const img = data.allProject[0].banner.asset.url;
 
   const mdxSource = await serialize(source);
-  return { props: { source: mdxSource, po } };
+  return { props: { source: mdxSource, po,img } };
 }

@@ -5,7 +5,7 @@ import ProjectLayout from "../../components/ProjectLayout";
 export default function Index({ Projects }) {
   const router = useRouter();
   return (
-    <div>
+    <div >
       <ProjectLayout src="/projects/" projects={Projects} />
     </div>
   );
