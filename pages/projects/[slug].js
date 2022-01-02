@@ -16,13 +16,14 @@ export default function TestPage({ source, po, img }) {
       </div>
       <article className="w-full max-w-6xl ] mx-auto overflow-scroll  scrollbar-hide">
         <Link href="/projects">
-        <div className="flex items-center p-2 border-b">
-          <button className="flex px-2 py-2 mr-2 text-sm text-gray-500 border rounded-md hover:bg-slate-200 hover:text-gray-900"><FaChevronLeft size={12} /> </button>
-          Back
+          <div className="flex items-center p-2 border-b md:hidden">
+            <button className="flex px-2 py-2 mr-2 text-sm text-gray-500 border rounded-md hover:bg-slate-200 hover:text-gray-900">
+              <FaChevronLeft size={12} />
+            </button>
+            Back
           </div>
-        
         </Link>
-       
+
         <div className="p-8">
           <img className="mb-8" src={img} />
           <div className="prose">
