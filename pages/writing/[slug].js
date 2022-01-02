@@ -22,8 +22,8 @@ export default function TestPage({ source, po }) {
 export async function getStaticPaths() {
   const data = await getSanityContent({
     query: `
-      query AllPage {
-        allPage {
+      query AllWriting {
+        allWriting {
           slug {
             current
           }
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
     `,
   });
 
-  const pages = data.allPage;
+  const pages = data.allWriting;
 
   return {
     paths: pages.map((p) => `/writing/${p.slug.current}`),
@@ -44,7 +44,7 @@ export async function getStaticProps(context) {
   const data = await getSanityContent({
     query: `
       query ProjectBySlug($slug: String!) {
-        allPage(where: { slug: { current: { eq: $slug } } }) {
+        allWriting(where: { slug: { current: { eq: $slug } } }) {
           title
           content
       }
@@ -56,8 +56,8 @@ export async function getStaticProps(context) {
   });
   const datad = await getSanityContent({
     query: `
-    query AllPage {
-      allPage {
+    query AllWriting {
+      allWriting {
         publishDate
         title
         sub
@@ -70,14 +70,14 @@ export async function getStaticProps(context) {
     `,
   });
 
-  const po = datad.allPage.map((page) => ({
+  const po = datad.allWriting.map((page) => ({
     title: page.title,
     slug: page.slug.current,
     date: page.publishDate,
     sub: page.sub,
   }));
 
-  const source = data.allPage[0].content;
+  const source = data.allWriting[0].content;
 
   const mdxSource = await serialize(source);
   return { props: { source: mdxSource, po } };

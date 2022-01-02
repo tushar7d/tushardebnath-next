@@ -1,13 +1,12 @@
 import { useRouter } from "next/router";
 import { getSanityContent } from "../../utils/sanity";
-import SubLayout from "../../components/SubLayout";
-import ProjectLayout from '../../components/ProjectLayout';
+import ProjectLayout from "../../components/ProjectLayout";
 
-export default function Index({ pages }) {
+export default function Index({ Projects }) {
   const router = useRouter();
   return (
     <div>
-      <ProjectLayout src="/projects/" pages={pages} />
+      <ProjectLayout src="/projects/" projects={Projects} />
     </div>
   );
 }
@@ -17,9 +16,16 @@ export async function getStaticProps() {
     query: `
     query AllProject {
       allProject {
-        publishDate
-        title
-        sub
+       pname
+        type
+        desc
+        org
+        
+        badge{
+          asset{
+            url
+          }
+        }
         slug {
           current
         }
@@ -29,14 +35,15 @@ export async function getStaticProps() {
     `,
   });
 
-  const pages = data.allProject.map((page) => ({
-    title: page.title,
-    slug: page.slug.current,
-    date: page.publishDate,
-    sub: page.sub,
+  const Projects = data.allProject.map((prjkt) => ({
+    title: prjkt.pname,
+    slug: prjkt.slug.current,
+    sub: prjkt.desc,
+    badge: prjkt.badge.asset.url,
+    type: prjkt.type,
   }));
 
   return {
-    props: { pages },
+    props: { Projects },
   };
 }

@@ -14,8 +14,8 @@ export default function Index({ pages }) {
 export async function getStaticProps() {
   const data = await getSanityContent({
     query: `
-    query AllPage {
-      allPage {
+    query AllWriting {
+      allWriting {
         publishDate
         title
         sub
@@ -28,7 +28,7 @@ export async function getStaticProps() {
     `,
   });
 
-  const pages = data.allPage.map((page) => ({
+  const pages = data.allWriting.map((page) => ({
     title: page.title,
     slug: page.slug.current,
     date: page.publishDate,

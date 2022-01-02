@@ -21,10 +21,11 @@ export default () =>
             .documentId("siteconfig")
         ),
         S.divider(),
-      S.documentTypeListItem("page").title("Pages"),
+      S.documentTypeListItem("writing").title("Writing"),
       S.divider(),
       S.documentTypeListItem("project").title("Projects"),
       S.divider(),
+      S.documentTypeListItem("timeline").title("Timeline"),
    
       
     ]);
