@@ -16,9 +16,11 @@ const SubLayout = ({ pages, src }) => {
                   : 'link-sub'
               }
             >
-              <div className="flex ">
-                <div className='w-12 h-12 bg-gray-300'>Box</div>
+              <div className="flex space-x-2 ">
+                <div className=" min-w-[80px] max-w-[80px]  max-h-[80px] min-h-[80px]  rounded-lg bg-blue-100" />
+                
                 <div>
+                    <small>Case Study</small>
                   <h5 className="text-base font-semibold">{title}</h5>
                   <p className="text-sm font-normal text-gray-700">{sub}</p>
                 </div>
@@ -27,7 +29,7 @@ const SubLayout = ({ pages, src }) => {
           </Link>
         ))}
       </div>
-      <div className="w-[350px] min-w-[350px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial hidden md:hidden lg:block  ">
+      <div className="w-[350px] min-w-[350px] border-r  overflow-scroll scrollbar-hide  h-screen flex-initial hidden md:hidden lg:block  divide-y ">
         {pages.map(({ title, slug, date, sub }) => (
           <Link href={`${src}${slug}`} key={slug}>
             <div
@@ -37,9 +39,11 @@ const SubLayout = ({ pages, src }) => {
                   : 'link-sub'
               }
             >
-                <div className="flex ">
-                <div className='w-12 h-12 bg-gray-300'>Box</div>
+              <div className="flex space-x-2">
+                <div className=" min-w-[80px] max-w-[80px]  max-h-[80px] min-h-[80px] rounded-lg bg-blue-100" />
+                
                 <div>
+                <small className=' text-gray-500'>Case Study</small>
                   <h5 className="text-base font-semibold">{title}</h5>
                   <p className="text-sm font-normal text-gray-700">{sub}</p>
                 </div>

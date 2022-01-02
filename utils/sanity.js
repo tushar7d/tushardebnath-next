@@ -15,3 +15,20 @@ export async function getSanityContent({ query, variables = {} }) {
   
     return data;
   }
+
+  export async function groq({ query }) {
+    const { data } = await fetch(
+      'https://7d3iajp8.api.sanity.io/v1/groq/production',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          query,
+        }),
+      },
+    ).then((response) => response.json());
+  
+    return data;
+  }
