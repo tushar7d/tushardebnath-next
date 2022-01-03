@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { getSanityContent } from "../../utils/sanity";
-import SubLayout from "../../components/SubLayout";
+import SubLayout from "../../components/BlogLayout";
 
 export default function Index({ pages }) {
   const router = useRouter();

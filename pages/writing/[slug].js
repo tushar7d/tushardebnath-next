@@ -1,7 +1,7 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { getSanityContent } from "../../utils/sanity";
-import SubLayout from "../../components/SubLayout";
+import SubLayout from "../../components/BlogLayout";
 
 import Callout from "../../components/Callout";
 
@@ -9,7 +9,7 @@ const components = { Callout };
 
 export default function TestPage({ source, po }) {
   return (
-    <div className="flex flex-auto md:h-screen overflow-hidden">
+    <div className="flex flex-auto overflow-hidden md:h-screen">
       <div className="hidden lg:block">
         <SubLayout src="/writing/" pages={po} />
       </div>

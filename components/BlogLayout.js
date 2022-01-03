@@ -6,7 +6,7 @@ const SubLayout = ({ pages,src }) => {
 
   return (
     <div>
-      <div className=" overflow-scroll h-screen scrollbar-hide  flex-initial block  lg:hidden  divide-y ">
+      <div className="flex-initial block h-screen overflow-scroll divide-y  scrollbar-hide lg:hidden">
         {pages.map(({ title, slug, date, sub }) => (
           <Link href={`${src}${slug}`} key={slug}>
             <div
@@ -16,7 +16,7 @@ const SubLayout = ({ pages,src }) => {
                   : "link-sub"
               }
             >
-              <small className="text-sm text-gray-400">{date}</small>
+              
 
               <h5 className="text-base font-semibold">{title}</h5>
               <p className="text-sm font-normal text-gray-700">{sub}</p>
@@ -34,7 +34,7 @@ const SubLayout = ({ pages,src }) => {
                   : "link-sub"
               }
             >
-              <small className="text-sm text-gray-400">{date}</small>
+              
 
               <h5 className="text-base font-semibold">{title}</h5>
               <p className="text-sm font-normal text-gray-700">{sub}</p>
