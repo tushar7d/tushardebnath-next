@@ -19,7 +19,7 @@ const SubLayout = (props) => {
            
               <div >
               <small className="text-xs text-gray-500 uppercase ">{type}</small>
-                <h5 className="text-lg font-semibold ">{title}</h5>
+                <p className="text-base font-semibold ">{title}</p>
                 <p className="text-sm font-normal text-gray-700 ">{sub}</p>
                 
               </div>

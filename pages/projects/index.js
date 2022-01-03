@@ -15,7 +15,7 @@ export async function getStaticProps() {
   const data = await getSanityContent({
     query: `
     query AllProject {
-      allProject {
+      allProject(sort: [{ order: ASC }]) {
        pname
         type
         desc

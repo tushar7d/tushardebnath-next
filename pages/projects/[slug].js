@@ -44,7 +44,7 @@ export async function getStaticPaths() {
   const data = await getSanityContent({
     query: `
       query AllProject {
-        allProject {
+        allProject(sort: [{ order: ASC }]) {
           slug {
             current
           }
@@ -82,7 +82,7 @@ export async function getStaticProps(context) {
   const datad = await getSanityContent({
     query: `
     query AllProject {
-      allProject {
+      allProject(sort: [{ order: ASC }]) {
        pname
         type
         desc
