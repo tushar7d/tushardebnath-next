@@ -15,27 +15,24 @@ const Home = () => {
         <div className="mb-2 font-serif text-4xl antialiased font-bold text-center md:text-5xl">
           Tushar Debnath
         </div>
-        <div className="text-lg antialiased leading-normal text-center text-gray-500 md:text-xl lg:text-2xl">
+        <div className="max-w-4xl mx-auto mb-3 text-xl antialiased font-medium leading-normal text-center text-gray-800 md:text-xl lg:text-2xl">
           Product Designer and Design Technologist fron New Delhi.
         </div>
-        <div className="max-w-5xl p-4 mx-auto mt-4 ">
-        <div className="p-4 mb-3 bg-indigo-100 rounded-xl">
-            <h1 className="text-xl font-medium">About me</h1>
-            <p>heloo this is awesome</p>
-          </div>
-          <div className="p-4 mb-3 bg-green-100 rounded-xl">
-            <h1 className="text-xl font-medium">Experience</h1>
-            <p>heloo this is awesome</p>
-          </div>
-          <div className="p-4 mb-3 bg-orange-100 rounded-xl">
-            <h1 className="text-xl font-medium">Skills</h1>
-            <p>heloo this is awesome</p>
-          </div>
-          <div className="p-4 mb-3 bg-yellow-100 rounded-xl">
-            <h1 className="text-xl font-medium">Education</h1>
-            <p>heloo this is awesome</p>
-          </div>
-         
+        <div className="mx-auto mb-6 text-lg text-center text-gray-500 lg:w-2/3 ">
+          {" "}
+          A bit about me, I Love building digital products, design tools,
+          workflows and design systems. Currently, I work at Zomato as senior
+          product designer. When I am not designing or coding, you can find me
+          reading fantasy books, working on my podcast, or travelling with my
+          wife.
+        </div>
+        <div className="flex justify-center w-full mx-auto space-x-3 ">
+          <button className="p-2 px-3 text-white bg-black rounded-md">
+           View Work
+          </button>
+          <button className="p-2 px-3 text-black bg-gray-200 rounded-md">
+            About me
+          </button>
         </div>
       </div>
     </div>
