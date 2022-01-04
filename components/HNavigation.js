@@ -25,11 +25,11 @@ const HNavigation = () => {
   let { styles, attributes } = usePopper(referenceElement, popperElement);
 
   return (
-    <Popover className="p-2 flex align-middle bg-white shadow-sm w-screen">
+    <Popover className="flex w-screen p-2 align-middle bg-white shadow-sm">
       <Popover.Button ref={setReferenceElement}>
         <HiMenu size={32} />
       </Popover.Button>
-      <div className=" pt-1 ml-4 font-medium capitalize ">
+      <div className="pt-1 ml-4 font-medium capitalize ">
         {router.asPath.slice(1).split("/").join(": ")}
       </div>
 
@@ -40,7 +40,7 @@ const HNavigation = () => {
         className="m-2"
       >
         {({ close }) => (
-          <div className=" bg-white  rounded-xl shadow-lg border  p-2">
+          <div className="p-2 bg-white border shadow-lg  rounded-xl">
             <Link href="/">
               <div
                 className={
@@ -56,7 +56,7 @@ const HNavigation = () => {
             </Link>
             <div onClick={close}>
               <LinkIn
-                href="/projects"
+                href="/projects/zomato-order-tracker"
                 name="Projects"
                 icon={<MdWork size={16} />}
               />

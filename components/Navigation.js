@@ -17,9 +17,9 @@ import Link from "next/link";
 const Navigation = () => {
     const router = useRouter();
     return (
-      <div className="sidebar flex-shrink-0 scrollbar-hide">
+      <div className="flex-shrink-0 sidebar scrollbar-hide">
         <section className="logo">Tushar Debnath</section>
-        <div className=" flex flex-col p-4">
+        <div className="flex flex-col p-4 ">
           <Link href="/">
             <div
               className={router.asPath === "/" ? "link link-selected" : "link"}
@@ -31,7 +31,7 @@ const Navigation = () => {
             </div>
           </Link>
   
-          <LinkIn href="/projects" name="Projects" icon={<MdWork size={16} />} />
+          <LinkIn href="/projects/zomato-order-tracker" name="Projects" icon={<MdWork size={16} />} />
   
           <LinkIn href="/writing" name="Writing" icon={<FaPenNib size={16} />} />
   
