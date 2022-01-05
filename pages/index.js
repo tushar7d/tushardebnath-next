@@ -19,7 +19,7 @@ const Home = () => {
           Product Designer and Design Technologist fron New Delhi.
         </div>
         <div className="mx-auto mb-6 text-lg text-center text-gray-500 lg:w-2/3 ">
-          {" "}
+          
           A bit about me, I Love building digital products, design tools,
           workflows and design systems. Currently, I work at Zomato as senior
           product designer. When I am not designing or coding, you can find me
