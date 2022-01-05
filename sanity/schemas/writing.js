@@ -18,6 +18,17 @@ export default {
           dateFormat: 'DD-MM-YYYY',
         }
       },
+      
+      {
+        name: "tags",
+        title: "Tags",
+        type: "array",
+        of: [{ type: "string" }],
+        options: {
+          layout: "tags",
+        },
+        validation: (Rule) => Rule.required(),
+      },
       {
         name: 'title',
         title: 'Page Title',
@@ -44,6 +55,20 @@ export default {
         name: 'content',
         title: 'Content',
         type: 'markdown',
+      },
+      {
+        name: "banner",
+        title: "Banner",
+        type: "image",
+        
+      
+      },
+      {
+        name: "badge",
+        title: "Badge",
+        type: "image",
+        
+      
       },
     ],
     orderings: [

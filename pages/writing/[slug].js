@@ -78,16 +78,23 @@ export async function getStaticProps(context) {
   const datad = await getSanityContent({
     query: `
     query AllWriting {
-      allWriting {
-        publishDate
+      allWriting(sort: [{ order: ASC }]) {
         title
-        sub
-        slug {
-          current
-        }
-        content
-      }
-    }
+         sub
+         tags
+         publishDate 
+         badge{
+           asset{
+             url
+           }
+         }
+         
+         slug {
+           current
+         }
+         content
+       }
+     }
     `,
   });
 
@@ -95,7 +102,8 @@ export async function getStaticProps(context) {
     title: page.title,
     slug: page.slug.current,
     date: page.publishDate,
-    sub: page.sub,
+    desc: page.sub,
+    badge: page.badge.asset.url,
   }));
 
   const source = data.allWriting[0].content;
