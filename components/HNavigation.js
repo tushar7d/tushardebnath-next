@@ -40,7 +40,7 @@ const HNavigation = () => {
         className="m-2"
       >
         {({ close }) => (
-          <div className="p-2 bg-white border shadow-lg  rounded-xl">
+          <div className="p-2 bg-white border shadow-lg rounded-xl">
             <Link href="/">
               <div
                 className={
@@ -56,7 +56,7 @@ const HNavigation = () => {
             </Link>
             <div onClick={close}>
               <LinkIn
-                href="/projects/zomato-order-tracker"
+                href="/projects"
                 name="Projects"
                 icon={<MdWork size={16} />}
               />

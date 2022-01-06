@@ -8,7 +8,8 @@ import Link from "next/link";
 
 const components = { Callout };
 
-export default function TestPage({ source, po, img }) {
+export default function TestPage({ source, po, img, order, count }) {
+
   return (
     <div className="flex flex-auto overflow-hidden md:h-screen">
       <div className="hidden lg:block">
@@ -30,9 +31,23 @@ export default function TestPage({ source, po, img }) {
             <MDXRemote {...source} components={components} />
           </div>
 
-          <div className="flex w-full justify-between mt-4  pt-12">
-            <div className="p-4 bg-gray-100 rounded-md  w-80"><div>Previous</div><div>Expedia Car..</div></div>
-            <div className="p-4 bg-gray-100 rounded-md  w-80"><div>Next</div><div>Expedia more...</div></div>
+          <div className="flex justify-between w-full pt-12 mt-4">
+            {order > 0 ? (
+              <Link href={`/projects/${po[order-1].slug}`}>
+              <div className="p-4 bg-gray-100 rounded-md cursor-pointer w-80">
+                <div>Previous</div>
+                <div>{po[order-1].title}</div>
+              </div>
+              </Link>
+            ) : null}
+            {order < count ? (
+              <Link href={`/projects/${po[order+1].slug}`}>
+              <div className="p-4 bg-gray-100 rounded-md cursor-pointer w-80">
+                <div>Next</div>
+                <div>{po[order+1].title}</div>
+              </div>
+              </Link>
+            ) : null}
           </div>
         </div>
       </article>
@@ -67,6 +82,7 @@ export async function getStaticProps(context) {
       query ProjectBySlug($slug: String!) {
         allProject(where: { slug: { current: { eq: $slug } } }) {
           content
+          order
           banner{
             asset{
               url
@@ -112,7 +128,9 @@ export async function getStaticProps(context) {
 
   const source = data.allProject[0].content;
   const img = data.allProject[0].banner.asset.url;
+  const order = data.allProject[0].order;
+  const count = datad.allProject.length - 1;
 
   const mdxSource = await serialize(source);
-  return { props: { source: mdxSource, po, img } };
+  return { props: { source: mdxSource, po, img, order, count } };
 }
