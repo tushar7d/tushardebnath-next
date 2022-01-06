@@ -6,8 +6,6 @@ import Callout from "../../components/Callout";
 import { FaChevronLeft } from "@react-icons/all-files/fa/FaChevronLeft";
 import Link from "next/link";
 
-
-
 const components = { Callout };
 
 export default function TestPage({ source, po, img }) {
@@ -32,8 +30,10 @@ export default function TestPage({ source, po, img }) {
             <MDXRemote {...source} components={components} />
           </div>
 
-          <a>Previous</a>
-          <a>Next</a>
+          <div className="flex w-full justify-between mt-4  pt-12">
+            <div className="p-4 bg-gray-100 rounded-md  w-80"><div>Previous</div><div>Expedia Car..</div></div>
+            <div className="p-4 bg-gray-100 rounded-md  w-80"><div>Next</div><div>Expedia more...</div></div>
+          </div>
         </div>
       </article>
     </div>
