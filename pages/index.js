@@ -27,10 +27,10 @@ const Home = () => {
           wife.
         </div>
         <div className="flex justify-center w-full mx-auto space-x-3 ">
-          <button className="p-2 px-3 text-white bg-black rounded-md">
+          <button className="p-2 px-4 text-white bg-black rounded-md">
            View Work
           </button>
-          <button className="p-2 px-3 text-black bg-gray-200 rounded-md">
+          <button className="p-2 px-4 text-black border rounded-md">
             About me
           </button>
         </div>
