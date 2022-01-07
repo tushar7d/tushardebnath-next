@@ -1,13 +1,15 @@
 import { useRouter } from "next/router";
-import Link from "next/link";
+
+
 
 const SubLayout = (props) => {
   const router = useRouter();
+ 
 
   return (
     <div className="md:w-[350px] md:min-w-[350px]  border-r overflow-scroll scrollbar-hide  h-screen flex-initial divide-y ">
       {props.projects.map(({ title, slug, sub, badge, type }) => (
-        <Link href={`${props.src}${slug}`} key={slug}>
+        <div onClick={() => router.push(`${props.src}${slug}`)}  key={slug}>
           <div
             className={
               router.asPath.startsWith(`${props.src}${slug}`)
@@ -29,7 +31,7 @@ const SubLayout = (props) => {
               />
             </div>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );
