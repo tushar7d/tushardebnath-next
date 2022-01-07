@@ -12,7 +12,7 @@
     @apply hidden bg-white lg:block lg:fixed;
   }
   .project-content-container {
-    @apply md:w-[calc(100vw-200px)] w-full lg:ml-[350px] md:ml-[200px] overflow-scroll scrollbar-hide;
+    @apply md:w-[calc(100vw-200px)] w-full lg:ml-[350px]  overflow-scroll scrollbar-hide;
   }
   
 

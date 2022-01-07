@@ -50,7 +50,7 @@ export default function Index({ source, po, img, order, count }) {
 
         <div className="p-8 ">
           <img className="mb-8 w-[850px] md:mx-auto " src={img} />
-          <div className="prose  md:max-w-[850px]  md:mx-auto ">
+          <div className="prose  lg:max-w-[850px]  lg:mx-auto ">
             <MDXRemote {...source} components={components} />
           </div>
 
