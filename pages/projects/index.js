@@ -6,7 +6,10 @@ import Layout from '../../components/Layout'
 Index.getLayout = function getLayout(page) {
   return (
     <Layout>
+      
       {page}
+     
+      
     </Layout>
   )
 }
