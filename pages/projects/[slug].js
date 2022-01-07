@@ -22,12 +22,12 @@ const components = { Callout };
 
 export default function Index({ source, po, img, order, count }) {
   return (
-    <div className="flex lg:ml-[200px]">
+    <div className="flex md:ml-0 md:w-full lg:ml-[200px] lg:w-[calc(100vw-200px)]">
       <div className="hidden bg-white lg:block lg:fixed">
         <ProjectLayout src="/projects/" projects={po} />
       </div>
 
-      <div className="lg:w-[calc(100%-350px)] w-full lg:ml-[350px] md:ml-[200px] overflow-scroll scrollbar-hide">
+      <div className="md:w-[calc(100vw-200px)] w-full lg:ml-[350px] md:ml-[200px] overflow-scroll scrollbar-hide ">
         <Link href="/projects">
           <div className="flex items-center p-2 border-b lg:hidden">
             <button className="flex px-2 py-2 mr-2 text-sm text-gray-500 border rounded-md hover:bg-slate-200 hover:text-gray-900">
@@ -37,9 +37,9 @@ export default function Index({ source, po, img, order, count }) {
           </div>
         </Link>
 
-        <div className="p-8">
-          <img className="mx-auto mb-8" src={img} />
-          <div className="prose max-w-[850px] mx-auto">
+        <div className="p-8 ">
+          <img className="mb-8 w-[850px] md:mx-auto " src={img} />
+          <div className="prose  md:max-w-[850px]  md:mx-auto ">
             <MDXRemote {...source} components={components} />
           </div>
 

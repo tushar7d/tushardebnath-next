@@ -14,7 +14,7 @@ Index.getLayout = function getLayout(page) {
 export default function Index({ Projects }) {
   const router = useRouter();
   return (
-    <div className="lg:ml-[200px]" >
+    <div className="lg:ml-[200px] w-[calc(100vw-200px)]" >
       <ProjectLayout src="/projects/" projects={Projects} />
     </div>
   );
