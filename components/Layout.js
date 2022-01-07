@@ -5,9 +5,9 @@ const Layout = (props) => {
 
 
   return (
-    <div className="md:flex  ">
+    <div className="md:flex ">
       
-      <header className="hidden md:block fixed lg:block">
+      <header className="fixed hidden md:block lg:block">
         <Navigation />
       </header>
       <header className="sticky top-0 z-50 block md:hidden">
