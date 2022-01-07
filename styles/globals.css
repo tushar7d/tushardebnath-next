@@ -5,6 +5,17 @@
 
 @layer components {
 
+  .project-container {
+    @apply flex md:ml-0 md:w-full lg:ml-[200px] lg:w-[calc(100vw-200px)];
+  }
+  .sidebar-container {
+    @apply hidden bg-white lg:block lg:fixed;
+  }
+  .project-content-container {
+    @apply md:w-[calc(100vw-200px)] w-full lg:ml-[350px] md:ml-[200px] overflow-scroll scrollbar-hide;
+  }
+  
+
   .mdx {
     @apply p-8  max-w-6xl  w-full mx-auto prose overflow-scroll scrollbar-hide;
   }
