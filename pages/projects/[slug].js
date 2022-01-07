@@ -5,17 +5,27 @@ import ProjectLayout from "../../components/ProjectLayout";
 import Callout from "../../components/Callout";
 import { FaChevronLeft } from "@react-icons/all-files/fa/FaChevronLeft";
 import Link from "next/link";
+import Layout from '../../components/Layout'
+
+Index.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  )
+}
+
 
 const components = { Callout };
 
-export default function TestPage({ source, po, img, order, count }) {
-
+export default function Index({ source, po, img, order, count }) {
   return (
-    <div className="flex flex-auto overflow-hidden md:h-screen">
-      <div className="hidden lg:block">
+    <div className="flex ">
+      <div className="hidden lg:block lg:fixed bg-white">
         <ProjectLayout src="/projects/" projects={po} />
       </div>
-      <article className="w-full max-w-[850px] mx-auto overflow-scroll scrollbar-hide">
+
+      <div className="  lg:w-[calc(100%-350px)] w-full lg:ml-[350px] overflow-scroll scrollbar-hide">
         <Link href="/projects">
           <div className="flex items-center p-2 border-b lg:hidden">
             <button className="flex px-2 py-2 mr-2 text-sm text-gray-500 border rounded-md hover:bg-slate-200 hover:text-gray-900">
@@ -25,32 +35,32 @@ export default function TestPage({ source, po, img, order, count }) {
           </div>
         </Link>
 
-        <div className="p-8">
-          <img className="mb-8" src={img} />
-          <div className="prose max-w-none">
+        <div className="p-8 ">
+          <img className="mb-8 ax-w-[850px] mx-auto" src={img} />
+          <div className="prose max-w-[850px] mx-auto">
             <MDXRemote {...source} components={components} />
           </div>
 
           <div className="flex justify-between w-full pt-12 mt-4">
             {order > 0 ? (
-              <Link href={`/projects/${po[order-1].slug}`}>
-              <div className="p-4 bg-gray-100 rounded-md cursor-pointer w-80">
-                <div>Previous</div>
-                <div>{po[order-1].title}</div>
-              </div>
+              <Link href={`/projects/${po[order - 1].slug}`}>
+                <div className="p-4 bg-gray-100 rounded-md cursor-pointer w-80">
+                  <div>Previous</div>
+                  <div>{po[order - 1].title}</div>
+                </div>
               </Link>
             ) : null}
             {order < count ? (
-              <Link href={`/projects/${po[order+1].slug}`}>
-              <div className="p-4 bg-gray-100 rounded-md cursor-pointer w-80">
-                <div>Next</div>
-                <div>{po[order+1].title}</div>
-              </div>
+              <Link href={`/projects/${po[order + 1].slug}`}>
+                <div className="p-4 bg-gray-100 rounded-md cursor-pointer w-80">
+                  <div>Next</div>
+                  <div>{po[order + 1].title}</div>
+                </div>
               </Link>
             ) : null}
           </div>
         </div>
-      </article>
+      </div>
     </div>
   );
 }

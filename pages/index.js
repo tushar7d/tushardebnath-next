@@ -1,5 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Layout from "../components/Layout";
+
+
+
 
 const Home = () => {
   return (
@@ -38,5 +42,12 @@ const Home = () => {
     </div>
   );
 };
+Home.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  )
+}
 
 export default Home;

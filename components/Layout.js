@@ -5,15 +5,15 @@ const Layout = (props) => {
 
 
   return (
-    <div className="md:flex md:h-screen md:overflow-hidden ">
+    <div className="md:flex  ">
       
-      <header className="hidden md:block lg:block">
+      <header className="hidden md:block fixed lg:block">
         <Navigation />
       </header>
       <header className="sticky top-0 z-50 block md:hidden">
         <HNavigation />
       </header>
-      <div className="relative flex-auto md:overflow-hidden md:h-screen">
+      <div className="">
         {props.children}
       </div>
     </div>

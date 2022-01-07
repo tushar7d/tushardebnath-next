@@ -1,6 +1,15 @@
 import { useRouter } from "next/router";
 import { getSanityContent } from "../../utils/sanity";
 import ProjectLayout from "../../components/ProjectLayout";
+import Layout from '../../components/Layout'
+
+Index.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  )
+}
 
 export default function Index({ Projects }) {
   const router = useRouter();
