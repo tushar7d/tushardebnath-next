@@ -6,7 +6,7 @@
 @layer components {
 
   .project-container {
-    @apply flex md:ml-0 md:w-full lg:ml-[200px] lg:w-[calc(100vw-200px)];
+    @apply flex;
   }
   .sidebar-container {
     @apply hidden bg-white lg:block lg:fixed;

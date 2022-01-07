@@ -45,9 +45,9 @@ const Home = () => {
 Home.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <div className="md:w-[calc(100vw-200px)] md:ml-[200px] ">
+     
       {page}
-      </div>
+      
       
     </Layout>
   )

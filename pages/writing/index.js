@@ -15,9 +15,9 @@ Index.getLayout = function getLayout(page) {
 export default function Index({ po }) {
   const router = useRouter();
   return (
-    <div className="lg:ml-[200px] w-[calc(100vw-200px)]">
+    
       <SubLayout src="/writing/" pages={po} />
-    </div>
+  
   );
 }
 

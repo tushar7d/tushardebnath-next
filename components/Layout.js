@@ -13,7 +13,7 @@ const Layout = (props) => {
       <header className="sticky top-0 z-50 block md:hidden">
         <HNavigation />
       </header>
-      <div className="">
+      <div className="md:w-[calc(100vw-200px)] md:ml-[200px]">
         {props.children}
       </div>
     </div>
