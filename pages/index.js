@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 
 const Home = () => {
   return (
-    <div className="flex-auto">
+    <div className="flex-auto md:w-[calc(100vw-200px)]  md:ml-[200px]  ">
       <Head>
         <title>Tushar Debnath</title>
       </Head>
