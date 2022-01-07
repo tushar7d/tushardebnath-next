@@ -54,7 +54,7 @@ export default function Index({ source, po, img, order, count }) {
             <MDXRemote {...source} components={components} />
           </div>
 
-          <Stepper po={po} order={order} count={count} />
+          <Stepper dest="/projects/" po={po} order={order} count={count} />
         </div>
       </div>
     </div>

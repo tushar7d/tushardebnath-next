@@ -6,18 +6,28 @@ import Link from "next/link";
 import SubLayout from "../../components/BlogLayout";
 
 import Callout from "../../components/Callout";
+import Layout from '../../components/Layout'
+import Stepper from '../../components/Stepper'
+
+Index.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  )
+}
 
 const components = { Callout };
 
-export default function TestPage({ source, po }) {
+export default function Index({ source, po, order, count }) {
   
   return (
-    <div className="flex flex-auto overflow-hidden md:h-screen">
-      <div className="hidden lg:block">
+    <div className="project-container">
+      <div className="sidebar-container">
         <SubLayout src="/writing/" pages={po} />
       </div>
 
-      <article className="w-full max-w-[850px] mx-auto overflow-scroll scrollbar-hide">
+      <div className="project-content-container">
         <Link href="/writing">
           <div className="flex items-center p-2 border-b lg:hidden">
             <button className="flex px-2 py-2 mr-2 text-sm text-gray-500 border rounded-md hover:bg-slate-200 hover:text-gray-900">
@@ -29,14 +39,13 @@ export default function TestPage({ source, po }) {
 
         <div className="p-8">
           
-          <div className="prose max-w-none">
+          <div className="prose  md:max-w-[850px]  md:mx-auto">
             <MDXRemote {...source} components={components} />
           </div>
 
-          <a>Previous</a>
-          <a>Next</a>
+          <Stepper dest="/writing/" po={po} order={order} count={count} />
         </div>
-      </article>
+      </div>
     </div>
   );
 }
@@ -68,6 +77,7 @@ export async function getStaticProps(context) {
         allWriting(where: { slug: { current: { eq: $slug } } }) {
           title
           content
+          order
       }
      }
     `,
@@ -107,7 +117,9 @@ export async function getStaticProps(context) {
   }));
 
   const source = data.allWriting[0].content;
+  const order = data.allWriting[0].order;
+  const count = datad.allWriting.length - 1;
 
   const mdxSource = await serialize(source);
-  return { props: { source: mdxSource, po } };
+  return { props: { source: mdxSource, po,order,count } };
 }

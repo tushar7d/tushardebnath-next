@@ -1,41 +1,59 @@
 import { useRouter } from "next/router";
 import { getSanityContent } from "../../utils/sanity";
 import SubLayout from "../../components/BlogLayout";
+import Layout from '../../components/Layout'
 
-export default function Index({ pages }) {
+
+Index.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  )
+}
+
+export default function Index({ po }) {
   const router = useRouter();
   return (
-    <div>
-      <SubLayout src="/writing/" pages={pages} />
+    <div className="lg:ml-[200px] w-[calc(100vw-200px)]">
+      <SubLayout src="/writing/" pages={po} />
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const data = await getSanityContent({
+  const datad = await getSanityContent({
     query: `
     query AllWriting {
-      allWriting {
-        publishDate
+      allWriting(sort: [{ order: ASC }]) {
         title
-        sub
-        slug {
-          current
-        }
-        content
-      }
-    }
+         sub
+         tags
+         publishDate 
+         badge{
+           asset{
+             url
+           }
+         }
+         
+         slug {
+           current
+         }
+         content
+       }
+     }
     `,
   });
 
-  const pages = data.allWriting.map((page) => ({
+  const po = datad.allWriting.map((page) => ({
     title: page.title,
     slug: page.slug.current,
     date: page.publishDate,
-    sub: page.sub,
+    desc: page.sub,
+    badge: page.badge.asset.url,
   }));
 
   return {
-    props: { pages },
+    props: { po },
   };
 }
