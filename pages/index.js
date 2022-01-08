@@ -10,7 +10,7 @@ const Home = () => {
         <title>Tushar Debnath</title>
       </Head>
 
-      <div className="z-50 p-2 mx-auto md:p-12">
+      <div className="z-50 p-4 mx-auto md:p-12 max-w-4xl">
         <div className="flex justify-center mb-4 ">
           <Image src="/td.png" width={200} height={200} loading="lazy" />
         </div>
@@ -20,7 +20,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto mb-3 text-xl antialiased font-medium leading-normal text-center text-gray-800 md:text-xl lg:text-2xl">
           Product Designer and Design Technologist fron New Delhi.
         </div>
-        <div className="mx-auto mb-6 text-lg text-center text-gray-500 lg:w-2/3 ">
+        <div className="mx-auto mb-6 text-lg text-justify text-gray-500 ">
           
           A bit about me, I Love building digital products, design tools,
           workflows and design systems. Currently, I work at Zomato as senior
