@@ -4,6 +4,8 @@ import Layout from "../components/Layout";
 
 const Home = () => {
   
+  const sub =
+    "max-w-4xl mx-auto mb-3 text-xl antialiased font-medium leading-normal text-center text-gray-800 md:text-xl lg:text-2xl";
   return (
     <div className="flex-auto ">
       <Head>
