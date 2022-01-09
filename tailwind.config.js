@@ -11,6 +11,10 @@ module.exports = {
       colors: {
         "page-black": "#121212",
       },
+      fontFamily: {
+        
+        monox: ["'Source Code Pro'", "monospace"],
+       },
       typography: {
         DEFAULT: {
           css: {
