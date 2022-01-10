@@ -18,7 +18,7 @@ const SubLayout = ({ pages, src }) => {
            <div className="flex items-center justify-between space-x-2">
            
            <div >
-           <small className="text-xs text-gray-500 uppercase ">{date}</small>
+           <small className="text-xs text-gray-500 uppercase ">{date.split("-")}</small>
              <p className="text-base font-semibold ">{title}</p>
              <p className="text-sm font-normal text-gray-700 ">{desc}</p>
              

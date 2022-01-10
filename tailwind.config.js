@@ -7,14 +7,16 @@ module.exports = {
   ],
 
   theme: {
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ["'Oswald'", "sans-serif"],
+      mono: ["'Source Code Pro'", "monospace"],
+    },
     extend: {
       colors: {
         "page-black": "#121212",
       },
-      fontFamily: {
-        
-        monox: ["'Source Code Pro'", "monospace"],
-       },
+      
       typography: {
         DEFAULT: {
           css: {
