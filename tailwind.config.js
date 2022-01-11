@@ -8,7 +8,7 @@ module.exports = {
 
   theme: {
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      
       serif: ["'Oswald'", "sans-serif"],
       mono: ["'Source Code Pro'", "monospace"],
     },
