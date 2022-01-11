@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
-import { getSanityContent } from "../../utils/sanity";
+import { getSanityContent } from "../utils/sanity";
 
 const Home = ({data}) => {
-  console.log(data)
+  console.log({data})
   return (
     <>
       <div className="p-12 max-w-prose mx-auto">
@@ -26,24 +26,9 @@ Home.getLayout = function getLayout(page) {
 export async function getStaticProps() {
   const data = await getSanityContent({
     query: `
-    query AllProject {
-      allProject(sort: [{ order: ASC }]) {
-       pname
-        type
-        desc
-        org
-        
-        badge{
-          asset{
-            url
-          }
-        }
-        slug {
-          current
-        }
-        content
-      }
-    }
+    query AllSiteconfig {
+      allSiteConfig {
+       work
     `,
   });
 

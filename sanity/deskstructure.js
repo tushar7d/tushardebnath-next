@@ -21,6 +21,7 @@ export default () =>
             .documentId("siteconfig")
         ),
         S.divider(),
+      
       S.documentTypeListItem("writing").title("Writing"),
       S.divider(),
       S.documentTypeListItem("project").title("Projects"),

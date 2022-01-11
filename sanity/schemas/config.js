@@ -7,6 +7,13 @@ export default {
     ],
     fields: [
       {
+        name: "title",
+        type: "string",
+        title: "Title",
+        hidden: true,
+      },
+
+      {
         name: "content",
         type: "markdown",
         title: "Content"
