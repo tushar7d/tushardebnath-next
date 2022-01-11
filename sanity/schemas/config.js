@@ -7,10 +7,21 @@ export default {
     ],
     fields: [
       {
-        name: "title",
-        type: "string",
-        title: "Site title"
-      }
+        name: "content",
+        type: "markdown",
+        title: "Content"
+      },
+      {
+        name: "work",
+        type: "markdown",
+        title: "Work"
+      },
+      {
+        name: "education",
+        type: "markdown",
+        title: "Education"
+      },
+
      
     ]
   }
