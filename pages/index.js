@@ -6,12 +6,8 @@ import { MDXRemote } from "next-mdx-remote";
 const Home = ({ mdxSource }) => {
   return (
     <>
-      <div className="p-12 max-w-prose mx-auto">
-        <div className="text-4xl   font-serif mb-3 ">Hello</div>
-
-        <div className="prose pros-2xl">
-          <MDXRemote {...mdxSource} />
-        </div>
+      <div className="p-12 prose prose-base max-w-prose mx-auto">
+        <MDXRemote {...mdxSource} />
       </div>
     </>
   );
