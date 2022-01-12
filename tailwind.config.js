@@ -7,11 +7,7 @@ module.exports = {
   ],
 
   theme: {
-    fontFamily: {
-      
-      serif: ["'Oswald'", "sans-serif"],
-      mono: ["'Source Code Pro'", "monospace"],
-    },
+    
     extend: {
       colors: {
         "page-black": "#121212",

@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
-import { FaCookieBite } from "@react-icons/all-files/fa/FaCookieBite";
+
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaPenNib } from "@react-icons/all-files/fa/FaPenNib";
-import { FaFile } from "@react-icons/all-files/fa/FaFile";
+
 import { FaDribbble } from "@react-icons/all-files/fa/FaDribbble";
 import { MdWork } from "@react-icons/all-files/md/MdWork";
 import LinkIn from "./LinkIn";
@@ -18,7 +18,7 @@ const Navigation = () => {
     const router = useRouter();
     return (
       <div className="flex-shrink-0 sidebar scrollbar-hide">
-        <section className="logo">Tushar Debnath</section>
+        <section className="logo">TUSHAR DEBNATH</section>
         <div className="flex flex-col p-4 ">
           <Link href="/">
             <div
@@ -35,20 +35,9 @@ const Navigation = () => {
   
           <LinkIn href="/writing" name="Writing" icon={<FaPenNib size={16} />} />
   
-          <LinkIn href="/resume" name="Resume" icon={<FaFile size={16} />} />
+          
   
-          <div className="sidebar-label">Side Projects</div>
-  
-          <LinkIn
-            href="/figmaplugin"
-            name="Figma Plugins"
-            icon={<FaFigma size={16} />}
-          />
-          <LinkIn
-            href="/design-bites"
-            name="Design Bites"
-            icon={<FaCookieBite size={16} />}
-          />
+          
   
           <div className="sidebar-label">Find me</div>
   
