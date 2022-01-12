@@ -3,10 +3,10 @@ import Layout from "../components/Layout";
 const Home = ({ mdxSource }) => {
   return (
     <>
-      <div className="p-12 mx-auto prose prose-lg max-w-prose">
-        <h1>Hello</h1>
+      <div className="p-8 mx-auto prose prose-lg md:p-12 max-w-prose">
+        <img src="/td.png" className="w-[200px] mx-auto" /> 
         <p>
-          I'm Tushar, a product designer and developer, from New Delhi. I build
+          Hello, I'm Tushar, a product designer and developer, from New Delhi. I build
           digital products,design tools, workflows and design systems. I am
           currently working at Zomato as a senior product designer.
         </p>
@@ -16,7 +16,7 @@ const Home = ({ mdxSource }) => {
         </p>
         <p>
           When I am not designing or coding, you can find me reading fantasy
-          books, working on my cool side projects, or travelling with my wife.
+          books, building Gundams, working on side projects, or travelling with my lovely wife.
         </p>
       </div>
     </>

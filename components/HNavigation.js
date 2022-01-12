@@ -25,13 +25,49 @@ const HNavigation = () => {
   let { styles, attributes } = usePopper(referenceElement, popperElement);
 
   return (
-    <Popover className="flex w-screen p-2 align-middle bg-white shadow-sm">
-      <Popover.Button ref={setReferenceElement}>
-        <HiMenu size={32} />
-      </Popover.Button>
-      <div className="pt-1 ml-4 font-medium capitalize ">
-        {router.asPath.slice(1).split("/").join(": ")}
-      </div>
+    <Popover className="flex w-screen p-2 space-x-2 bg-white shadow-sm">
+      {router.asPath === "/" ? (
+          <div className="flex justify-around w-full">
+            <Link href="/">
+              <div
+                className={
+                  router.asPath === "/" ? "link link-selected" : "link"
+                }
+               
+              >
+                <div className="link-icon">
+                  <FaHome size={16} />
+                </div>
+                <div className="link-tag">Home</div>
+              </div>
+            </Link>
+            <LinkIn
+              href="/projects"
+              name="Projects"
+              icon={<MdWork size={16} />}
+            />
+            <LinkIn
+                href="/writing"
+                name="Writing"
+                icon={<FaPenNib size={16} />}
+              />
+          </div>
+        ) : null}
+       
+      
+     {router.asPath === "/" ? null :
+     <>
+     <Popover.Button ref={setReferenceElement}>
+      <HiMenu size={32} />
+      
+    </Popover.Button>
+    <div className="pt-1 font-medium capitalize ">
+    {router.asPath.slice(1).split("/").join(": ")}
+  </div></>
+      
+
+     }
+        
 
       <Popover.Panel
         ref={setPopperElement}
@@ -68,40 +104,8 @@ const HNavigation = () => {
                 icon={<FaPenNib size={16} />}
               />
             </div>
-            <div onClick={close}>
-              <LinkIn
-                href="/figmaplugin"
-                name="Figma Plugins"
-                icon={<FaFigma size={16} />}
-              />
-            </div>
-            <div onClick={close}>
-              <LinkIn
-                href="/design-bites"
-                name="Design Bites"
-                icon={<FaCookieBite size={16} />}
-              />
-            </div>
-            <LinkOut
-              href="https://www.linkedin.com/in/tushardebnath/"
-              name="LinkedIn"
-              icon={<FaLinkedin size={16} />}
-            />
-            <LinkOut
-              href="https://www.figma.com/@tushar"
-              name="Figma"
-              icon={<FaFigma size={16} />}
-            />
-            <LinkOut
-              href="https://dribbble.com/tushardebnath"
-              name="Dribbble"
-              icon={<FaDribbble size={16} />}
-            />
-            <LinkOut
-              href="https://github.com/tushar7d"
-              name="GitHub"
-              icon={<FaGithub size={16} />}
-            />
+           
+            
           </div>
         )}
       </Popover.Panel>
