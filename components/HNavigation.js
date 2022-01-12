@@ -1,21 +1,12 @@
 import { useRouter } from "next/router";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
-import { FaCookieBite } from "@react-icons/all-files/fa/FaCookieBite";
-import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaPenNib } from "@react-icons/all-files/fa/FaPenNib";
-
 import { HiMenu } from "@react-icons/all-files/hi/HiMenu";
-
 import { useState } from "react";
 import { usePopper } from "react-popper";
 import { Popover } from "@headlessui/react";
-import { FaDribbble } from "@react-icons/all-files/fa/FaDribbble";
 import { MdWork } from "@react-icons/all-files/md/MdWork";
-
 import LinkIn from "./LinkIn";
-import LinkOut from "./LinkOut";
 import Link from "next/link";
 
 const HNavigation = () => {
@@ -27,47 +18,40 @@ const HNavigation = () => {
   return (
     <Popover className="flex w-screen p-2 space-x-2 bg-white shadow-sm">
       {router.asPath === "/" ? (
-          <div className="flex justify-around w-full">
-            <Link href="/">
-              <div
-                className={
-                  router.asPath === "/" ? "link link-selected" : "link"
-                }
-               
-              >
-                <div className="link-icon">
-                  <FaHome size={16} />
-                </div>
-                <div className="link-tag">Home</div>
+        <div className="flex justify-around w-full">
+          <Link href="/">
+            <div
+              className={router.asPath === "/" ? "link link-selected" : "link"}
+            >
+              <div className="link-icon">
+                <FaHome size={16} />
               </div>
-            </Link>
-            <LinkIn
-              href="/projects"
-              name="Projects"
-              icon={<MdWork size={16} />}
-            />
-            <LinkIn
-                href="/writing"
-                name="Writing"
-                icon={<FaPenNib size={16} />}
-              />
-          </div>
-        ) : null}
-       
-      
-     {router.asPath === "/" ? null :
-     <>
-     <Popover.Button ref={setReferenceElement}>
-      <HiMenu size={32} />
-      
-    </Popover.Button>
-    <div className="pt-1 font-medium capitalize ">
-    {router.asPath.slice(1).split("/").join(": ")}
-  </div></>
-      
+              <div className="link-tag">Home</div>
+            </div>
+          </Link>
+          <LinkIn
+            href="/projects"
+            name="Projects"
+            icon={<MdWork size={16} />}
+          />
+          <LinkIn
+            href="/writing"
+            name="Writing"
+            icon={<FaPenNib size={16} />}
+          />
+        </div>
+      ) : null}
 
-     }
-        
+      {router.asPath === "/" ? null : (
+        <>
+          <Popover.Button ref={setReferenceElement}>
+            <HiMenu size={32} />
+          </Popover.Button>
+          <div className="pt-1 font-medium capitalize ">
+            {router.asPath.slice(1).split("/").join(": ")}
+          </div>
+        </>
+      )}
 
       <Popover.Panel
         ref={setPopperElement}
@@ -104,8 +88,6 @@ const HNavigation = () => {
                 icon={<FaPenNib size={16} />}
               />
             </div>
-           
-            
           </div>
         )}
       </Popover.Panel>
