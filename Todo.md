@@ -14,3 +14,12 @@ applying human-centred design to challenges in Travel, Hyper Local, and Personal
           product designer. When I am not designing or coding, you can find me
           reading fantasy books, working on my podcast, or travelling with my
           wife.
+
+
+          I'm Tushar a product designer and developer, from New Delhi. I build
+            digital products, workflows, design tools and design systems.
+            For the past 9 odd years I've worked with different teams applying
+            human-centred design to challenges in Travel, Hyper Local, and
+            Instant messaging.When I am not designing or coding, you can find me reading fantasy
+            books, building Gundams, working on side projects, or travelling
+            with my lovely wife.

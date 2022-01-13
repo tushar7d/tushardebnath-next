@@ -1,6 +1,5 @@
 import Layout from "../components/Layout";
 
-
 const Job = ({ name, role, tenure }) => {
   return (
     <div className="flex items-center justify-between w-full py-4 ">
@@ -16,28 +15,56 @@ const Job = ({ name, role, tenure }) => {
 const Home = () => {
   return (
     <>
-      <div className="p-8 w-full mx-auto md:p-12 max-w-prose mt-12">
-        <img src="/td.png" className="w-[200px] mx-auto" />
-        
-      <h2 className="mb-2 text-4xl font-serif text-center font-semibold my-4">Tushar Debnath</h2>
-        
-          <p className="text-justify ">
-            I'm Tushar a product designer and developer, from New Delhi. I build
-            digital products, workflows, design tools and design systems.
-          </p>
-          <p className="text-justify mb-2">
+      <div className=" grid xl:grid-cols-2 gap-10 h-screen">
+        <div className="p-12 border-r">
+          <img src="/td.png" className="w-[200px] mt- mx-auto" />
+
+          <div className="text-xl mb-2 mt-12  text-gray-400 ">INTRO </div>
+
+          <div className=" text-4xl font-semibold mb-6 ">
+            Hello I am Tushar a product designer and developer from New Delhi.
+          </div>
+          <div className="text-xl tracking-wide  text-gray-500 text-justify">
             For the past 9 odd years I've worked with different teams applying
             human-centred design to challenges in Travel, Hyper Local, and
-            Instant messaging.
-          </p>
-          <p className="text-justify mb-2">
-            When I am not designing or coding, you can find me reading fantasy
-            books, building Gundams, working on side projects, or travelling
-            with my lovely wife.
-          </p>
+            Instant messaging. When I am not designing or coding, you can find
+            me reading fantasy books, building Gundams, working on side
+            projects, or travelling with my lovely wife.
+          </div>
         </div>
-        
-    
+
+        <div className="mt-12 p-12">
+          <div className="text-2xl mb-2 text-gray-400 ">EXPERIENCE </div>
+
+          <div className="divide-y ">
+            <Job
+              name="Zomato"
+              role="Senior Product Designer"
+              tenure="2019 - current"
+            />
+            <Job
+              name="Expedia"
+              role="Senior Product Designer"
+              tenure="2019 - current"
+            />
+            <Job
+              name="Hike Messenger"
+              role="Lead Product Designer"
+              tenure="2019 - current"
+            />
+            <Job
+              name="MakeMyTrip"
+              role="Product Designer"
+              tenure="2019 - current"
+            />
+            <Job
+              name="Frog Walks Out"
+              role="Designer"
+              tenure="2019 - current"
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
