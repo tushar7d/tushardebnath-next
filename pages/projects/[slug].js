@@ -7,6 +7,7 @@ import { FaChevronLeft } from "@react-icons/all-files/fa/FaChevronLeft";
 import Link from "next/link";
 import Layout from '../../components/Layout'
 import Stepper from '../../components/Stepper'
+import Img from '../../components/Img'
 
 Index.getLayout = function getLayout(page) {
   return (
@@ -35,7 +36,7 @@ const CollapsedBackButton = () =>{
 
 
 
-const components = { Callout };
+const components = { Callout,Img };
 
 export default function Index({ source, po, img, order, count }) {
   return (
