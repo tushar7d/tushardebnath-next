@@ -8,34 +8,44 @@ const Job = ({ name, role, tenure }) => {
         <div className="mb-1 text-xl font-semibold">{name}</div>
         <div>{role}</div>
       </div>
-      <div className="text-gray-500 tetx-sm">{tenure}</div>
+      <div className="text-gray-500 tetx-sm text-right">{tenure}</div>
     </div>
   );
 };
 
 const Home = () => {
   return (
-    <div className="grid h-screen xl:relative xl:overflow-hidden lg:grid-cols-2 xl:grid-cols-3  scrollbar-hide  ">
-      <div className="p-12 border-r xl:overflow-scroll xl:scrollbar-hide  xl:col-span-2 ">
+    <div className="grid h-screen xl:relative xl:overflow-hidden lg:grid-cols-2 xl:grid-cols-6  scrollbar-hide  ">
+      <div className="p-12 border-r xl:overflow-scroll xl:scrollbar-hide  xl:col-span-4 ">
         <div className="max-w-prose mx-auto mt-24">
-          <img src="/td.png" className="w-[200px]  mx-auto" />
+          <img src="/td.png" className="w-[300px]  mx-auto" />
 
           <div className="mt-12 mb-2 text-xl text-gray-400 ">INTRO </div>
 
           <div className="mb-6 text-4xl font-semibold ">
-            Hello I am Tushar a product designer and developer from New Delhi.
+            Hello 👋 I am Tushar a product designer and developer from New
+            Delhi.
           </div>
           <div className="text-xl tracking-wide text-justify text-gray-500">
-            For the past 9 odd years I've worked with different teams applying
-            human-centred design to challenges in Travel, Hyper Local, and
-            Instant messaging. When I am not designing or coding, you can find
-            me reading fantasy books, building Gundams, working on side
-            projects, or travelling with my lovely wife.
+            <p className="mb-4">
+              I specialize in building digital products, optimizing workflows,
+              developing custom design tools and multi brand design systems.
+            </p>
+            <p className="mb-4">
+              For the past 9 odd years I've worked with different teams applying
+              human-centred design to challenges in Travel, Hyper Local, and
+              Instant messaging.
+            </p>
+            <p>
+              When I am not designing or coding, you can find me reading fantasy
+              books, working on side projects, or travelling with my lovely
+              wife.
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="xl:overflow-scroll  xl:scrollbar-hide p-12   ">
+      <div className="xl:overflow-scroll  xl:scrollbar-hide p-12 xl:col-span-2   ">
         <div className="   ">
           <div className="mb-2 text-2xl text-gray-400 xl:mt-12 ">
             EXPERIENCE{" "}
