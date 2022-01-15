@@ -15,7 +15,7 @@ const Job = ({ name, role, tenure }) => {
 
 const Home = () => {
   return (
-    <div className="p-12 mx-auto mt-24 max-w-prose scrollbar-hide">
+    <div className="max-w-3xl p-12 mx-auto mt-24 scrollbar-hide">
       <img src="/td.png" className="w-[300px]  mx-auto" />
 
       <div className="mt-12 mb-2 text-xl text-gray-400 ">INTRO </div>
