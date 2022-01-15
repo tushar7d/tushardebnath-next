@@ -8,16 +8,16 @@ const Job = ({ name, role, tenure }) => {
         <div className="mb-1 text-xl font-semibold">{name}</div>
         <div>{role}</div>
       </div>
-      <div className="text-gray-500 tetx-sm text-right">{tenure}</div>
+      <div className="text-right text-gray-500 tetx-sm">{tenure}</div>
     </div>
   );
 };
 
 const Home = () => {
   return (
-    <div className="grid h-screen xl:relative xl:overflow-hidden lg:grid-cols-2 xl:grid-cols-6  scrollbar-hide  ">
-      <div className="p-12 border-r xl:overflow-scroll xl:scrollbar-hide  xl:col-span-4 ">
-        <div className="max-w-prose mx-auto mt-24">
+    <div className="grid h-screen xl:relative xl:overflow-hidden lg:grid-cols-2 xl:grid-cols-6 scrollbar-hide ">
+      <div className="p-12 border-r xl:overflow-scroll xl:scrollbar-hide xl:col-span-4 ">
+        <div className="mx-auto mt-24 max-w-prose">
           <img src="/td.png" className="w-[300px]  mx-auto" />
 
           <div className="mt-12 mb-2 text-xl text-gray-400 ">INTRO </div>
@@ -45,16 +45,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="xl:overflow-scroll  xl:scrollbar-hide p-12 xl:col-span-2   ">
-        <div className="   ">
+      <div className="p-12 xl:overflow-scroll xl:scrollbar-hide xl:col-span-2 ">
+        <div className="">
           <div className="mb-2 text-2xl text-gray-400 xl:mt-12 ">
             EXPERIENCE{" "}
           </div>
 
           <div className="divide-y ">
-            {experience.map((data) => {
+            {experience.map((data,index) => {
               return (
-                <Job name={data.name} role={data.role} tenure={data.tenure} />
+                <Job name={data.name} role={data.role} tenure={data.tenure} key={index} />
               );
             })}
           </div>
