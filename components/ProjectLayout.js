@@ -7,7 +7,7 @@ const SubLayout = (props) => {
  
 
   return (
-    <div className="md:w-[350px] md:min-w-[350px]  border-r overflow-scroll scrollbar-hide  h-screen flex-initial divide-y ">
+    <div className="md:w-[350px] md:min-w-[350px] mt-12 md:mt-0  border-r overflow-scroll scrollbar-hide  h-screen flex-initial divide-y ">
       {props.projects.map(({ title, slug, sub, badge, type }) => (
         <div onClick={() => router.push(`${props.src}${slug}`)}  key={slug}>
           <div

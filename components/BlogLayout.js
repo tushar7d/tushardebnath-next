@@ -5,7 +5,7 @@ const SubLayout = ({ pages, src }) => {
   const router = useRouter();
 
   return (
-    <div className="md:w-[350px] md:min-w-[350px]  border-r overflow-scroll scrollbar-hide  h-screen flex-initial divide-y ">
+    <div className="md:w-[350px] md:min-w-[350px] mt-12 md:mt-0  border-r overflow-scroll scrollbar-hide  h-screen flex-initial divide-y ">
       {pages.map(({ title, slug, date, desc, badge }) => (
         <Link href={`${src}${slug}`} key={slug}>
           <div
