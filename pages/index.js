@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-
 const Home = () => {
   return (
     <>
@@ -17,6 +16,7 @@ const Home = () => {
         systems. For the past 8 years I've worked with teams applying
         human-centred design to the challenges in Travel, Hyper Local, and
         Personal Communication.
+
       </div>
     </div>
     </>
