@@ -3,7 +3,7 @@ import ReactRotatingText from "react-rotating-text";
 let Intro = () => {
   return (
     <div className="mt-12 ">
-      <img src="/td.png" alt="Me" style={{ maxWidth: "180px" }} />
+      <img src="/td.png" alt="Me" className=" w-[200px] 2xl:w-[300px]" />
 
       <h1 className="mt-8 mb-2 text-4xl font-semibold md:mb-3 md:font-medium md:text-4xl lg:text-4xl dark:text-white">
         Hello, I'm Tushar Debnath
@@ -21,14 +21,14 @@ let Intro = () => {
       </div>
 
       
-      <p className="pb-3 my-4 text-xl text-gray-500">
+      <p className="pb-3 my-4 text-xl text-gray-500 2xl:text-2xl">
         For the past 9 odd years I've worked with different teams applying
         human-centred design to challenges in Travel, Hyper Local, and Instant
         messaging.
       </p>
-      <p className="pb-3 my-4 text-xl text-gray-500">
+      <p className="pb-3 my-4 text-xl text-gray-500 2xl:text-2xl">
         When I am not designing or coding, you can find me reading fantasy
-        books, working on side projects, or travelling with my lovely wife.
+        books, working on side projects, or travelling with my family.
       </p>
     </div>
   );
