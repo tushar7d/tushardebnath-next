@@ -6,6 +6,10 @@ module.exports = {
   ],
   darkMode: 'class', 
   theme: {
+    fontFamily: {
+      sans: [ 'Inter', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
     extend: {
       colors: { 
         'page-black':'#121212'
