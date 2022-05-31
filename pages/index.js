@@ -1,18 +1,4 @@
 import Head from "next/head";
-import IconSet from '../components/IconSet'
-import Intro from '../components/Intro'
-import Content from '../components/Content'
-
-
-let AboutMe = () => {
-  return (
-    <div className="flex flex-col justify-between p-4 pb-12 md:px-12 md:h-screen md:w-1/2 xl:px-24">
-      <Intro />
-      <IconSet />
-    </div>
-  );
-};
-
 
 export default function Home() {
   return (
@@ -21,9 +7,34 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="max-h-screen m-auto md:overflow-hidden md:flex ">
-        <AboutMe />
-        <Content />
+      <div className="grid grid-cols-2 ">
+        <div className="h-screen col-span-1 p-14 ">
+          <div className="flex content-center justify-center w-12 h-12 mb-4 text-white align-middle bg-black">
+            TD
+          </div>
+          <h1 className="text-2xl font-normal leading-relaxed ">
+            Hello, I’m Tushar Debnath a product designer and design technologist
+            from New Delhi.
+          </h1>
+          <p className="mt-4 leading-relaxed text-gray-400">
+            I specialize in building consumer products, design systems,
+            workflows and design tools for fast moving product companies. I have
+            over 8 years of experience working in a variety of industries such
+            as Travel, HyperLocal and more recently FinTech.
+          </p>
+          <p className="mt-4 leading-relaxed text-gray-400">
+            I am currently working with Revolut as a senior product designer,
+            helping bring the Revolut App to the APAC region. Previously I have
+            worked for Expedia, Zomato, MakeMyTrip and Hike Messenger.
+          </p>
+          <p className="mt-4 leading-relaxed text-gray-400">
+            When I am not designing or tinkering with something new, you can
+            find me listening to the alt rock from the 00s, watching obscure
+            anime from the 90s or obsessing over some fantasy book I am
+            currently reading.
+          </p>
+        </div>
+        <div className="h-screen col-span-1 bg-gray-200 p-14 ">two</div>
       </div>
     </>
   );
