@@ -7,8 +7,8 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="grid grid-cols-2 ">
-        <div className="h-screen col-span-1 p-14 ">
+      <div className="grid md:grid-cols-2 ">
+        <div className="col-span-1 md:h-screen p-14 ">
           <div className="flex content-center justify-center w-12 h-12 mb-4 text-white align-middle bg-black">
             TD
           </div>
@@ -34,7 +34,7 @@ export default function Home() {
             currently reading.
           </p>
         </div>
-        <div className="h-screen col-span-1 bg-gray-200 p-14 ">two</div>
+        <div className="col-span-1 bg-gray-200 md:h-screen p-14 ">two</div>
       </div>
     </>
   );
