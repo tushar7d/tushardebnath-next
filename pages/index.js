@@ -9,10 +9,10 @@ export default function Home() {
       </Head>
       <div className="grid md:grid-cols-2 ">
         <div className="col-span-1 md:h-screen p-14 ">
-          <div className="flex items-center content-center justify-center w-12 h-12 mb-4 text-xl text-white bg-black rounded-full">
+          <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
             TD
           </div>
-          <h1 className="text-2xl font-normal leading-relaxed ">
+          <h1 className="text-2xl font-medium leading-relaxed ">
             Hello, I’m Tushar Debnath a product designer and design technologist
             from New Delhi.
           </h1>
