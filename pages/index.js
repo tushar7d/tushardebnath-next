@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
       <div className="grid md:grid-cols-2 ">
         <div className="col-span-1 md:h-screen p-14 ">
-          <div className="flex content-center justify-center w-12 h-12 mb-4 text-white align-middle bg-black">
+          <div className="flex items-center content-center justify-center w-12 h-12 mb-4 text-xl text-white bg-black rounded-full">
             TD
           </div>
           <h1 className="text-2xl font-normal leading-relaxed ">
@@ -34,7 +34,7 @@ export default function Home() {
             currently reading.
           </p>
         </div>
-        <div className="col-span-1 bg-gray-200 md:h-screen p-14 ">two</div>
+        <div className="col-span-1 bg-gray-50 md:h-screen p-14">two</div>
       </div>
     </>
   );
