@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+
 export default function Home() {
   return (
     <>
@@ -48,16 +49,18 @@ let Bio = () => {
 let Navigation = () => {
   return (
     <div className="col-span-1 p-6 lg:relative lg:overflow-scroll bg-gray-50 lg:h-screen lg:p-14">
-      <div className="mb-6">WORK</div>
+      <div className="mb-6 ">WORK</div>
       <Cell title="Redesigning Zomato's order tracker." desc="Case study" />
       <Cell
         title="Helping Expedia users find the right rental car"
         desc="Case Study"
       />
-      <div className="mt-12 mb-6">WRITING</div>
+      <div className="mt-12 mb-6 ">WRITING</div>
       <Cell title="Projeect" desc="lorem ipsum" />
       <Cell title="Projeect" desc="lorem ipsum" />
       <Cell title="Projeect" desc="lorem ipsum" />
+      
+      <div className="mt-12 mb-6 ">SIDE PROJECTS</div>
       <Cell title="Projeect" desc="lorem ipsum" />
       <Cell title="Projeect" desc="lorem ipsum" />
       <Cell title="Projeect" desc="lorem ipsum" />
@@ -67,12 +70,11 @@ let Navigation = () => {
 
 let Cell = (props) => {
   return (
-    <div className="flex mb-6 ">
+    <div className="flex items-center mb-6 rounded-xl hover:cursor-pointer">
       <div className="w-20 h-20 bg-gray-200 rounded-xl" />
       <div className="ml-3">
       <div className="text-sm text-gray-500">{props.desc}</div>
-        <div className="text-lg">{props.title}</div>
-        
+        <div className="text-lg">{props.title}</div> 
       </div>
     </div>
   );
