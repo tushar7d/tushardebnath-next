@@ -7,7 +7,7 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="grid md:grid-cols-2 ">
+      <div className="grid lg:grid-cols-2 ">
         <Bio />
         <Navigation />
       </div>
@@ -17,7 +17,7 @@ export default function Home() {
 
 let Bio = () => {
   return (
-    <div className="col-span-1 p-6 md:h-screen md:p-14 ">
+    <div className="col-span-1 p-6 lg:h-screen lg:p-14 ">
       <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
         TD
       </div>
@@ -47,7 +47,7 @@ let Bio = () => {
 
 let Navigation = () => {
   return (
-    <div className="col-span-1 p-6 md:relative md:overflow-scroll bg-gray-50 md:h-screen md:p-14">
+    <div className="col-span-1 p-6 lg:relative lg:overflow-scroll bg-gray-50 lg:h-screen lg:p-14">
       <div className="mb-6">WORK</div>
       <Cell title="Redesigning Zomato's order tracker." desc="Case study" />
       <Cell
