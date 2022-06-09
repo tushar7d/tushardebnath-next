@@ -17,7 +17,7 @@ export default function Home() {
 
 let Bio = () => {
   return (
-    <div className="col-span-1 md:h-screen p-14 ">
+    <div className="col-span-1 p-6 md:h-screen md:p-14 ">
       <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
         TD
       </div>
@@ -45,6 +45,21 @@ let Bio = () => {
   );
 };
 
+let Cell = () => {
+  return(
+    <div>
+      <div className="w-20 h-20 bg-gray-200 rounded-xl">
+
+      </div>
+    </div>
+  )
+}
+
 let Navigation = () => {
-  return <div className="col-span-1 bg-gray-50 md:h-screen p-14">two</div>;
+  return (
+    <div className="col-span-1 p-6 bg-gray-50 md:h-screen md:p-14">
+      <div className="mb-12">WORK</div>
+      <Cell />
+    </div>
+  );
 };
