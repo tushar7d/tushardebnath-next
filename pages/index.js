@@ -45,21 +45,35 @@ let Bio = () => {
   );
 };
 
-let Cell = () => {
-  return(
-    <div>
-      <div className="w-20 h-20 bg-gray-200 rounded-xl">
-
-      </div>
-    </div>
-  )
-}
-
 let Navigation = () => {
   return (
-    <div className="col-span-1 p-6 bg-gray-50 md:h-screen md:p-14">
-      <div className="mb-12">WORK</div>
-      <Cell />
+    <div className="col-span-1 p-6 md:relative md:overflow-scroll bg-gray-50 md:h-screen md:p-14">
+      <div className="mb-6">WORK</div>
+      <Cell title="Redesigning Zomato's order tracker." desc="Case study" />
+      <Cell
+        title="Helping Expedia users find the right rental car"
+        desc="Case Study"
+      />
+      <div className="mt-12 mb-6">WRITING</div>
+      <Cell title="Projeect" desc="lorem ipsum" />
+      <Cell title="Projeect" desc="lorem ipsum" />
+      <Cell title="Projeect" desc="lorem ipsum" />
+      <Cell title="Projeect" desc="lorem ipsum" />
+      <Cell title="Projeect" desc="lorem ipsum" />
+      <Cell title="Projeect" desc="lorem ipsum" />
+    </div>
+  );
+};
+
+let Cell = (props) => {
+  return (
+    <div className="flex mb-6 ">
+      <div className="w-20 h-20 bg-gray-200 rounded-xl" />
+      <div className="ml-3">
+      <div className="text-sm text-gray-500">{props.desc}</div>
+        <div className="text-lg">{props.title}</div>
+        
+      </div>
     </div>
   );
 };
