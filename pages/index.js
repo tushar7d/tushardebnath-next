@@ -23,7 +23,7 @@ let Bio = () => {
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-2xl font-medium leading-relaxed ">
+        <h1 className="text-3xl font-medium leading-relaxed ">
           Hello, I’m Tushar Debnath a product designer and design technologist
           from New Delhi.
         </h1>
@@ -36,11 +36,11 @@ let Bio = () => {
         </p>
 
         <Link href="/about">
-          <button className="flex items-center mt-4 text-gray-900 hover:text-gray-800">
+          <button className="flex items-center mt-4 text-gray-900 hover:text-yellow-500">
             Read More
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 ml-1"
+              className="w-4 h-4 ml-1 hover:text-yellow-500"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -71,25 +71,24 @@ let Navigation = () => {
         desc="Case Study"
       />
       <div className="mt-12 mb-6 ">WRITING</div>
-      <Cell title="Projeect" desc="lorem ipsum" />
-      <Cell title="Projeect" desc="lorem ipsum" />
-      <Cell title="Projeect" desc="lorem ipsum" />
-
+      <Cell title="How I created a Figma plugin to automate our design system migration." desc="Medium" />
+      <Cell title="Figma shortcuts using MIDI" desc="Medium" />
+      <Cell title="Consistent file structure = Better collaboration" desc="Medium" />
       <div className="mt-12 mb-6 ">SIDE PROJECTS</div>
-      <Cell title="Projeect" desc="lorem ipsum" />
-      <Cell title="Projeect" desc="lorem ipsum" />
-      <Cell title="Projeect" desc="lorem ipsum" />
+      <Cell title="ColorKit: Generate darker or lighter shades of a particular color" desc="Figma Plugin" />
+      <Cell title="Project Scaffold: Generate project stucture" desc="Figma Plugin" />
+      
     </div>
   );
 };
 
 let Cell = (props) => {
   return (
-    <div className="flex items-center mb-6 rounded-xl hover:cursor-pointer">
-      <div className="w-20 h-20 bg-gray-200 rounded-xl" />
+    <div className="flex items-center mb-6 rounded-xl hover:cursor-pointer hover:text-yellow-500 ">
+      <div className="w-20 h-20 bg-gray-200 shrink-0 rounded-xl" />
       <div className="ml-3">
         <div className="text-sm text-gray-500">{props.desc}</div>
-        <div className="text-lg">{props.title}</div>
+        <div className="text-lg ">{props.title}</div>
       </div>
     </div>
   );
