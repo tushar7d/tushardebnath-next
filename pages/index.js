@@ -8,6 +8,7 @@ export default function Home() {
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      
       <div className="grid lg:grid-cols-2 ">
         <Bio />
         <Navigation />
@@ -23,21 +24,21 @@ let Bio = () => {
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-3xl font-medium leading-relaxed lg:mt-24 ">
+        <h1 className="text-2xl md:text-3xl font-medium md:leading-relaxed  lg:mt-24 ">
           Hello, I’m Tushar Debnath a product designer and design technologist
           from New Delhi.
         </h1>
 
-        <p className="mt-4 leading-relaxed text-gray-500">
+        <p className="mt-6 lg:text-lg font-normal leading-relaxed text-gray-500">
           I am a self taught designer with a background in engineering. I have
           over 8 years of experience building consumer products used by millions
           of people across the globe and for a variety of industries like
           Travel, Food Delivery, Banking, and Instant Messaging.
-          
+
         </p>
 
         <Link href="/about">
-          <button className="flex items-center mt-4 text-gray-900 hover:text-yellow-500">
+          <button className="flex items-center mt-6 text-gray-900 hover:text-yellow-500">
             Read More
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,27 +65,29 @@ let Bio = () => {
 
 let Navigation = () => {
   return (
-    <div className="col-span-1 p-6 lg:relative lg:overflow-scroll bg-gray-50 lg:h-screen lg:p-14">
+    <div className="col-span-1 p-6 lg:relative lg:overflow-scroll bg-gray-50 lg:h-screen scrollbar-hide lg:p-14">
       <div className="mb-6 ">WORK</div>
-      <Cell title="Redesigning Zomato's order tracker." desc="Case study" />
+      <Cell title="Redesigning Zomato's order tracker." desc="Case study" link="/work/zomato" />
       <Cell
         title="Helping Expedia users find the right rental car"
         desc="Case Study"
+        link="/"
       />
       <div className="mt-12 mb-6 ">WRITING</div>
-      <Cell title="How I created a Figma plugin to automate our design system migration." desc="Medium" />
-      <Cell title="Figma shortcuts using MIDI" desc="Medium" />
-      <Cell title="Consistent file structure = Better collaboration" desc="Medium" />
+      <Cell title="How I created a Figma plugin to automate our design system migration." desc="Medium" link="/" />
+      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="/" />
+      <Cell title="Consistent file structure = Better collaboration" desc="Medium" link="/" />
       <div className="mt-12 mb-6 ">SIDE PROJECTS</div>
-      <Cell title="ColorKit: Generate darker or lighter shades of a particular color" desc="Figma Plugin" />
-      <Cell title="Project Scaffold: Generate project stucture" desc="Figma Plugin" />
-      
+      <Cell title="ColorKit: Generate darker or lighter shades of a particular color" desc="Figma Plugin" link="/" />
+      <Cell title="Project Scaffold: Generate project stucture" desc="Figma Plugin" link="/" />
+
     </div>
   );
 };
 
 let Cell = (props) => {
   return (
+    <Link href={props.link}>
     <div className="flex items-center mb-6 rounded-xl hover:cursor-pointer hover:text-yellow-500 ">
       <div className="w-20 h-20 bg-gray-200 shrink-0 rounded-xl" />
       <div className="ml-3">
@@ -92,6 +95,7 @@ let Cell = (props) => {
         <div className="text-lg ">{props.title}</div>
       </div>
     </div>
+    </Link>
   );
 };
 
