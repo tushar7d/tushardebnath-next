@@ -33,6 +33,7 @@ let Bio = () => {
           over 8 years of experience building consumer products used by millions
           of people across the globe and for a variety of industries like
           Travel, Food Delivery, Banking, and Instant Messaging.
+          
         </p>
 
         <Link href="/about">
