@@ -23,7 +23,7 @@ let Bio = () => {
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-3xl font-medium leading-relaxed ">
+        <h1 className="text-3xl font-medium leading-relaxed lg:mt-24 ">
           Hello, I’m Tushar Debnath a product designer and design technologist
           from New Delhi.
         </h1>
