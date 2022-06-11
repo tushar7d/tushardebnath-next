@@ -63,10 +63,37 @@ let Bio = () => {
   );
 };
 
+let LinkButton = (props) =>{
+
+  return(
+
+    <Link href={props.link}>
+    <button className="flex items-center p-4 mt-2 text-gray-900 hover:text-yellow-500">
+      {props.title}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-4 h-4 ml-1 hover:text-yellow-500"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M14 5l7 7m0 0l-7 7m7-7H3"
+        />
+      </svg>
+    </button>
+  </Link>
+
+  )
+}
+
 let Navigation = () => {
   return (
     <div className="col-span-1 p-6 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
-      <div className="mb-6 ">WORK</div>
+      <div className="pl-4 mb-6 ">WORK</div>
       <Cell title="Revolut India Expansion" desc="Case study" link="/work/revolut" />
       <Cell title="Redesigning Zomato's order tracker." desc="Case study" link="/work/zomato" />
       <Cell
@@ -74,14 +101,16 @@ let Navigation = () => {
         desc="Case Study"
         link="/"
       />
-      <div className="mt-12 mb-6 ">WRITING</div>
+      <LinkButton link="/" title="More work" />
+      <div className="pl-4 mt-12 mb-6 ">WRITING</div>
       <Cell title="How I created a Figma plugin to automate our design system migration." desc="Medium" link="/" />
       <Cell title="Figma shortcuts using MIDI" desc="Medium" link="/" />
       <Cell title="Consistent file structure = Better collaboration" desc="Medium" link="/" />
-      <div className="mt-12 mb-6 ">SIDE PROJECTS</div>
+      <LinkButton link="/" title="More writing" />
+      <div className="pl-4 mt-12 mb-6 ">SIDE PROJECTS</div>
       <Cell title="ColorKit: Generate darker or lighter shades of a particular color" desc="Figma Plugin" link="/" />
       <Cell title="Project Scaffold: Generate project stucture" desc="Figma Plugin" link="/" />
-
+      <LinkButton link="/" title="More projects" />
     </div>
   );
 };
