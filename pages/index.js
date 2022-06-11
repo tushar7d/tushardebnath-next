@@ -19,17 +19,17 @@ export default function Home() {
 
 let Bio = () => {
   return (
-    <div className="flex flex-col justify-between col-span-1 p-6 mb-12 lg:h-screen lg:p-14 lg:mb-0">
+    <div className="flex flex-col justify-between col-span-1 p-6 mb-12 lg:h-screen lg:p-14 bg-gray-50 lg:mb-0">
       <div>
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-2xl md:text-3xl font-medium md:leading-relaxed  lg:mt-24 ">
+        <h1 className="text-2xl font-semibold md:text-3xl md:leading-relaxed lg:mt-24 ">
           Hello, I’m Tushar Debnath a product designer and design technologist
           from New Delhi.
         </h1>
 
-        <p className="mt-6 lg:text-lg font-normal leading-relaxed text-gray-500">
+        <p className="mt-6 font-normal leading-relaxed text-gray-500 lg:text-lg">
           I am a self taught designer with a background in engineering. I have
           over 8 years of experience building consumer products used by millions
           of people across the globe and for a variety of industries like
@@ -65,8 +65,9 @@ let Bio = () => {
 
 let Navigation = () => {
   return (
-    <div className="col-span-1 p-6 lg:relative lg:overflow-scroll bg-gray-50 lg:h-screen scrollbar-hide lg:p-14">
+    <div className="col-span-1 p-6 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
       <div className="mb-6 ">WORK</div>
+      <Cell title="Revolut India Expansion" desc="Case study" link="/work/revolut" />
       <Cell title="Redesigning Zomato's order tracker." desc="Case study" link="/work/zomato" />
       <Cell
         title="Helping Expedia users find the right rental car"
@@ -88,7 +89,7 @@ let Navigation = () => {
 let Cell = (props) => {
   return (
     <Link href={props.link}>
-    <div className="flex items-center mb-6 rounded-xl hover:cursor-pointer hover:text-yellow-500 ">
+    <div className="flex items-center p-4 hover:bg-gray-50 rounded-xl hover:cursor-pointer hover:text-yellow-500 ">
       <div className="w-20 h-20 bg-gray-200 shrink-0 rounded-xl" />
       <div className="ml-3">
         <div className="text-sm text-gray-500">{props.desc}</div>
