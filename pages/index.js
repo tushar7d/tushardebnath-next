@@ -122,7 +122,7 @@ let Navigation = () => {
         link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
         img="/dsauto.png"
       />
-      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa" img="/key.png" />
+      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa" img="/Key.png" />
       <Cell
         title="Consistent file structure = Better collaboration"
         desc="Medium"
