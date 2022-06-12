@@ -35,7 +35,7 @@ let Bio = () => {
           of people across the globe and for a variety of industries like
           Travel, Food Delivery, Banking, and Instant Messaging.
         </p>
-
+        {/*
         <Link href="/about">
           <button className="flex items-center mt-6 text-gray-500 hover:text-yellow-500">
             Read More
@@ -55,6 +55,10 @@ let Bio = () => {
             </svg>
           </button>
         </Link>
+        
+        */}
+
+        
       </div>
 
       <Iconset />
@@ -97,22 +101,17 @@ let Navigation = () => {
   return (
     <div className="col-span-1 p-6 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
       <Heading>WORK</Heading>
-      <Cell
-        title="Revolut India Expansion"
-        desc="Case study"
-        link="/work/revolut"
-        img="/revolut.png"
-      />
+     
       <Cell
         title="Redesigning Zomato's order tracker."
         desc="Case study"
-        link="/work/zomato"
+        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
         img="/Zomato.png"
       />
       <Cell
         title="Helping Expedia users find the right rental car"
         desc="Case Study"
-        link="/work/expedia"
+        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
         img="/Expedia.png"
       />
 
@@ -120,14 +119,14 @@ let Navigation = () => {
       <Cell
         title="How I created a Figma plugin to automate our design system migration"
         desc="Medium"
-        link="/"
+        link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
         img="/dsauto.png"
       />
-      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="/" img="/key.png" />
+      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa" img="/key.png" />
       <Cell
         title="Consistent file structure = Better collaboration"
         desc="Medium"
-        link="/"
+        link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
         img="/struct.png"
         
       />
@@ -136,13 +135,13 @@ let Navigation = () => {
       <Cell
         title="ColorKit: Generate darker or lighter shades of a particular color"
         desc="Figma Plugin"
-        link="/"
+        link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
         img="/colors.png"
       />
       <Cell
         title="Project Scaffold: Generate project stucture"
         desc="Figma Plugin"
-        link="/"
+        link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
         img="/scaffold.png"
       />
     </div>
@@ -151,7 +150,7 @@ let Navigation = () => {
 
 let Cell = (props) => {
   return (
-    <Link href={props.link}>
+    <a href={props.link}  target="_blank">
       <div className="flex items-center p-4 hover:bg-gray-50 rounded-3xl hover:cursor-pointer hover:text-yellow-500 ">
         <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl" >
           <img src={props.img} className="w-14" />
@@ -161,7 +160,7 @@ let Cell = (props) => {
           <div className="text-lg ">{props.title}</div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 
