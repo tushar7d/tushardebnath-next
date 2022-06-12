@@ -37,7 +37,7 @@ let Bio = () => {
         </p>
 
         <Link href="/about">
-          <button className="flex items-center mt-6 text-gray-900 hover:text-yellow-500">
+          <button className="flex items-center mt-6 text-gray-500 hover:text-yellow-500">
             Read More
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,29 +101,35 @@ let Navigation = () => {
         title="Revolut India Expansion"
         desc="Case study"
         link="/work/revolut"
+        img="/revolut.png"
       />
       <Cell
         title="Redesigning Zomato's order tracker."
         desc="Case study"
         link="/work/zomato"
+        img="/Zomato.png"
       />
       <Cell
         title="Helping Expedia users find the right rental car"
         desc="Case Study"
         link="/work/expedia"
+        img="/Expedia.png"
       />
 
       <Heading>WRITING</Heading>
       <Cell
-        title="How I created a Figma plugin to automate our design system migration."
+        title="How I created a Figma plugin to automate our design system migration"
         desc="Medium"
         link="/"
+        img="/dsauto.png"
       />
-      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="/" />
+      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="/" img="/key.png" />
       <Cell
         title="Consistent file structure = Better collaboration"
         desc="Medium"
         link="/"
+        img="/struct.png"
+        
       />
 
       <Heading>SIDE PROJECTS</Heading>
@@ -131,11 +137,13 @@ let Navigation = () => {
         title="ColorKit: Generate darker or lighter shades of a particular color"
         desc="Figma Plugin"
         link="/"
+        img="/colors.png"
       />
       <Cell
         title="Project Scaffold: Generate project stucture"
         desc="Figma Plugin"
         link="/"
+        img="/scaffold.png"
       />
     </div>
   );
@@ -144,8 +152,10 @@ let Navigation = () => {
 let Cell = (props) => {
   return (
     <Link href={props.link}>
-      <div className="flex items-center p-4 hover:bg-gray-50 rounded-xl hover:cursor-pointer hover:text-yellow-500 ">
-        <div className="w-20 h-20 bg-gray-200 shrink-0 rounded-xl" />
+      <div className="flex items-center p-4 hover:bg-gray-50 rounded-3xl hover:cursor-pointer hover:text-yellow-500 ">
+        <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl" >
+          <img src={props.img} className="w-14" />
+        </div>
         <div className="ml-3">
           <div className="text-sm text-gray-500">{props.desc}</div>
           <div className="text-lg ">{props.title}</div>
