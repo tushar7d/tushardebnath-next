@@ -20,11 +20,11 @@ export default function Home() {
 let Bio = () => {
   return (
     <div className="flex flex-col justify-between col-span-1 p-6 mb-12 lg:h-screen lg:p-14 bg-gray-50 lg:mb-0">
-      <div>
+      <div className="xl:pr-24">
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-2xl font-semibold md:text-3xl md:leading-relaxed lg:mt-24 ">
+        <h1 className="text-2xl font-semibold md:text-3xl md:leading-relaxed lg:mt-24  ">
           Hello, I’m Tushar Debnath a product designer and design technologist
           from New Delhi.
         </h1>
