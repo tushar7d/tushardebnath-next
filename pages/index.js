@@ -7,6 +7,18 @@ export default function Home() {
       <Head>
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          property="og:title"
+          content="Tushar Debnath | Product Designer"
+        />
+        <meta
+          property="og:description"
+          content="Product designer and design technologist
+          from New Delhi."
+        />
+        
+        <meta property="og:url" content="https://tushardebnath.com" />
+        <meta property="og:type" content="website" />
       </Head>
 
       <div className="grid lg:grid-cols-2 ">
@@ -57,8 +69,6 @@ let Bio = () => {
         </Link>
         
         */}
-
-        
       </div>
 
       <Iconset />
@@ -66,29 +76,7 @@ let Bio = () => {
   );
 };
 
-let LinkButton = (props) => {
-  return (
-    <Link href={props.link}>
-      <button className="flex items-center justify-center w-full p-3 mt-6 text-sm text-gray-500 rounded-lg bg-gray-50 hover:text-yellow-500">
-        {props.title}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-4 h-4 ml-1 hover:text-yellow-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M14 5l7 7m0 0l-7 7m7-7H3"
-          />
-        </svg>
-      </button>
-    </Link>
-  );
-};
+
 let Heading = (props) => {
   return (
     <div className="pl-4 mt-12 mb-6 text-lg font-semibold tracking-widest ">
@@ -101,7 +89,7 @@ let Navigation = () => {
   return (
     <div className="col-span-1 p-6 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
       <Heading>FEATURED WORK</Heading>
-     
+
       <Cell
         title="Redesigning Zomato's order tracker."
         desc="Case study"
@@ -115,8 +103,6 @@ let Navigation = () => {
         img="/Expedia.png"
       />
 
-    
-
       <Heading>WRITING</Heading>
       <Cell
         title="How I created a Figma plugin to automate our design system migration"
@@ -124,13 +110,17 @@ let Navigation = () => {
         link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
         img="/dsauto.png"
       />
-      <Cell title="Figma shortcuts using MIDI" desc="Medium" link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa" img="/Key.png" />
+      <Cell
+        title="Figma shortcuts using MIDI"
+        desc="Medium"
+        link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
+        img="/Key.png"
+      />
       <Cell
         title="Consistent file structure = Better collaboration"
         desc="Medium"
         link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
         img="/struct.png"
-        
       />
 
       <Heading>SIDE PROJECTS</Heading>
@@ -152,10 +142,10 @@ let Navigation = () => {
 
 let Cell = (props) => {
   return (
-    <a href={props.link}  target="_blank">
+    <a href={props.link} target="_blank" aria-label={`link to ${props.title}`}>
       <div className="flex items-center p-4 hover:bg-gray-50 rounded-3xl hover:cursor-pointer hover:text-yellow-500 ">
-        <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl" >
-          <img src={props.img} className="w-14" />
+        <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl">
+          <img src={props.img} className="w-14 h-14" />
         </div>
         <div className="ml-3">
           <div className="text-sm text-gray-500">{props.desc}</div>
@@ -172,6 +162,7 @@ let IconLink = (props) => {
       className="mr-5 no-underline dark:text-white hover:text-yellow-500 dark:hover:text-yellow-500"
       target="_blank"
       href={props.link}
+      aria-label={props.aria}
     >
       {props.children}
     </a>
@@ -181,7 +172,7 @@ let IconLink = (props) => {
 let Iconset = () => {
   return (
     <div className="flex items-baseline mt-24 text-lg lg:mt-0 ">
-      <IconLink link="https://www.linkedin.com/in/tushardebnath/">
+      <IconLink link="https://www.linkedin.com/in/tushardebnath/" aria="Linked In Profile">
         <svg
           width="24"
           height="24"
@@ -195,7 +186,7 @@ let Iconset = () => {
           />
         </svg>
       </IconLink>
-      <IconLink link="https://dribbble.com/tushardebnath">
+      <IconLink link="https://dribbble.com/tushardebnath" aria="Dribble Profile">
         <svg
           width="24"
           height="24"
@@ -209,7 +200,7 @@ let Iconset = () => {
           />
         </svg>
       </IconLink>
-      <IconLink link="https://github.com/tushar7d">
+      <IconLink link="https://github.com/tushar7d" aria="Github Profile">
         <svg
           width="24"
           height="24"
