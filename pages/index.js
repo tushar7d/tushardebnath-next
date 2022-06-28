@@ -100,7 +100,7 @@ let Heading = (props) => {
 let Navigation = () => {
   return (
     <div className="col-span-1 p-6 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
-      <Heading>WORK</Heading>
+      <Heading>FEATURED WORK</Heading>
      
       <Cell
         title="Redesigning Zomato's order tracker."
@@ -114,6 +114,8 @@ let Navigation = () => {
         link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
         img="/Expedia.png"
       />
+
+    
 
       <Heading>WRITING</Heading>
       <Cell
