@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -148,7 +148,7 @@ let Cell = (props) => {
     <a href={props.link} target="_blank" aria-label={`link to ${props.title}`}>
       <div className="flex items-center p-4 hover:bg-gray-50 rounded-3xl hover:cursor-pointer hover:text-yellow-500 ">
         <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl">
-          <img src={props.img} className="w-14 h-14" />
+          <Image src={props.img} width={56} height={56} blur="true" lazy="true"/>
         </div>
         <div className="ml-3">
           <div className="text-sm text-gray-500">{props.desc}</div>
