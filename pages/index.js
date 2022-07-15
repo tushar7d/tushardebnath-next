@@ -7,16 +7,13 @@ export default function Home() {
       <Head>
         <title>Tushar Debnath</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          property="og:title"
-          content="Tushar Debnath | Product Designer"
-        />
+        <meta property="og:title" content="Tushar Debnath | Product Designer" />
         <meta
           property="og:description"
           content="Product designer and design technologist
           from New Delhi."
         />
-        
+
         <meta property="og:url" content="https://tushardebnath.com" />
         <meta property="og:type" content="website" />
       </Head>
@@ -36,7 +33,7 @@ let Bio = () => {
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-2xl font-semibold md:text-3xl md:leading-relaxed lg:mt-24  ">
+        <h1 className="text-2xl font-semibold md:text-3xl md:leading-relaxed lg:mt-24 ">
           Hello, I’m Tushar Debnath a product designer and design technologist
           from New Delhi.
         </h1>
@@ -76,7 +73,6 @@ let Bio = () => {
   );
 };
 
-
 let Heading = (props) => {
   return (
     <div className="pl-4 mt-12 mb-6 text-lg font-semibold tracking-widest ">
@@ -102,6 +98,27 @@ let Navigation = () => {
         link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
         img="/Expedia.png"
       />
+      <Heading>SPEAKING</Heading>
+      <Cell
+        title="Design to production in a snap and how you can do it too?"
+        desc="Config 2022 (Figma Conference)"
+        link="https://youtu.be/FhXXEM1_aP4"
+        img="/config.png"
+      />
+
+      <Heading>SIDE PROJECTS</Heading>
+      <Cell
+        title="ColorKit: Generate darker or lighter shades of a particular color"
+        desc="Figma Plugin"
+        link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
+        img="/colors.png"
+      />
+      <Cell
+        title="Project Scaffold: Generate project stucture"
+        desc="Figma Plugin"
+        link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
+        img="/scaffold.png"
+      />
 
       <Heading>WRITING</Heading>
       <Cell
@@ -121,20 +138,6 @@ let Navigation = () => {
         desc="Medium"
         link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
         img="/struct.png"
-      />
-
-      <Heading>SIDE PROJECTS</Heading>
-      <Cell
-        title="ColorKit: Generate darker or lighter shades of a particular color"
-        desc="Figma Plugin"
-        link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
-        img="/colors.png"
-      />
-      <Cell
-        title="Project Scaffold: Generate project stucture"
-        desc="Figma Plugin"
-        link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
-        img="/scaffold.png"
       />
     </div>
   );
@@ -172,7 +175,10 @@ let IconLink = (props) => {
 let Iconset = () => {
   return (
     <div className="flex items-baseline mt-24 text-lg lg:mt-0 ">
-      <IconLink link="https://www.linkedin.com/in/tushardebnath/" aria="Linked In Profile">
+      <IconLink
+        link="https://www.linkedin.com/in/tushardebnath/"
+        aria="Linked In Profile"
+      >
         <svg
           width="24"
           height="24"
@@ -186,7 +192,10 @@ let Iconset = () => {
           />
         </svg>
       </IconLink>
-      <IconLink link="https://dribbble.com/tushardebnath" aria="Dribble Profile">
+      <IconLink
+        link="https://dribbble.com/tushardebnath"
+        aria="Dribble Profile"
+      >
         <svg
           width="24"
           height="24"
