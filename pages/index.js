@@ -102,7 +102,7 @@ let Navigation = () => {
       <Cell
         title="Design to production in a snap and how you can do it too?"
         desc="Config 2022 (Figma Conference)"
-        link="https://youtu.be/FhXXEM1_aP4"
+        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
         img="/config.png"
       />
 
