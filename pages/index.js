@@ -44,28 +44,6 @@ let Bio = () => {
           of people across the globe and for a variety of industries like
           Travel, Food Delivery, Banking, and Instant Messaging.
         </p>
-        {/*
-        <Link href="/about">
-          <button className="flex items-center mt-6 text-gray-500 hover:text-yellow-500">
-            Read More
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 ml-1 hover:text-yellow-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </button>
-        </Link>
-        
-        */}
       </div>
 
       <Iconset />
@@ -83,7 +61,7 @@ let Heading = (props) => {
 
 let Navigation = () => {
   return (
-    <div className="col-span-1 p-6 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
+    <div className="col-span-1 p-3 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
       <Heading>FEATURED WORK</Heading>
 
       <Cell
