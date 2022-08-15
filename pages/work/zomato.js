@@ -8,7 +8,7 @@ export default function Zomato() {
         <title>Tushar Debnath</title>
       </Head>
 
-      <div className="p-3 mx-auto mt-24 prose max-w-prose">
+      <div className="max-w-3xl p-3 mx-auto mt-24 prose ">
         <h1>Zomato Order Tracker</h1>
         <p>
           Helping millions of Zomato users answer the biggest question of all

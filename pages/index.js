@@ -34,16 +34,57 @@ let Bio = () => {
           TD
         </div>
         <h1 className="text-2xl font-semibold md:text-3xl md:leading-relaxed lg:mt-24 ">
-          Hello, I’m Tushar Debnath a product designer and design technologist
-          from New Delhi.
+          Hello, I’m Tushar Debnath a product designer and design technologist.
         </h1>
 
         <p className="mt-6 font-normal leading-relaxed text-gray-500 lg:text-lg">
           I am a self taught designer with a background in engineering. I have
-          over 8 years of experience building consumer products used by millions
-          of people across the globe and for a variety of industries like
-          Travel, Food Delivery, Banking, and Instant Messaging.
+          over 8 years of experience in building consumer products used by
+          millions of people across the globe.
         </p>
+        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
+          I am currently working at{" "}
+          <a
+            className="text-yellow-500"
+            target="_blank"
+            href="https://www.revolut.com/"
+          >
+            Revolut
+          </a>{" "}
+          as a Senior product designer helping launch the Revolut retail app in
+          the APAC region.
+        </p>
+        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
+          Before Revolut I was working at{" "}
+          <a
+            className="text-yellow-500"
+            target="_blank"
+            href="https://www.zomato.com/who-we-are"
+          >
+            Zomato
+          </a>{" "}
+          helping build the delivery tracking system for teh consumer app and
+          the workforce optimisation for delivery agents.
+        </p>
+        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
+          Before Zomato I was working at{" "}
+          <a
+            className="text-yellow-500"
+            target="_blank"
+            href="https://www.expedia.com/"
+          >
+            Expedia
+          </a>{" "}
+          as a senior product designer helping build the global car rental
+          product and the Expedia design system.
+        </p>
+        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
+        I am currently living in New delhi with my wife Priya.
+          When I am not working I like to spend my time listening to the music
+          from the 90s, playing retro game on my DIY arcade machine, or
+          reading Fantasy books or some manga. 
+        </p>
+       
       </div>
 
       <Iconset />
@@ -126,7 +167,13 @@ let Cell = (props) => {
     <a href={props.link} target="_blank" aria-label={`link to ${props.title}`}>
       <div className="flex items-center p-4 hover:bg-gray-50 rounded-3xl hover:cursor-pointer hover:text-yellow-500 ">
         <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl">
-          <Image src={props.img} width={56} height={56} blur="true" lazy="true"/>
+          <Image
+            src={props.img}
+            width={56}
+            height={56}
+            blur="true"
+            lazy="true"
+          />
         </div>
         <div className="ml-3">
           <div className="text-sm text-gray-500">{props.desc}</div>
