@@ -79,6 +79,14 @@ let Heading = (props) => {
 let Navigation = () => {
   return (
     <div className="col-span-1 p-3 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
+       <Heading>SPEAKING</Heading>
+      <Cell
+        title="Design to production in a snap and how you can do it too?"
+        desc="Config 2022 (Figma Conference)"
+        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
+        img="/config.png"
+      />
+      
       <Heading>FEATURED WORK</Heading>
 
       <Cell
@@ -93,13 +101,7 @@ let Navigation = () => {
         link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
         img="/Expedia.png"
       />
-      <Heading>SPEAKING</Heading>
-      <Cell
-        title="Design to production in a snap and how you can do it too?"
-        desc="Config 2022 (Figma Conference)"
-        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
-        img="/config.png"
-      />
+     
 
       <Heading>SIDE PROJECTS</Heading>
       <Cell
