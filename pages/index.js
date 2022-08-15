@@ -54,30 +54,7 @@ let Bio = () => {
           as a Senior product designer helping launch the Revolut retail app in
           the APAC region.
         </p>
-        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
-          Before Revolut I was working at{" "}
-          <a
-            className="text-yellow-500"
-            target="_blank"
-            href="https://www.zomato.com/who-we-are"
-          >
-            Zomato
-          </a>{" "}
-          helping build the delivery tracking system for teh consumer app and
-          the workforce optimisation for delivery agents.
-        </p>
-        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
-          Before Zomato I was working at{" "}
-          <a
-            className="text-yellow-500"
-            target="_blank"
-            href="https://www.expedia.com/"
-          >
-            Expedia
-          </a>{" "}
-          as a senior product designer helping build the global car rental
-          product and the Expedia design system.
-        </p>
+       
         <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
         I am currently living in New delhi with my wife Priya.
           When I am not working I like to spend my time listening to the music
