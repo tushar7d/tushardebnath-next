@@ -54,14 +54,13 @@ let Bio = () => {
           as a Senior product designer helping launch the Revolut retail app in
           the APAC region.
         </p>
-       
+
         <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
-        I am currently living in New delhi with my wife Priya.
-          When I am not working I like to spend my time listening to the music
-          from the 90s, playing retro game on my DIY arcade machine, or
-          reading Fantasy books or some manga. 
+          I live in New Delhi, India. When I am not working I like
+          to spend my time listening to the music from the 90s, playing retro
+          game on my DIY arcade machine, reading Fantasy books/mangas and
+          travelling with my wife Priya.
         </p>
-       
       </div>
 
       <Iconset />
