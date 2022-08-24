@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Zoom from "react-medium-image-zoom";
 
 
 export default function Zomato() {
@@ -15,7 +16,9 @@ export default function Zomato() {
           time! "Mera Khana Kahan hai?"( Where is my Food ? )
         </p>
 
-        <img src='/zomato/crystal.png' />
+        <Zoom>
+          <img src="/zomato/crystal.png" />
+        </Zoom>
 
         <h2>Context & My Role</h2>
         <p>
@@ -47,16 +50,23 @@ export default function Zomato() {
           user interviews helped us decide on a winning approach. The following
           is a brief overview of the two approaches that we used.
         </p>
-        
-        <img src='/zomato/one.png' />
+        <Zoom>
+        <img src="/zomato/one.png" />
+      
+        </Zoom>
         <h4>Approach 1 (Winner)</h4>
         <p>
           In this approach, we used bold colours and typography to suggest the
           status of the order, by using existing colours associations (for
           instance, green is perceived as positive).
         </p>
-        
-        <img src='/zomato/two.png' />
+
+
+        <Zoom>
+        <img src="/zomato/two.png" />
+        </Zoom>
+
+      
         <h4>Approach 2</h4>
         <p>
           In this approach, we used progressive disclosure to call out the
@@ -76,13 +86,21 @@ export default function Zomato() {
           Restaurant communication
         </p>
         <h4>Delivery Partner Communication </h4>
-        <img src='/zomato/4.png' />
+        <Zoom>
+        <img src="/zomato/4.png" />
+        </Zoom>
+       
         <h4>Restaurant Communication</h4>
-        <img src='/zomato/5.png' />
+        <Zoom>
+        <img src="/zomato/5.png" />
+        </Zoom>
+      
 
         <h3>Creating a modular system for scalability</h3>
-        <p>All the designs have been created with modularity and scalability in mind and have been scaled to all of our LOBs</p>
-        
+        <p>
+          All the designs have been created with modularity and scalability in
+          mind and have been scaled to all of our LOBs
+        </p>
       </div>
     </>
   );
