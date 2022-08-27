@@ -33,7 +33,7 @@ let Bio = () => {
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-2xl font-semibold md:text-3xl md:leading-relaxed lg:mt-24 ">
+        <h1 className="text-2xl font-semibold md:text-3xl lg:mt-24 ">
           Hello, I’m Tushar Debnath a product designer and design technologist.
         </h1>
 
