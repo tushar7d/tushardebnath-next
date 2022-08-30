@@ -1,13 +1,7 @@
-const withMDX = require('@next/mdx')({
-    extension: /\.mdx?$/,
-    options: {
-      remarkPlugins: [],
-      rehypePlugins: [],
-      // If you use `MDXProvider`, uncomment the following line.
-      // providerImportSource: "@mdx-js/react",
-    },
-  })
-  module.exports = withMDX({
-    // Append the default value with md extensions
-    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  })
+// next.config.js
+const withNextra = require('nextra')({
+  theme: 'nextra-theme-docs',
+  themeConfig: './theme.config.js',
+  // optional: add `unstable_staticImage: true` to enable Nextra's auto image import
+})
+module.exports = withNextra()
