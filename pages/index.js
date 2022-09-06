@@ -16,6 +16,7 @@ export default function Home() {
 
         <meta property="og:url" content="https://tushardebnath.com" />
         <meta property="og:type" content="website" />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       <div className="grid lg:grid-cols-2 ">
