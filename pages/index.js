@@ -33,7 +33,7 @@ let Bio = () => {
         <div className="flex items-center content-center justify-center w-12 h-12 mb-12 text-xl text-white bg-black rounded-full">
           TD
         </div>
-        <h1 className="text-2xl font-semibold md:text-3xl lg:mt-24 ">
+        <h1 className="text-2xl font-semibold md:text-3xl lg:mt-4 ">
           Hello, I’m Tushar Debnath a product designer and design technologist.
         </h1>
 
@@ -78,7 +78,15 @@ let Heading = (props) => {
 
 let Navigation = () => {
   return (
-    <div className="col-span-1 p-3 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
+    <div className="col-span-1 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide scroll-smooth">
+     <div className="sticky top-0 z-50 flex justify-center px-8 py-5 space-x-2 md:justify-start bg-white/30 backdrop-blur-lg">
+      <div className="px-4 py-2 text-white bg-black border rounded-full hover:cursor-pointer">Featured</div>
+      <div className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">Work</div>
+      <div className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">Writing</div>
+      <div className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">Sideprojects</div>
+    </div>
+    <div className="lg:py-4 lg:px-8">
+   
        <Heading>SPEAKING</Heading>
       <Cell
         title="Design to production in a snap and how you can do it too?"
@@ -136,6 +144,7 @@ let Navigation = () => {
         link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
         img="/struct.png"
       />
+    </div>
     </div>
   );
 };
