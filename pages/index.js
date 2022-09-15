@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Tab } from "@headlessui/react";
 
 export default function Home() {
   return (
@@ -56,10 +57,10 @@ let Bio = () => {
         </p>
 
         <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
-          I live in New Delhi, India. When I am not working I like
-          to spend my time listening to the music from the 90s, playing retro
-          game on my DIY arcade machine, reading Fantasy books/mangas and
-          travelling with my wife Priya.
+          I live in New Delhi, India. When I am not working I like to spend my
+          time listening to the music from the 90s, playing retro game on my DIY
+          arcade machine, reading Fantasy books/mangas and travelling with my
+          wife Priya.
         </p>
       </div>
 
@@ -79,72 +80,85 @@ let Heading = (props) => {
 let Navigation = () => {
   return (
     <div className="col-span-1 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide scroll-smooth">
-     <div className="sticky top-0 z-50 flex justify-center px-8 py-5 space-x-2 md:justify-start bg-white/30 backdrop-blur-lg">
-      <div className="px-4 py-2 text-white bg-black border rounded-full hover:cursor-pointer">Featured</div>
-      <div className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">Work</div>
-      <div className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">Writing</div>
-      <div className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">Sideprojects</div>
-    </div>
-    <div className="lg:py-4 lg:px-8">
-   
-       <Heading>SPEAKING</Heading>
-      <Cell
-        title="Design to production in a snap and how you can do it too?"
-        desc="Config 2022 (Figma Conference)"
-        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
-        img="/config.png"
-      />
-      
-      <Heading>FEATURED WORK</Heading>
+      <Tab.Group>
+        <Tab.List className="sticky top-0 z-50 flex justify-center px-8 py-5 space-x-2 md:justify-start bg-white/30 backdrop-blur-lg">
+          <Tab className="px-4 py-2 text-white bg-black border rounded-full hover:cursor-pointer">
+            Featured
+          </Tab>
+          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+            Work
+          </Tab>
+          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+            Writing
+          </Tab>
+          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+            Sideprojects
+          </Tab>
+        </Tab.List>
+        <Tab.Panels>
+          <div className="lg:py-4 lg:px-8">
+            <Tab.Panel>
+              <Heading>SPEAKING</Heading>
+              <Cell
+                title="Design to production in a snap and how you can do it too?"
+                desc="Config 2022 (Figma Conference)"
+                link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
+                img="/config.png"
+              />
+            </Tab.Panel>
+            <Tab.Panel>
+              <Heading>FEATURED WORK</Heading>
 
-      <Cell
-        title="Redesigning Zomato's order tracker."
-        desc="Case study"
-        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-        img="/Zomato.png"
-      />
-      <Cell
-        title="Helping Expedia users find the right rental car"
-        desc="Case Study"
-        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
-        img="/Expedia.png"
-      />
-     
+              <Cell
+                title="Redesigning Zomato's order tracker."
+                desc="Case study"
+                link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+                img="/Zomato.png"
+              />
+              <Cell
+                title="Helping Expedia users find the right rental car"
+                desc="Case Study"
+                link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
+                img="/Expedia.png"
+              />
 
-      <Heading>SIDE PROJECTS</Heading>
-      <Cell
-        title="ColorKit: Generate darker or lighter shades of a particular color"
-        desc="Figma Plugin"
-        link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
-        img="/colors.png"
-      />
-      <Cell
-        title="Project Scaffold: Generate project stucture"
-        desc="Figma Plugin"
-        link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
-        img="/scaffold.png"
-      />
+              <Heading>SIDE PROJECTS</Heading>
+              <Cell
+                title="ColorKit: Generate darker or lighter shades of a particular color"
+                desc="Figma Plugin"
+                link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
+                img="/colors.png"
+              />
+              <Cell
+                title="Project Scaffold: Generate project stucture"
+                desc="Figma Plugin"
+                link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
+                img="/scaffold.png"
+              />
 
-      <Heading>WRITING</Heading>
-      <Cell
-        title="How I created a Figma plugin to automate our design system migration"
-        desc="Medium"
-        link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
-        img="/dsauto.png"
-      />
-      <Cell
-        title="Figma shortcuts using MIDI"
-        desc="Medium"
-        link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-        img="/Key.png"
-      />
-      <Cell
-        title="Consistent file structure = Better collaboration"
-        desc="Medium"
-        link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
-        img="/struct.png"
-      />
-    </div>
+              <Heading>WRITING</Heading>
+              <Cell
+                title="How I created a Figma plugin to automate our design system migration"
+                desc="Medium"
+                link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
+                img="/dsauto.png"
+              />
+              <Cell
+                title="Figma shortcuts using MIDI"
+                desc="Medium"
+                link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
+                img="/Key.png"
+              />
+              <Cell
+                title="Consistent file structure = Better collaboration"
+                desc="Medium"
+                link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
+                img="/struct.png"
+              />
+            </Tab.Panel>
+          </div>
+        </Tab.Panels>
+      </Tab.Group>
     </div>
   );
 };
