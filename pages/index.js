@@ -82,7 +82,7 @@ let Navigation = () => {
     <div className="col-span-1 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide scroll-smooth">
       <Tab.Group>
         <Tab.List className="sticky top-0 z-50 flex justify-center px-8 py-5 space-x-2 md:justify-start bg-white/30 backdrop-blur-lg">
-          <Tab className="px-4 py-2 text-white bg-black border rounded-full hover:cursor-pointer">
+          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
             Featured
           </Tab>
           <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
@@ -94,20 +94,21 @@ let Navigation = () => {
           <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
             Sideprojects
           </Tab>
+          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+            Podcast
+          </Tab>
         </Tab.List>
         <Tab.Panels>
           <div className="lg:py-4 lg:px-8">
             <Tab.Panel>
-              <Heading>SPEAKING</Heading>
+              <Heading>CONFRENCE</Heading>
               <Cell
                 title="Design to production in a snap and how you can do it too?"
                 desc="Config 2022 (Figma Conference)"
                 link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
                 img="/config.png"
               />
-            </Tab.Panel>
-            <Tab.Panel>
-              <Heading>FEATURED WORK</Heading>
+              <Heading>WORK</Heading>
 
               <Cell
                 title="Redesigning Zomato's order tracker."
@@ -149,12 +150,54 @@ let Navigation = () => {
                 link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
                 img="/Key.png"
               />
+            </Tab.Panel>
+            <Tab.Panel>
+              <Heading>CASE STUDIES</Heading>
+
               <Cell
-                title="Consistent file structure = Better collaboration"
-                desc="Medium"
-                link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
-                img="/struct.png"
+                title="Redesigning Zomato's order tracker."
+                desc="Case study"
+                link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+                img="/Zomato.png"
               />
+              <Cell
+                title="Helping Expedia users find the right rental car"
+                desc="Case Study"
+                link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
+                img="/Expedia.png"
+              />
+
+              <Heading>SHOTS</Heading>
+
+              <Cell
+                title="Redesigning Zomato's order tracker."
+                desc="Case study"
+                link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+                img="/Zomato.png"
+              />
+              <Cell
+                title="Helping Expedia users find the right rental car"
+                desc="Case Study"
+                link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
+                img="/Expedia.png"
+              />
+            </Tab.Panel>
+            <Heading>RECENT</Heading>
+            <Cell
+                title="How I created a Figma plugin to automate our design system migration"
+                desc="Medium"
+                link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
+                img="/dsauto.png"
+              />
+              <Cell
+                title="Figma shortcuts using MIDI"
+                desc="Medium"
+                link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
+                img="/Key.png"
+              />
+
+            <Tab.Panel>
+
             </Tab.Panel>
           </div>
         </Tab.Panels>
