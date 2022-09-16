@@ -78,30 +78,32 @@ let Heading = (props) => {
 };
 
 let Navigation = () => {
+
+  const button  = "px-2 py-1 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black"
   return (
     <div className="col-span-1 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide scroll-smooth">
       <Tab.Group>
         <Tab.List className="sticky top-0 z-50 flex justify-center px-8 py-5 space-x-2 md:justify-start bg-white/30 backdrop-blur-lg">
-          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+          <Tab className={button}>
             Featured
           </Tab>
-          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+          <Tab className={button}>
             Work
           </Tab>
-          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+          <Tab className={button}>
             Writing
           </Tab>
-          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+          <Tab className={button}>
             Sideprojects
           </Tab>
-          <Tab className="px-4 py-2 bg-white border rounded-full hover:cursor-pointer hover:text-white hover:bg-black">
+          <Tab className={button}>
             Podcast
           </Tab>
         </Tab.List>
         <Tab.Panels>
           <div className="lg:py-4 lg:px-8">
             <Tab.Panel>
-              <Heading>CONFRENCE</Heading>
+              <Heading>CONFERENCE</Heading>
               <Cell
                 title="Design to production in a snap and how you can do it too?"
                 desc="Config 2022 (Figma Conference)"
@@ -167,7 +169,7 @@ let Navigation = () => {
                 img="/Expedia.png"
               />
 
-              <Heading>SHOTS</Heading>
+              
 
               <Cell
                 title="Redesigning Zomato's order tracker."
@@ -182,19 +184,7 @@ let Navigation = () => {
                 img="/Expedia.png"
               />
             </Tab.Panel>
-            <Heading>RECENT</Heading>
-            <Cell
-                title="How I created a Figma plugin to automate our design system migration"
-                desc="Medium"
-                link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
-                img="/dsauto.png"
-              />
-              <Cell
-                title="Figma shortcuts using MIDI"
-                desc="Medium"
-                link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-                img="/Key.png"
-              />
+            
 
             <Tab.Panel>
 
