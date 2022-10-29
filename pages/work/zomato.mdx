@@ -1,13 +1,18 @@
 import Layout from "../../components/layout.js";
-import Zoom from "react-medium-image-zoom";
+
+import { Item } from "react-photoswipe-gallery";
 
 # Zomato Order Tracker
 
 Helping millions of Zomato users answer the biggest question of all time! "Mera Khana Kahan hai?"( Where is my Food ? )
 
-<Zoom>
-  <img src="/zomato/crystal.png" />
-</Zoom>
+<Item original={"/zomato/crystal.png"} width={`800`} height={`600`}>
+  {({ ref, open }) => (
+    <img src={"/zomato/crystal.png"} ref={ref} onClick={open} />
+  )}
+</Item>
+
+
 
 ## Context & My Role
 
@@ -27,17 +32,24 @@ Based on user studies and internal tracking matrices, we formulated a series of 
 
 For reducing user anxiety, we tried two approaches. A/B testing and user interviews helped us decide on a winning approach. The following is a brief overview of the two approaches that we used.
 
-<Zoom>
-  <img src="/zomato/one.png" />
-</Zoom>
+
+<Item original={"/zomato/one.png"} width={`670`} height={`910`}>
+  {({ ref, open }) => (
+    <img src={"/zomato/one.png"} ref={ref} onClick={open} />
+  )}
+</Item>
+
 
 #### Approach 1 (Winner)
 
 In this approach, we used bold colours and typography to suggest the status of the order, by using existing colours associations (for instance, green is perceived as positive).
 
-<Zoom>
-  <img src="/zomato/two.png" />
-</Zoom>
+<Item original={"/zomato/two.png"} width={`670`} height={`910`}>
+  {({ ref, open }) => (
+    <img src={"/zomato/two.png"} ref={ref} onClick={open} />
+  )}
+</Item>
+
 
 #### Approach 2
 
@@ -55,15 +67,19 @@ Restaurant communication
 
 #### Delivery Partner Communication
 
-<Zoom>
-  <img src="/zomato/4.png" />
-</Zoom>
+<Item original={"/zomato/4.png"} width={`1606`} height={`418`}>
+  {({ ref, open }) => (
+    <img src={"/zomato/4.png"} ref={ref} onClick={open} />
+  )}
+</Item>
 
 #### Restaurant Communication
+<Item original={"/zomato/5.png"} width={`1440`} height={`322`}>
+  {({ ref, open }) => (
+    <img src={"/zomato/5.png"} ref={ref} onClick={open} />
+  )}
+</Item>
 
-<Zoom>
-  <img src="/zomato/5.png" />
-</Zoom>
 
 ### Creating a modular system for scalability
 

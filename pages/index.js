@@ -35,7 +35,7 @@ let Bio = () => {
           TD
         </div>
         <h1 className="text-2xl font-semibold md:text-3xl lg:mt-24 ">
-          Hello, I’m Tushar Debnath a product designer and design technologist.
+          Hello, I’m Tushar Debnath.
         </h1>
 
         <p className="mt-6 font-normal leading-relaxed text-gray-500 lg:text-lg">
@@ -52,15 +52,13 @@ let Bio = () => {
           >
             Revolut
           </a>{" "}
-          as a Senior product designer helping launch the Revolut retail app in
-          the APAC region.
+          as a Senior product designer in the design operations and the expansion teams.
         </p>
 
         <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
-          I live in New Delhi, India. When I am not working I like
+          I am based out of New Delhi, India. When I am not working I like
           to spend my time listening to the music from the 90s, playing retro
-          game on my DIY arcade machine, reading Fantasy books/mangas and
-          travelling with my wife Priya.
+          game on my DIY arcade machine, working on my book about the adventures of a cyborg and his pet dog.
         </p>
       </div>
 
