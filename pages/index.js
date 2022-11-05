@@ -85,12 +85,14 @@ let Navigation = () => {
         desc="Case study"
         link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
         img="/Zomato.png"
+        bee="Zomato-Case study"
       />
       <Cell
         title="Helping Expedia users find the right rental car"
         desc="Case Study"
         link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
         img="/Expedia.png"
+        bee="Expedia Case study"
       />
 
 <Heading>SPEAKING</Heading>
@@ -99,6 +101,7 @@ let Navigation = () => {
         desc="Config 2022 (Figma Conference)"
         link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
         img="/config.png"
+        bee="Config"
       />
      
 
@@ -108,12 +111,14 @@ let Navigation = () => {
         desc="Figma Plugin"
         link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
         img="/colors.png"
+        bee="Color Kit"
       />
       <Cell
         title="Project Scaffold: Generate project stucture"
         desc="Figma Plugin"
         link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
         img="/scaffold.png"
+        bee="Project scaffold"
       />
 
       <Heading>WRITING</Heading>
@@ -122,18 +127,21 @@ let Navigation = () => {
         desc="Medium"
         link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
         img="/dsauto.png"
+        bee="Medium automate"
       />
       <Cell
         title="Figma shortcuts using MIDI"
         desc="Medium"
         link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
         img="/Key.png"
+        bee="Midi"
       />
       <Cell
         title="Consistent file structure = Better collaboration"
         desc="Medium"
         link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
         img="/struct.png"
+        bee="Struct"
       />
     </div>
   );
@@ -141,7 +149,7 @@ let Navigation = () => {
 
 let Cell = (props) => {
   return (
-    <a href={props.link} target="_blank" aria-label={`link to ${props.title}`}>
+    <a href={props.link} target="_blank" aria-label={`link to ${props.title}`} data-splitbee-event={props.bee}>
       <div className="flex items-center p-4 hover:bg-gray-50 rounded-3xl hover:cursor-pointer hover:text-yellow-500 ">
         <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl">
           <Image
