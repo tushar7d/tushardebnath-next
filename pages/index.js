@@ -16,7 +16,7 @@ export default function Home() {
 
         <meta property="og:url" content="https://tushardebnath.com" />
         <meta property="og:type" content="website" />
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
+        
       </Head>
 
       <div className="grid lg:grid-cols-2 ">
@@ -176,6 +176,7 @@ let IconLink = (props) => {
       target="_blank"
       href={props.link}
       aria-label={props.aria}
+      data-splitbee-event={props.bee}
     >
       {props.children}
     </a>
@@ -188,6 +189,7 @@ let Iconset = () => {
       <IconLink
         link="https://www.linkedin.com/in/tushardebnath/"
         aria="Linked In Profile"
+        bee="linkedin"
       >
         <svg
           width="24"
@@ -205,6 +207,7 @@ let Iconset = () => {
       <IconLink
         link="https://dribbble.com/tushardebnath"
         aria="Dribble Profile"
+        bee="dribbble"
       >
         <svg
           width="24"
@@ -219,7 +222,7 @@ let Iconset = () => {
           />
         </svg>
       </IconLink>
-      <IconLink link="https://github.com/tushar7d" aria="Github Profile">
+      <IconLink link="https://github.com/tushar7d" aria="Github Profile" bee="github">
         <svg
           width="24"
           height="24"
@@ -233,6 +236,7 @@ let Iconset = () => {
           />
         </svg>
       </IconLink>
+      
     </div>
   );
 };
