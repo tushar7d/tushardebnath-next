@@ -18,7 +18,7 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col text-center md:text-left md:w-2/3">
-          <div className="mb-2 text-xl font-semibold ">Hello Everbody!</div>
+          <div className="mb-2 text-2xl font-semibold ">Hello Everbody!</div>
           <div className="space-y-2 text-gray-500">
             <p>
               I am Tushar a product designer and design technologist with over 8
