@@ -1,13 +1,12 @@
 const Home = () => {
-  let card = "p-8 mt-4 mx-3 md:mx-0  md:mt-0  bg-gray-100 rounded-xl";
-  let container =
-    "max-w-[1000px] px-3 mx-auto my-3 md:gap-3  md:grid md:grid-cols-4 mt-12  ";
+  
+  
 
   return (
-    <div className={container}>
+    <div className={"container"}>
       <div
         className={
-          card + " md:col-span-3 md:flex md:justify-between md:items-center"
+        "card md:col-span-3 md:flex md:justify-between md:items-center"
         }
       >
         <div className="mb-4 md:mb-0 md:order-last">
@@ -35,11 +34,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={card + " md:col-span-1"}>Featured</div>
-      <div className={card}>Blog</div>
-      <div className={card}>Podcast</div>
-      <div className={card}>About Me</div>
-      <div className={card}>Resume</div>
+      <div className={ "card md:col-span-1"}>Quick Links</div>
+      <div className={"card"}>Blog</div>
+      <div className={"card"}>Podcast</div>
+      <div className={"card"}>About Me</div>
+      <div className={"card"}>Resume</div>
     </div>
   );
 };
