@@ -33,40 +33,25 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={"card md:col-span-1 flex justify-center align-middle " }>
-        <ul className="grid grid-cols-2 gap-4 bg-red-200">
-          <li className="w-1/2 m-auto">
-            <div className="">
-              <div
-                className="w-[36px] h-[36px] rounded-full bg-black"
-              />
-              <div>Work</div>
-            </div>
-          </li>
-          <li className="w-1/2 m-auto"><div>
-              <div
-                className="w-[36px] h-[36px] rounded-full bg-black"
-              />
-              <div>Blog</div>
-            </div></li>
-          <li className="w-1/2 m-auto"><div>
-              <div
-                className="w-[36px] h-[36px] rounded-full bg-black"
-              />
-              <div>About</div>
-            </div></li>
-          <li className="w-1/2 m-auto"><div>
-              <div
-                className="w-[36px] h-[36px] rounded-full bg-black"
-              />
-              <div>Podcast</div>
-            </div></li>
+      <div className={"card p-0" }>
+       
+        <ul className="mt-1 text-sm divide-y space-y">
+          <li className="p-4">About Me</li>
+          <li className="p-4">Work</li>
+          <li className="p-4">Writing</li>
+          <li className="p-4">Podcast</li>
         </ul>
+        
       </div>
-      <div className={"card"}>Blog</div>
-      <div className={"card"}>Podcast</div>
-      <div className={"card"}>About Me</div>
-      <div className={"card"}>Resume</div>
+      <div className={"card min-h-[350px]"}>Figma Conference</div>
+      <div className={"card min-h-[350px]"}>Zomato project</div>
+      <div className={"card min-h-[350px]"}>Expedia project</div>
+      <div className={"card min-h-[350px]"}>Figma Conference</div>
+      <div className={"card min-h-[350px]"}>Zomato project</div>
+      <div className={"card min-h-[350px]"}>Expedia project</div>
+     
+      <div className={"card min-h-[350px]"}>Resume</div>
+    
     </div>
   );
 };

@@ -13,5 +13,8 @@
   .container {
     @apply max-w-[1000px] px-3 mx-auto my-3 md:gap-3  md:grid md:grid-cols-4 mt-12;
   }
+  .navitem {
+    @apply flex flex-col items-center justify-center p-3 space-y-2;
+  }
 
 }
