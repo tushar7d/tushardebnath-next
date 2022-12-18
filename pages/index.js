@@ -33,7 +33,36 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={"card md:col-span-1"}>Quick Links</div>
+      <div className={"card md:col-span-1 flex justify-center align-middle " }>
+        <ul className="grid grid-cols-2 gap-4 bg-red-200">
+          <li className="w-1/2 m-auto">
+            <div className="">
+              <div
+                className="w-[36px] h-[36px] rounded-full bg-black"
+              />
+              <div>Work</div>
+            </div>
+          </li>
+          <li className="w-1/2 m-auto"><div>
+              <div
+                className="w-[36px] h-[36px] rounded-full bg-black"
+              />
+              <div>Blog</div>
+            </div></li>
+          <li className="w-1/2 m-auto"><div>
+              <div
+                className="w-[36px] h-[36px] rounded-full bg-black"
+              />
+              <div>About</div>
+            </div></li>
+          <li className="w-1/2 m-auto"><div>
+              <div
+                className="w-[36px] h-[36px] rounded-full bg-black"
+              />
+              <div>Podcast</div>
+            </div></li>
+        </ul>
+      </div>
       <div className={"card"}>Blog</div>
       <div className={"card"}>Podcast</div>
       <div className={"card"}>About Me</div>
