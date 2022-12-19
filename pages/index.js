@@ -43,12 +43,12 @@ const Home = () => {
         </ul>
         
       </div>
-      <div className={"card min-h-[350px]"}>Figma Conference</div>
-      <div className={"card min-h-[350px]"}>Zomato project</div>
-      <div className={"card min-h-[350px]"}>Expedia project</div>
-      <div className={"card min-h-[350px]"}>Figma Conference</div>
-      <div className={"card min-h-[350px]"}>Zomato project</div>
-      <div className={"card min-h-[350px]"}>Expedia project</div>
+      <div className={"card min-h-[300px]"}>Figma Conference</div>
+      <div className={"card min-h-[300px]"}>Zomato project</div>
+      <div className={"card min-h-[300px]"}>Expedia project</div>
+      <div className={"card min-h-[300px]"}>Figma Conference</div>
+      <div className={"card min-h-[300px]"}>Zomato project</div>
+      <div className={"card min-h-[300px]"}>Expedia project</div>
      
       <div className={"card min-h-[350px]"}>Resume</div>
     
