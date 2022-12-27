@@ -11,7 +11,7 @@
     @apply p-4 mx-3 mt-4 bg-gray-100 md:mx-0 md:mt-0 rounded-xl ;
   }
   .container {
-    @apply max-w-[1000px] px-3 mx-auto my-3 md:gap-3  md:grid md:grid-cols-4 mt-12;
+    @apply max-w-[1200px] px-3 mx-auto my-3 md:gap-3   md:grid md:grid-cols-3 lg:grid-cols-4 mt-12;
   }
   .navitem {
     @apply flex flex-col items-center justify-center p-3 space-y-2;

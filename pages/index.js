@@ -1,3 +1,23 @@
+import Link from "next/link";
+
+const Tile = (props) => {
+  return (
+    <Link href={props.link} >
+     
+      <div className={" flex flex-col justify-between   card p-0   bg-gray-100  rounded-b-md"}>
+      <div className=" rounded-t-md bg-[url('/zcov.png')] min-h-[240px] md:min-h-[180px]  bg-cover bg-no-repeat bg-center " />
+        <div className="p-4">
+          <div className="mb-1 text-xs text-gray-400">{props.type}</div>
+          <div className="text-sm font-medium ">{props.heading}</div>
+          
+        </div>
+       
+        <div className="p-4 text-xs text-gray-400">{props.date}</div>
+      </div>
+    </Link>
+  );
+};
+
 const Home = () => {
   return (
     <div className={"container"}>
@@ -35,36 +55,27 @@ const Home = () => {
           <li className="p-4">Podcast</li>
         </ul>
       </div>
-      <div className={"card min-h-[300px]"}>Revolut Snap</div>
-      <div className={"card min-h-[300px]"}>Revolut Plugins</div>
-      <div className={"card min-h-[300px]"}>Revolut Expansion</div>
-      <div className={"card min-h-[300px]"}>Figma Conference</div>
-      <div className={"card min-h-[300px] flex flex-col justify-between "}>
-        <div>
-          <div className="text-xs">AUGUST 2021</div>
-        </div>
-        <div>
-          <div className="mb-1 text-xs">CASE STUDY</div>
-          <div className="font-medium">
-            Redesigning Zomato's order tracker
-          </div>
-        </div>
-      </div>
-      <div className={"card min-h-[300px] flex flex-col justify-between "}>
-        <div>
-          <div className="text-xs">JANUARY 2020</div>
-        </div>
-        <div>
-          <div className="mb-1 text-xs">CASE STUDY</div>
-          <div className="font-medium ">
-            Helping Expedia users find the right rental car
-          </div>
-        </div>
-      </div>
-      <div className={"card min-h-[300px]"}>Color kit</div>
-      <div className={"card min-h-[300px]"}>Medium article</div>
-      <div className={"card min-h-[300px]"}>Medium article</div>
-      <div className={"card min-h-[300px]"}>Medium article</div>
+      
+      <Tile
+        date="12 AUG 2022"
+        type="CASE STUDY"
+        heading="Zomato order tracker"
+        link="/"
+      />
+      <Tile
+        date="12 AUG 2022"
+        type="CASE STUDY"
+        heading="Expedia car rental experience"
+        link="/"
+      />
+      <Tile
+        date="12 AUG 2022"
+        type="FIGMA"
+        heading="Color kit plugin"
+        link="/"
+      />
+
+      
     </div>
   );
 };
