@@ -8,12 +8,12 @@ const Tile = (props) => {
           "flex sm:flex-col justify-between card md:h-[210px]"
         }
       >
-        <div className="w-1/3 sm:w-full">
+        <div className="w-1/4 sm:w-full">
           {" "}
           <img src={props.img} className="w-20 md:w-16" />
         </div>
 
-        <div className="w-2/3 md:w-full">
+        <div className="w-3/4 sm:w-full">
           <div className="mb-1 text-xs ">{props.type}</div>
           <div className="mb-1 text-sm font-medium ">{props.heading}</div>
           <div className="mb-1 text-xs ">{props.date}</div>
@@ -60,6 +60,14 @@ const Home = () => {
           <li className="p-4">Podcast</li>
         </ul>
       </div>
+
+      <Tile
+        date="12 AUG 2022"
+        type="CONFRENCE"
+        heading="Config 2022: Design to prouction in a snap"
+        link="/work/zomato-order-tracker"
+        img="./config.png"
+      />
 
       <Tile
         date="12 AUG 2022"
