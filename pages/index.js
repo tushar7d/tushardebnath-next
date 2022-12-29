@@ -3,11 +3,7 @@ import Link from "next/link";
 const Tile = (props) => {
   return (
     <Link href={props.link} target={props.ext ? "_blank" : "_self"}>
-      <div
-        className={
-          "flex sm:flex-col justify-between card md:h-[210px]"
-        }
-      >
+      <div className={"flex sm:flex-col justify-between card md:h-[210px]"}>
         <div className="w-1/4 sm:w-full">
           {" "}
           <img src={props.img} className="w-20 md:w-16" />
@@ -54,13 +50,52 @@ const Home = () => {
       </div>
       <div className={"card p-0"}>
         <ul className="mt-1 text-sm divide-y space-y">
-          <li className="p-4">About Me <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-  <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
-</svg>
-</li>
-          <li className="p-4">Work</li>
-          <li className="p-4">Writing</li>
-          <li className="p-4">Podcast</li>
+          <li className="flex justify-between p-4 space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <div>About Me</div>
+          </li>
+          <li className="flex justify-between p-4 space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <div>Work</div>
+          </li>
+          <li className="flex justify-between p-4 space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <div>Blog</div>
+          </li>
+          
         </ul>
       </div>
 
