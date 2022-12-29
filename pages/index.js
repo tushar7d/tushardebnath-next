@@ -54,7 +54,10 @@ const Home = () => {
       </div>
       <div className={"card p-0"}>
         <ul className="mt-1 text-sm divide-y space-y">
-          <li className="p-4">About Me</li>
+          <li className="p-4">About Me <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+  <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
+</svg>
+</li>
           <li className="p-4">Work</li>
           <li className="p-4">Writing</li>
           <li className="p-4">Podcast</li>
@@ -62,11 +65,12 @@ const Home = () => {
       </div>
 
       <Tile
-        date="12 AUG 2022"
+        date="19 MAY 2022"
         type="CONFRENCE"
         heading="Config 2022: Design to prouction in a snap"
-        link="/work/zomato-order-tracker"
+        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s&ab_channel=Figma"
         img="./config.png"
+        ext
       />
 
       <Tile
