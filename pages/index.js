@@ -22,9 +22,13 @@ const Tile = (props) => {
 const Home = () => {
   return (
     <div className={"container"}>
+       <div className="p-6 sm:col-span-2 md:col-span-3 lg:col-span-4 card min-h-fit">
+      nav bar
+      </div>
+     
       <div
         className={
-          "card p-8 sm:col-span-2 md:col-span-3 md:flex md:justify-between md:items-center"
+          "card p-8 sm:col-span-2 md:col-span-3 md:flex md:justify-between md:items-center "
         }
       >
         <div className="mb-4 md:mb-0 md:order-last">
@@ -40,64 +44,18 @@ const Home = () => {
             <p>
               Product designer and design technologist with 8+ years of
               experience building products loved by millions of people across
-              the globe.
+              the globe.I am currently working at Revolut as a Senior product designer.
+
             </p>
+           
           </div>
-          <div className="py-2 mx-auto mt-5 w-[120px] text-sm text-center text-black border border-gray-600  rounded-full md:mx-0 ">
-            Know more
-          </div>
+          
         </div>
       </div>
-      <div className={"card p-0"}>
-        <ul className="mt-1 text-sm divide-y space-y">
-          <li className="flex justify-between p-4 space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <div>About Me</div>
-          </li>
-          <li className="flex justify-between p-4 space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <div>Work</div>
-          </li>
-          <li className="flex justify-between p-4 space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <div>Blog</div>
-          </li>
-          
-        </ul>
-      </div>
+
+
+      
+     
 
       <Tile
         date="19 MAY 2022"

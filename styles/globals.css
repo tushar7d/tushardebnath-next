@@ -15,7 +15,7 @@
     @apply p-4 mx-3 mt-4 bg-white md:mx-0 md:mt-0 rounded-2xl sm:min-h-[220px] ;
   }
   .container {
-    @apply max-w-[1100px] px-3 mx-auto my-3 md:gap-3 sm:grid-cols-2   grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 mt-6;
+    @apply max-w-[1100px] px-3 mx-auto my-3 md:gap-3 sm:grid-cols-2   grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 mt-3;
   }
   .navitem {
     @apply flex flex-col items-center justify-center p-3 space-y-2;
