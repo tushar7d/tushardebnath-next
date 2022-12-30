@@ -3,7 +3,7 @@ import Link from "next/link";
 const Tile = (props) => {
   return (
     <Link href={props.link} target={props.ext ? "_blank" : "_self"}>
-      <div className={"flex sm:flex-col justify-between card md:h-[210px]"}>
+      <div className={"flex sm:flex-col justify-between card md:h-[240px]"}>
         <div className="w-1/4 sm:w-full">
           {" "}
           <img src={props.img} className="w-20 md:w-16" />
@@ -112,15 +112,17 @@ const Home = () => {
         date="12 AUG 2022"
         type="CASE STUDY"
         heading="Zomato order tracker"
-        link="/work/zomato-order-tracker"
+        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
         img="./Zomato.png"
+        ext
       />
       <Tile
         date="12 AUG 2022"
         type="CASE STUDY"
         heading="Expedia car rental experience"
-        link="/work/expedia-rental-car"
+        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
         img="./Expedia.png"
+        ext
       />
       <Tile
         date="12 AUG 2022"
