@@ -11,7 +11,7 @@ const Tile = (props) => {
 
         <div className="w-3/4 sm:w-full">
           <div className="mb-1 text-xs tracking-widest text-gray-400">{props.type}</div>
-          <div className="mb-2 font-medium ">{props.heading}</div>
+          <div className="mb-1 font-medium ">{props.heading}</div>
           
         </div>
       </div>
