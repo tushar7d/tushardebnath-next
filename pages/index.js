@@ -97,15 +97,11 @@ let Iconset = () => {
 const Home = () => {
   return (
     <div className={"container"}>
-       <div className="flex items-center content-center justify-between p-4 sm:col-span-2 md:col-span-3 lg:col-span-4 card min-h-fit">
+     {/*<div className="flex items-center content-center justify-between p-4 sm:col-span-2 md:col-span-3 lg:col-span-4 card min-h-fit">
       <img src="./td.png" className="w-8" />
-      <ul className="flex pr-3 space-x-8 text-sm font-medium">
-        <li><div>Work</div></li>
-        <li><div>Blog</div></li>
-        <li><div>About</div></li>
-      </ul>
+      <Iconset />
       
-      </div>
+      </div> */}  
      
       <div
         className={
