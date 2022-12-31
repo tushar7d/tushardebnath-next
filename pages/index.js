@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 
 const Tile = (props) => {
   return (
@@ -102,7 +103,9 @@ const Home = () => {
       <Iconset />
       
       </div> */}  
-     
+     <Head >
+     <title>Tushar Debnath</title>
+     </Head>
       <div
         className={
           "card p-8 sm:col-span-2 md:col-span-3 md:flex md:justify-between md:items-center   "
