@@ -10,9 +10,9 @@ const Tile = (props) => {
         </div>
 
         <div className="w-3/4 sm:w-full">
-          <div className="mb-1 text-xs ">{props.type}</div>
-          <div className="mb-1 text-sm font-medium ">{props.heading}</div>
-          <div className="mb-1 text-xs ">{props.date}</div>
+          <div className="mb-1 text-xs tracking-widest text-gray-400">{props.type}</div>
+          <div className="mb-2 font-medium ">{props.heading}</div>
+          
         </div>
       </div>
     </Link>
@@ -34,6 +34,8 @@ let IconLink = (props) => {
 };
 
 let Iconset = () => {
+
+  let size = "20"
   return (
     <div className="flex items-baseline mt-2 text-xs lg:mt-0 ">
       <IconLink
@@ -42,8 +44,8 @@ let Iconset = () => {
         bee="linkedin"
       >
         <svg
-          width="18"
-          height="18"
+          width={size}
+          height={size}
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -60,8 +62,8 @@ let Iconset = () => {
         bee="dribbble"
       >
         <svg
-          width="18"
-          height="18"
+          width={size}
+          height={size}
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +76,8 @@ let Iconset = () => {
       </IconLink>
       <IconLink link="https://github.com/tushar7d" aria="Github Profile" bee="github">
         <svg
-          width="18"
-          height="18"
+          width={size}
+          height={size}
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +109,7 @@ const Home = () => {
      
       <div
         className={
-          "card p-8 sm:col-span-2 md:col-span-3 md:flex md:justify-between md:items-center "
+          "card p-8 sm:col-span-2 md:col-span-3 md:flex md:justify-between md:items-center   "
         }
       >
         <div className="mb-4 md:mb-0 md:order-last">
@@ -117,7 +119,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="flex flex-col text-center md:text-left md:w-2/3">
+        <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%]">
           <h1 className="mb-2 text-2xl font-semibold ">Tushar Debnath</h1>
           <div className="space-y-2 text-gray-600">
             <p>
@@ -128,7 +130,7 @@ const Home = () => {
             </p>
            
           </div>
-          <div className="mx-auto mt-3 md:mx-0"><Iconset /></div>
+          <div className="mx-auto mt-4 md:mt-6 md:mx-0"><Iconset /></div>
           
           
         </div>
@@ -140,7 +142,7 @@ const Home = () => {
 
       <Tile
         date="19 MAY 2022"
-        type="CONFRENCE"
+        type="CONFERENCE"
         heading="Config 2022: Design to prouction in a snap"
         link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s&ab_channel=Figma"
         img="./config.png"
@@ -150,7 +152,7 @@ const Home = () => {
       <Tile
         date="12 AUG 2022"
         type="CASE STUDY"
-        heading="Zomato order tracker"
+        heading="Zomato order tracking"
         link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
         img="./Zomato.png"
         ext
@@ -158,7 +160,7 @@ const Home = () => {
       <Tile
         date="12 AUG 2022"
         type="CASE STUDY"
-        heading="Expedia car rental experience"
+        heading="Expedia car rental"
         link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
         img="./Expedia.png"
         ext
