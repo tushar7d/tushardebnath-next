@@ -11,9 +11,10 @@ const Tile = (props) => {
         </div>
 
         <div className="w-3/4 sm:w-full">
-          <div className="mb-1 text-xs tracking-widest text-gray-400">{props.type}</div>
+          <div className="mb-1 text-xs tracking-widest text-gray-400">
+            {props.type}
+          </div>
           <div className="mb-1 font-medium ">{props.heading}</div>
-          
         </div>
       </div>
     </Link>
@@ -35,8 +36,7 @@ let IconLink = (props) => {
 };
 
 let Iconset = () => {
-
-  let size = "20"
+  let size = "20";
   return (
     <div className="flex items-baseline mt-2 text-xs lg:mt-0 ">
       <IconLink
@@ -75,7 +75,11 @@ let Iconset = () => {
           />
         </svg>
       </IconLink>
-      <IconLink link="https://github.com/tushar7d" aria="Github Profile" bee="github">
+      <IconLink
+        link="https://github.com/tushar7d"
+        aria="Github Profile"
+        bee="github"
+      >
         <svg
           width={size}
           height={size}
@@ -89,23 +93,21 @@ let Iconset = () => {
           />
         </svg>
       </IconLink>
-      
     </div>
   );
 };
 
-
 const Home = () => {
   return (
     <div className={"container"}>
-     {/*<div className="flex items-center content-center justify-between p-4 sm:col-span-2 md:col-span-3 lg:col-span-4 card min-h-fit">
+      {/*<div className="flex items-center content-center justify-between p-4 sm:col-span-2 md:col-span-3 lg:col-span-4 card min-h-fit">
       <img src="./td.png" className="w-8" />
       <Iconset />
       
-      </div> */}  
-     <Head >
-     <title>Tushar Debnath</title>
-     </Head>
+      </div> */}
+      <Head>
+        <title>Tushar Debnath</title>
+      </Head>
       <div
         className={
           "card p-8 sm:col-span-2 md:col-span-3 md:flex md:justify-between md:items-center   "
@@ -124,20 +126,17 @@ const Home = () => {
             <p>
               Product designer and design technologist with 8+ years of
               experience building products loved by millions of people across
-              the globe. I am currently working at Revolut as a Senior product designer.
-
+              the globe. I am currently working at Revolut as a Senior product
+              designer.
             </p>
-           
           </div>
-          <div className="mx-auto mt-4 md:mt-6 md:mx-0"><Iconset /></div>
-          
-          
+          <div className="mx-auto mt-4 md:mt-6 md:mx-0">
+            <Iconset />
+          </div>
         </div>
       </div>
 
-
-      
-     
+   
 
       <Tile
         date="19 MAY 2022"
@@ -164,6 +163,7 @@ const Home = () => {
         img="./Expedia.png"
         ext
       />
+      
       <Tile
         date="12 AUG 2022"
         type="FIGMA"
