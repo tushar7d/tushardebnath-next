@@ -1,21 +1,171 @@
-import Link from "next/link";
+import Head from "next/head";
+import Image from "next/image";
 
-const Tile = (props) => {
+export default function Home() {
   return (
-    <Link href={props.link} target={props.ext ? "_blank" : "_self"}>
-      <div className={"flex sm:flex-col justify-between card md:h-[240px]"}>
-        <div className="w-1/4 sm:w-full">
-          {" "}
-          <img src={props.img} className="w-20 md:w-16" />
-        </div>
+    <>
+      <Head>
+        <title>Tushar Debnath</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Tushar Debnath | Product Designer" />
+        <meta
+          property="og:description"
+          content="Product designer and design technologist
+          from New Delhi."
+        />
 
-        <div className="w-3/4 sm:w-full">
-          <div className="mb-1 text-xs tracking-widest text-gray-400">{props.type}</div>
-          <div className="mb-1 font-medium ">{props.heading}</div>
-          
+        <meta property="og:url" content="https://tushardebnath.com" />
+        <meta property="og:type" content="website" />
+        
+      </Head>
+
+      <div className="grid lg:grid-cols-2 ">
+        <Bio />
+        <Navigation />
+      </div>
+    </>
+  );
+}
+
+let Bio = () => {
+  return (
+    <div className="flex flex-col justify-between col-span-1 p-6 mb-12 lg:h-screen lg:p-14 bg-gray-50 lg:mb-0">
+      <div className="xl:pr-24">
+        <img src="./td.png" className="mb-6 max-w-[60px] max-h-[60px]" />
+        <h1 className="text-2xl font-semibold md:text-3xl lg:mt-24 ">
+          Hello, I’m Tushar Debnath.
+        </h1>
+
+        <p className="mt-6 font-normal leading-relaxed text-gray-500 lg:text-lg">
+          I am a self taught designer with a background in engineering. I have
+          over 8 years of experience in building consumer products used by
+          millions of people across the globe.
+        </p>
+        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
+          I am currently working at{" "}
+          <a
+            className="text-yellow-500"
+            target="_blank"
+            href="https://www.revolut.com/"
+          >
+            Revolut
+          </a>{" "}
+          as a Senior product designer in the design operations and the expansion teams.
+        </p>
+
+        <p className="mt-3 font-normal leading-relaxed text-gray-500 lg:text-lg">
+          I am based out of New Delhi, India. When I am not working I like
+          to spend my time listening to the music from the 90s, playing retro
+          game on my DIY arcade machine, working on my book about the adventures of a cyborg and his pet dog.
+        </p>
+      </div>
+
+      <Iconset />
+    </div>
+  );
+};
+
+let Heading = (props) => {
+  return (
+    <div className="pl-4 mt-12 mb-6 text-lg font-semibold tracking-widest ">
+      {props.children}
+    </div>
+  );
+};
+
+let Navigation = () => {
+  return (
+    <div className="col-span-1 p-3 bg-white lg:relative lg:overflow-scroll lg:h-screen scrollbar-hide lg:p-8">
+   
+      
+      <Heading>FEATURED WORK</Heading>
+
+      <Cell
+        title="Redesigning Zomato's order tracker."
+        desc="Case study"
+        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+        img="/Zomato.png"
+        bee="Zomato-Case study"
+      />
+      <Cell
+        title="Helping Expedia users find the right rental car"
+        desc="Case Study"
+        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
+        img="/Expedia.png"
+        bee="Expedia Case study"
+      />
+
+<Heading>SPEAKING</Heading>
+      <Cell
+        title="Design to production in a snap and how you can do it too?"
+        desc="Config 2022 (Figma Conference)"
+        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s"
+        img="/config.png"
+        bee="Config"
+      />
+     
+
+      <Heading>SIDE PROJECTS</Heading>
+      <Cell
+        title="ColorKit: Generate darker or lighter shades of a particular color"
+        desc="Figma Plugin"
+        link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
+        img="/colors.png"
+        bee="Color Kit"
+      />
+      <Cell
+        title="Project Scaffold: Generate project stucture"
+        desc="Figma Plugin"
+        link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
+        img="/scaffold.png"
+        bee="Project scaffold"
+      />
+
+      <Heading>WRITING</Heading>
+      <Cell
+        title="How I created a Figma plugin to automate our design system migration"
+        desc="Medium"
+        link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
+        img="/dsauto.png"
+        bee="Medium automate"
+      />
+      <Cell
+        title="Figma shortcuts using MIDI"
+        desc="Medium"
+        link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
+        img="/Key.png"
+        bee="Midi"
+      />
+      <Cell
+        title="Consistent file structure = Better collaboration"
+        desc="Medium"
+        link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
+        img="/struct.png"
+        bee="Struct"
+      />
+    </div>
+  );
+};
+
+let Cell = (props) => {
+  return (
+    <a href={props.link} target="_blank" aria-label={`link to ${props.title}`} data-splitbee-event={props.bee}>
+      <div className="flex items-center p-4 hover:bg-gray-50 rounded-3xl hover:cursor-pointer hover:text-yellow-500 ">
+        <div className="flex items-center justify-center w-20 h-20 bg-gray-100 shrink-0 rounded-xl">
+          <Image
+            src={props.img}
+            width={56}
+            height={56}
+            blur="true"
+            lazy="true"
+          />
+        </div>
+        <div className="ml-3">
+          <div className="text-sm text-gray-500">{props.desc}</div>
+          <div className="text-lg ">{props.title}</div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 
@@ -34,18 +184,16 @@ let IconLink = (props) => {
 };
 
 let Iconset = () => {
-
-  let size = "20"
   return (
-    <div className="flex items-baseline mt-2 text-xs lg:mt-0 ">
+    <div className="flex items-baseline mt-24 text-lg lg:mt-0 ">
       <IconLink
         link="https://www.linkedin.com/in/tushardebnath/"
         aria="Linked In Profile"
         bee="linkedin"
       >
         <svg
-          width={size}
-          height={size}
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -62,8 +210,8 @@ let Iconset = () => {
         bee="dribbble"
       >
         <svg
-          width={size}
-          height={size}
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +224,8 @@ let Iconset = () => {
       </IconLink>
       <IconLink link="https://github.com/tushar7d" aria="Github Profile" bee="github">
         <svg
-          width={size}
-          height={size}
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -92,118 +240,3 @@ let Iconset = () => {
     </div>
   );
 };
-
-
-const Home = () => {
-  return (
-    <div className={"container"}>
-     {/*<div className="flex items-center content-center justify-between p-4 sm:col-span-2 md:col-span-3 lg:col-span-4 card min-h-fit">
-      <img src="./td.png" className="w-8" />
-      <Iconset />
-      
-      </div> */}  
-     
-      <div
-        className={
-          "card p-8 sm:col-span-2 md:col-span-3 md:flex md:justify-between md:items-center   "
-        }
-      >
-        <div className="mb-4 md:mb-0 md:order-last">
-          <img
-            src="/pic.png"
-            className="w-[200px] h-[200px] md:w-[180px] md:h-[180px]  mx-auto md:mx-0"
-          />
-        </div>
-
-        <div className="flex flex-col justify-between text-center  md:text-left md:w-[70%]">
-          <h1 className="mb-2 text-2xl font-semibold ">Tushar Debnath</h1>
-          <div className="space-y-2 text-gray-600">
-            <p>
-              Product designer and design technologist with 8+ years of
-              experience building products loved by millions of people across
-              the globe. I am currently working at Revolut as a Senior product designer.
-
-            </p>
-           
-          </div>
-          <div className="mx-auto mt-4 md:mt-6 md:mx-0"><Iconset /></div>
-          
-          
-        </div>
-      </div>
-
-
-      
-     
-
-      <Tile
-        date="19 MAY 2022"
-        type="CONFERENCE"
-        heading="Config 2022: Design to prouction in a snap"
-        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s&ab_channel=Figma"
-        img="./config.png"
-        ext
-      />
-
-      <Tile
-        date="12 AUG 2022"
-        type="CASE STUDY"
-        heading="Zomato order tracking"
-        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-        img="./Zomato.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="CASE STUDY"
-        heading="Expedia car rental"
-        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
-        img="./Expedia.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="FIGMA"
-        heading="Color kit plugin"
-        link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
-        img="./colors.png"
-        ext
-      />
-
-      <Tile
-        date="12 AUG 2022"
-        type="FIGMA"
-        heading="Project Scaffold"
-        link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
-        img="./scaffold.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Automating our design system migration"
-        link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
-        img="./dsauto.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Figma shortcut using MIDI"
-        link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-        img="./key.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Consistent file stucture = better collaboration"
-        link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
-        img="./struct.png"
-        ext
-      />
-    </div>
-  );
-};
-
-export default Home;

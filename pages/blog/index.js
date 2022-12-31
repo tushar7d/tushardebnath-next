@@ -7,7 +7,7 @@ export default function Home() {
       </p>
 
       <div className="mt-12 space-y-3 ">
-        <div className="flex items-center p-4 bg-gray-50 rounded-2xl hover:cursor-pointer hover:text-yellow-500 md:max-w-[75%] mx-auto ">
+        <div className="flex items-center p-4 bg-white rounded-2xl hover:cursor-pointer hover:text-yellow-500 md:max-w-[75%] mx-auto ">
           <div className="ml-3">
             <div className="text-gray-500 ">Medium</div>
             <div className="text-xl font-medium ">

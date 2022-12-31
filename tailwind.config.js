@@ -1,30 +1,37 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
+/** @type {import('tailwindcss').Config} \*/
+
 module.exports = {
-  
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', 
+  darkMode: "class",
   theme: {
-    
     extend: {
-      colors: { 
-        'page-black':'#121212'
+      fontFamily: {
+        sans: ["var(--font-open-sans)", ...fontFamily.sans],
       },
-      typography:{
-        DEFAULT:{
-          css:{
-            a:{
-              textDecoration: "none"
-            }
-          }
-        }
-      }
+      colors: {
+        "page-black": "#121212",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              textDecoration: "none",
+            },
+          },
+        },
+      },
     },
-    
   },
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography'),require('tailwind-scrollbar-hide')]
-}
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("tailwind-scrollbar-hide"),
+  ],
+};
