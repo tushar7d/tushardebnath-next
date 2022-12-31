@@ -191,7 +191,7 @@ const Home = () => {
         type="MEDIUM"
         heading="Figma shortcut using MIDI"
         link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-        img="./key.png"
+        img="./Key.png"
         ext
       />
       <Tile
