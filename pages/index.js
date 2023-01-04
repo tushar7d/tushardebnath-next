@@ -110,6 +110,7 @@ const Home = () => {
         <meta property="og:title" content="Tushar Debnath" />
         <meta property="og:site_name" content="Tushar Debnath" />
         <meta property="og:url" content="https://tushardebnath.com" />
+        <meta property="og:image" content="https://tushardebnath.com/og.png" />
         <meta
           property="og:description"
           content="Product designer and developer from New Delhi"
