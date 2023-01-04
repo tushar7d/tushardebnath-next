@@ -107,6 +107,14 @@ const Home = () => {
       </div> */}
       <Head>
         <title>Tushar Debnath</title>
+        <meta property="og:title" content="Tushar Debnath" />
+        <meta property="og:site_name" content="Tushar Debnath" />
+        <meta property="og:url" content="https://tushardebnath.com" />
+        <meta
+          property="og:description"
+          content="Product designer and developer from New Delhi"
+        />
+        <meta property="og:type" content="website" />
       </Head>
       <div
         className={
@@ -136,8 +144,6 @@ const Home = () => {
         </div>
       </div>
 
-   
-
       <Tile
         date="19 MAY 2022"
         type="CONFERENCE"
@@ -163,7 +169,7 @@ const Home = () => {
         img="./Expedia.png"
         ext
       />
-      
+
       <Tile
         date="12 AUG 2022"
         type="FIGMA"
