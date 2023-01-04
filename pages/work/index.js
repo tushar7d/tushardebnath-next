@@ -40,31 +40,23 @@ const Home = () => {
       </Head>
       
     
+
       <Tile
         date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Automating our design system migration"
-        link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
-        img="./dsauto.png"
+        type="CASE STUDY"
+        heading="Zomato order tracking"
+        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+        img="./Zomato.png"
         ext
       />
       <Tile
         date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Figma shortcut using MIDI"
-        link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-        img="./Key.png"
+        type="CASE STUDY"
+        heading="Expedia car rental"
+        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
+        img="./Expedia.png"
         ext
       />
-      <Tile
-        date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Consistent file stucture = better collaboration"
-        link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
-        img="./struct.png"
-        ext
-      />
-  
 
       
     </div>
