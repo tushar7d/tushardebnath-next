@@ -14,7 +14,7 @@ const Tile = (props) => {
           <div className="mb-1 text-xs tracking-widest text-gray-400">
             {props.type}
           </div>
-          <div className="mb-1 font-medium ">{props.heading}</div>
+          <div className="mb-1 text-lg font-medium ">{props.heading}</div>
         </div>
       </div>
     </Link>
@@ -144,6 +144,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+     
 
       <Tile
         date="19 MAY 2022"
@@ -215,6 +216,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;
