@@ -10,9 +10,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-open-sans)", ...fontFamily.sans],
-      },
+      
       colors: {
         "page-black": "#121212",
       },
