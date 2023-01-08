@@ -1,28 +1,9 @@
-import Link from "next/link";
+import Tile from '../../components/tile'
 import Head from "next/head";
 
-const Tile = (props) => {
-  return (
-    <Link href={props.link} target={props.ext ? "_blank" : "_self"}>
-      <div className={"flex sm:flex-col justify-between card md:h-[240px] "}>
-        <div className="w-1/4 sm:w-full">
-          {" "}
-          <img src={props.img} className="w-20 md:w-16 " />
-        </div>
-
-        <div className="w-3/4 sm:w-full">
-          <div className="mb-1 text-xs tracking-widest text-gray-400">
-            {props.type}
-          </div>
-          <div className="mb-1 font-medium ">{props.heading}</div>
-        </div>
-      </div>
-    </Link>
-  );
-};
 
 
-const Projects = () => {
+const Home = () => {
   return (
     <div className={"container"}>
      
@@ -40,9 +21,26 @@ const Projects = () => {
       </Head>
       
     
+
       <Tile
         date="12 AUG 2022"
-        type="FIGMA"
+        type="CASE STUDY"
+        heading="Zomato order tracking"
+        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
+        img="./Zomato.png"
+        ext
+      />
+      <Tile
+        date="12 AUG 2022"
+        type="CASE STUDY"
+        heading="Expedia car rental"
+        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
+        img="./Expedia.png"
+        ext
+      />
+       <Tile
+        date="12 AUG 2022"
+        type="FIGMA PLUGIN"
         heading="Color kit plugin"
         link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
         img="./colors.png"
@@ -51,7 +49,7 @@ const Projects = () => {
 
       <Tile
         date="12 AUG 2022"
-        type="FIGMA"
+        type="FIGMA PLUGIN"
         heading="Project Scaffold"
         link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
         img="./scaffold.png"
@@ -64,4 +62,4 @@ const Projects = () => {
 };
 
 
-export default Projects;
+export default Home;

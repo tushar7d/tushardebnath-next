@@ -14,9 +14,9 @@ const Nav = ()=>{
           <div>
             <ul className="flex space-x-2 text-sm md:space-x-4 ">
             
-            <Link href="/work"><li className={`px-2 cursor-pointer hover:text-yellow-500 ${r=="/work"?" text-yellow-500":""} `}>Work</li></Link>
+            <Link href="/projects"><li className={`px-2 cursor-pointer hover:text-yellow-500 ${r=="/work"?" text-yellow-500":""} `}>Projects</li></Link>
             <Link href="/blog"><li className={`px-2 cursor-pointer hover:text-yellow-500 ${r=="/blog"?" text-yellow-500":""} `}>Writing</li></Link>
-            <Link href="/projects"><li className={`px-2 cursor-pointer hover:text-yellow-500 ${r=="/resume"?" text-yellow-500":""} `}>Projects</li></Link>
+           
             
             </ul>
           </div>
