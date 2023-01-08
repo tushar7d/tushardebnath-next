@@ -1,6 +1,5 @@
-import Tile from '../components/tile'
+import Tile from "../components/tile";
 import Head from "next/head";
-
 
 let IconLink = (props) => {
   return (
@@ -125,75 +124,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-     
 
-      <Tile
-        date="19 MAY 2022"
-        type="CONFERENCE"
-        heading="Config 2022: Design to prouction in a snap"
-        link="https://www.youtube.com/watch?v=FhXXEM1_aP4&t=55s&ab_channel=Figma"
-        img="./config.png"
-        ext
-      />
-
-      <Tile
-        date="12 AUG 2022"
-        type="CASE STUDY"
-        heading="Zomato order tracking"
-        link="https://tushardebnath.notion.site/Zomato-Order-Tracker-bb8ca43d32bb4363a1dfe0643c4cb91c"
-        img="./Zomato.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="CASE STUDY"
-        heading="Expedia car rental"
-        link="https://tushardebnath.notion.site/Helping-users-find-the-right-car-4140d01adf3343dc98249fdb91d643e2"
-        img="./Expedia.png"
-        ext
-      />
-
-      <Tile
-        date="12 AUG 2022"
-        type="FIGMA"
-        heading="Color kit plugin"
-        link="https://www.figma.com/community/plugin/797696673804519719/Color-Kit"
-        img="./colors.png"
-        ext
-      />
-
-      <Tile
-        date="12 AUG 2022"
-        type="FIGMA"
-        heading="Project Scaffold"
-        link="https://www.figma.com/community/plugin/747372158567878238/Project-Scaffold"
-        img="./scaffold.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Automating our design system migration"
-        link="https://blog.prototypr.io/how-i-created-a-figma-plugin-to-automate-our-design-system-migration-600d1c07518e"
-        img="./dsauto.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Figma shortcut using MIDI"
-        link="https://blog.prototypr.io/how-to-run-figma-shortcuts-using-midi-e0ab0997eafa"
-        img="./Key.png"
-        ext
-      />
-      <Tile
-        date="12 AUG 2022"
-        type="MEDIUM"
-        heading="Consistent file stucture = better collaboration"
-        link="https://blog.prototypr.io/how-structuring-figma-files-in-a-consistent-way-has-improved-collaboration-and-efficiency-f3c904791b85"
-        img="./struct.png"
-        ext
-      />
+      <div className="card">Music Player</div>
+      <div className=" card">Proffessional</div>
+      <div className=" card">Educational</div>
+      
     </div>
   );
 };
