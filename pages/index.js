@@ -100,11 +100,7 @@ let Iconset = () => {
 const Home = () => {
   return (
     <div className={"container"}>
-      {/*<div className="flex items-center content-center justify-between p-4 sm:col-span-2 md:col-span-3 lg:col-span-4 card min-h-fit">
-      <img src="./td.png" className="w-8" />
-      <Iconset />
-      
-      </div> */}
+     
       <Head>
         <title>Tushar Debnath</title>
         <meta property="og:title" content="Tushar Debnath" />
