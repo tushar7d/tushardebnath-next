@@ -14,13 +14,13 @@
   }
 
   .nav-container {
-    @apply sticky w-[80px] top-0 flex flex-col justify-between h-screen border-r;
+    @apply sticky w-[80px] top-0 flex flex-col justify-between items-center h-screen border-r py-4;
   }
   .home-content-container {
     @apply w-[calc(100vw-80px)] py-6;
   }
 
   .home-content-section {
-    @apply max-w-[1200px] mx-auto;
+    @apply max-w-[1200px] mx-auto mt-24;
   }
 }
