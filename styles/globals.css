@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-white;
+    @apply text-white bg-black;
   }
 }
 
