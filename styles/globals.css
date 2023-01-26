@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   body {
     @apply bg-white;
@@ -10,14 +9,18 @@
 }
 
 @layer components {
-
   .top-container {
-    @apply flex w-screen h-screen ;
+    @apply flex scrollbar-hide;
   }
+
   .nav-container {
-    @apply max-w-[80px] flex flex-col justify-between px-6 py-6 border-r ;
+    @apply sticky w-[80px] top-0 flex flex-col justify-between h-screen border-r;
+  }
+  .home-content-container {
+    @apply w-[calc(100vw-80px)] py-6;
   }
 
-  
-
+  .home-content-section {
+    @apply max-w-[1200px] mx-auto;
+  }
 }
