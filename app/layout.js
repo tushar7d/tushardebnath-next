@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
           </div>
           <div className="space-y-6 text-gray-800">
             <AiFillLinkedin className="w-6 h-6 " />
-            <AiFillGithub className="w-6 h-6 " />
             <FiFigma className="w-6 h-6 " />
+            <AiFillGithub className="w-6 h-6 " />
           </div>
         </nav>
         <main>{children}</main>
