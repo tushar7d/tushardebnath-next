@@ -1,4 +1,9 @@
 export default function Page() {
-    return <div className="sticky top-0 overflow-hidden">hello</div>;
+    return<>
+    
+    <div className=" max-w-[1000px] mx-auto w-full ">
+      Hello
+    </div>
+    </>
   }
   
