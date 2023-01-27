@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <div className="flex w-[calc(100vw-80px)]  h-screen sticky top-0 overflow-hidden">
       <div className="w-[360px] border-r overflow-y-auto scrollbar-hide">
         <div className="sticky top-0 px-3 py-3 font-medium bg-white border-b ">My Blog</div>
-        <ol className="p-3 space-y-6 ">
+        <ul className="p-3 space-y-6 ">
           <Card h="Heading" s="This is a subheading" />
           <Card h="Heading" s="This is a subheading" />
           <Card h="Heading" s="This is a subheading" />
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
           <Card h="Heading" s="This is a subheading" />
           <Card h="Heading" s="This is a subheading" />
           <Card h="Heading" s="This is a subheading" />
-        </ol>
+        </ul>
       </div>
       {children}
     </div>
