@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
       <head />
       <body className="top-container">
         <nav className="nav-container">
-          <div className="text-3xl font-bold">TD</div>
+          <div className="font-serif text-3xl font-black">T.D</div>
           <div className="w-6 h-6 space-y-6 text-blue-600">
             <HomeIcon  />
             <RectangleStackIcon  />
