@@ -11,6 +11,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        'serif': ['var(--font-recoleta)'],
+       
+      },
       
       colors: {
         "page-black": "#121212",

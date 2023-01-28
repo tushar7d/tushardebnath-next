@@ -2,8 +2,8 @@ export default function Page() {
   return (
     <div className="home-content-container">
       <section className="home-content-section ">
-        <div className="p-6 bg-green-100 rounded-2xl h-[250px] mb-4">
-          Hello I am tushar
+        <div className="p-6 bg-green-100 rounded-2xl h-[250px] mb-4 font-serif text-3xl font-bold">
+          Hello I am Tushar Debnath
         </div>
         <div className="p-6 bg-blue-100 rounded-2xl h-[250px] mb-4">
           I am product designer and coder{" "}
