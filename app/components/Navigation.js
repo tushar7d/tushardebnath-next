@@ -32,7 +32,7 @@ let Bttn = (props) => {
 const Navigation = () => {
   return (
     <nav className="nav-container">
-      <div className="font-serif text-3xl font-medium ">T</div>
+      <div className="font-serif text-4xl font-medium ">T</div>
       <div className="flex flex-col space-y-3 ">
         <Bttn link="/">
           <HomeIcon className="w-6 h-6 " />

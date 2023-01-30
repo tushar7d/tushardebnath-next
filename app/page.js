@@ -1,11 +1,14 @@
-
+"use client"
+import { motion } from "framer-motion"
 export default function Page() {
+
   return (
     <div className="home-content-container">
-      
+      <motion.div animate={{y:-10}} initial={{y:300}}  transition={{ duration: 1, delay:0.1 }}>
       <div className="w-full px-3 mx-auto mt-24 font-serif text-center text-8xl">
         Hello Everyone!
       </div>
+      
       <section className="home-content-section ">
         <div className="flex items-center justify-between p-6 mb-4 bg-blue-100 rounded-2xl ">
           <div>
@@ -39,6 +42,7 @@ export default function Page() {
           When I am not working
         </div>
       </section>
+      </motion.div>
     </div>
   );
 }
