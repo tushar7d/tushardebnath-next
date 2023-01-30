@@ -42,7 +42,7 @@ const Navigation = () => {
           <RectangleStackIcon className="w-6 h-6" />
         </Bttn>
 
-        <Bttn link="/blog">
+        <Bttn link="/blog/one">
           <BookOpenIcon className="w-6 h-6 " />
         </Bttn>
       </div>
