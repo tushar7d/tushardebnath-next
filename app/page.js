@@ -11,9 +11,9 @@ export default function Page() {
         <div className="w-full px-3 mx-auto mt-[25vh] mb-8 font-serif text-5xl font-medium text-center md:text-8xl">
           Hello Everyone!
         </div>
-        <p className="mx-auto mb-12 font-serif text-2xl leading-loose text-center md:w-2/4 md:text-5xl ">
+        <p className="mx-auto mb-12 font-serif text-2xl text-center md:w-2/4 md:text-5xl ">
                 I am <em className="text-orange-400 ">Tushar Debnath</em> a
-                product designer, developer, & writer from New Delhi. 
+                product designer and developer from New Delhi. 
               </p>
             
 
