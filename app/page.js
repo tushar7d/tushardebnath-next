@@ -17,11 +17,11 @@ export default function Page() {
         </p>
 
         <section className="mt-48 home-content-section ">
-          <div className="flex justify-between p-6 mb-4 ">
+          <div className="justify-between p-6 mb-4 md:flex ">
             <h2 className="mb-2 font-serif text-3xl font-medium ">
               About my work
             </h2>
-            <div className="w-3/4 text-2xl font-light text-left text-gray-500 ">
+            <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
               I am currently a Senior product designer at Revolut a Global
               Fintech Giant, where I work with the Expansion department to bring
               revolut to the world. Apart fromt he expansion department I am
@@ -45,11 +45,11 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex justify-between p-6 mb-4 ">
+          <div className="justify-between p-6 mb-4 md:flex ">
             <h2 className="mb-2 font-serif text-3xl font-medium ">
               About my life
             </h2>
-            <div className="w-3/4 text-2xl font-light text-left text-gray-500 ">
+            <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
               I live in the beautiful city of new delhi, which is the capital of
               India. Life in delhi is chaotic and beautiful at the same time.
               <br /> <br />
