@@ -1,5 +1,8 @@
 "use client";
+
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
+
 import {
   HomeIcon,
   RectangleStackIcon,
@@ -8,24 +11,27 @@ import {
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
 
-export default Navigation = () => {
+const Navigation = () => {
+    const path = usePathname()
+   
   return (
     <nav className="nav-container">
       <div className="font-serif text-3xl font-medium ">T</div>
       <div className="flex flex-col space-y-3 ">
+      
         <Link href="/">
-          <div className="w-[48px] h-[48px] p-2 bg-blue-50 rounded-xl flex   items-center  justify-center">
-            <HomeIcon className="w-6 h-6 space-y-6 text-blue-600" />
+          <div className={` hover:scale-110 transition-transform duration-200 ease-out w-[48px] h-[48px] p-2  rounded-xl flex   items-center  justify-center ${path=="/"?"text-white bg-blue-500":"text-blue-600 bg-blue-50"} `}>
+            <HomeIcon className="w-6 h-6 " />
           </div>
         </Link>
         <Link href="/blog">
-          <div className="w-[48px] h-[48px] p-2 bg-blue-50 rounded-xl flex   items-center  justify-center">
-            <RectangleStackIcon className="w-6 h-6 space-y-6 text-blue-600" />
+          <div className={ `  hover:scale-110 transition-transform duration-200 ease-out  w-[48px] h-[48px] p-2  rounded-xl flex   items-center  justify-center ${path=="/blog"?"text-white bg-blue-500":"text-blue-600 bg-blue-50"} `}>
+            <RectangleStackIcon className="w-6 h-6" />
           </div>
         </Link>
         <Link href="/blog">
-          <div className="w-[48px] h-[48px] p-2 bg-blue-50 rounded-xl flex   items-center  justify-center">
-            <BookOpenIcon className="w-6 h-6 space-y-6 text-blue-600" />
+          <div className={` hover:scale-110 transition-transform duration-200 ease-out w-[48px] h-[48px] p-2  rounded-xl flex   items-center  justify-center ${path=="/log"?"text-white bg-blue-500":"text-blue-600 bg-blue-50"} `}>
+            <BookOpenIcon className="w-6 h-6 " />
           </div>
         </Link>
       </div>
@@ -37,3 +43,6 @@ export default Navigation = () => {
     </nav>
   );
 };
+
+
+export default Navigation

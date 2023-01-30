@@ -15,7 +15,7 @@ let Card = (props) => {
 export default function RootLayout({ children }) {
   return (
     <div className="flex w-[calc(100vw-80px)]  h-screen sticky top-0 overflow-hidden">
-      <div className="w-[360px] border-r overflow-y-auto scrollbar-hide">
+      <div className="w-[360px] min-w-[360px] border-r overflow-y-auto scrollbar-hide">
         <div className="sticky top-0 px-3 py-3 font-medium bg-white border-b ">My Blog</div>
         <ul className="p-3 space-y-6 ">
           <Card h="Automating our design system migration" s="Automation" />
