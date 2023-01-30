@@ -19,8 +19,8 @@ let Bttn = (props) => {
       <div
         className={` hover:scale-110 transition-transform duration-200 ease-out w-[48px] h-[48px] p-2  rounded-xl flex   items-center  justify-center ${
           path == props.link
-            ? "text-white bg-blue-500"
-            : "text-blue-600 bg-blue-50"
+            ? "text-white bg-orange-400"
+            : "text-orange-500 bg-orange-50"
         } `}
       >
         {props.children}
