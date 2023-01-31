@@ -17,7 +17,7 @@ export default function Page() {
         </p>
 
         <section className="mt-48 home-content-section ">
-          <div className="justify-between p-6 mb-4 md:flex ">
+          <div className="justify-between p-6 mb-12 md:flex ">
             <h2 className="mb-2 font-serif text-3xl font-medium ">
               About my work
             </h2>
@@ -27,6 +27,9 @@ export default function Page() {
               revolut to the world. Apart fromt he expansion department I am
               also a part of the design operations team where we build internal
               products to optimise internal workflows.
+              <br />
+              <br />
+              Recently I also have been contributing back to the community by building Figma plugins, design resources and speaking at design conferences
               <br />
               <br />
               Before Revolut, I was at Zomato an Indian Food tech unicorn where
@@ -45,19 +48,28 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="justify-between p-6 mb-4 md:flex ">
+          <div className="justify-between p-6 mb-12 md:flex ">
+            <h2 className="mb-2 font-serif text-3xl font-medium ">
+              My skills
+            </h2>
+            <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
+              <em>Design:</em> I have over a decade of experience in building high quality and scalable products for few of the largest product companies in the world.
+              <br /> <br />
+              <em>Development:</em> I have a background in engineering and I specialize in building websites, internal tools, figma plugins, and high fidelity prototypes.
+              
+            </div>
+          </div>
+
+          <div className="justify-between p-6 mb-12 md:flex ">
             <h2 className="mb-2 font-serif text-3xl font-medium ">
               About my life
             </h2>
             <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
-              I live in the beautiful city of new delhi, which is the capital of
-              India. Life in delhi is chaotic and beautiful at the same time.
+              I currently Live in New Delhi with my family, but I spent most of
+              my school life on the hills of Mussorie on the Himalayan montain range.
               <br /> <br />
-              I spend most of my free time with my wife listening to music from
-              the 90's, reading fantasy books or mangas and watching old movies.
-              <br />
-              <br />I also enjoy travelling and taking pictures you can see them
-              here.
+              I like the music from the 90's, fantasy books, mangas, Tarantino movies, Anime and photography.
+             
             </div>
           </div>
         </section>
