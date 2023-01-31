@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 import {
   HomeIcon,
@@ -12,13 +12,13 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
 
 let Bttn = (props) => {
-  const path = usePathname();
+  const path = useSelectedLayoutSegment();
 
   return (
     <Link href={props.link}>
       <div
         className={` hover:scale-110 transition-transform duration-200 ease-out w-[48px] h-[48px] p-2  rounded-xl flex   items-center  justify-center ${
-          path == props.link
+          path == (props.link == "/" ? null : props.link.substring(1))
             ? "text-white bg-orange-400"
             : "text-orange-500 bg-orange-50"
         } `}
@@ -42,7 +42,7 @@ const Navigation = () => {
           <RectangleStackIcon className="w-6 h-6" />
         </Bttn>
 
-        <Bttn link="/blog/one">
+        <Bttn link="/blog">
           <BookOpenIcon className="w-6 h-6 " />
         </Bttn>
       </div>

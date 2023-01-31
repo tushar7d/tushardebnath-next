@@ -66,7 +66,7 @@ export default function Page() {
             </h2>
             <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
               I currently Live in New Delhi with my family, but I spent most of
-              my school life on the hills of Mussorie on the Himalayan montain range.
+              my school life on the hills of Mussorie.
               <br /> <br />
               I like the music from the 90's, fantasy books, mangas, Tarantino movies, Anime and photography.
              

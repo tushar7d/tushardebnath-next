@@ -1,6 +1,12 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 let Card = (props) => {
+  const path = usePathname();
+ 
   return (
-    <li className="flex ">
+    <Link href={props.link}>
+    <li className={ `flex ${path == props.link?"bg-orange-50" :""}`}>
       <div className="w-[72px] h-[72px] bg-blue-50 rounded-xl" />
       <div className="pl-3 mt-1 text-gray-800">
       
@@ -9,18 +15,21 @@ let Card = (props) => {
         
       </div>
     </li>
+    </Link>
   );
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
     <div className="flex w-[calc(100vw-80px)]  h-screen sticky top-0 overflow-hidden">
       <div className="w-[360px] min-w-[360px] border-r overflow-y-auto scrollbar-hide">
         <div className="sticky top-0 px-3 py-3 font-medium bg-white border-b ">My Blog</div>
-        <ul className="p-3 space-y-6 ">
-          <Card h="Automating our design system migration" s="Automation" />
-          <Card h="Using Figma shortcuts via a midi keyboard" s="Hacking" />
-          <Card h="Consistent files means better collaboration" s="Plugin" />
+        <ul className="flex flex-col p-3 space-y-6 ">
+          <Card h="Automating our design system migration" s="Automation" link="/blog/one" />
+          <Card h="Using Figma shortcuts via a midi keyboard" s="Hacking" link="/blog/two" />
+          
          
         </ul>
       </div>
