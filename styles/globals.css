@@ -23,4 +23,7 @@
   .home-content-section {
     @apply max-w-[1200px] mx-auto mt-24 px-4;
   }
+  .project-card {
+    @apply w-full min-h-[500px] bg-gray-100 rounded-xl p-6;
+  }
 }

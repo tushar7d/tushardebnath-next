@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <div className="home-content-container">
       <motion.div
-        animate={{ y: -10 }}
-        initial={{ y: 300 }}
+        animate={{ y: 0, opacity:1 }}
+        initial={{ y: 300,opacity:0 }}
         transition={{ duration: 1, delay: 0.1 }}
       >
         <div className="w-full px-3 mx-auto mt-[25vh] mb-8 font-serif text-5xl font-medium text-center md:text-8xl">

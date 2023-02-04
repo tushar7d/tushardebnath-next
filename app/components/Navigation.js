@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-
+import { Tooltip } from "flowbite-react";
 import {
   HomeIcon,
   RectangleStackIcon,
@@ -15,7 +15,9 @@ let Bttn = (props) => {
   const path = useSelectedLayoutSegment();
 
   return (
+    
     <Link href={props.link}>
+      <Tooltip content={props.name} placement="right">
       <div
         className={` hover:scale-110 transition-transform duration-200 ease-out w-[48px] h-[48px] p-2  rounded-xl flex   items-center  justify-center ${
           path == (props.link == "/" ? null : props.link.substring(1))
@@ -25,7 +27,9 @@ let Bttn = (props) => {
       >
         {props.children}
       </div>
+      </Tooltip>
     </Link>
+   
   );
 };
 
@@ -34,15 +38,15 @@ const Navigation = () => {
     <nav className="nav-container">
       <div className="font-serif text-4xl font-medium ">T</div>
       <div className="flex flex-col space-y-3 ">
-        <Bttn link="/">
+        <Bttn link="/" name="Home">
           <HomeIcon className="w-6 h-6 " />
         </Bttn>
 
-        <Bttn link="/work">
+        <Bttn link="/work" name="Work">
           <RectangleStackIcon className="w-6 h-6" />
         </Bttn>
 
-        <Bttn link="/blog">
+        <Bttn link="/blog" name="Blog">
           <BookOpenIcon className="w-6 h-6 " />
         </Bttn>
       </div>

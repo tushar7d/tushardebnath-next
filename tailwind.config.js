@@ -6,6 +6,8 @@ module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite-react/**/*.js",
+
   ],
   
   darkMode: "class",
@@ -36,5 +38,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
     require("tailwind-scrollbar-hide"),
+    require('flowbite/plugin'),
   ],
 };
