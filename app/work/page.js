@@ -12,20 +12,11 @@ export default function Page() {
           <div className="col-span-2 mb-12 font-serif text-6xl font-medium">
             Featured Work
           </div>
-          <div className="col-span-2 p-6 bg-center bg-gradient-to-tr from-blue-500 via-cyan-400 to-purple-300 project-card" >
-            <div>
-            <div className="mt-32 mb-2 text-xl font-light text-white">
-              CASE STUDY
+          <div className="flex flex-col items-center justify-center col-span-2 p-6 bg-center bg-gradient-to-tr from-blue-300 via-cyan-500 to-purple-500 project-card ">
+            <div className="w-2/3 font-serif text-5xl font-medium text-center text-white ">
+             Zomato Order Tracking System 
             </div>
-            <div className="w-4/6 font-serif text-5xl font-medium text-white rounded-l-xl">
-             Designing the Zomato Order Tracking System
-            </div>
-
-            </div>
-         
-        
-             
-            
+            <div className="mt-3 text-4xl font-light text-white">A case study</div>
           </div>
           <div className="project-card ">Main content</div>
           <div className="project-card">Main content</div>
