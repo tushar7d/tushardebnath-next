@@ -13,6 +13,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage: {
+        'mapbg' : "url('../public/images/map.png')",
+      },
       fontFamily: {
         'serif': ['var(--font-recoleta)'],
        
