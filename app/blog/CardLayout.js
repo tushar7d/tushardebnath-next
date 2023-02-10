@@ -37,9 +37,9 @@ export default function RootLayout(props) {
           {props.list.map((item) => {
             return (
               <Card
-                h={item.replace(".mdx", "").replace(/-/g, " ")}
-                s="Automation"
-                link={"/blog/" + item.replace(".mdx", "")}
+                h={item.heading}
+                s={item.subheading}
+                link={"/blog/"+item.slug}
               />
             );
           })}
