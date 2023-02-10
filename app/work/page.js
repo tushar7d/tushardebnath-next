@@ -20,6 +20,7 @@ export default function Page() {
           </div>
           <div className="project-card ">Main content</div>
           <div className="project-card">Main content</div>
+          
         </section>
       </motion.div>
     </div>

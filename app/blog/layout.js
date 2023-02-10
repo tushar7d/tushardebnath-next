@@ -1,4 +1,6 @@
 "use client";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 let Card = (props) => {
@@ -24,7 +26,12 @@ let Card = (props) => {
 export default function RootLayout({ children }) {
   return (
     <div className="flex w-[calc(100vw-80px)]  h-screen sticky top-0 overflow-hidden">
-      <div className="w-[360px] min-w-[360px] border-r overflow-y-auto scrollbar-hide">
+       <motion.div
+        animate={{ x: 0, opacity:1 }}
+        initial={{ x: -300,opacity:0 }}
+        transition={{ duration: 1, delay: 0.1 }}
+      >
+      <div className="w-[360px] min-w-[360px] border-r overflow-y-auto scrollbar-hide h-screen">
         <div className="sticky top-0 px-3 py-3 font-serif text-xl font-medium bg-white border-b ">Writing</div>
         <ul className="flex flex-col p-2 space-y-3 ">
           <Card h="Automating our design system migration" s="Automation" link="/blog/one" />
@@ -33,6 +40,7 @@ export default function RootLayout({ children }) {
          
         </ul>
       </div>
+      </motion.div>
       {children}
     </div>
   );
