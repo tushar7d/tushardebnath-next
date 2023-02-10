@@ -35,7 +35,7 @@ let Bttn = (props) => {
 
 const Navigation = () => {
   return (
-    <nav className="nav-container">
+    <nav className="z-50 nav-container">
       <div className="font-serif text-4xl font-medium ">T</div>
       <div className="flex flex-col space-y-3 ">
         <Bttn link="/" name="Home">
