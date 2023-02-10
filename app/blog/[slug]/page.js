@@ -1,17 +1,27 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
-
 import { promises as fs } from "fs";
-
 import path from "path";
 
+
+async function listDir(path) {
+  try {
+    return await fs.readdir(path);
+  } catch (err) {
+    console.error('Error occurred while reading directory!', err);
+  }
+}
+
 export async function generateStaticParams() {
-  return [{ slug: "one" }, { slug: "two" }];
+
+  const mdxDirectory = path.join(process.cwd(), "app/blog/mdx/");
+
+console.log(await listDir(mdxDirectory))
+  return [{ slug: "automating-design-system-migration" }, { slug: "two" }];
 }
 
 async function getPost(params) {
   const mdxDirectory = path.join(process.cwd(), "app/blog/mdx/");
   const res = await fs.readFile(mdxDirectory + params.slug + ".mdx", "utf8");
-
   return res;
 }
 
@@ -20,7 +30,7 @@ export default async function Page({ params }) {
   return (
     <>
       <div className=" max-w-[1000px] mx-auto w-full prose pt-12 px-6">
-        <MDXRemote source={data}   />
+        <MDXRemote source={data} />
       </div>
     </>
   );

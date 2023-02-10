@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <div className="w-[360px] min-w-[360px] border-r overflow-y-auto scrollbar-hide h-screen">
         <div className="sticky top-0 px-3 py-3 font-serif text-xl font-medium bg-white border-b ">Writing</div>
         <ul className="flex flex-col p-2 space-y-3 ">
-          <Card h="Automating our design system migration" s="Automation" link="/blog/one" />
+          <Card h="Automating our design system migration" s="Automation" link="/blog/automating-design-system-migration" />
           <Card h="Using Figma shortcuts via a midi keyboard" s="Hacking" link="/blog/two" />
           
          
