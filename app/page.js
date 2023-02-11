@@ -12,9 +12,10 @@ export default function Page() {
           Hello Everyone!
         </div>
 
-        <p className="w-full mx-auto mb-12 font-serif text-2xl text-center md:w-3/4 sm:text-3xl md:text-5xl">
+        <p className="w-full mx-auto mb-12 font-serif text-2xl text-center sm:text-3xl md:text-5xl">
           I am <em className="text-orange-400 ">Tushar Debnath</em> a product
-          designer and developer from New Delhi.
+          designer <br className="hidden lg:inline" /> and developer from New
+          Delhi.
         </p>
 
         <section className="mt-48 home-content-section ">
@@ -112,13 +113,10 @@ export default function Page() {
               <em>Development:</em> I have a background in engineering and I
               specialize in building websites, internal tools, figma plugins,
               and high fidelity prototypes.
-              
               <br /> <br />
-              
               <em>Design Ops:</em> Recently I have been involved in design
               operations work and have actively contibuted to setting up
-              processes, and frameworks for world class design
-              teams.
+              processes, and frameworks for world class design teams.
             </div>
           </div>
 
