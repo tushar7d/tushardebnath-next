@@ -11,6 +11,7 @@ let Card = (props) => {
         className={`flex p-2 rounded-xl ${
           path == props.link ? "bg-gray-50" : ""
         }`}
+        key={props.h}
       >
         <div className="min-w-[80px] min-h-[80px] bg-gray-100 rounded-xl" />
         <div className="pl-3 mt-1 text-gray-800">
