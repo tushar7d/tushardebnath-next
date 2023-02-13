@@ -1,6 +1,7 @@
 import localFont from '@next/font/local';
 import "../styles/globals.css";
 import Navigation from './components/Navigation';
+import { AnalyticsWrapper } from './components/analytics';
 
 
 const recoleta = localFont({
@@ -48,7 +49,8 @@ export default function RootLayout({ children }) {
       <head />
       <body className="top-container">
        <Navigation />
-        <main>{children}</main>
+        <main>{children}
+        <AnalyticsWrapper /></main>
       </body>
     </html>
   );
