@@ -30,7 +30,7 @@ export default async function Page({ params }) {
   const data = await getPost(params);
   return (
     <>
-      <div className=" max-w-[1000px] mx-auto w-full prose pt-12 px-6">
+      <div className=" max-w-[1000px] mx-auto w-full prose py-12 px-6 overflow-scroll scrollbar-hide">
         <MDXRemote source={data} />
       </div>
     </>

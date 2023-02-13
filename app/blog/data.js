@@ -1,6 +1,8 @@
 let data =[
-    {slug:"automating-design-system-migration",heading:"Automating Design System Migration",subheading:"Automation"},
-    {slug:"test",heading:"Test",subheading:"Automation"},
-    {slug:"two",heading:"Two",subheading:"Automation"},
+    
+  
+    {slug:"managing-design-system",heading:"Managing Design System",subheading:"Design Ops"},
+    {slug:"double-diamond",heading:"Double Diamond Approach to Design",subheading:"Back 2 Basics"},
+    {slug:"pyramid-principle",heading:"Pyramid Principle",subheading:"Back 2 Basics"},
 ]
 export default data
