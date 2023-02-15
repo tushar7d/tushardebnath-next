@@ -17,6 +17,7 @@ export default function Page() {
           designer <br className="hidden lg:inline" /> and developer from New
           Delhi.
         </p>
+        
 
         <section className="mt-48 home-content-section ">
           <div className="justify-between p-6 mb-12 md:flex ">
