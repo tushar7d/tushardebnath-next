@@ -6,12 +6,12 @@ let Card = (props) => {
   const path = usePathname();
 
   return (
-    <Link href={props.link}>
+    <Link href={props.link} key={props.keys}>
       <li
         className={`flex p-2 rounded-xl ${
           path == props.link ? "bg-gray-50" : ""
         }`}
-        key={props.h}
+        
       >
         <div className="min-w-[80px] min-h-[80px] bg-gray-100 rounded-xl" />
         <div className="pl-3 mt-1 text-gray-800">
@@ -35,12 +35,13 @@ export default function RootLayout(props) {
           Writing
         </div>
         <ul className="flex flex-col p-2 space-y-3 ">
-          {props.list.map((item) => {
+          {props.list.map((item,index) => {
             return (
               <Card
                 h={item.heading}
                 s={item.subheading}
                 link={"/blog/"+item.slug}
+                keys={index}
               />
             );
           })}
