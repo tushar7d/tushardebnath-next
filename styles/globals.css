@@ -25,7 +25,7 @@
   }
 
   .nav-container {
-    @apply fixed inset-x-0 bottom-0 flex items-center justify-between px-6 py-4 mx-auto mb-6 space-x-6 bg-white border rounded-full shadow-xl w-fit;
+    @apply fixed inset-x-0 bottom-0 flex items-center justify-between px-4 py-3 mx-auto mb-6 space-x-6 bg-white border rounded-full shadow-xl w-fit;
   }
   .home-content-container {
     @apply w-[100vw] py-6;

@@ -1,19 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { FiFigma } from "react-icons/fi";
 export default function Page() {
   return (
     <div className="home-content-container">
-      <div className="flex justify-between">
-      <div className="font-serif text-4xl font-medium ">T</div>
-      <div className="flex space-x-6 text-gray-800">
-        <AiFillLinkedin className="w-6 h-6 " />
-        <FiFigma className="w-6 h-6 " />
-        <AiFillGithub className="w-6 h-6 " />
-      </div>
-      </div>
+   
       <motion.div
         animate={{ y: 0, opacity: 1 }}
         initial={{ y: 300, opacity: 0 }}
