@@ -25,16 +25,16 @@ export default function Page() {
               A case study
             </div>
           </Link>
-          <div className="project-card ">Main content</div>
-          <div className="project-card">Main content</div>
+          <div className="project-card bg-gradient-to-tr from-yellow-500 to-blue-500">Main content</div>
+          <div className="project-card bg-gradient-to-tr from-blue-400 to-green-300">Main content</div>
 
           <div className="col-span-2 my-12 font-serif text-6xl font-medium">
             Little details
           </div>
-          <div className="project-card ">Main content</div>
-          <div className="project-card">Main content</div>
-          <div className="project-card ">Main content</div>
-          <div className="project-card">Main content</div>
+          <div className="project-card bg-gradient-to-tr from-red-200 to-orange-300">Main content</div>
+          <div className="project-card bg-gradient-to-tr from-blue-400 to-green-300">Main content</div>
+          <div className="project-card bg-gradient-to-tr from-yellow-500 to-blue-500">Main content</div>
+          <div className="project-card bg-gradient-to-tr from-blue-400 to-green-300">Main content</div>
         </section>
       </motion.div>
     </div>
