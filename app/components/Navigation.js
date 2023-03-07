@@ -8,7 +8,7 @@ import {
   RectangleStackIcon,
   BookOpenIcon,
 } from "@heroicons/react/24/outline";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiOutlineCamera } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
 
 let Bttn = (props) => {
@@ -50,7 +50,7 @@ const Navigation = () => {
           <BookOpenIcon className="w-6 h-6 " />
         </Bttn>
         <Bttn link="/photography" name="Photography">
-          <BookOpenIcon className="w-6 h-6 " />
+          <AiOutlineCamera className="w-6 h-6 " />
         </Bttn>
       </div>
       <div className="space-y-6 text-gray-800">
