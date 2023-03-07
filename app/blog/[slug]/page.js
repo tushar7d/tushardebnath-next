@@ -1,37 +1,29 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 
-import { promises as fs } from "fs";
-import path from "path";
+import { createClient } from "next-sanity";
 
-async function listDir(path) {
-  try {
-    return await fs.readdir(path);
-  } catch (err) {
-    console.error("Error occurred while reading directory!", err);
+
+  async function getData(params) {
+    const client = createClient({
+        projectId: "uvu14ce6",
+        dataset: "production",
+        apiVersion: "2023-03-07",
+        useCdn: false
+      });
+    const res = await client.fetch(`*[_type == "blog" && slug.current == "${params.slug}" ]`);
+ 
+    return res;
   }
-}
 
-export async function generateStaticParams() {
-  const mdxDirectory = path.join(process.cwd(), "app/blog/mdx/");
-  let list = await listDir(mdxDirectory);
-  let out = list.map((o) => {
-    return { slug: o.replace(".mdx", "") };
-  });
-  return out;
-}
-
-async function getPost(params) {
-  const mdxDirectory = path.join(process.cwd(), "app/blog/mdx/");
-  const res = await fs.readFile(mdxDirectory + params.slug + ".mdx", "utf8");
-  return res;
-}
 
 export default async function Page({ params }) {
-  const data = await getPost(params);
+ 
+  let data = await getData(params)
+  
   return (
     <>
       <div className=" max-w-[1000px] mx-auto w-full prose py-12 px-6 overflow-scroll scrollbar-hide">
-        <MDXRemote source={data} />
+      <MDXRemote source={data[0].content} />
       </div>
     </>
   );

@@ -16,7 +16,7 @@ let Card = (props) => {
         <div className="min-w-[80px] min-h-[80px] bg-gray-100 rounded-xl" />
         <div className="pl-3 mt-1 text-gray-800">
           <h3 className="mb-1 ">{props.h}</h3>
-          <p className="p-1 text-xs text-black bg-gray-100 w-fit ">{props.s}</p>
+         
         </div>
       </li>
     </Link>
@@ -40,7 +40,7 @@ export default function RootLayout(props) {
               <Card
                 h={item.heading}
                 s={item.subheading}
-                link={"/blog/"+item.slug}
+                link={"/blog/"+item.slug.current}
                 keys={index}
               />
             );
