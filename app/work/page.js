@@ -27,6 +27,14 @@ export default function Page() {
           </Link>
           <div className="project-card ">Main content</div>
           <div className="project-card">Main content</div>
+
+          <div className="col-span-2 my-12 font-serif text-6xl font-medium">
+            Little details
+          </div>
+          <div className="project-card ">Main content</div>
+          <div className="project-card">Main content</div>
+          <div className="project-card ">Main content</div>
+          <div className="project-card">Main content</div>
         </section>
       </motion.div>
     </div>

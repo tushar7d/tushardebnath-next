@@ -49,6 +49,9 @@ const Navigation = () => {
         <Bttn link="/blog" name="Blog">
           <BookOpenIcon className="w-6 h-6 " />
         </Bttn>
+        <Bttn link="/photography" name="Photography">
+          <BookOpenIcon className="w-6 h-6 " />
+        </Bttn>
       </div>
       <div className="space-y-6 text-gray-800">
         <AiFillLinkedin className="w-6 h-6 " />
