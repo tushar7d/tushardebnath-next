@@ -8,7 +8,9 @@ export default function Page() {
         initial={{ opacity: 0 }}
         transition={{ duration: 1.5, delay: 0.2 }}
       >
-        <div className="h-[80vh] bg-blue-50">Cover</div>
+        <div className="h-[80vh] bg-blue-50 overflow-hidden bg-[url('/images/mapbg.png')]">
+          <h1 className="text-6xl  font-serif font-semibold text-center mt-[35vh]">Zomato order tracker</h1>
+        </div>
         <div className="h-[20vh] p-12 flex justify-between">
           <div>Hello</div>
           <div>Hello</div>
