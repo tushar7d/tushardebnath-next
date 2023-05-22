@@ -16,12 +16,12 @@ export default function Page() {
           </div>
           <Link
             href="/work/zomato-order-tracking-system"
-            className="flex flex-col items-center justify-center col-span-2 p-6 bg-center bg-gradient-to-tr from-blue-300 via-cyan-500 to-purple-500 project-card "
+            className="flex flex-col items-center justify-center col-span-2 p-6 bg-center bg-gradient-to-tr bg-red-50 project-card "
           >
-            <div className="w-2/3 font-serif text-5xl font-medium text-center text-white ">
+            <div className="w-2/3 font-serif text-5xl font-medium text-center text-black ">
               Zomato Order Tracking System
             </div>
-            <div className="mt-3 text-4xl font-light text-white">
+            <div className="mt-3 text-4xl font-light text-black">
               A case study
             </div>
           </Link>
