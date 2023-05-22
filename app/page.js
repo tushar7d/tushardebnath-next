@@ -10,23 +10,24 @@ export default function Page() {
         initial={{ y: 300, opacity: 0 }}
         transition={{ duration: 1, delay: 0.1 }}
       >
-        <div className="w-full px-3 mx-auto mt-[25vh] mb-3 md:mb-8 font-serif text-5xl sm:text-6xl font-medium text-center md:text-8xl">
+        <img src="./images/td.png" className=" w-[380px] self-center mx-auto mt-[10vh] mb-24 rounded-3xl px-4"  />
+        <div className="w-full px-3 mx-auto  mb-3 md:mb-8 font-serif text-5xl sm:text-6xl font-medium text-center md:text-8xl">
           Hello Everyone!
         </div>
 
-        <p className="w-full mx-auto mb-12 font-serif text-2xl text-center sm:text-3xl md:text-5xl">
+        <p className="w-full mx-auto mb-3 md:mb-12 font-serif text-3xl text-center sm:text-4xl md:text-5xl">
           I am <em className="text-orange-400 ">Tushar Debnath</em> a product
           designer <br className="hidden lg:inline" /> and developer from New
           Delhi.
         </p>
         
 
-        <section className="mt-48 home-content-section ">
+        <section className="md:mt-48 home-content-section ">
           <div className="justify-between p-6 mb-12 md:flex ">
             <h2 className="mb-2 font-serif text-3xl font-medium ">
               About my work
             </h2>
-            <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
+            <div className=" text-lg md:text-2xl font-light text-left text-gray-500 md:w-3/4 ">
               I am currently a Senior product designer at{" "}
               <a
                 href="https://www.revolut.com/"
@@ -108,7 +109,7 @@ export default function Page() {
 
           <div className="justify-between p-6 mb-12 md:flex ">
             <h2 className="mb-2 font-serif text-3xl font-medium ">My skills</h2>
-            <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
+            <div className="text-lg md:text-2xl font-light text-left text-gray-500 md:w-3/4 ">
               <em>Design:</em> I have over a decade of experience in building
               high quality and scalable products for few of the largest product
               companies in the world.
@@ -127,7 +128,7 @@ export default function Page() {
             <h2 className="mb-2 font-serif text-3xl font-medium ">
               About my life
             </h2>
-            <div className="text-2xl font-light text-left text-gray-500 md:w-3/4 ">
+            <div className="text-lg md:text-2xl font-light text-left text-gray-500 md:w-3/4 ">
               I currently reside in New Delhi with my family. However, I have
               fond memories of my school years spent in the beautiful hills of
               Mussorie.
