@@ -21,17 +21,54 @@ export default function Page() {
         </section>
 
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  p-12 gap-4 max-w-7xl mx-auto">
-            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-red-100 h-[450px]" >About me </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" >Experience </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" > Featured work</div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" >Fun facts </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" > Tools and Skills</div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" > Writing</div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" > Photography</div>   
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" >Resume </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-100 h-[450px]" > Testimonials</div>
-            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-red-100 h-[450px]" > Interests</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4  md:p-12 gap-4 max-w-7xl mx-auto">
+            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-orange-100 h-[450px]">
+              <h3 className="text-3xl font-medium mb-4 mt-12 text-orange-400">
+                About me
+              </h3>
+              <p className="text-xl">
+                Product designer and design technologist with 8+ years of
+                experience building products loved by millions of people across
+                the globe. I am currently working at Revolut as a Senior product
+                designer.
+              </p>
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              <h3 className="text-8xl font-black text-orange-400">10</h3>
+              <p className="text-4xl">
+                Plus years of building High Quality products
+              </p>
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              {" "}
+              Featured work
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              Fun facts{" "}
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              {" "}
+              Tools and Skills
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              {" "}
+              Writing
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              {" "}
+              Photography
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              Resume{" "}
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-100 h-[450px]">
+              {" "}
+              Testimonials
+            </div>
+            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-orange-100 h-[450px]">
+              {" "}
+              Interests
+            </div>
           </div>
         </section>
       </motion.div>
