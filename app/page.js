@@ -23,7 +23,7 @@ export default function Page() {
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4  md:p-12 gap-4 max-w-7xl mx-auto">
             <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-orange-100 h-[450px]">
-              <h3 className="text-3xl font-medium mb-4 mt-12 text-orange-400">
+              <h3 className="text-6xl font-medium mb-4 mt-12 text-orange-400">
                 About me
               </h3>
               <p className="text-xl">
