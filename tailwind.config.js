@@ -11,7 +11,12 @@ module.exports = {
   
   darkMode: "class",
   theme: {
-   
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-outfit)'],
+      },
+    },
   },
   variants: {
     extend: {},
