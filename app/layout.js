@@ -50,7 +50,8 @@ export default function RootLayout({ children }) {
       <body className="top-container">
        <Navigation />
         <main>{children}
-        <AnalyticsWrapper /></main>
+        </main>
+        <AnalyticsWrapper />
       </body>
     </html>
   );

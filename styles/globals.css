@@ -28,7 +28,7 @@
     @apply sticky w-[80px] top-0 flex flex-col justify-between items-center h-screen border-r py-4;
   }
   .home-content-container {
-    @apply w-[calc(100vw-80px)] py-6;
+    @apply md:w-[calc(100vw-80px)] py-6;
   }
 
   .home-content-section {
