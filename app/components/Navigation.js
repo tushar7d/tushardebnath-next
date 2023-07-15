@@ -33,8 +33,31 @@ let Bttn = (props) => {
   );
 };
 
+
+let Bttnsm = (props) => {
+  const path = useSelectedLayoutSegment();
+
+  return (
+    
+    <Link href={props.link}>
+      <Tooltip content={props.name} placement="top">
+      <div
+        className={` hover:scale-110 transition-transform duration-200 ease-out w-[48px] h-[48px] p-2  rounded-full flex   items-center  justify-center ${
+          path == (props.link == "/" ? null : props.link.substring(1))
+            ? "text-white bg-black"
+            : "text-black bg-white"
+        } `}
+      >
+        {props.children}
+      </div>
+      </Tooltip>
+    </Link>
+   
+  );
+};
 const Navigation = () => {
   return (
+    <>
     <nav className="z-50 nav-container  hidden  md:flex">
       <div className="font-serif text-4xl font-medium ">T</div>
       <div className="flex flex-col space-y-3 ">
@@ -62,6 +85,30 @@ const Navigation = () => {
         <AiFillGithub className="w-6 h-6 " />
       </div>
     </nav>
+    <nav className=" z-50  border space-x-4 p-4 w-fit mx-auto mb-12 bg-white rounded-full fixed bottom-0  left-0 right-0  justify-center  flex  md:hidden">
+      
+      
+        <Bttnsm link="/" name="Home">
+          <HomeIcon className="w-6 h-6 " />
+        </Bttnsm>
+
+        <Bttnsm link="/work" name="Work">
+          <RectangleStackIcon className="w-6 h-6" />
+        </Bttnsm>
+
+        <Bttnsm link="/blog" name="Blog">
+          <BookOpenIcon className="w-6 h-6 " />
+        </Bttnsm>
+        <Bttnsm link="/photography" name="Photography">
+          <AiOutlineCamera className="w-6 h-6 " />
+        </Bttnsm>
+        <Bttnsm link="/about" name="About">
+          <AiOutlineUser className="w-6 h-6 " />
+        </Bttnsm>
+      
+      
+    </nav>
+    </>
   );
 };
 

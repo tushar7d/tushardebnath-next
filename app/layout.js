@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
         </main>
         <AnalyticsWrapper />
       </body>
+
     </html>
   );
 }
