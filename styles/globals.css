@@ -12,13 +12,11 @@
   }
 }
 
-
-@layer base {
+@layer base{
   body {
-    @apply bg-white;
+      @apply dark:bg-gray-800 bg-white
   }
 }
-
 @layer components {
   .top-container {
     @apply  scrollbar-hide;
@@ -27,14 +25,5 @@
   .nav-container {
     @apply fixed inset-x-0 bottom-0 flex items-center justify-between px-4 py-3 mx-auto mb-6 space-x-6 bg-white border rounded-full shadow-xl w-fit;
   }
-  .home-content-container {
-    @apply w-[100vw] py-6;
-  }
-
-  .home-content-section {
-    @apply max-w-[1200px] mx-auto mt-24 px-4;
-  }
-  .project-card {
-    @apply w-full min-h-[500px] bg-gray-100 rounded-xl p-6;
-  }
+ 
 }
