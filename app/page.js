@@ -1,5 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "./style.css";
+
+
 export default function Page() {
   return (
     <div className="home-content-container">
@@ -35,19 +42,39 @@ export default function Page() {
             </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px] flex flex-col justify-between">
               <div>
-              <h3 className="text-8xl mt-4 font-bold font-serif text-orange-400">10<sup>+</sup></h3>
-              <p className="text-3xl">
-                Years of experience building digital products for some of the biggest brands in the industry
-              </p>
+                <h3 className="text-8xl mt-4 font-bold font-serif text-orange-400">
+                  10<sup>+</sup>
+                </h3>
+                <p className="text-3xl">
+                  Years of experience building digital products for some of the
+                  biggest brands in the industry
+                </p>
               </div>
               <div>
-               <img src="./images/brands.png" />
+                <img src="./images/brands.png" />
               </div>
-              
             </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              {" "}
-              Featured work
+              <Swiper
+                pagination={true}
+                modules={[Autoplay]}
+                className="mySwiper"
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+              >
+                <SwiperSlide>
+                  <div className="text-3xl h-full text-orange-400 font-serif font-medium p-4">
+                    Featured Work
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+               
+              </Swiper>
             </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
               Fun facts{" "}
