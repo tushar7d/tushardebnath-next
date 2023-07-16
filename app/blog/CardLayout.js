@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 let Card = (props) => {
@@ -25,11 +25,7 @@ let Card = (props) => {
 
 export default function RootLayout(props) {
   return (
-    <motion.div
-      animate={{ x: 0, opacity: 1 }}
-      initial={{ x: -300, opacity: 0 }}
-      transition={{ duration: 1, delay: 0.1 }}
-    >
+  
       <div className="w-[360px] min-w-[360px] border-r overflow-y-auto scrollbar-hide h-screen">
         <div className="sticky top-0 px-3 py-3 font-serif text-xl font-medium bg-white border-b ">
           Writing
@@ -47,6 +43,6 @@ export default function RootLayout(props) {
           })}
         </ul>
       </div>
-    </motion.div>
+   
   );
 }
