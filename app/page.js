@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./style.css";
@@ -21,7 +21,7 @@ export default function Page() {
           </div>
 
           <p className="w-full mx-auto mb-12 font-serif text-3xl text-center  md:text-5xl">
-            I am <em className="text-orange-400 ">Tushar Debnath,</em> product
+            I am <em className="text-blue-500 ">Tushar Debnath,</em> product
             designer <br className="hidden lg:inline" /> and developer from New
             Delhi.
           </p>
@@ -29,24 +29,27 @@ export default function Page() {
 
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4  md:p-12 gap-4 max-w-7xl mx-auto">
-            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-orange-50 h-[450px]">
-              <h3 className="text-3xl font-bold mb-4 mt-2 font-serif text-orange-400">
-                ABOUT ME
+            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-green-50 h-[450px]">
+              <h3 className="text-3xl font-bold mb-4 mt-2 font-serif text-green-400  ">
+                About
               </h3>
-              <p className="text-xl">
+              <p className="text-xl text-gray-600">
                 Product designer and design technologist with 8+ years of
                 experience building products loved by millions of people across
                 the globe. I am currently working at Revolut as a Senior product
                 designer.
               </p>
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px] flex flex-col justify-between">
+            <div className=" p-6 rounded-3xl col-span-1 bg-blue-50 h-[450px] flex flex-col justify-between">
               <div>
-                <h3 className="text-8xl mt-4 font-bold font-serif text-orange-400">
+              <h3 className="text-3xl font-bold mb-4 mt-2 text-blue-400 font-serif ">
+                Experience
+              </h3>
+                <h3 className="text-9xl mt-4  font-bold  ">
                   10<sup>+</sup>
                 </h3>
-                <p className="text-3xl">
-                  Years of experience building digital products for some of the
+                <p className="text-2xl text-gray-600">
+                  Years of building digital products for some of the
                   biggest brands in the industry
                 </p>
               </div>
@@ -54,19 +57,18 @@ export default function Page() {
                 <img src="./images/brands.png" />
               </div>
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
+            <div className=" p-6 rounded-3xl col-span-1 bg-purple-50 h-[450px]">
+             
               <Swiper
                 pagination={true}
-                modules={[Autoplay]}
+                modules={[ Pagination]}
                 className="mySwiper"
                 loop={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
+               
               >
+                
                 <SwiperSlide>
-                  <div className="text-3xl h-full text-orange-400 font-serif font-medium p-4">
+                  <div className="text-3xl h-full text-purple-400 font-serif font-medium p-4 ">
                     Featured Work
                   </div>
                 </SwiperSlide>
@@ -79,7 +81,7 @@ export default function Page() {
             <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
               Fun facts{" "}
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
+            <div className=" p-6 rounded-3xl col-span-1 bg-red-50 h-[450px]">
               {" "}
               Tools and Skills
             </div>
