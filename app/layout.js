@@ -1,4 +1,4 @@
-import localFont from '@next/font/local';
+import localFont from "next/font/local";
 import "../styles/globals.css";
 import Navigation from './components/Navigation';
 import { AnalyticsWrapper } from './components/analytics';
