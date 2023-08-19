@@ -10,31 +10,33 @@ export default function Page() {
         initial={{ y: 200, opacity: 0 }}
         transition={{ duration: 1, delay: 0.1 }}
       >
-        <section className="grid grid-cols-2 gap-6 home-content-section">
-          <div className="col-span-2 mb-12 font-serif text-6xl font-medium">
-            Featured Work
+        <section className=" max-w-[1200px] mx-auto mt-24 px-6">
+          <div className=" mb-12 font-serif text-6xl font-medium">
+            Featured
           </div>
-          <Link
-            href="/work/zomato-order-tracking-system"
-            className="flex flex-col items-center justify-center col-span-2 p-6 bg-center bg-gradient-to-tr bg-red-50 project-card "
-          >
-            <div className="w-2/3 font-serif text-5xl font-medium text-center text-black ">
-              Zomato Order Tracking System
-            </div>
-            <div className="mt-3 text-4xl font-light text-black">
-              A case study
-            </div>
-          </Link>
-          <div className="project-card bg-gradient-to-tr from-yellow-500 to-blue-500">Main content</div>
-          <div className="project-card bg-gradient-to-tr from-blue-400 to-green-300">Main content</div>
-
-          <div className="col-span-2 my-12 font-serif text-6xl font-medium">
-            Little details
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="project-card bg-red-50 ">Revolut India launch</div>
+            <div className="project-card bg-red-50 ">Revolut Snap</div>
+            <div className="project-card bg-red-50 ">Revolut APAC</div>
+           
           </div>
-          <div className="project-card bg-gradient-to-tr from-red-200 to-orange-300">Main content</div>
-          <div className="project-card bg-gradient-to-tr from-blue-400 to-green-300">Main content</div>
-          <div className="project-card bg-gradient-to-tr from-yellow-500 to-blue-500">Main content</div>
-          <div className="project-card bg-gradient-to-tr from-blue-400 to-green-300">Main content</div>
+          <div className="my-12 mt-16 font-serif text-6xl font-medium">
+            Case studies
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+           
+          <div className="project-card bg-red-50 ">Zomato order tracker</div>
+            <div className="project-card bg-red-50 ">Zomato Market</div>
+            <div className="project-card bg-red-50 ">Expedia car rental</div>
+          </div>
+          <div className="my-12 mt-16 font-serif text-6xl font-medium">
+            Side projects
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="project-card bg-red-50 ">Expedia design ops</div>
+            <div className="project-card bg-red-50 ">Figma comunity plugins</div>
+            <div className="project-card bg-red-50 ">Figma course</div>
+          </div>
         </section>
       </motion.div>
     </div>
