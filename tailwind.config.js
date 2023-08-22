@@ -43,6 +43,7 @@ module.exports = {
       
       colors: {
         "page-black": "#121212",
+        "gblue": "linear-gradient(151deg, #17157C 0%, #504DFF 99.42%)"
       },
       typography: {
         DEFAULT: {
