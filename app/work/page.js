@@ -15,7 +15,14 @@ export default function Page() {
             Featured
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="project-card bg-red-50 ">Revolut India launch</div>
+            <div className="flex flex-col justify-between p-0 project-card bg-red-50 ">
+              <div className="mt-12 text-center">
+              <div>Revolut</div>
+              <div>India Launch</div>
+
+              </div>
+             
+            </div>
             <div className="project-card bg-red-50 ">Revolut Snap</div>
             <div className="project-card bg-red-50 ">Revolut APAC</div>
            
