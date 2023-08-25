@@ -11,6 +11,7 @@ module.exports = {
   
   darkMode: "class",
   theme: {
+   
     extend: {
       animation: {
         blob: "blob 7s infinite",
@@ -63,5 +64,6 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("tailwind-scrollbar-hide"),
     require('flowbite/plugin'),
+  
   ],
 };
