@@ -1,10 +1,7 @@
 "use client";
 import { motion, LayoutGroup } from "framer-motion";
 
-
 export default function Page() {
-
-
   return (
     <div className="home-content-container">
       <div>
@@ -32,7 +29,6 @@ export default function Page() {
               </div>
             </div>
 
-
             <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 ">
               <div className="mt-12 text-center h-[150px]">
                 <div className="mb-2 text-xl ">Revolut</div>
@@ -40,21 +36,101 @@ export default function Page() {
                   Building Snap
                 </div>
               </div>
-              <div className="bg-[url('/images/snapcov.png')]  w-full h-[90%] md:h-full ml-24 md:ml-12  mb-4  bg-contain bg-no-repeat" />
-             
+              <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-12  mb-4  bg-contain bg-no-repeat" />
             </div>
 
-            
-            <div className="bg-indigo-500 project-card ">Revolut APAC</div>
+            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-500 to-green-900 group hover">
+              <div className="mt-12 text-center h-[150px]">
+                <div className="mb-2 text-xl ">Zomato</div>
+                <div className="font-serif text-3xl font-semibold">
+                  Order Tracking
+                </div>
+              </div>
+              <div className="relative w-full h-full ">
+                <div>
+                  <div className="bg-[url('/images/track.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-12    top-20  transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/track.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-2 top-12  transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/track.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto group-hover:-translate-x-12  left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="my-12 mt-24 font-serif text-6xl font-medium">
             Case studies
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
-            <div  className={`project-card bg-red-50   `}>Zomato order tracker</div>
-            <div className="project-card bg-red-50 ">Zomato Market</div>
-            <div className="project-card bg-red-50 ">Expedia car rental</div>
+            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 ">
+              <div className="mt-12 text-center h-[150px]">
+                <div className="mb-2 text-xl ">Expedia</div>
+                <div className="font-serif text-3xl font-semibold">
+                  Car Rental Experience
+                </div>
+              </div>
+              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 group">
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-8 top-12 group-hover:-rotate-6 transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 ">
+              <div className="mt-12 text-center h-[150px]">
+                <div className="mb-2 text-xl ">Zomato</div>
+                <div className="font-serif text-3xl font-semibold">
+                  Launching Marketplace
+                </div>
+              </div>
+              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 group">
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-8 top-12 group-hover:-rotate-6 transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
+              </div>
+            </div><div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 ">
+              <div className="mt-12 text-center h-[150px]">
+                <div className="mb-2 text-xl ">Revolut</div>
+                <div className="font-serif text-3xl font-semibold">
+                  Asia Pacific Region
+                </div>
+              </div>
+              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 group">
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-8 top-12 group-hover:-rotate-6 transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
+              </div>
+            </div>
           </div>
+          <div className="my-12 mt-16 font-serif text-6xl font-medium">
+            Small wins
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="project-card bg-red-50 ">Revolut Singapore eGiro</div>
+            <div className="project-card bg-red-50 ">
+              Revolut Lite App
+            </div>
+            <div className="project-card bg-red-50 ">Revolut Australi openbanking</div>
+          </div>
+
           <div className="my-12 mt-16 font-serif text-6xl font-medium">
             Side projects
           </div>
