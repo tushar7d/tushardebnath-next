@@ -33,9 +33,9 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 ">
+            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 group">
               <CardHeader t="Revolut" b="Building Snap" />
-              <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-12  mb-4  bg-contain bg-no-repeat" />
+              <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-16  mb-4  bg-contain bg-no-repeat group-hover:-translate-x-8 transition ease-out duration-300" />
             </div>
 
             <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-500 to-green-900 group hover">
