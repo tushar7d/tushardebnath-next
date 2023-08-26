@@ -34,7 +34,7 @@ export default function Page() {
             </div>
 
             <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 ">
-              <CardHeader t="Revolut" b="Expanding to India" />
+              <CardHeader t="Revolut" b="Building Snap" />
               <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-12  mb-4  bg-contain bg-no-repeat" />
             </div>
 
