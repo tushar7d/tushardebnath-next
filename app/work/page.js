@@ -17,7 +17,7 @@ export default function Page() {
         <section className=" max-w-[1200px] mx-auto mt-24 px-6">
           <div className="mb-12 font-serif text-6xl font-medium ">Featured</div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-b from-violet-950 to-indigo-600 overflow-clip group ">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-b from-violet-950 to-indigo-600 overflow-clip group hover:scale-105">
               <CardHeader t="Revolut" b="Expanding to India" />
 
               <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6">
@@ -33,12 +33,12 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 group">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 group hover:scale-105">
               <CardHeader t="Revolut" b="Building Snap" />
               <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-16  mb-4  bg-contain bg-no-repeat group-hover:-translate-x-8 transition ease-out duration-300" />
             </div>
 
-            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-500 to-green-900 group hover">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-green-500 to-green-900 group hover:scale-105">
               <CardHeader t="Zomato" b="Order Tracking" />
               <div className="relative w-full h-full ">
                 <div>

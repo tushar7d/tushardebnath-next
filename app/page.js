@@ -15,12 +15,12 @@ export default function Page() {
         initial={{ y: 300, opacity: 0 }}
         transition={{ duration: 1, delay: 0.1 }}
       >
-        <section className=" ">
+        <section className="">
           <div className="w-full px-3 mx-auto mt-[25vh] mb-3 md:mb-8 font-serif text-6xl  font-medium text-center md:text-8xl">
             Hello Everyone!
           </div>
 
-          <p className="w-full mx-auto mb-12 font-serif text-3xl text-center  md:text-5xl">
+          <p className="w-full mx-auto mb-12 font-serif text-3xl text-center md:text-5xl">
             I am <em className="text-blue-500 ">Tushar Debnath,</em> product
             designer <br className="hidden lg:inline" /> and developer from New
             Delhi.
@@ -28,9 +28,9 @@ export default function Page() {
         </section>
 
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4  md:p-12 gap-4 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 gap-4 p-4 mx-auto md:grid-cols-2 lg:grid-cols-3 md:p-12 max-w-7xl">
             <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-green-50 h-[450px]">
-              <h3 className="text-3xl font-bold mb-4 mt-2 font-serif text-green-400  ">
+              <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-green-400 ">
                 About
               </h3>
               <p className="text-xl text-gray-600">
@@ -42,10 +42,10 @@ export default function Page() {
             </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-blue-50 h-[450px] flex flex-col justify-between">
               <div>
-              <h3 className="text-3xl font-bold mb-4 mt-2 text-blue-400 font-serif ">
+              <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-blue-400 ">
                 Experience
               </h3>
-                <h3 className="text-9xl mt-4  font-bold  ">
+                <h3 className="mt-4 font-bold text-9xl ">
                   10<sup>+</sup>
                 </h3>
                 <p className="text-2xl text-gray-600">
@@ -68,7 +68,7 @@ export default function Page() {
               >
                 
                 <SwiperSlide>
-                  <div className="text-3xl h-full text-purple-400 font-serif font-medium p-4 ">
+                  <div className="h-full p-4 font-serif text-3xl font-medium text-purple-400 ">
                     Featured Work
                   </div>
                 </SwiperSlide>
