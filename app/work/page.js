@@ -57,9 +57,9 @@ export default function Page() {
             Case studies
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
-            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 ">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 group hover:scale-105">
             <CardHeader t="Expedia" b="Car rental experience" />
-              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 group">
+              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
                 <div>
                   <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
                 </div>
@@ -71,9 +71,9 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 ">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 hover:scale-105 group">
             <CardHeader t="Zomato" b="Market place" />
-              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 group">
+              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
                 <div>
                   <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0  group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
                 </div>
@@ -85,9 +85,9 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-between p-0 text-white cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 ">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-green-400 to-cyan-700 hover:scale-105 group">
             <CardHeader t="Revolut" b="Asia pacific" />
-              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 group">
+              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
                 <div>
                   <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
                 </div>
