@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./style.css";
 
-
 export default function Page() {
   return (
     <div className="home-content-container">
@@ -16,7 +15,8 @@ export default function Page() {
         transition={{ duration: 1, delay: 0.1 }}
       >
         <section className="">
-          <div className="w-full px-3 mx-auto mt-[25vh] mb-3 md:mb-8 font-serif text-6xl  font-medium text-center md:text-8xl">
+        <img src="./images/td.png" className="w-[300px] h-[300px] mx-auto  mt-[100px] mb-12" />{" "}
+          <div className="w-full px-3 mx-auto mb-3 md:mb-8 font-serif text-6xl  font-medium text-center md:text-8xl">
             Hello Everyone!
           </div>
 
@@ -29,44 +29,48 @@ export default function Page() {
 
         <section>
           <div className="grid grid-cols-1 gap-4 p-4 mx-auto md:grid-cols-2 lg:grid-cols-3 md:p-12 max-w-7xl">
-            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-green-50 h-[450px]">
-              <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-green-400 ">
-                About
-              </h3>
-              <p className="text-xl text-gray-600">
-                Product designer and design technologist with 8+ years of
-                experience building products loved by millions of people across
-                the globe. I am currently working at Revolut as a Senior product
-                designer.
-              </p>
+            <div className=" p-6 rounded-3xl  flex col-span-1  bg-green-50 h-[450px]  justify-center">
+              
+              <div>
+                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-green-400 ">
+                  About
+                </h3>
+                <p className="text-xl text-gray-600">
+                  Product designer and design technologist with 8+ years of
+                  experience building products loved by millions of people
+                  across the globe. I am currently working at Revolut as a
+                  Senior product designer.
+                </p>
+              </div>
             </div>
+            
             <div className=" p-6 rounded-3xl col-span-1 bg-blue-50 h-[450px] flex flex-col justify-between">
               <div>
-              <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-blue-400 ">
-                Experience
-              </h3>
-                <h3 className="mt-4 font-bold text-9xl ">
+                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-blue-400 ">
+                  Experience
+                </h3>
+                <h3 className="mt-4 font-bold text-6xl ">
                   10<sup>+</sup>
                 </h3>
                 <p className="text-2xl text-gray-600">
-                  Years of building digital products for some of the
-                  biggest brands in the industry
+                  Years of building digital products for some of the biggest
+                  brands in the industry
                 </p>
               </div>
               <div>
                 <img src="./images/brands.png" />
               </div>
             </div>
+            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
+              <img src="./images/cover.png"  className="w-[350px] mx-auto mt-4  "/>
+            </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-purple-50 h-[450px]">
-             
               <Swiper
                 pagination={true}
-                modules={[ Pagination]}
+                modules={[Pagination]}
                 className="mySwiper"
                 loop={true}
-               
               >
-                
                 <SwiperSlide>
                   <div className="h-full p-4 font-serif text-3xl font-medium text-purple-400 ">
                     Featured Work
@@ -75,7 +79,6 @@ export default function Page() {
                 <SwiperSlide>Slide 2</SwiperSlide>
                 <SwiperSlide>Slide 3</SwiperSlide>
                 <SwiperSlide>Slide 4</SwiperSlide>
-               
               </Swiper>
             </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
