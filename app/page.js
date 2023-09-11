@@ -29,24 +29,23 @@ export default function Page() {
 
         <section>
           <div className="grid grid-cols-1 gap-4 p-4 mx-auto md:grid-cols-2 lg:grid-cols-3 md:p-12 max-w-7xl">
-            <div className=" p-6 rounded-3xl  flex col-span-1  bg-green-50 h-[450px]  justify-center">
+            <div className=" p-6 rounded-3xl  flex col-span-1  bg-gray-50 h-[450px]  justify-center">
               
               <div>
-                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-green-400 ">
-                  About
+                <div className="w-[60px] h-[60px] bg-black rounded-full mb-12" /> 
+                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold  ">
+                  A bit about me
                 </h3>
                 <p className="text-xl text-gray-600">
-                  Product designer and design technologist with 8+ years of
-                  experience building products loved by millions of people
-                  across the globe. I am currently working at Revolut as a
+                  Product designer and design technologist from India. I am currently working at Revolut as a
                   Senior product designer.
                 </p>
               </div>
             </div>
             
-            <div className=" p-6 rounded-3xl col-span-1 bg-blue-50 h-[450px] flex flex-col justify-between">
+            <div className=" p-6 rounded-3xl col-span-1 bg-gray-50 h-[450px] flex flex-col justify-between">
               <div>
-                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold text-blue-400 ">
+                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold  ">
                   Experience
                 </h3>
                 <h3 className="mt-4 font-bold text-6xl ">
@@ -62,7 +61,7 @@ export default function Page() {
               </div>
             </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              <img src="./images/cover.png"  className="w-[350px] mx-auto mt-4  "/>
+              <img src="./images/flume.jpeg"  className="w-[300px] mx-auto mt-3   rounded-2xl"/>
             </div>
             <div className=" p-6 rounded-3xl col-span-1 bg-purple-50 h-[450px]">
               <Swiper
