@@ -65,16 +65,12 @@ const Navigation = () => {
           <HomeIcon className="w-6 h-6 " />
         </Bttn>
 
-        <Bttn link="/work" name="Work">
-          <RectangleStackIcon className="w-6 h-6" />
-        </Bttn>
+        
 
         <Bttn link="/blog" name="Blog">
           <BookOpenIcon className="w-6 h-6 " />
         </Bttn>
-        <Bttn link="/photography" name="Photography">
-          <AiOutlineCamera className="w-6 h-6 " />
-        </Bttn>
+       
         <Bttn link="/about" name="About">
           <AiOutlineUser className="w-6 h-6 " />
         </Bttn>
@@ -92,16 +88,11 @@ const Navigation = () => {
           <HomeIcon className="w-6 h-6 " />
         </Bttnsm>
 
-        <Bttnsm link="/work" name="Work">
-          <RectangleStackIcon className="w-6 h-6" />
-        </Bttnsm>
-
+        
         <Bttnsm link="/blog" name="Blog">
           <BookOpenIcon className="w-6 h-6 " />
         </Bttnsm>
-        <Bttnsm link="/photography" name="Photography">
-          <AiOutlineCamera className="w-6 h-6 " />
-        </Bttnsm>
+        
         <Bttnsm link="/about" name="About">
           <AiOutlineUser className="w-6 h-6 " />
         </Bttnsm>
