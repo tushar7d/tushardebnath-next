@@ -13,7 +13,7 @@ export default async function RootLayout({ children }) {
 console.log(path)
   return (
     <div className="flex w-screen sm:w-[calc(100vw-80px)] h-screen sticky top-0 overflow-hidden ">
-      <div className={`${path.endsWith("/blog")?"block":"hidden"}`}>
+      <div className={`${path.endsWith("/blog")?"block":"hidden md:block"}`}>
       <CardList  list={data}/>
       </div>
       
