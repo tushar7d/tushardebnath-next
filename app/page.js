@@ -5,7 +5,18 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./style.css";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
+
+
+let CardHeader = (props) => {
+  return (
+    <div className="mt-12 text-center h-[150px]">
+      <div className="mb-2 text-xl ">{props.t}</div>
+      <div className="font-serif text-3xl font-semibold">{props.b}</div>
+    </div>
+  );
+};
 export default function Page() {
   return (
     <div className="home-content-container">
@@ -14,98 +25,132 @@ export default function Page() {
         initial={{ y: 300, opacity: 0 }}
         transition={{ duration: 1, delay: 0.1 }}
       >
-        <section className="">
-        <img src="./images/td.png" className="w-[300px] h-[300px] mx-auto  mt-[100px] mb-12" />{" "}
-          <div className="w-full px-3 mx-auto mb-3 md:mb-8 font-serif text-6xl  font-medium text-center md:text-8xl">
+        <section className="max-w-[1200px] mt-24 mx-auto px-6 lg:flex mb-[100px] justify-between  items-center">
+        <img
+            src="./images/td.png"
+            className="w-[260px] h-[260px] mb-12 mx-auto lg:mr-12"
+          /> 
+        
+          <div>
+         
+          <div className="w-full  mx-auto mb-3 md:mb-6 font-serif text-6xl text-center md:text-left font-medium  md:text-8xl">
             Hello Everyone!
           </div>
-
-          <p className="w-full mx-auto mb-12 font-serif text-3xl text-center md:text-5xl">
-            I am <em className="text-blue-500 ">Tushar Debnath,</em> product
-            designer <br className="hidden lg:inline" /> and developer from New
-            Delhi.
-          </p>
+          <p className=" mb-12 font-serif text-3xl  md:text-5xl  text-center md:text-left  leading-[40px] md:leading-[60px]">
+            I am Tushar Debnath, a product designer & devloper from New delhi
+            </p>
+          </div>
+         
         </section>
 
-        <section>
-          <div className="grid grid-cols-1 gap-4 p-4 mx-auto md:grid-cols-2 lg:grid-cols-3 md:p-12 max-w-7xl">
-            <div className=" p-6 rounded-3xl  flex col-span-1  bg-gray-50 h-[450px]  justify-center">
-              
-              <div>
-                <div className="w-[60px] h-[60px] bg-black rounded-full mb-12" /> 
-                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold  ">
-                  A bit about me
-                </h3>
-                <p className="text-xl text-gray-600">
-                  Product designer and design technologist from India. I am currently working at Revolut as a
-                  Senior product designer.
-                </p>
+        <section className=" max-w-[1200px] mx-auto mt-24 px-6">
+          <div className="mb-12 font-serif text-6xl font-medium ">Featured Work</div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-b from-violet-950 to-indigo-600 overflow-clip group hover:scale-105">
+              <CardHeader t="Revolut" b="Expanding to India" />
+
+              <div className="relative w-full h-full ">
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-8 top-12 group-hover:-rotate-6 transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
               </div>
             </div>
-            
-            <div className=" p-6 rounded-3xl col-span-1 bg-gray-50 h-[450px] flex flex-col justify-between">
-              <div>
-                <h3 className="mt-2 mb-4 font-serif text-3xl font-bold  ">
-                  Experience
-                </h3>
-                <h3 className="mt-4 font-bold text-6xl ">
-                  10<sup>+</sup>
-                </h3>
-                <p className="text-2xl text-gray-600">
-                  Years of building digital products for some of the biggest
-                  brands in the industry
-                </p>
+
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-fuchsia-700 to-cyan-950 group hover:scale-105">
+              <CardHeader t="Revolut" b="Building Snap" />
+              <div className="bg-[url('/images/snapcov.png')]  w-[500px]  h-full md:h-full ml-24 md:ml-16  mb-4  bg-contain bg-no-repeat group-hover:-translate-x-8 transition ease-out duration-300" />
+            </div>
+
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-green-500 to-green-900 group hover:scale-105">
+              <CardHeader t="Zomato" b="Order Tracking" />
+              <div className="relative w-full h-full ">
+                <div>
+                  <div className="bg-[url('/images/track.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-12    top-20  transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/track.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-2 top-12  transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/track.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto group-hover:-translate-x-12  left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
               </div>
-              <div>
-                <img src="./images/brands.png" />
+            </div>
+          </div>
+          <div className="my-12 mt-24 font-serif text-6xl font-medium">
+            Case studies
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-blue-400 to-blue-900 group hover:scale-105">
+            <CardHeader t="Expedia" b="Car rental experience" />
+              <div className="relative w-full h-full  ">
+                <div>
+                  <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-12 right-0 top-16  transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-12 top-16   transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/car.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
               </div>
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              <img src="./images/flume.jpeg"  className="w-[300px] mx-auto mt-3   rounded-2xl"/>
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-emerald-400 to-blue-700 hover:scale-105 group">
+            <CardHeader t="Zomato" b="Partner App" />
+              <div className="relative w-full h-full ">
+                <div>
+                  <div className="bg-[url('/images/medal.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-12    top-20  transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/medal.png')]  w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto   left-0 right-0 group-hover:translate-x-2 top-12  transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/medal.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto group-hover:-translate-x-12  left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
+              </div>
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-purple-50 h-[450px]">
-              <Swiper
-                pagination={true}
-                modules={[Pagination]}
-                className="mySwiper"
-                loop={true}
-              >
-                <SwiperSlide>
-                  <div className="h-full p-4 font-serif text-3xl font-medium text-purple-400 ">
-                    Featured Work
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-              </Swiper>
+            <div className="flex flex-col justify-between p-0 text-white transition duration-300 ease-out cursor-pointer project-card bg-gradient-to-t from-red-400 to-purple-700 hover:scale-105 group">
+            <CardHeader t="Revolut" b="Security Hub" />
+              <div className="relative w-full h-full transition ease-in-out group-hover:-translate-y-6 ">
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0   group-hover:translate-x-8 right-0 top-12 group-hover:rotate-6 transition ease-out duration-300   " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute m-auto left-0 right-0 group-hover:-translate-x-8 top-12 group-hover:-rotate-6 transition ease-out duration-300  " />
+                </div>
+                <div>
+                  <div className="bg-[url('/images/inlaunch1.png')] w-[200px] mx-auto h-[500px] bg-contain bg-no-repeat absolute  m-auto left-0 right-0 top-4 transition ease-out duration-300" />
+                </div>
+              </div>
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              Fun facts{" "}
+          </div>
+          <div className="my-12 mt-16 font-serif text-6xl font-medium">
+            Small wins
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="project-card bg-red-50 ">
+              Revolut Singapore eGiro
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-red-50 h-[450px]">
-              {" "}
-              Tools and Skills
+            <div className="project-card bg-red-50 ">Revolut Lite App</div>
+            <div className="project-card bg-red-50 ">
+              Revolut Australi openbanking
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              {" "}
-              Writing
+          </div>
+
+          <div className="my-12 mt-16 font-serif text-6xl font-medium">
+            Side projects
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="project-card bg-red-50 ">Expedia design ops</div>
+            <div className="project-card bg-red-50 ">
+              Figma comunity plugins
             </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              {" "}
-              Photography
-            </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              Resume{" "}
-            </div>
-            <div className=" p-6 rounded-3xl col-span-1 bg-orange-50 h-[450px]">
-              {" "}
-              Testimonials
-            </div>
-            <div className=" p-6 rounded-3xl col-span-1 md:col-span-2 bg-orange-50 h-[450px]">
-              {" "}
-              Interests
-            </div>
+            <div className="project-card bg-red-50 ">Figma course</div>
           </div>
         </section>
       </motion.div>
