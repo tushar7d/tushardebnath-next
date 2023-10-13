@@ -26,7 +26,7 @@ let Card = (props) => {
 export default function RootLayout(props) {
   return (
   
-      <div className="w-[360px] min-w-[360px] border-r overflow-y-auto scrollbar-hide h-screen">
+      <div className="  w-screen sm:w-[360px] sm:min-w-[360px]  border-r overflow-y-auto scrollbar-hide h-screen">
         <div className="sticky top-0 px-3 py-3 font-serif text-xl font-medium bg-white border-b ">
           Writing
         </div>
