@@ -58,7 +58,7 @@ let Bttnsm = (props) => {
 const Navigation = () => {
   return (
     <>
-    <nav className="z-50 nav-container  hidden  md:flex">
+    <nav className="z-50 hidden nav-container md:flex">
       <div className="font-serif text-4xl font-medium ">T</div>
       <div className="flex flex-col space-y-3 ">
         <Bttn link="/" name="Home">
@@ -67,21 +67,21 @@ const Navigation = () => {
 
        
 
-        <Bttn link="/blog" name="Blog">
-          <BookOpenIcon className="w-6 h-6 " />
-        </Bttn>
+        
+
+       
         
         <Bttn link="/about" name="About">
           <AiOutlineUser className="w-6 h-6 " />
         </Bttn>
       </div>
-      <div className="space-y-6 text-gray-800 pb-4">
+      <div className="pb-4 space-y-6 text-gray-800">
         <AiFillLinkedin className="w-6 h-6 " />
         <FiFigma className="w-6 h-6 " />
         <AiFillGithub className="w-6 h-6 " />
       </div>
     </nav>
-    <nav className=" z-50  border space-x-4 p-4 w-fit mx-auto mb-12 bg-white rounded-full fixed bottom-0  left-0 right-0  justify-center  flex  md:hidden">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 flex justify-center p-4 mx-auto mb-12 space-x-4 bg-white border rounded-full w-fit md:hidden">
       
       
         <Bttnsm link="/" name="Home">
